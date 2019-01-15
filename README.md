@@ -1,2 +1,1 @@
-# zejuli.gihub.io
-Zeju Li's Homepage
+# Zeju Li's Homepage
