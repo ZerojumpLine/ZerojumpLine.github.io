@@ -1,0 +1,54 @@
+
+#layout-content{
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 0px;
+    width: 1000px;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family:  "Arial"; */
+    /*background-color: #e6e6e6;*/
+    background-color: #ffffff;
+	font-size : 16px;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+    /*font-family:  "Arial"; */
+    text-align: left;
+    }
+
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: "Arial";*/
+    text-align: left;}    
+    
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: "Arial";*/
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #0050e7
+}
+
+a:hover{
+    color: #0404B4;
+    border-bottom: 1px gray dotted;
+}
+
+.contents {align: left;}
+
+
+
+
+
+
+
+
+
