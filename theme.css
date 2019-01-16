@@ -1,54 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
 
-#layout-content{
-    margin: auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 0px;
-    width: 1000px;
+h1
+{
+color:#000000;
+font-family:"Times New Roman", Times, serif;
+-moz-animation-duration: 3s;
+-moz-animation-name: slidein;
+-moz-animation-iteration-count: infinite;
 }
 
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-	/*font-family:  "Arial"; */
-    /*background-color: #e6e6e6;*/
-    background-color: #ffffff;
-	font-size : 16px;
 }
 
-h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-    /*font-family:  "Arial"; */
-    text-align: left;
-    }
 
-h2{
-	font-family: 'Source Sans Pro', sans-serif;
-    /*font-family: "Arial";*/
-    text-align: left;}    
-    
-p {
-	font-family: 'Source Sans Pro', sans-serif;
-    /*font-family: "Arial";*/
-    font-size: 16px;
+h2
+{
+font-family:"Times New Roman", Times, serif;
+text-transform:uppercase;
+color:#000000;
 }
 
-a{
-    text-decoration: none;
-    color: #0050e7
+a 
+{
+color:#0033CC;
+text-decoration:none;
+font-weight:bold;
 }
 
-a:hover{
-    color: #0404B4;
-    border-bottom: 1px gray dotted;
+a:hover {color:#FF9900; text-decoration:underline;}
+a.two:hover {text-decoration:none;color:#000000;}
+
+a.two
+{
+color:#000000;
 }
-
-.contents {align: left;}
-
-
-
-
-
-
-
-
-
