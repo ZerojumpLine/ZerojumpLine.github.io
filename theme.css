@@ -136,13 +136,13 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #0072BD;
 	margin-top: 0.7em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1.5px solid #D95319;
 }
 
 h1 {
