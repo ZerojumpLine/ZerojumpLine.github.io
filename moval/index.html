@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Object detection, Instance segmentation, Depth estimation, Stereo matching, Assistive computer vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOVAL: Estimating performance for safe deployment of machine learning models</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- mathjax -->
+  <script type="text/x-mathjax-config"> 
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); 
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  <!--/ mathjax -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <!--<script src="./assets/nerfies/js/index.js"></script>-->
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://zerojumpline.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Estimating performance for safe deployment of machine learning models</h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://zerojumpline.github.io/">Zeju Li</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Konstantinos Kamnitsas</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Mobarakol Islam</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Chen Chen</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="#">Mélanie Roschewitz</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="#">Cheng Ouyang</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="#">Ben Glocker</a><sup>4</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Oxford.&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>2</sup>University College London.&nbsp;&nbsp;&nbsp;</span>
+            <span class="author-block"><sup>3</sup>University of Sheffield.</span>
+            <span class="author-block"><sup>4</sup>Imperial College London.</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2207.09957" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2207.09957" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Preprint</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://moval.readthedocs.io/en/latest/index.html" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-book"></i>
+                  </span>
+                  <span>Document</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ZerojumpLine/MOVAL"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Introduction</h2> 
+        <div class="content has-text-justified">
+          <p>
+            MOVAL is a Python package designed for assessing model performance in the absence of ground truth labels. It computes and calibrated confidence scores to accurately reflect the likelihood of predictions, leveraging these calibrated confidence scores to estimate the model's overall performance. Notably, MOVAL operates without the need for ground truth labels in the target domains and supports the evaluation of model performance in classification, 2D segmentation, and 3D segmentation.
+          </p>
+          <p>
+            MOVAL highlights a key feature—class-wise calibration, recognized as essential for addressing long-tailed distributions commonly found in real-world datasets. This proves especially significant in segmentation tasks where background samples often outnumber foregrounds. The inclusion of class-specific variants becomes crucial for accurately estimating segmentation performance. Additionally, MOVAL offers support for various types of confidence scores, enhancing its versatility..
+          </p>
+        </div>
+        What it offers:
+
+        <div class="hero-body">
+          <div class="columns is-centered">
+            <div class="column is-9">
+              <img src="./static/images/features.png"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <p>
+      If you find our work useful for your research, please cite with the following bibtex:
+    </p>
+    <pre><code>@inproceedings{li2022estimating,
+      title={Estimating model performance under domain shifts with class-specific confidence scores},
+      author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
+      booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+      pages={693--703},
+      year={2022},
+      organization={Springer}
+    } </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2207.09957">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ZerojumpLine/MOVAL" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>This website is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies website template</a>,
+            which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
