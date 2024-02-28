@@ -148,11 +148,11 @@ p {
 }
 
 .news-item {
-  background-color: #f8f8f8; /* Light gray background */
-  border: 1px solid #ddd; /* Light gray border */
+  background-color: #fffff; /* Light gray background */
+  border: 2px solid #000; /* Light gray border */
   padding: 5px; /* Spacing inside the news item */
   margin-bottom: 5px; /* Spacing between news items */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -171,5 +171,5 @@ p {
 .news-item .date {
   font-size: 0.8em; /* Smaller font size for the date */
   color: #999; /* Lighter color for the date */
-  margin-top: 10px; /* Spacing above the date */
+  margin-top: 0px; /* Spacing above the date */
 }
