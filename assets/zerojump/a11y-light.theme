@@ -1,0 +1,37 @@
+{
+  "name": "a11y-light",
+  "author": "Sarah Rainsberger",
+  "url": "https://github.com/ericwbailey/a11y-syntax-highlighting",
+  "modes": [
+    {
+      "name": "default",
+      "scope": [],
+      "settings": {
+        "foreground": "#545454",
+        "background": "#fefefe"
+      }
+    },
+    {
+      "name": "comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#696969"
+      }
+    },
+    {
+      "name": "keyword",
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#008000",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "string",
+      "scope": ["string", "constant.other.symbol"],
+      "settings": {
+        "foreground": "#a31515"
+      }
+    }
+  ]
+} 

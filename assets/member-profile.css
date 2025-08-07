@@ -1,0 +1,97 @@
+/* Member Profile Layout */
+.member-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.member-photo {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.member-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-info h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.member-info p {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.member-info h3 {
+  color: #495057;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.member-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.member-info li {
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .member-profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .member-photo {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+  
+  .member-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .member-info h2 {
+    color: #e9ecef;
+  }
+  
+  .member-info p {
+    color: #adb5bd;
+  }
+  
+  .member-info h3 {
+    color: #ced4da;
+  }
+  
+  .member-info li {
+    color: #ced4da;
+  }
+} 

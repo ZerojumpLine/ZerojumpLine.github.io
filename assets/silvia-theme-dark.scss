@@ -1,0 +1,583 @@
+/*-- scss:defaults --*/
+
+// Quarto references:
+// Variables: https://github.com/quarto-dev/quarto-cli/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
+// Rules: https://github.com/quarto-dev/quarto-cli/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
+
+// Colors: Quarto variables
+$primary:                    $spc-primary-light;
+$secondary:                  $spc-secondary-light;
+// Colors: custom variables
+$primary-dark:               $spc-primary;
+$secondary-light:            $spc-secondary;
+$accent:                     $spc-accent; 
+$accent-light:               $spc-accent-light;
+$accent-dark:                $spc-accent-dark;
+
+// Body
+$body-color:                 $primary-dark;
+$body-bg:                    $spc-bg-0;
+$body-secondary:             #ede8de;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:     "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// $font-family-serif: "Petrona", serif,;
+$headings-font-weight:       400;
+
+$font-family-monospace:      "Dank Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$headings-font-family:       "Petrona";
+
+// Font sizes - increased for better readability
+$font-size-base:             1.1rem !default;
+$font-size-sm:               1rem !default;
+$font-size-lg:               1.25rem !default;
+$font-size-xl:               1.5rem !default;
+$font-size-2xl:              2rem !default;
+$font-size-3xl:              2.5rem !default;
+
+// Heading sizes - increased
+$h1-font-size:               2.5rem !default;
+$h2-font-size:               2rem !default;
+$h3-font-size:               1.75rem !default;
+$h4-font-size:               1.5rem !default;
+$h5-font-size:               1.25rem !default;
+$h6-font-size:               1.1rem !default;
+
+// Links
+
+$link-color:                  $secondary;
+$link-decoration:             underline;
+$link-hover-color:            $secondary-light;
+$link-hover-decoration:       none;
+
+// Tables
+
+$table-border-color:          $primary;
+$table-group-separator-color: lighten($primary, 40%);
+$table-caption-color:         $body-secondary;
+
+// Code blocks
+$code-block-bg:              $spc-bg-1; // 2b2b2b
+$code-block-border:          $body-bg;
+
+// Inline code
+$code-color:                  $body-bg;
+$code-bg:                     $spc-bg-1;
+
+// Table of contents
+$toc-color:                   $link-color;
+$toc-active-border:           $toc-color;
+$toc-inactive-border:         lighten($toc-color, 50%);
+
+// Navbar icons
+$navbar-fg:                   $secondary;
+$navbar-bg:                   $spc-bg-0;
+
+// Footer text
+$footer-fg:                   $primary;
+
+// table variable overrides
+$table-group-separator-color: lighten($primary, 25%);
+$table-group-separator-color-lighter: lighten($primary, 50%);
+
+// Miscellaneous (workarounds)
+$gray-200:                    lighten($primary, 60%);
+$gray-700:                    lighten($primary, 60%);
+
+/*-- scss:rules --*/
+
+// General font size increase for better readability
+body {
+  font-size: 1.1rem;
+}
+
+// Code
+
+// code block
+div.sourceCode {
+  background-color: $code-block-bg;
+  border: 1px solid $code-block-border;
+}
+
+// inline code
+p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
+  border: 1px solid $accent;
+}
+
+// code with filename
+.code-with-filename .code-with-filename-file {
+  color: $code-color;
+  background-color: $code-bg !important; // $code-bg
+  border: 1px solid $code-block-border;
+  border-bottom: none;
+  pre {
+    background-color: $code-bg !important;
+  }
+}
+
+// code output
+pre code {
+  color: $primary;
+}
+
+// Blockquotes
+.blockquote {
+  color: lighten($primary, 15%);
+  font-style: oblique;
+}
+
+// Social icons
+
+// footer
+.nav-footer-center i {
+  color: $secondary !important;
+  
+  &:hover {
+    color: $secondary-light !important;
+  }
+}
+
+// home + about pages
+.about-links .about-link i {
+  color: $secondary !important;
+
+  &:hover {
+    color: $secondary-light !important;
+  }
+}
+
+// Contact
+
+// social links
+.link-dark.me-1 i {
+  color: $secondary !important;
+}
+
+// Buttons
+
+// post links
+.btn-secondary {
+  color: $secondary;
+  background: transparent;
+  border-radius: 5px;
+}
+
+// contact form
+.btn-primary:hover {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+// pagination
+.page-link {
+  color: $primary;
+  &:hover {
+    color: white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+// Categories
+
+// posts
+.quarto-category {
+  background-color: $body-bg;
+  color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: $primary;
+    color: $body-bg;
+  }
+}
+
+// listings
+.listing-category {
+  color: $secondary !important;
+  border-color: $secondary !important;
+  &:hover {
+  background-color: $secondary;
+  color: white !important;
+  }
+}
+
+// Navbar
+
+// header
+.navbar {
+  background: $navbar-bg;
+  padding: 1rem 0 !important;
+  min-height: 80px !important;
+}
+
+// title
+.navbar-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+
+  &:hover {
+    border-bottom: 1px solid $primary !important;
+  }
+}
+
+// links
+.navbar-nav .nav-link {
+    color: $secondary !important;
+    text-transform: uppercase;
+    letter-spacing: .1em; 
+    border-bottom: 0px hidden $secondary;    
+    margin: 0px 15px 0px 15px; 
+    padding: 8px 12px 10px 12px !important;
+    font-size: 0.95em;
+    font-weight: 500;
+
+    &:hover {
+      border-bottom: 2px solid $secondary !important;
+      padding: 8px 12px 6px 12px !important;
+    }
+}
+
+// Navbar dropdown menu - removed general styling to prevent affecting light theme
+// Dark theme dropdown styling is handled in the body.quarto-dark section below
+
+// Footer
+
+// links on left side
+.nav-footer a {
+    color: $secondary;
+    // link on hover
+    &:hover {
+      color: $secondary-light;
+    }
+}
+
+// links on right side
+.nav-footer .nav-link {
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+// Listing cards
+.card {
+  background: $spc-bg-1 !important;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-img {
+    border-radius: 4px 4px 0px 0px;
+}
+
+// Title block
+
+// style background image on posts
+.featured-image {
+  // https://stackoverflow.com/a/24084708
+  // style = "background-image: url(featured.png), url(featured.jpg); background-size: cover; color: white; box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.65);"
+  background-size: cover; 
+  background-position: center;
+  color: white; 
+  box-shadow: inset 0 0 0 1000px rgba(0,38,66,0.75);
+}
+
+// make nav bar be centered in mobile
+.fixed-top {
+  position: absolute;
+}
+
+.aa-DetachedOverlay {
+  position: absolute;
+}
+
+// links in description
+
+.description a {
+  text-decoration: underline !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+// Throughout the site
+
+// title
+.title {
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.1em;
+}
+
+// subtitle + Learn More About Me
+.subtitle {
+  font-size: 1.2em;
+  // links within subtitles
+  a {
+    color: white;
+    text-decoration: underline !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+
+// details/summaries
+details > summary {
+  color: $body-secondary;
+}
+
+// Mobile
+
+@media screen and (max-width: 991.98px) {
+  // social media links
+  .about-entity .about-links {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+
+  // navigation footer
+  .nav-footer {
+      flex-direction: row;
+    }
+
+  .nav-footer-center {
+    order: 1 !important;
+    flex-basis: 100%;
+    margin: 0 0 -1.2em 0;
+  }
+
+  .nav-footer-right {
+    order: 2 !important;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .nav-footer-left {
+    order: 3 !important;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .navbar .quarto-navbar-tools {
+    text-align: left;
+  }
+
+  // Mobile navbar adjustments
+  .navbar {
+    background: $navbar-bg;
+    padding: 0.75rem 0 !important;
+    min-height: 70px !important;
+  }
+
+  .navbar-title {
+    font-size: 1em;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0px 8px 0px 8px;
+    padding: 6px 8px 8px 8px !important;
+    font-size: 0.9em;
+  }
+}
+
+// Dark mode specific fixes
+body.quarto-dark {
+  // Remove any borders that might cause lines between sections
+  .navbar {
+    background: $navbar-bg !important;
+    border: none !important;
+    border-bottom: none !important;
+  }
+
+  .nav-footer {
+    border: none !important;
+    border-top: none !important;
+    background-color: $body-bg !important;
+  }
+
+  footer {
+    border: none !important;
+    border-top: none !important;
+    background-color: $body-bg !important;
+  }
+
+  .quarto-container {
+    border: none !important;
+  }
+
+  #quarto-content {
+    border: none !important;
+  }
+
+  main.content {
+    border: none !important;
+  }
+
+  .content {
+    border: none !important;
+  }
+
+  // Ensure footer elements use theme colors
+  .nav-footer,
+  .nav-footer-center,
+  .nav-footer-left,
+  .nav-footer-right {
+    background-color: $body-bg !important;
+    color: $body-color !important;
+  }
+
+  .nav-footer a,
+  .nav-footer .nav-link {
+    color: $link-color !important;
+    &:hover {
+      color: $link-hover-color !important;
+    }
+  }
+
+  // Ensure critical text elements are visible in dark mode
+  .quarto-title .title,
+  .quarto-title-block .title,
+  h1.title,
+  .title.h1 {
+    color: $primary !important;
+  }
+
+  // Ensure navigation is visible in dark mode
+  .navbar-nav .nav-link {
+    color: $secondary !important;
+  }
+
+  .navbar-title {
+    color: $primary !important;
+  }
+
+  // Ensure all text uses #ede8de color in dark mode
+  body {
+    color: #ede8de !important;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, li, td, th, span, div {
+    color: #ede8de !important;
+  }
+
+  // Ensure all links use #ede8de color
+  a {
+    color: #ede8de !important;
+    &:hover {
+      color: #ede8de !important;
+    }
+  }
+
+  // Ensure all form elements use #ede8de color
+  input, textarea, select {
+    color: #ede8de !important;
+  }
+
+  // Ensure all table elements use #ede8de color
+  table, th, td {
+    color: #ede8de !important;
+  }
+
+  // Ensure about pages use proper dark theme colors
+  .about-entity,
+  .about-entity .about-contents,
+  .about-entity .about-links,
+  .about-entity .about-link,
+  .about-links.subtitle,
+  .content-block .about-links {
+    color: #ede8de !important;
+  }
+
+  .about-entity .about-contents h1,
+  .about-entity .about-contents h2,
+  .about-entity .about-contents h3,
+  .about-entity .about-contents h4,
+  .about-entity .about-contents h5,
+  .about-entity .about-contents h6,
+  .about-entity .about-contents p,
+  .about-entity .about-contents li,
+  .about-entity .about-contents span,
+  .about-entity .about-contents div,
+  .about-entity .about-contents a {
+    color: #ede8de !important;
+  }
+
+  .about-entity .about-contents a:hover {
+    color: #ede8de !important;
+  }
+
+  // Ensure icons use proper dark theme colors
+  .fa,
+  .fa-solid,
+  .fa-regular,
+  .fa-brands,
+  .ai,
+  i[class*="fa-"],
+  i[class*="ai-"] {
+    color: #ede8de !important;
+  }
+
+  // Ensure social media icons use proper colors
+  .about-entity .about-links i,
+  .about-entity .about-link i,
+  .content-block .about-links i,
+  .social-icon i {
+    color: #ede8de !important;
+  }
+
+  // Ensure icons in lists use proper colors
+  .fa-ul .fa-li i,
+  .fa-ul .fa-li .fa,
+  .fa-ul .fa-li .ai {
+    color: #ede8de !important;
+  }
+
+  // Ensure all icons use dark theme colors
+  body.quarto-dark [class*="fa-"],
+  body.quarto-dark [class*="ai-"] {
+    color: #ede8de !important;
+  }
+
+  // Ensure navbar dropdown uses dark theme colors
+  .navbar-nav .dropdown-menu {
+    background-color: #141414 !important;
+    border-color: #ede8de !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .navbar-nav .dropdown-item {
+    color: #ede8de !important;
+    background-color: transparent !important;
+  }
+
+  .navbar-nav .dropdown-item:hover,
+  .navbar-nav .dropdown-item:focus {
+    background-color: #1a1a1a !important;
+    color: #ede8de !important;
+  }
+
+  .navbar-nav .dropdown-item.active {
+    background-color: #1a1a1a !important;
+    color: #ede8de !important;
+  }
+
+  // Ensure back to top button uses dark theme colors
+  #quarto-back-to-top {
+    color: #ede8de !important;
+    background-color: #141414 !important;
+    border-color: #ede8de !important;
+  }
+
+  #quarto-back-to-top:hover {
+    color: #141414 !important;
+    background-color: #ede8de !important;
+    border-color: #141414 !important;
+  }
+}

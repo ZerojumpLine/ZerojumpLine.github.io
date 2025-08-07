@@ -1,0 +1,31 @@
+---
+title: "Reconstruction of Thin-Slice Medical Images Using Generative Adversarial Network"
+author: 
+- name: Zeju Li
+- name: Yuanyuan Wang
+- name: Jinhua Yu
+date: '2017-09-01'
+categories:
+  - 2017
+slug: reconstruction-thin-slice-medical-images-gan
+image: featured.png
+description: 'MICCAI-MLMI 2017'
+subtitle: A generative adversarial network approach for reconstructing high-quality thin-slice medical images.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/978-3-319-67389-9_38
+- icon: calendar-check
+  name: MICCAI-MLMI 2017
+  url: https://link.springer.com/chapter/10.1007/978-3-319-67389-9_38
+---
+
+## Abstract
+
+Thin-slice medical image reconstruction is crucial for improving diagnostic accuracy, particularly when high-resolution scans are unavailable or costly to acquire. Traditional reconstruction methods often struggle with maintaining image quality and anatomical accuracy. In this work, we propose a generative adversarial network approach for reconstructing high-quality thin-slice medical images.
+
+Our method leverages the power of generative adversarial networks to produce high-resolution images from limited or noisy data. The framework consists of three key components: (1) a generator network that learns to reconstruct high-quality images, (2) a discriminator network that ensures realistic output, and (3) a specialized loss function that preserves anatomical details and structural integrity.
+
+We evaluate our approach on multiple medical imaging datasets, including brain MRI and chest CT scans. Experimental results demonstrate that our GAN-based method significantly improves reconstruction quality compared to traditional approaches. The method shows excellent performance in preserving fine anatomical details and reducing artifacts commonly found in thin-slice imaging.
+
+The proposed framework represents a significant advancement in medical image reconstruction, providing higher quality images that could improve diagnostic accuracy and reduce the need for additional imaging procedures. 

@@ -1,0 +1,64 @@
+---
+title: "AI Foundations 2025"
+author: Zeju Li
+date: 2025-09-01
+slug: AI-2025
+image: featured.jpg
+categories:
+  - UG
+  - General education course
+subtitle: "An AI course for junior undergraduate students."
+description: ''
+links:
+# listing: 
+# - id: blog
+#   contents: 
+#     - "../../blog/*/index.qmd"
+#     - "../../blog/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: talk
+#   contents: 
+#     - "../../talk/*/index.qmd"
+#     - "../../talk/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: project
+#   contents: 
+#     - "../../project/*/index.qmd"
+#     - "../../project/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+---
+
+I am teaching an AI course for a general audience, designed for students from all majors.
+
+## AI Foundations
+
+In this course, I will cover some basic concepts of AI.
+
+## Recommended Reading Materials
+
+- [Mathematics for Machine Learning](https://mml-book.github.io/).
+- [Dive into Deep Learning](https://d2l.ai/).

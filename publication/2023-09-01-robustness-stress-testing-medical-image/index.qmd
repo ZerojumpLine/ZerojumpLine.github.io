@@ -1,0 +1,31 @@
+---
+title: "Robustness Stress Testing in Medical Image Classification"
+author: 
+- name: Mobarakol Islam
+- name: Zeju Li
+- name: Ben Glocker
+date: '2023-09-01'
+categories:
+  - 2023
+slug: robustness-stress-testing-medical-image
+image: featured.png
+description: 'MICCAI-UNSURE 2023'
+subtitle: A comprehensive approach for robustness stress testing in medical image classification.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/978-3-031-44336-7_17
+- icon: calendar-check
+  name: MICCAI-UNSURE 2023
+  url: https://link.springer.com/chapter/10.1007/978-3-031-44336-7_17
+---
+
+## Abstract
+
+Robustness stress testing is crucial for ensuring the reliability of medical image classification models in clinical settings, where performance degradation can have serious consequences. Traditional evaluation approaches often focus on average performance metrics, failing to identify potential failure modes and vulnerabilities. In this work, we propose a comprehensive framework for robustness stress testing in medical image classification.
+
+Our method introduces systematic stress testing procedures that evaluate model performance under various challenging conditions. The framework consists of three key components: (1) a stress test generator that creates challenging scenarios, (2) a robustness evaluation module that assesses model performance under stress, and (3) a failure mode analysis system that identifies potential vulnerabilities.
+
+We evaluate our approach on multiple medical image classification datasets with various stress conditions, including noise, artifacts, and domain shifts. Experimental results demonstrate that our stress testing framework effectively identifies model vulnerabilities and provides insights into failure modes. The method shows particular effectiveness in detecting robustness issues that may not be apparent through standard evaluation procedures.
+
+The proposed framework represents a significant advancement in medical AI evaluation, providing more comprehensive assessment that could improve the safe deployment of medical image classification systems. 

@@ -1,0 +1,98 @@
+---
+title: "Research Vacancies at Fudan University"
+format:
+  html:
+    page-layout: article
+title-block-banner: false
+header-includes: >
+  <link rel="stylesheet" href="assets/hiring.css">
+resources:
+  - assets/hiring.css
+---
+
+::: {.hiring-hero}
+
+:::
+
+::: {.about-section}
+
+## About Me
+
+李泽榉，现[复旦大学生物医学工程与技术创新学院](https://bme-college.fudan.edu.cn/)青年研究员，获国家自然科学基金委（海外）优青项目资助，以及上海市高层次青年人才计划（浦江项目）资助。
+他于2023年1月在帝国理工学院Computing系获得博士学位，此前是牛津大学FMRIB Centre的博士后研究员。
+
+- 研究方向集中在机器学习及其在医学图像处理中的应用，侧重神经影像分析和解决临床问题。
+- 发表学术论文30余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过4000次。
+- 曾获得华为AI挑战赛和MICCAI挑战赛冠军，并担任MICCAI/MIDL等领域主要会议的领域主席。
+- 详情请访问个人主页：[https://zerojumpline.github.io](https://zerojumpline.github.io)。
+
+:::
+
+::: {.positions-section}
+
+## Who We're Looking For
+
+**每年**招募**1名**硕士研究生，**2名**博士研究生以及多名博士后和科研实习生，欢迎垂询。复旦硕士和直博生的最佳入学机会在7月份的夏令营，报名需从5月开始准备。普博生和博士后全年均可申请，请及时联系。
+
+### 研究方向包括但不限于：
+
+- Safe and robust AI approaches.
+- Advanced medical imaging algorithms.
+- AI for Healthcare.
+- 具体研究方向可根据学生兴趣确定。
+
+### 基础要求：
+
+- 计算机、电子工程或生物医学工程等相关领域教育背景。
+- 熟练掌握深度学习框架（如PyTorch）及软件开发工具（如Git）。
+- 对AI在医疗健康或神经科学中的应用有浓厚兴趣。
+- 具备团队合作精神，能够在跨学科团队中学习成长。
+
+### 优先考虑：
+
+- 有以下研究经验之一：
+  - Generative model (e.g. diffusion model, VAEs);
+  - Interpretebility methods (e.g. causal model, explainable AI);
+  - Large multimodal transformers (e.g. LLMs, knowledge graph);
+  - MRI acquisition and postprocessing (e.g. MRI reconstruction, segmentation).
+- 拥有直接参与医学图像或医学信息处理工作的经验。
+- 在医学图像、机器学习或综合旗舰会议/期刊上以第一作者身份发表论文。
+
+:::
+
+::: {.why-join-section}
+
+## Why Join Us?
+
+你将加入由[复旦大学副校长汪源源教授](https://bme-college.fudan.edu.cn/wyy/main.html)领导的医学信号处理实验室，团队现有超过30名研究生。加入我们，你将获得：
+
+- 充足的资金、计算资源和临床资源支持。
+- 开放包容的实验室氛围，导师注重学生个人成长。
+- 与国内和国际顶级科研机构的访学交流机会。
+
+我们拥有与来自不同背景的同学合作的经验，得益于学校的平台和项目实践，大家的后续发展都非常好（例如，获得Oxford, Cambridge, Imperial和TUM等高校的博士学位，或进入Google, Microsoft, Meta和华为等公司工作）。
+
+:::
+
+::: {.apply-section}
+
+## How to Apply
+
+请将个人简历（包含教育和研究经历）、相关信息（如GitHub账号、成绩单、论文）发送至：
+[zejuli@fudan.edu.cn](mailto:zejuli@fudan.edu.cn)。
+
+邮件标题格式为**"<u>入学时间</u>-<u>项目</u>-<u>你的姓名</u>"**，如"2025秋-博士-张三"。
+
+若您的背景符合该职位要求，我们将尽快与您取得联系，并安排面试。
+
+我会认真阅读每一封以此标题格式发送的邮件，并尽量回复每一位认真写邮件的同学。但对于那些看似群发的邮件，我可能无法一一回复。
+
+:::
+
+::: {.final-words-section}
+
+## A Few More Words
+
+感谢阅读到这里的每一位同学。我觉得做研究和创造新事物是非常有意思的事情，并且大部分时间我会享受这个过程。如果有机会，我也希望你们能够体验到类似的感觉。
+
+:::

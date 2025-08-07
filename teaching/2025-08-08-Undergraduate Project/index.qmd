@@ -1,0 +1,64 @@
+---
+title: "Undergraduate Project 2025"
+author: Zeju Li
+date: 2025-09-01
+slug: PJ-2025
+image: featured.jpg
+categories:
+  - UG
+  - BME
+subtitle: "An advanced practical course for senior undergraduate students."
+description: ''
+links:
+# listing: 
+# - id: blog
+#   contents: 
+#     - "../../blog/*/index.qmd"
+#     - "../../blog/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: talk
+#   contents: 
+#     - "../../talk/*/index.qmd"
+#     - "../../talk/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: project
+#   contents: 
+#     - "../../project/*/index.qmd"
+#     - "../../project/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+---
+
+I am teaching a practical course for BME senior undergraduate students.
+
+## Medical LLMs
+
+This semester, we will investigate the use of LLMs in medical applications.
+
+## Recommended Reading Materials
+
+- [Mathematics for Machine Learning](https://mml-book.github.io/).
+- [Dive into Deep Learning](https://d2l.ai/).

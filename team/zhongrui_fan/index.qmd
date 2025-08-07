@@ -1,0 +1,60 @@
+---
+title: "Zhongrui Fan"
+subtitle: "Undergraduate Student"
+image: zhongrui_fan.jpg
+date: 2025-06-01
+image-alt: "Zhongrui Fan"
+categories:
+  - UG
+  - 2025
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">范中睿</div>
+
+**本科生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Jun 2025 - Present
+
+📧 **Email** 22307130437(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Zhongrui Fan is an undergraduate student working on generative model in medical imaging.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Zhongrui joined the lab in 2025 and is currently pursuing his Bachelor's degree in Biomedical Engineering at the Fudan University.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
+</ul>
+
+:::

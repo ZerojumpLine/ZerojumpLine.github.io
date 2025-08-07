@@ -1,0 +1,63 @@
+---
+title: "Jiaheng Dai"
+subtitle: "Ph.D. Student"
+image: jiaheng_dai.jpg
+date: 2025-09-01
+image-alt: "Jiaheng Dai"
+categories:
+  - Ph.D.
+  - 2025
+  - Co-supervision
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">戴嘉恒</div>
+
+**博士生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Sep 2025 - Present
+
+📧 **Email** 25113060007(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Jiaheng Dai is a doctor student working on medical image analysis.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Jiaheng joined the lab in 2025 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2029</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ University of Edinburgh ∙ 2025</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ University of Edinburgh ∙ 2024</li>
+</ul>
+
+:::

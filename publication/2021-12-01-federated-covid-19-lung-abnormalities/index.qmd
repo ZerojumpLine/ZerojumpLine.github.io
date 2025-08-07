@@ -1,0 +1,39 @@
+---
+title: "Federated Deep Learning for Detecting COVID-19 Lung Abnormalities in CT: A Privacy-Preserving Multinational Validation Study"
+author: 
+- name: Qi Dou
+- name: Tiffany Y So
+- name: Meirui Jiang
+- name: Quande Liu
+- name: Varut Vardhanabhuti
+- name: Georgios Kaissis
+- name: Zeju Li
+- name: Weixin Si
+- name: Heather HC Lee
+- name: Kevin Yu
+- name: others
+date: '2021-12-01'
+categories:
+  - 2021
+slug: federated-covid-19-lung-abnormalities
+image: featured.png
+description: 'NPJ Digital Medicine'
+subtitle: A privacy-preserving federated learning approach for detecting COVID-19 lung abnormalities across multiple institutions.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1038/s41746-021-00431-6
+- icon: calendar-check
+  name: NPJ Digital Medicine
+  url: https://www.nature.com/articles/s41746-021-00431-6
+---
+
+## Abstract
+
+The COVID-19 pandemic has highlighted the critical need for rapid and accurate diagnostic tools, with chest CT imaging playing a crucial role in detecting lung abnormalities. However, developing robust AI models for COVID-19 detection requires large, diverse datasets that are often distributed across multiple institutions, raising privacy and data sharing concerns. In this work, we present a federated learning approach for detecting COVID-19 lung abnormalities in CT images across multiple institutions while preserving data privacy.
+
+Our federated learning framework enables collaborative model training without sharing raw patient data between institutions. The approach consists of three key components: (1) a distributed training protocol that allows local model updates, (2) a secure aggregation mechanism that combines model parameters without exposing individual data, and (3) a validation framework that ensures model performance across diverse populations.
+
+We evaluate our approach on a multinational dataset involving multiple institutions across different countries. Experimental results demonstrate that federated learning achieves comparable performance to centralized training while maintaining data privacy. The method shows robust performance across different populations and imaging protocols, providing a scalable solution for COVID-19 detection.
+
+The proposed framework represents a significant advancement in privacy-preserving medical AI, demonstrating the potential for collaborative model development while maintaining strict privacy standards. 

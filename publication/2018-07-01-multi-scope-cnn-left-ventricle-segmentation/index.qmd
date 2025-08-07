@@ -1,0 +1,34 @@
+---
+title: "A Multi-Scope Convolutional Neural Network for Automatic Left Ventricle Segmentation from Magnetic Resonance Images: Deep-Learning at Multiple Scopes"
+author: 
+- name: Xinyi Li
+- name: Yuanyuan Wang
+- name: Wenjun Yan
+- name: Rob J Van der Geest
+- name: Zeju Li
+- name: Qian Tao
+date: '2018-07-01'
+categories:
+  - 2018
+slug: multi-scope-cnn-left-ventricle-segmentation
+image: featured.png
+description: 'CISP-BMEI 2018'
+subtitle: A multi-scope convolutional neural network approach for automatic left ventricle segmentation from MRI.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1109/CISP-BMEI.2018.8633185
+- icon: calendar-check
+  name: CISP-BMEI 2018
+  url: https://ieeexplore.ieee.org/document/8633185
+---
+
+## Abstract
+
+Automatic left ventricle segmentation from cardiac MRI is crucial for quantitative assessment of cardiac function. Traditional approaches often use single-scale analysis, which may miss important features at different spatial scales. In this work, we propose a multi-scope convolutional neural network approach that leverages information at multiple scales for improved left ventricle segmentation.
+
+Our method introduces a multi-scope architecture that processes cardiac images at different spatial resolutions simultaneously. The framework consists of three key components: (1) multiple scope modules that capture features at different scales, (2) a feature fusion mechanism that combines multi-scale information, and (3) a segmentation network that leverages the fused features for accurate delineation.
+
+We evaluate our approach on cardiac MRI datasets with expert annotations. Experimental results demonstrate that our multi-scope approach significantly improves segmentation accuracy compared to single-scale methods. The method shows excellent performance in capturing both fine details and global structure of the left ventricle.
+
+The proposed framework represents a significant advancement in cardiac image analysis, providing more accurate segmentation that could improve cardiac function assessment and clinical diagnosis. 
