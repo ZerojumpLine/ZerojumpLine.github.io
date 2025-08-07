@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Zeju Li"
 format:
   html:
     page-layout: article
@@ -81,6 +81,7 @@ I am a researcher at the intersection of machine learning and medical imaging. M
 :::
 
 ::: {.column-screen}
+
 
 ::: {.research-intro}
 ::: {.columns}
@@ -222,4 +223,5 @@ Currently, we are working on building AI models that can 1) operate reliably and
 
 :::
 
+:::
 :::
