@@ -1,8 +1,0 @@
-/* Theme toggle icons */
-.quarto-color-scheme-toggle .bi::before {
-  content: "\f5a2"; /* bi-sun */
-}
-
-.quarto-color-scheme-toggle.alternate .bi::before {
-  content: "\f497"; /* bi-moon */
-} 
