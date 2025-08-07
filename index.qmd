@@ -1,5 +1,5 @@
 ---
-title: "Zeju Li"
+page-title: "Zeju Li"  # This will appear in the browser tab
 format:
   html:
     page-layout: article
