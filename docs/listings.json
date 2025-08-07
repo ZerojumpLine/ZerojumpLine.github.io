@@ -1,0 +1,84 @@
+[
+  {
+    "listing": "/teaching/index.html",
+    "items": [
+      "/teaching/2025-08-08-AI/index.html",
+      "/teaching/2025-08-08-Pattern Recognition/index.html",
+      "/teaching/2025-08-08-Undergraduate Project/index.html"
+    ]
+  },
+  {
+    "listing": "/team/index.html",
+    "items": [
+      "/team/jiaheng_dai/index.html",
+      "/team/yi_yang/index.html",
+      "/team/zhongrui_fan/index.html",
+      "/team/jiahe_wang/index.html",
+      "/team/lei_liu/index.html",
+      "/team/haoyan_ma/index.html",
+      "/team/weidong_guo/index.html",
+      "/team/xinyu_jia/index.html",
+      "/team/yuejian_wu/index.html",
+      "/team/danqing_gu/index.html",
+      "/team/jie_xu/index.html",
+      "/team/wutong_li/index.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2025-08-08-GenAI-Book/index.html",
+      "/news/2025-08-08-MICCAI2025/index.html",
+      "/news/2025-08-08-MICS/index.html"
+    ]
+  },
+  {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/2025-09-01-vap-diffusion-enriching-descriptions-mllms/index.html",
+      "/publication/2024-07-01-fedfdd-federated-frequency-domain-decomposition/index.html",
+      "/publication/2023-09-01-post-deployment-adaptation-federated-learning/index.html",
+      "/publication/2023-09-01-robust-segmentation-topology-violation/index.html",
+      "/publication/2023-09-01-robustness-stress-testing-medical-image/index.html",
+      "/publication/2023-06-27-context-label-learning/index.html",
+      "/publication/2023-06-27-joint-optimization-segmentation/index.html",
+      "/publication/2022-11-01-causality-inspired-domain-generalization/index.html",
+      "/publication/2022-10-01-tackling-long-tailed-category-distribution/index.html",
+      "/publication/2022-09-01-estimating-model-performance-domain-shifts/index.html",
+      "/publication/2022-09-01-fetal-cortex-segmentation-topology-thickness/index.html",
+      "/publication/2022-09-01-improved-post-hoc-probability-calibration/index.html",
+      "/publication/2022-09-01-maxstyle-adversarial-style-composition/index.html",
+      "/publication/2022-06-01-enhancing-mr-segmentation-adversarial/index.html",
+      "/publication/2022-03-01-learn2reg-comprehensive-challenge/index.html",
+      "/publication/2022-01-15-breast-tumor-classification-mri-us/index.html",
+      "/publication/2021-12-01-federated-covid-19-lung-abnormalities/index.html",
+      "/publication/2021-04-01-novel-image-signature-radiomics/index.html",
+      "/publication/2020-12-17-overfitting-class-imbalance/index.html",
+      "/publication/2020-06-01-high-resolution-chest-xray-bone-suppression/index.html",
+      "/publication/2019-12-01-deepvolume-brain-mri/index.html",
+      "/publication/2019-10-01-encoding-ct-anatomy-knowledge/index.html",
+      "/publication/2019-10-01-overfitting-neural-nets-class-imbalance/index.html",
+      "/publication/2019-03-01-early-identification-ischemic-stroke/index.html",
+      "/publication/2019-01-01-deep-generative-adversarial-networks-infant-mr/index.html",
+      "/publication/2019-01-01-super-resolution-reconstruction-ultrasound/index.html",
+      "/publication/2018-12-01-primary-cns-lymphoma-glioblastoma-differentiation/index.html",
+      "/publication/2018-09-01-left-ventricle-segmentation-optical-flow/index.html",
+      "/publication/2018-07-01-multi-scope-cnn-left-ventricle-segmentation/index.html",
+      "/publication/2018-01-01-primary-cns-lymphoma-sparse-representation/index.html",
+      "/publication/2017-12-01-deep-learning-radiomics-idh1/index.html",
+      "/publication/2017-12-01-noninvasive-idh1-mutation-estimation/index.html",
+      "/publication/2017-10-01-low-grade-glioma-segmentation/index.html",
+      "/publication/2017-09-01-age-groups-glioblastoma/index.html",
+      "/publication/2017-09-01-brain-tumor-segmentation-adversarial-network/index.html",
+      "/publication/2017-09-01-reconstruction-thin-slice-medical-images-gan/index.html"
+    ]
+  },
+  {
+    "listing": "/about/index.html",
+    "items": [
+      "/news/2025-08-08-GenAI-Book/index.html",
+      "/news/2025-08-08-MICCAI2025/index.html",
+      "/news/2025-08-08-MICS/index.html"
+    ]
+  }
+]
