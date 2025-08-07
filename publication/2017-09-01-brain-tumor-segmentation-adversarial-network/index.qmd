@@ -1,0 +1,31 @@
+---
+title: "Brain Tumor Segmentation Using an Adversarial Network"
+author: 
+- name: Zeju Li
+- name: Yuanyuan Wang
+- name: Jinhua Yu
+date: '2017-09-01'
+categories:
+  - 2017
+slug: brain-tumor-segmentation-adversarial-network
+image: featured.png
+description: 'MICCAI-Brainlesion 2017'
+subtitle: A novel adversarial network approach for brain tumor segmentation in MRI.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/978-3-319-75238-9_11
+- icon: calendar-check
+  name: MICCAI-Brainlesion 2017
+  url: https://link.springer.com/chapter/10.1007/978-3-319-75238-9_11
+---
+
+## Abstract
+
+Brain tumor segmentation is a critical task in medical image analysis, with applications ranging from treatment planning to outcome prediction. Traditional segmentation methods often struggle with the complex and heterogeneous nature of brain tumors. In this work, we propose a novel adversarial network approach for brain tumor segmentation that leverages the power of generative adversarial networks to improve segmentation accuracy.
+
+Our method introduces an adversarial training framework that consists of a segmentation network and a discriminator network. The segmentation network learns to produce accurate tumor masks, while the discriminator network ensures that the generated masks are realistic and consistent with expert annotations. The framework consists of three main components: (1) a segmentation generator that produces tumor masks, (2) a discriminator that evaluates mask quality, and (3) an adversarial training mechanism that improves both networks.
+
+We evaluate our approach on the BraTS challenge dataset with expert annotations. Experimental results demonstrate that our adversarial network approach significantly improves segmentation accuracy compared to traditional methods. The method shows excellent performance in handling the challenging aspects of brain tumor segmentation, including boundary ambiguity and tissue heterogeneity.
+
+The proposed framework represents a significant advancement in brain tumor segmentation, providing more accurate results that could improve treatment planning and patient outcomes. 

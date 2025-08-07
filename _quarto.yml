@@ -1,0 +1,99 @@
+project:
+  type: website
+  # post-render:
+  #   - "cp -rnv static/. _site" # source: https://github.com/quarto-dev/quarto-cli/discussions/4162#discussioncomment-4831352
+
+website:
+  title: "**ZEJU** Li"
+  site-url: https://zerojumpline.github.io/
+  description: "Zeju Li."
+  favicon: assets/zerojump/img/brain_logo.png
+  page-navigation: true
+  back-to-top-navigation: true
+  twitter-card:
+    creator: "@spcanelon"
+    site: "@spcanelon"
+    card-style: summary_large_image
+  comments: 
+    utterances: 
+      repo: yourusername/yourrepo
+      label: utterances
+      theme: body-light
+      issue-term: title
+  # search:
+  #   algolia:
+  #     index-name: silviacanelon_com_2nwwu5566h_pages
+  #     application-id: 2NWWU5566H
+  #     search-only-api-key: 4fc205c04b677b0951348a8571b2d7d0
+  #     show-logo: false
+      # index-fields:
+      #   href: url
+      #   title: title
+      #   section: subtitle
+      #   text: body
+ 
+  navbar:
+    logo: assets/zerojump/img/brain_logo.png
+    toggle-color-scheme: true
+    tools:
+    - icon: github
+      href: https://github.com/ZerojumpLine/ZerojumpLine.github.io
+    right:
+      - text: About
+        menu:
+          - text: About Me
+            aria-label: "About Me"
+            href: about/index.qmd
+          - text: Find Me
+            aria-label: "Contact & Location"
+            href: about/find-me.qmd
+      - text: News
+        aria-label: "Latest News"
+        href: news/index.qmd
+      - text: Team
+        aria-label: "Our Team"
+        href: team/index.qmd
+      - text: Publications
+        aria-label: "Publications"
+        href: publication/index.qmd
+      - text: Teaching
+        aria-label: "Teaching Materials"
+        href: teaching/index.qmd
+  
+  page-footer:  
+    left: >-
+     <span style="font-size: 1.2em;">&#169; 2025 Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
+
+    center: >-
+      <span style="font-size: 1.2em;"> Jiangwan Campus, Fudan University, Shanghai, China.
+
+    right: >-
+      <a class="link-dark me-1" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener" style="font-size: 2em;">{{< fa brands linkedin >}}</a>
+      <a class="link-dark me-1" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener" style="font-size: 2em;">{{< fa brands x-twitter >}}</a>
+
+format: 
+  html:
+    theme:
+      light:
+        - cosmo
+        - assets/silvia-theme-light.scss
+        - assets/zerojump/colors-light.scss
+        - assets/zerojump/fonts.scss
+      dark: 
+        - cosmo
+        - assets/silvia-theme-dark.scss
+        - assets/zerojump/colors-dark.scss
+        - assets/zerojump/fonts.scss
+    css: assets/citation-custom.css
+    highlight-style:
+      light: assets/zerojump/a11y-light.theme
+      dark: assets/zerojump/a11y-dark.theme
+    code-link: true
+    pagetitle: "{{< meta title >}}"
+    lightbox: true
+
+
+execute: 
+  freeze: auto
+
+include-in-header: assets/zerojump/umami.html

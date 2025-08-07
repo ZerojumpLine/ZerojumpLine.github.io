@@ -1,0 +1,33 @@
+---
+title: "Deep Learning based Radiomics (DLR) and its Usage in Noninvasive IDH1 Prediction for Low Grade Glioma"
+author: 
+- name: Zeju Li
+- name: Yuanyuan Wang
+- name: Jinhua Yu
+- name: Yi Guo
+- name: Wei Cao
+date: '2017-12-01'
+categories:
+  - 2017
+slug: deep-learning-radiomics-idh1
+image: featured.png
+description: 'Scientific Reports'
+subtitle: A novel deep learning radiomics approach for noninvasive prediction of IDH1 mutation status in low-grade gliomas.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1038/s41598-017-05848-2
+- icon: calendar-check
+  name: Scientific Reports
+  url: https://www.nature.com/articles/s41598-017-05848-2
+---
+
+## Abstract
+
+Isocitrate dehydrogenase 1 (IDH1) mutation status is a critical prognostic factor in low-grade gliomas, traditionally requiring invasive biopsy for determination. Noninvasive prediction of IDH1 status could significantly improve patient management and treatment planning. In this work, we propose Deep Learning based Radiomics (DLR), a novel approach that combines deep learning with traditional radiomics for noninvasive IDH1 prediction.
+
+Our DLR framework integrates convolutional neural networks with radiomics features to capture both high-level image patterns and quantitative imaging biomarkers. The approach consists of three main components: (1) a deep learning module that extracts hierarchical features from brain MRI scans, (2) a radiomics feature extraction module that computes quantitative imaging descriptors, and (3) a fusion module that combines both feature types for final prediction.
+
+We evaluate our method on a comprehensive dataset of low-grade glioma patients with known IDH1 mutation status. Experimental results demonstrate that DLR significantly outperforms traditional radiomics approaches and deep learning methods alone, achieving high accuracy in IDH1 prediction. The method shows robust performance across different MRI sequences and patient populations.
+
+DLR represents a significant advancement in noninvasive glioma characterization, providing a more accurate and clinically practical approach to IDH1 prediction that could reduce the need for invasive procedures and improve patient outcomes. 

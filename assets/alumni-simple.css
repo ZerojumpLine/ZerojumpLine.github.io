@@ -1,0 +1,177 @@
+/* Simple Alumni Section Styles */
+
+.alumni-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--bs-light);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--bs-primary);
+  transition: all 0.3s ease-in-out;
+}
+
+.alumni-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-intro {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--bs-body-color);
+}
+
+.alumni-links {
+  color: var(--bs-body-color);
+}
+
+.alumni-links strong {
+  color: var(--bs-body-color);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.alumni-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.alumni-links li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--bs-border-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.alumni-links li:hover {
+  background-color: var(--bs-light);
+  padding-left: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.alumni-links li:last-child {
+  border-bottom: none;
+}
+
+.alumni-links a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.alumni-links a:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+.alumni-links a[href*="alumni/"] {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.alumni-links a[href*="alumni/"]:hover {
+  transform: translateX(2px);
+}
+
+/* Dark mode support - More specific selectors */
+body.quarto-dark .alumni-section {
+  background: #1a1a1a !important;
+  border-left-color: #495057 !important;
+}
+
+body.quarto-dark .alumni-section:hover {
+  background: #ff0000 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+
+body.quarto-dark .alumni-intro {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .alumni-links {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .alumni-links strong {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .alumni-links li {
+  border-bottom-color: #2d3748 !important;
+}
+
+body.quarto-dark .alumni-links li:hover {
+  background-color: #141414 !important;
+}
+
+body.quarto-dark .alumni-links a {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .alumni-links a:hover {
+  color: #ede8de !important;
+  transform: translateX(2px) !important;
+}
+
+body.quarto-dark .alumni-links a[href*="alumni/"] {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .alumni-links a[href*="alumni/"]:hover {
+  transform: translateX(2px) !important;
+}
+
+/* Light mode specific overrides */
+body.quarto-light .alumni-section {
+  background: #f8fafc !important;
+  border-left-color: #3498db !important;
+}
+
+body.quarto-light .alumni-section:hover {
+  background: #f1f5f9 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+body.quarto-light .alumni-intro {
+  color: #374151 !important;
+}
+
+body.quarto-light .alumni-links {
+  color: #4b5563 !important;
+}
+
+body.quarto-light .alumni-links strong {
+  color: #1f2937 !important;
+}
+
+body.quarto-light .alumni-links li {
+  border-bottom-color: #e5e7eb !important;
+}
+
+body.quarto-light .alumni-links li:hover {
+  background-color: #f8fafc !important;
+}
+
+body.quarto-light .alumni-links a {
+  color: #3498db !important;
+}
+
+body.quarto-light .alumni-links a:hover {
+  color: #2980b9 !important;
+  transform: translateX(2px) !important;
+}
+
+body.quarto-light .alumni-links a[href*="alumni/"] {
+  color: #1f2937 !important;
+}
+
+body.quarto-light .alumni-links a[href*="alumni/"]:hover {
+  transform: translateX(2px) !important;
+} 

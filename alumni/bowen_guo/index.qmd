@@ -1,0 +1,132 @@
+---
+title: "Bowen Guo"
+subtitle: "Undergraduate Student"
+image: bowen_guo.jpg
+date: 2025-06-01
+image-alt: "Bowen Guo"
+categories:
+  - UG
+  - 2025
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+header-includes: >
+  <link rel="stylesheet" href="../assets/about.css">
+  <style>
+    /* Alumni Profile Color Region Styling */
+    .quarto-title-block {
+      position: relative !important;
+      margin-bottom: 2rem !important;
+      padding-top: 1rem !important;
+    }
+    
+    /* Create the background color region */
+    .quarto-title-block::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 160px;
+      background: linear-gradient(135deg, #34495e, #2c3e50) !important;
+      border-radius: 8px;
+      z-index: -1;
+      margin: 0 -1rem 0 -1rem;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    
+    /* Style the title */
+    .quarto-title-block .title {
+      color: white !important;
+      font-size: 2.5rem !important;
+      font-weight: 600 !important;
+      margin-bottom: 0.5rem !important;
+      text-align: center !important;
+      position: relative;
+      z-index: 1;
+      line-height: 1.2 !important;
+    }
+    
+    /* Style the subtitle */
+    .quarto-title-block .subtitle {
+      color: #ecf0f1 !important;
+      font-size: 1.3rem !important;
+      font-weight: 400 !important;
+      text-align: center !important;
+      margin-top: 0 !important;
+      position: relative;
+      z-index: 1;
+      line-height: 1.4 !important;
+    }
+    
+    /* Dark theme adjustments */
+    body.quarto-dark .quarto-title-block::after {
+      background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+    }
+    
+    /* Mobile responsiveness */
+    @media screen and (max-width: 768px) {
+      .quarto-title-block::after {
+        height: 100px;
+        margin: 0 -0.5rem 0 -0.5rem;
+      }
+      
+      .quarto-title-block .title {
+        font-size: 2rem !important;
+      }
+      
+      .quarto-title-block .subtitle {
+        font-size: 1.1rem !important;
+      }
+    }
+  </style>
+resources:
+  - ../assets/about.css
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">郭博文</div>
+
+**本科生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Feb 2025 - Jul 2025
+
+📧 **Email** 21307130160(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Bowen Guo was an undergraduate student working on multi-modal generative model.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Bowen joined the lab in 2025 and later pursued a Ph.D. at Fudan University after leaving us.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ 2025</li>
+</ul>
+
+:::

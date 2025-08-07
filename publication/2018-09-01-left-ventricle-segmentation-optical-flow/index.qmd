@@ -1,0 +1,33 @@
+---
+title: "Left Ventricle Segmentation via Optical-Flow-Net from Short-Axis Cine MRI: Preserving the Temporal Coherence of Cardiac Motion"
+author: 
+- name: Wenjun Yan
+- name: Yuanyuan Wang
+- name: Zeju Li
+- name: Rob J van der Geest
+- name: Qian Tao
+date: '2018-09-01'
+categories:
+  - 2018
+slug: left-ventricle-segmentation-optical-flow
+image: featured.png
+description: 'MICCAI 2018'
+subtitle: A novel optical-flow-based approach for left ventricle segmentation preserving temporal coherence in cardiac MRI.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/978-3-030-00937-3_70
+- icon: calendar-check
+  name: MICCAI 2018
+  url: https://link.springer.com/chapter/10.1007/978-3-030-00937-3_70
+---
+
+## Abstract
+
+Cardiac MRI segmentation requires maintaining temporal coherence across the cardiac cycle, which is crucial for accurate assessment of cardiac function. Traditional segmentation methods often process each frame independently, failing to capture the temporal relationships that are essential for cardiac analysis. In this work, we propose a novel optical-flow-based approach for left ventricle segmentation that preserves temporal coherence.
+
+Our method introduces an optical-flow network that captures motion patterns across the cardiac cycle to guide segmentation. The framework consists of three key components: (1) an optical-flow estimation module that learns cardiac motion patterns, (2) a temporal coherence module that ensures smooth segmentation across frames, and (3) a segmentation network that leverages motion information for accurate delineation.
+
+We evaluate our approach on short-axis cine MRI datasets with expert annotations. Experimental results demonstrate that our optical-flow-based approach significantly improves segmentation accuracy compared to frame-independent methods. The method shows excellent performance in maintaining temporal coherence and capturing cardiac motion patterns.
+
+The proposed framework represents a significant advancement in cardiac image analysis, providing more accurate and temporally consistent segmentation that could improve cardiac function assessment and clinical diagnosis. 

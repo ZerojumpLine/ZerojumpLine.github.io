@@ -1,0 +1,313 @@
+/* 
+ * Citation Customization CSS
+ * 
+ * This file contains the original Quarto citation styling as the base,
+ * with additional customization options you can uncomment and modify as needed.
+ * 
+ * To customize: Uncomment the sections below and modify the values to your liking.
+ */
+
+/* ========================================
+ * ORIGINAL QUARTO CITATION STYLING (DEFAULT)
+ * ======================================== */
+
+/* This preserves the original Quarto citation appearance */
+/* No changes applied by default - citations will look as they originally did */
+
+
+/* ========================================
+ * CUSTOMIZATION OPTIONS
+ * Uncomment and modify the sections below to customize your citations
+ * ======================================== */
+
+/* 
+ * OPTION 1: Basic Color Customization
+ * Uncomment to change just the accent colors
+ */
+
+/*
+#quarto-citation h2.quarto-appendix-heading {
+  color: #0066cc;  /* Change this color for citation headings */
+
+/* 
+ * OPTION 2: Enhanced Visual Styling
+ * Uncomment to add background, borders, and improved spacing
+ */
+
+/*
+#quarto-appendix .quarto-appendix-contents #quarto-citation {
+  background: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+body.quarto-dark #quarto-appendix .quarto-appendix-contents #quarto-citation {
+  background: #2d3748;
+  border-left-color: #4299e1;
+}
+*/
+
+
+/* 
+ * OPTION 3: Typography Improvements
+ * Uncomment to enhance fonts and text styling
+ */
+
+/*
+#quarto-citation h2.quarto-appendix-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.quarto-appendix-secondary-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.quarto-appendix-citeas {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+*/
+
+
+/* 
+ * OPTION 4: BibTeX Code Block Styling
+ * Uncomment to improve the appearance of the BibTeX citation block
+ */
+
+.quarto-appendix-bibtex {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #141414; /* Change this to your desired color */
+}
+
+body.quarto-dark .quarto-appendix-bibtex {
+  background: #141414;
+  border-color: #4a5568;
+  color: #ede8de; /* Change this to your desired dark mode color */
+}
+
+
+/* 
+ * OPTION 5: Formatted Citation Box
+ * Uncomment to add a styled container around the formatted citation
+ */
+
+/*
+.quarto-appendix-citeas {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+body.quarto-dark .quarto-appendix-citeas {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+*/
+
+
+/* 
+ * OPTION 6: Link Hover Effects
+ * Uncomment to add smooth transitions to citation links
+ */
+
+/*
+.quarto-appendix-citeas a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.quarto-appendix-citeas a:hover {
+  border-bottom-color: currentColor;
+}
+*/
+
+
+/* 
+ * OPTION 7: Responsive Design
+ * Uncomment to optimize for mobile devices
+ */
+
+/*
+@media (max-width: 768px) {
+  #quarto-appendix .quarto-appendix-contents #quarto-citation {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .quarto-appendix-bibtex {
+    font-size: 0.8rem;
+    padding: 0.75rem;
+  }
+  
+  .quarto-appendix-citeas {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+*/
+
+
+/* 
+ * OPTION 8: Animation Effects
+ * Uncomment to add subtle entrance animations
+ */
+
+/*
+#quarto-citation {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*/
+
+
+/* ========================================
+ * CUSTOM MODIFICATIONS
+ * Add your own custom CSS rules below this line
+ * ======================================== */
+
+/* 
+ * OPTION 9: Change Citation Order
+ * Uncomment to reverse the order (formatted citation first, then BibTeX)
+ */
+
+/*
+#quarto-citation > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Move the formatted citation (citeas) to the top */
+/*
+.quarto-appendix-citeas {
+  order: -1;
+  margin-bottom: 1.5rem;
+}
+
+/* Keep BibTeX block in its normal position */
+/*
+.quarto-appendix-bibtex {
+  order: 1;
+}
+
+/* Keep the labels with their respective content */
+/*
+.quarto-appendix-secondary-label:has(+ .quarto-appendix-citeas) {
+  order: -2;
+}
+
+.quarto-appendix-secondary-label:has(+ pre.quarto-appendix-bibtex) {
+  order: 0;
+}
+*/
+
+/* 
+ * OPTION 10: Hide Citation Formats
+ * Uncomment one of these sections to show only one citation format
+ */
+
+/* Hide the BibTeX block (show only formatted citation) */
+/*
+.quarto-appendix-secondary-label:has(+ pre.quarto-appendix-bibtex),
+.quarto-appendix-bibtex {
+  display: none;
+}
+*/
+
+/* Hide the formatted citation (show only BibTeX) */
+/*
+.quarto-appendix-secondary-label:has(+ .quarto-appendix-citeas),
+.quarto-appendix-citeas {
+  display: none;
+}
+*/
+
+/* Your custom styles go here */
+
+/* 
+ * CUSTOM: Publication Page Title and Subtitle Colors
+ * Only affects individual publication pages, not listing pages
+ */
+
+/* Target titles only on individual publication pages (not listing pages) */
+/* Use path-based approach - individual publications are in subdirectories */
+/* This targets pages that are NOT the main listing page */
+
+/* Method 1: Target titles and subtitles for individual pages only */
+body:not([class*="listing"]) .quarto-title-block h1.title {
+  color: #ffffff !important; /* Title color for individual pages */
+}
+
+/* Target subtitles for individual pages only */
+body:not([class*="listing"]) .quarto-title-block .subtitle,
+body:not([class*="listing"]) .subtitle {
+  color: #ffffff !important; /* Subtitle color for individual pages - darker for light theme */
+}
+
+/* Dark theme override for subtitles */
+body.quarto-dark:not([class*="listing"]) .quarto-title-block .subtitle,
+body.quarto-dark:not([class*="listing"]) .subtitle {
+  color: #ffffff !important; /* Subtitle color for dark theme */
+}
+
+/* Category buttons for individual publication pages */
+body.quarto-light:not([class*="listing"]) .quarto-category {
+  background-color: #ffffff !important; /* Dark mode category background */
+  border-color: #718096 !important; /* Dark mode category border */
+}
+
+body.quarto-light:not([class*="listing"]) .quarto-category:hover {
+  background-color: #bbbbbb !important; /* Dark mode category hover background */
+  border-color: #a0aec0 !important; /* Dark mode category hover border */
+}
+
+/* Dark mode category buttons */
+body.quarto-dark:not([class*="listing"]) .quarto-category {
+  background-color: #4a5568 !important; /* Dark mode category background */
+  border-color: #718096 !important; /* Dark mode category border */
+}
+
+body.quarto-dark:not([class*="listing"]) .quarto-category:hover {
+  background-color: #718096 !important; /* Dark mode category hover background */
+  border-color: #a0aec0 !important; /* Dark mode category hover border */
+}
+
+
+/* Method 2: Then specifically override listing pages to restore original color */
+.quarto-listing-container-default h1.title,
+.quarto-listing h1.title,
+.listing h1.title,
+.quarto-listing-container h1.title,
+body:has(.quarto-listing-container) h1.title {
+  color: inherit !important; /* Restore original color for listing pages */
+}
+
+/* Method 3: More specific override for listing page title */
+#title-block-header h1.title:only-child {
+  color: inherit !important; /* Restore color if it's the only title in header */
+}
