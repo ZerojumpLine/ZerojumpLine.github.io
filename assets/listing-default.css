@@ -174,3 +174,20 @@ body.quarto-dark .quarto-listing-category-title {
   color: #e9ecef !important;
   border: none !important;
 }
+
+/* Additional dark mode fixes for sidebar borders to prevent vertical light lines */
+body.quarto-dark .sidebar,
+body.quarto-dark .margin-sidebar,
+body.quarto-dark #quarto-margin-sidebar {
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Ensure sidebar background matches dark theme */
+body.quarto-dark .sidebar,
+body.quarto-dark .margin-sidebar,
+body.quarto-dark #quarto-margin-sidebar {
+  background-color: #141414 !important;
+}
