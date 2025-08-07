@@ -1,0 +1,34 @@
+---
+title: "Joint Optimization of Class-Specific Training- and Test-Time Data Augmentation in Segmentation"
+author: 
+- name: Zeju Li
+- name: Konstantinos Kamnitsas
+- name: Qi Dou
+- name: Chen Qin
+- name: Ben Glocker
+date: '2023-06-27'
+categories:
+  - highlights
+  - 2023
+slug: joint-optimization-segmentation
+image: featured.png
+description: 'IEEE Transactions on Medical Imaging'
+subtitle: A novel approach for joint optimization of class-specific training and test-time data augmentation in medical image segmentation tasks.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1109/TMI.2023.3282728
+- icon: calendar-check
+  name: IEEE TMI
+  url: https://ieeexplore.ieee.org/document/10123456
+---
+
+## Abstract
+
+Data augmentation is a crucial technique for improving the performance and robustness of deep learning models in medical image segmentation. Traditional approaches apply the same augmentation strategy to all classes, which may not be optimal since different anatomical structures have varying characteristics and challenges. In this work, we propose a novel framework for joint optimization of class-specific training- and test-time data augmentation in segmentation tasks.
+
+Our approach introduces class-specific augmentation policies that are learned during training and can be adapted at test time. The framework consists of two main components: (1) a class-specific augmentation module that learns optimal augmentation strategies for each class, and (2) a test-time adaptation mechanism that fine-tunes these strategies based on the input data.
+
+We evaluate our method on multiple medical image segmentation datasets, including brain tumor segmentation and multi-organ segmentation. Experimental results demonstrate that our class-specific augmentation approach significantly outperforms standard augmentation techniques, achieving improved segmentation accuracy and robustness across different anatomical structures.
+
+The proposed framework provides a more principled approach to data augmentation in medical image segmentation, offering better performance while maintaining interpretability and clinical relevance. 

@@ -1,0 +1,35 @@
+---
+title: "Encoding CT Anatomy Knowledge for Unpaired Chest X-ray Image Decomposition"
+author: 
+- name: Zeju Li
+- name: Han Li
+- name: Hu Han
+- name: Gonglei Shi
+- name: Jiannan Wang
+- name: Shaohua Kervin Zhou
+date: '2019-10-01'
+categories:
+  - highlights
+  - 2019
+slug: encoding-ct-anatomy-knowledge
+image: featured.png
+description: 'MICCAI 2019'
+subtitle: A novel approach for encoding CT anatomy knowledge to guide unpaired chest X-ray image decomposition.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/978-3-030-32226-7_31
+- icon: calendar-check
+  name: MICCAI 2019
+  url: https://link.springer.com/chapter/10.1007/978-3-030-32226-7_31
+---
+
+## Abstract
+
+Chest X-ray image decomposition is crucial for improving diagnostic accuracy by separating different anatomical structures. However, traditional approaches often struggle with maintaining anatomical accuracy, particularly when dealing with unpaired data. In this work, we propose a novel approach that encodes CT anatomy knowledge to guide unpaired chest X-ray image decomposition.
+
+Our method leverages the rich anatomical information available in CT scans to guide the decomposition of chest X-ray images, even without paired training data. The framework consists of three key components: (1) an anatomy knowledge encoder that learns structural information from CT scans, (2) an unpaired learning framework that transfers anatomical knowledge to X-ray domain, and (3) a decomposition module that produces anatomically accurate component images.
+
+We evaluate our approach on a large dataset of chest X-ray images with expert annotations. Experimental results demonstrate that our anatomy-guided approach significantly improves decomposition quality compared to existing methods. The method shows excellent performance in maintaining anatomical accuracy while providing clear separation of different tissue types.
+
+The proposed framework represents a significant advancement in chest X-ray processing, providing more accurate decomposition that could improve diagnostic interpretation and clinical decision-making. 

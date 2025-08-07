@@ -1,0 +1,66 @@
+---
+title: "Team" 
+description: |
+  Meet our research team and collaborators.<br>
+  Learn about our diverse backgrounds and expertise.
+listing: 
+  contents: 
+    - "zhongrui_fan/index.qmd"
+    - "danqing_gu/index.qmd"
+    - "haoyan_ma/index.qmd"
+    - "jie_xu/index.qmd"
+    - "jiahe_wang/index.qmd"
+    - "jiaheng_dai/index.qmd"
+    - "lei_liu/index.qmd"
+    - "weidong_guo/index.qmd"
+    - "wutong_li/index.qmd"
+    - "xinyu_jia/index.qmd"
+    - "yi_yang/index.qmd"
+    - "yuejian_wu/index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [title, categories, date, image]
+
+  image-align: left
+  image-height: 100%
+  page-size: 12
+
+
+format: 
+  html: 
+    page-layout: full
+title-block-banner: false
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/listing-default.css">
+  <link rel="stylesheet" href="../assets/team-listing.css">
+  <link rel="stylesheet" href="../assets/alumni-simple.css?v=1.1">
+  <script src="../assets/custom-category-toggle.js"></script>
+  <script>
+    // Ensure categories are loaded before our custom script runs
+    window.addEventListener('load', function() {
+      if (window['quarto-listing-loaded']) {
+        window['quarto-listing-loaded']();
+      }
+    });
+  </script>
+resources:
+  - ../assets/listing-default.css
+  - ../assets/team-listing.css
+  - ../assets/alumni-simple.css?v=1.1
+---
+
+## Current Team
+
+We are a part of research team lead by [Prof. Yuanyuan Wang](https://bme-college.fudan.edu.cn/wyy/main.htm). I feel truly fortunate to collaborate with such a talented and kind team.
+
+## Alumni
+
+Our lab has been fortunate to work with many talented researchers who have moved on to exciting opportunities. Learn more about our alumni and their current positions.
+
+::: {.cta-section}
+[VIEW ALUMNI DIRECTORY →](../alumni/){.hero-link}
+:::
