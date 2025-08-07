@@ -1,0 +1,37 @@
+---
+title: "Noninvasive IDH1 Mutation Estimation Based on a Quantitative Radiomics Approach for Grade II Glioma"
+author: 
+- name: Jinhua Yu
+- name: Zhifeng Shi
+- name: Yuxi Lian
+- name: Zeju Li
+- name: Tongtong Liu
+- name: Yuan Gao
+- name: Yuanyuan Wang
+- name: Liang Chen
+- name: Ying Mao
+date: '2017-12-01'
+categories:
+  - 2017
+slug: noninvasive-idh1-mutation-estimation
+image: featured.png
+description: 'European Radiology'
+subtitle: A quantitative radiomics approach for noninvasive estimation of IDH1 mutation status in grade II gliomas.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1007/s00330-016-4653-3
+- icon: calendar-check
+  name: European Radiology
+  url: https://link.springer.com/article/10.1007/s00330-016-4653-3
+---
+
+## Abstract
+
+Isocitrate dehydrogenase 1 (IDH1) mutation status is a critical prognostic factor in grade II gliomas, traditionally requiring invasive biopsy for determination. Noninvasive prediction of IDH1 status could significantly improve patient management and treatment planning. In this work, we propose a quantitative radiomics approach for noninvasive estimation of IDH1 mutation status in grade II gliomas.
+
+Our method leverages quantitative imaging features extracted from conventional MRI sequences to predict IDH1 mutation status without requiring invasive procedures. The framework consists of three key components: (1) a comprehensive radiomics feature extraction module that captures quantitative imaging biomarkers, (2) a feature selection mechanism that identifies the most predictive features, and (3) a prediction model that provides noninvasive IDH1 estimation.
+
+We evaluate our approach on a large cohort of grade II glioma patients with confirmed IDH1 mutation status. Experimental results demonstrate that our quantitative radiomics approach significantly improves prediction accuracy compared to traditional methods. The method shows robust performance across different MRI protocols and provides valuable insights into the relationship between imaging features and molecular characteristics.
+
+The proposed framework represents a significant advancement in noninvasive glioma characterization, providing more accurate IDH1 prediction that could reduce the need for invasive procedures and improve patient outcomes. 

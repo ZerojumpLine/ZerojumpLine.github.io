@@ -1,0 +1,62 @@
+---
+title: "Danqing Gu"
+subtitle: "Master Student"
+image: danqing_gu.jpg
+date: 2024-09-01
+image-alt: "Danqing Gu"
+categories:
+  - M.S.
+  - 2024
+  - Co-supervision
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">顾丹青</div>
+
+**硕士生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Sep 2024 - Present
+
+📧 **Email** 24210720032(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Danqing Gu is a master's student working on counterfactual image generation.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Danqing joined the lab in 2024 and is currently pursuing his Master's degree in Biomedical Engineering at the Fudan University.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2027</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ 2024</li>
+</ul>
+
+:::

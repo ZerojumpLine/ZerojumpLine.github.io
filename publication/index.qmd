@@ -1,0 +1,162 @@
+---
+title: "Publications" 
+description: |
+  This is home for my research publications, each linked with<br>
+  accompanying preprints, posters, and/or news pieces.
+listing: 
+  contents: 
+    - "**/index.qmd"
+    - "**/index.markdown"
+    - "**/index.md"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  fields: [title, author, categories, date]
+  image-align: left
+  # image-height: 10em
+  # page-size: 5
+
+format: 
+  html: 
+    page-layout: full
+title-block-banner: false
+citation: false
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/listing-default.css">
+  <script src="../assets/custom-category-toggle.js"></script>
+  <script>
+    // Ensure categories are loaded before our custom script runs
+    window.addEventListener('load', function() {
+      if (window['quarto-listing-loaded']) {
+        window['quarto-listing-loaded']();
+      }
+    });
+  </script>
+  <style>
+  /* Make publication index page wider and properly centered */
+  .page-layout-full,
+  .page-layout-full .quarto-container,
+  .page-layout-full #quarto-content,
+  .page-layout-full main.content,
+  .page-layout-full .content {
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Ensure listing content uses full width and is centered */
+  .listing,
+  .listing .quarto-listing,
+  .listing .quarto-listing .listing-item {
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Override any Bootstrap container constraints */
+  body .page-layout-full,
+  html .page-layout-full,
+  .quarto-container .page-layout-full,
+  #quarto-content .page-layout-full {
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Fix centering for publication pages */
+  .page-layout-full .quarto-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Ensure the main content area is properly centered */
+  #quarto-content.page-layout-full {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  /* Center the listing container */
+  .quarto-listing-container-default {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Ensure full-width background for the entire page */
+  body.page-layout-full,
+  html.page-layout-full {
+    width: 100% !important;
+  }
+  
+  /* Make sure the main container extends full width for background */
+  #quarto-content.page-layout-full {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  /* Create a wrapper for the centered content */
+  .page-layout-full .quarto-container {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Add responsive padding for mobile devices */
+  @media (max-width: 768px) {
+    .page-layout-full,
+    .page-layout-full .quarto-container,
+    .page-layout-full #quarto-content,
+    .page-layout-full main.content,
+    .page-layout-full .content {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    .listing,
+    .listing .quarto-listing,
+    .listing .quarto-listing .listing-item,
+    .quarto-listing-container-default {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+  }
+  
+  /* Dark mode background consistency for publication listing */
+  body.quarto-dark .page-layout-full,
+  body.quarto-dark .page-layout-full .quarto-container,
+  body.quarto-dark .page-layout-full #quarto-content,
+  body.quarto-dark .page-layout-full main.content,
+  body.quarto-dark .page-layout-full .content,
+  body.quarto-dark .listing,
+  body.quarto-dark .listing .quarto-listing,
+  body.quarto-dark .listing .quarto-listing .listing-item,
+  body.quarto-dark .quarto-listing-container-default,
+  body.quarto-dark .quarto-listing,
+  body.quarto-dark .quarto-listing-container,
+  body.quarto-dark .listing-item,
+  body.quarto-dark .quarto-grid-item {
+    background-color: #141414 !important;
+    background: #141414 !important;
+  }
+  </style>
+resources:
+  - ../assets/listing-default.css
+  - ../assets/custom-category-toggle.js
+---

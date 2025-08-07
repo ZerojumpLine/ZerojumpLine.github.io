@@ -1,0 +1,38 @@
+---
+title: "Teaching"
+author: ""
+comments: false
+citation: false
+description: |
+  This section includes our teaching materials, courses, and educational resources.<br> Find openly available educational content and teaching tools.
+listing: 
+  contents:
+    - "**/index.qmd"
+    - "**/index.markdown"
+    - "**/index.md"
+  type: grid
+  fields: [title, categories, date, image]
+  sort: "date desc"
+  categories: true
+  filter-ui: false
+  image-align: left
+  image-height: 100%
+format: 
+  html: 
+    page-layout: full
+title-block-banner: false
+
+header-includes: >
+  <link rel="stylesheet" href="../assets/listing-default.css">
+  <script src="../assets/custom-category-toggle.js"></script>
+  <script>
+    // Ensure categories are loaded before our custom script runs
+    window.addEventListener('load', function() {
+      if (window['quarto-listing-loaded']) {
+        window['quarto-listing-loaded']();
+      }
+    });
+  </script>
+resources:
+  - ../assets/listing-default.css
+---
