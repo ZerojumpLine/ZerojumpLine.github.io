@@ -1,4 +1,4 @@
-/* Ensure light mode background for home page */
+/* Theme-specific background colors */
 body:not(.quarto-dark) {
   background-color: #ede8de !important;
 }
@@ -10,7 +10,33 @@ body:not(.quarto-dark) .content {
   background-color: #ede8de !important;
 }
 
-/* Dark mode specific styling for about pages */
+body.quarto-dark {
+  background-color: #141414 !important;
+}
+
+body.quarto-dark #quarto-content,
+body.quarto-dark .quarto-container,
+body.quarto-dark main.content,
+body.quarto-dark .content,
+body.quarto-dark .page-layout-full,
+body.quarto-dark .page-layout-full .quarto-container,
+body.quarto-dark .page-layout-full #quarto-content,
+body.quarto-dark footer,
+body.quarto-dark .page-footer,
+body.quarto-dark .quarto-footer,
+body.quarto-dark .nav-footer,
+body.quarto-dark .nav-footer-center,
+body.quarto-dark .nav-footer-left,
+body.quarto-dark .nav-footer-right {
+  background-color: #141414 !important;
+  color: #ede8de !important;
+}
+
+/* Dark mode specific styling */
+body.quarto-dark {
+  background-color: #141414 !important;
+}
+
 body.quarto-dark .about-entity {
   background-color: #141414 !important;
 }
@@ -71,6 +97,37 @@ body.quarto-dark .fa-ul .fa-li .ai {
 body.quarto-dark [class*="fa-"],
 body.quarto-dark [class*="ai-"] {
   color: #ede8de !important;
+}
+
+/* Dark mode research cards */
+body.quarto-dark .research-card {
+  background-color: #1a1a1a !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+body.quarto-dark .research-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+body.quarto-dark .research-card p {
+  color: #ede8de !important;
+}
+
+body.quarto-dark .card-title {
+  color: #ede8de !important;
+}
+
+/* Dark mode card colors */
+body.quarto-dark .research-card.card-1 {
+  background-color: #1a1a1a !important;
+}
+
+body.quarto-dark .research-card.card-2 {
+  background-color: #1a1a1a !important;
+}
+
+body.quarto-dark .research-card.card-3 {
+  background-color: #1a1a1a !important;
 }
 
 /* Hero banner - image at top */
@@ -421,6 +478,22 @@ body.quarto-dark [class*="ai-"] {
   margin: 0 auto;
 }
 
+/* Column screen container */
+.column-screen {
+  max-width: 1400px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
+/* Content container */
+.content-container {
+  max-width: 1400px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 2rem !important;
+}
+
 /* Research intro section */
 .research-intro {
   max-width: 1400px !important;
@@ -652,6 +725,35 @@ body.quarto-dark .research-card p {
     width: 100% !important;
     margin: 10rem auto 2rem auto;
     padding: 0 2rem;
+    background-color: inherit !important;
+}
+
+/* Dark mode featured section */
+body.quarto-dark .featured-section,
+body.quarto-dark .featured-items,
+body.quarto-dark .featured-item {
+    background-color: #141414 !important;
+}
+
+body.quarto-dark .featured-item {
+    border-bottom-color: #404040 !important;
+}
+
+body.quarto-dark .featured-link {
+    color: #ede8de !important;
+}
+
+body.quarto-dark .featured-link:hover {
+    color: #3498db !important;
+}
+
+body.quarto-dark .featured-meta {
+    color: #adb5bd !important;
+}
+
+body.quarto-dark .featured-type {
+    background-color: #1a1a1a !important;
+    color: #ede8de !important;
 }
 
 /* Override any parent container constraints for featured section */
@@ -784,6 +886,35 @@ body.quarto-dark .featured-type {
     width: 100% !important;
     margin: 8rem auto 2rem auto;
     padding: 0 2rem;
+    background-color: inherit !important;
+}
+
+/* Dark mode hiring section */
+body.quarto-dark .hiring-section,
+body.quarto-dark .hiring-items,
+body.quarto-dark .hiring-item {
+    background-color: #141414 !important;
+}
+
+body.quarto-dark .hiring-item {
+    border-bottom-color: #404040 !important;
+}
+
+body.quarto-dark .hiring-link {
+    color: #ede8de !important;
+}
+
+body.quarto-dark .hiring-link:hover {
+    color: #3498db !important;
+}
+
+body.quarto-dark .hiring-meta {
+    color: #adb5bd !important;
+}
+
+body.quarto-dark .hiring-type {
+    background-color: #1a1a1a !important;
+    color: #ede8de !important;
 }
 
 /* Override any parent container constraints for hiring section */
