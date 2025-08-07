@@ -161,6 +161,151 @@ header-includes: |
       display: block;
       margin: 1rem auto;
     }
+    
+    /* Dark theme specific styling for better contrast */
+    body.quarto-dark .callout-note {
+      background-color: #1a1a1a !important;
+      border-color: #ede8de !important;
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark .callout-note h1,
+    body.quarto-dark .callout-note h2,
+    body.quarto-dark .callout-note h3,
+    body.quarto-dark .callout-note h4,
+    body.quarto-dark .callout-note h5,
+    body.quarto-dark .callout-note h6 {
+      color: #ede8de !important;
+    }
+    
+    /* More specific targeting for headings within callout boxes */
+    body.quarto-dark .callout-note .callout-title,
+    body.quarto-dark .callout-note .callout-title-container,
+    body.quarto-dark .callout-note .callout-title-container h1,
+    body.quarto-dark .callout-note .callout-title-container h2,
+    body.quarto-dark .callout-note .callout-title-container h3,
+    body.quarto-dark .callout-note .callout-title-container h4,
+    body.quarto-dark .callout-note .callout-title-container h5,
+    body.quarto-dark .callout-note .callout-title-container h6 {
+      color: #000000 !important;
+    }
+    
+    /* Target any heading that might be inside callout content */
+    body.quarto-dark .callout-note .callout-content h1,
+    body.quarto-dark .callout-note .callout-content h2,
+    body.quarto-dark .callout-note .callout-content h3,
+    body.quarto-dark .callout-note .callout-content h4,
+    body.quarto-dark .callout-note .callout-content h5,
+    body.quarto-dark .callout-note .callout-content h6 {
+      color: #000000 !important;
+    }
+    
+    /* Override any potential Bootstrap or Quarto default styles */
+    body.quarto-dark .callout-note * {
+      color: #ede8de !important;
+    }
+    
+    /* Ensure headings are visible with higher specificity */
+    body.quarto-dark .callout-note h1,
+    body.quarto-dark .callout-note h2,
+    body.quarto-dark .callout-note h3,
+    body.quarto-dark .callout-note h4,
+    body.quarto-dark .callout-note h5,
+    body.quarto-dark .callout-note h6,
+    body.quarto-dark .callout-note .h1,
+    body.quarto-dark .callout-note .h2,
+    body.quarto-dark .callout-note .h3,
+    body.quarto-dark .callout-note .h4,
+    body.quarto-dark .callout-note .h5,
+    body.quarto-dark .callout-note .h6 {
+      color: #ede8de !important;
+      font-weight: bold !important;
+    }
+    
+    body.quarto-dark .callout-note p,
+    body.quarto-dark .callout-note li,
+    body.quarto-dark .callout-note span,
+    body.quarto-dark .callout-note div {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark .callout-note strong,
+    body.quarto-dark .callout-note b {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark .callout-note a {
+      color: #ede8de !important;
+      text-decoration: underline;
+    }
+    
+    body.quarto-dark .callout-note a:hover {
+      color: #ede8de !important;
+      text-decoration: none;
+    }
+    
+    /* Ensure all text in the find-me page has proper contrast in dark theme */
+    body.quarto-dark h1,
+    body.quarto-dark h2,
+    body.quarto-dark h3,
+    body.quarto-dark h4,
+    body.quarto-dark h5,
+    body.quarto-dark h6 {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark p,
+    body.quarto-dark li,
+    body.quarto-dark span,
+    body.quarto-dark div {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark strong,
+    body.quarto-dark b {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark a {
+      color: #ede8de !important;
+      text-decoration: underline;
+    }
+    
+    body.quarto-dark a:hover {
+      color: #ede8de !important;
+      text-decoration: none;
+    }
+    
+    /* Panel tabset styling for dark theme */
+    body.quarto-dark .panel-tabset {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark .panel-tabset .nav-link {
+      color: #ede8de !important;
+      background-color: #1a1a1a !important;
+      border-color: #ede8de !important;
+    }
+    
+    body.quarto-dark .panel-tabset .nav-link.active {
+      color: #141414 !important;
+      background-color: #ede8de !important;
+      border-color: #ede8de !important;
+    }
+    
+    body.quarto-dark .panel-tabset .nav-link:hover {
+      color: #ede8de !important;
+      background-color: #2a2a2a !important;
+    }
+    
+    /* Tab content styling for dark theme */
+    body.quarto-dark .tab-content {
+      color: #ede8de !important;
+    }
+    
+    body.quarto-dark .tab-pane {
+      color: #ede8de !important;
+    }
   </style>
 ---
 
