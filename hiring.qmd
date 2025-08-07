@@ -64,7 +64,7 @@ resources:
 
 ## Why Join Us?
 
-你将加入由[复旦大学副校长汪源源教授](https://bme-college.fudan.edu.cn/wyy/main.html)领导的医学信号处理实验室，团队现有超过30名研究生。加入我们，你将获得：
+你将加入由[复旦大学副校长汪源源教授](https://bme-college.fudan.edu.cn/wyy/main.htm)领导的医学信号处理实验室，团队现有超过30名研究生。加入我们，你将获得：
 
 - 充足的资金、计算资源和临床资源支持。
 - 开放包容的实验室氛围，导师注重学生个人成长。
