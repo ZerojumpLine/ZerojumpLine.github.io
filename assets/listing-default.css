@@ -142,21 +142,35 @@ body.quarto-dark .card-footer {
   text-decoration: none;
 }
 
-/* Dark mode support for category styling */
+/* Dark mode support for category styling - fixed to prevent vertical light lines */
 body.quarto-dark .quarto-listing-category .category {
   border-color: #495057 !important;
   color: #adb5bd !important;
   background-color: transparent !important;
+  border: 1px solid #495057 !important;
 }
 
 body.quarto-dark .quarto-listing-category .category:hover {
   background-color: #343a40 !important;
   border-color: #6c757d !important;
   color: #e9ecef !important;
+  border: 1px solid #6c757d !important;
 }
 
 body.quarto-dark .quarto-listing-category .category.active {
   background-color: #343a40 !important;
   border-color: #6c757d !important;
   color: #e9ecef !important;
+  border: 1px solid #6c757d !important;
+}
+
+/* Additional fix for any remaining border issues in dark mode */
+body.quarto-dark .quarto-listing-category {
+  border: none !important;
+  background: transparent !important;
+}
+
+body.quarto-dark .quarto-listing-category-title {
+  color: #e9ecef !important;
+  border: none !important;
 }

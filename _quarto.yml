@@ -11,6 +11,7 @@ website:
   favicon: assets/zerojump/img/brain_logo.png
   page-navigation: true
   back-to-top-navigation: true
+
   twitter-card:
     creator: "@spcanelon"
     site: "@spcanelon"
