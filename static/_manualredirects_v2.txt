@@ -71,3 +71,4 @@ NA NA NA
 /talk/2023-epis4equity /talk/2023-10-11-epis4equity
 /talk/2024-env-justice /talk/2024-03-26-env-justice
 /talk/2024-data-equity-ldi /talk/2024-07-10-data-equity-ldi
+/moval/ /blog/2025-01-15-moval-estimating-performance/ 301!
