@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Encoding Test</title>
+</head>
+<body>
+    <h1>URL Encoding Test</h1>
+    <div id="results"></div>
+
+    <script>
+        // Test the URL encoding functions
+        function testUrlEncoding() {
+            const results = document.getElementById('results');
+            
+            // Test categories
+            const testCategories = ['Book', 'Medical Image Analysis', 'AI safety', 'He/Him'];
+            
+            let output = '<h2>Test Results:</h2>';
+            
+            testCategories.forEach(category => {
+                const encoded = encodeURIComponent(category);
+                const decoded = decodeURIComponent(encoded);
+                
+                output += `
+                    <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc;">
+                        <strong>Original:</strong> "${category}"<br>
+                        <strong>Encoded:</strong> "${encoded}"<br>
+                        <strong>Decoded:</strong> "${decoded}"<br>
+                        <strong>Match:</strong> ${category === decoded ? '✅' : '❌'}
+                    </div>
+                `;
+            });
+            
+            // Test hash creation
+            const testObj = { category: 'Medical Image Analysis' };
+            const hash = Object.keys(testObj)
+                .map((key) => {
+                    return `${key}=${encodeURIComponent(testObj[key])}`;
+                })
+                .join("&");
+            
+            output += `
+                <div style="margin: 10px 0; padding: 10px; border: 1px solid #ccc; background: #f0f0f0;">
+                    <strong>Hash Test:</strong><br>
+                    Object: ${JSON.stringify(testObj)}<br>
+                    Hash: #${hash}<br>
+                    Expected: #category=Medical%20Image%20Analysis
+                </div>
+            `;
+            
+            results.innerHTML = output;
+        }
+        
+        // Run test when page loads
+        window.addEventListener('load', testUrlEncoding);
+    </script>
+</body>
+</html> 
