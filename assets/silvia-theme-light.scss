@@ -193,7 +193,7 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
 
 // title
 .navbar-title {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   font-weight: 600;
   color: $primary;
   text-transform: uppercase;
@@ -212,7 +212,7 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
     border-bottom: 0px hidden $secondary;    
     margin: 0px 15px 0px 15px; 
     padding: 8px 12px 10px 12px !important;
-    font-size: 0.95em;
+    font-size: 1.05rem;
     font-weight: 500;
 
     &:hover {
@@ -287,12 +287,12 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
 }
 
 // Throughout the site
-$font-size-base:             1.25rem !default;
-$font-size-sm:               1.25rem !default;
-$font-size-lg:               1.25rem !default;
-$font-size-xl:               1.5rem !default;
-$font-size-2xl:              2rem !default;
-$font-size-3xl:              2.5rem !default;
+$font-size-base:             1.4rem !default;
+$font-size-sm:               1.4rem !default;
+$font-size-lg:               1.4rem !default;
+$font-size-xl:               1.6rem !default;
+$font-size-2xl:              2.2rem !default;
+$font-size-3xl:              2.7rem !default;
 
 // title
 .title {
@@ -357,13 +357,13 @@ $font-size-3xl:              2.5rem !default;
   }
 
   .navbar-title {
-    font-size: 1em;
+    font-size: 1.1rem;
   }
 
   .navbar-nav .nav-link {
     margin: 0px 8px 0px 8px;
     padding: 6px 8px 8px 8px !important;
-    font-size: 0.9em;
+    font-size: 1rem;
   }
 }
 

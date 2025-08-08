@@ -30,13 +30,13 @@ $font-family-monospace:      "Dank Mono", SFMono-Regular, Menlo, Monaco, Consola
 
 $headings-font-family:       "Petrona";
 
-// Font sizes - increased for better readability
-$font-size-base:             1.1rem !default;
-$font-size-sm:               1rem !default;
-$font-size-lg:               1.25rem !default;
-$font-size-xl:               1.5rem !default;
-$font-size-2xl:              2rem !default;
-$font-size-3xl:              2.5rem !default;
+// Font sizes - consistent with light theme
+$font-size-base:             1.4rem !default;
+$font-size-sm:               1.4rem !default;
+$font-size-lg:               1.4rem !default;
+$font-size-xl:               1.6rem !default;
+$font-size-2xl:              2.2rem !default;
+$font-size-3xl:              2.7rem !default;
 
 // Heading sizes - increased
 $h1-font-size:               2.5rem !default;
@@ -89,9 +89,9 @@ $gray-700:                    lighten($primary, 60%);
 
 /*-- scss:rules --*/
 
-// General font size increase for better readability
+// General font size consistent with light theme
 body {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 // Code
@@ -215,7 +215,7 @@ pre code {
 
 // title
 .navbar-title {
-  font-size: 1.1em;
+  font-size: 1.2rem;
   font-weight: 600;
   color: $primary;
   text-transform: uppercase;
@@ -234,7 +234,7 @@ pre code {
     border-bottom: 0px hidden $secondary;    
     margin: 0px 15px 0px 15px; 
     padding: 8px 12px 10px 12px !important;
-    font-size: 0.95em;
+    font-size: 1.05rem;
     font-weight: 500;
 
     &:hover {
@@ -377,13 +377,13 @@ details > summary {
   }
 
   .navbar-title {
-    font-size: 1em;
+    font-size: 1.1rem;
   }
 
   .navbar-nav .nav-link {
     margin: 0px 8px 0px 8px;
     padding: 6px 8px 8px 8px !important;
-    font-size: 0.9em;
+    font-size: 1rem;
   }
 }
 
