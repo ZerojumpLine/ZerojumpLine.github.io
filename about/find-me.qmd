@@ -332,9 +332,13 @@ Same as office location.
 ::: {.panel-tabset}
 
 ### Campus Overview
-::: {.callout-note}
-## Jiangwan Campus, Fudan University
 
+::: {.location-card}
+::: {.location-header}
+## Jiangwan Campus, Fudan University
+:::
+
+::: {.location-content}
 The Jiangwan Campus is located in the northeastern part of Shanghai, featuring modern research facilities and a beautiful academic environment.
 
 ![Campus View](sidebar/campus.jpg)
@@ -344,11 +348,16 @@ The Jiangwan Campus is located in the northeastern part of Shanghai, featuring m
 - **Bus:** Routes 966, 537, 854, 942
 - **Address:** 2005 Songhu Road, Yangpu District, Shanghai
 :::
+:::
 
 ### Building Location
-::: {.callout-note}
-## No. 2 Interdisciplinary Research Building
 
+::: {.location-card}
+::: {.location-header}
+## No. 2 Interdisciplinary Research Building
+:::
+
+::: {.location-content}
 Our building houses cutting-edge research facilities and collaborative spaces for interdisciplinary research.
 
 ![Building View](sidebar/building.jpg)
@@ -359,11 +368,16 @@ Our building houses cutting-edge research facilities and collaborative spaces fo
 - Advanced equipment facilities
 - Secure access control
 :::
+:::
 
 ### Lab Space
-::: {.callout-note}
-## Room C2008 - Biomedical Engineering Lab
 
+::: {.location-card}
+::: {.location-header}
+## Room C2008 - Biomedical Engineering Lab
+:::
+
+::: {.location-content}
 Our dedicated research space where innovation meets collaboration.
 
 ![Lab View](sidebar/lab.jpg)
@@ -373,6 +387,7 @@ Our dedicated research space where innovation meets collaboration.
 - Collaborative workspace
 - Data analysis stations
 - Meeting area for team discussions
+:::
 :::
 
 :::
