@@ -90,6 +90,7 @@ format:
     css: 
       - assets/citation-custom.css
       - assets/toc-fixes.css
+      - assets/navbar-icons.css
     highlight-style:
       light: assets/zerojump/a11y-light.theme
       dark: assets/zerojump/a11y-dark.theme

@@ -1,0 +1,133 @@
+/* Navbar Icon Consistency */
+/* Ensure navbar icons maintain consistent size across theme switches */
+
+/* Override body font-size inheritance specifically for navbar icons */
+body .navbar .quarto-navbar-tools .navbar-nav .nav-link,
+body .navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+body .navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+body .navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+}
+
+/* Force consistent sizing for all navbar icons regardless of theme */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link {
+  font-size: 1.1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
+
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+}
+
+/* Ensure GitHub icon specifically maintains size */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link[href*="github"] i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link[href*="github"] svg {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+/* Theme toggle icon consistency */
+.quarto-color-scheme-toggle .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+/* Override any Bootstrap or framework styles that might affect icon sizing */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link * {
+  font-size: inherit !important;
+}
+
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i *,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg *,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi * {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+/* Ensure icons don't change size on hover */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link:hover i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link:hover svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link:hover .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+/* Mobile responsiveness for navbar icons */
+@media screen and (max-width: 991.98px) {
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link {
+    font-size: 1.1rem !important;
+  }
+  
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+    font-size: 1.1rem !important;
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+  }
+}
+
+/* Force consistent sizing for all navbar icons regardless of theme */
+body.quarto-light .navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+body.quarto-light .navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+body.quarto-light .navbar .quarto-navbar-tools .navbar-nav .nav-link .bi,
+body.quarto-dark .navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+body.quarto-dark .navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+body.quarto-dark .navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+}
+
+/* Override any font-size inheritance from body or parent elements */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Specific override for any Bootstrap font-size variables */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link {
+  font-size: 1.1rem !important;
+}
+
+/* Ensure no font-size inheritance from parent elements */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+  font-size: 1.1rem !important;
+}
+
+/* Override any potential CSS custom properties */
+.navbar .quarto-navbar-tools .navbar-nav .nav-link {
+  font-size: 1.1rem !important;
+  --font-size: 1.1rem !important;
+}
+
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  --font-size: 1.1rem !important;
+} 

@@ -176,6 +176,42 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   }
 }
 
+// Additional fixes for category containers to prevent overlap
+.quarto-listing-category {
+  background-color: var(--bs-body-bg) !important;
+  z-index: 100 !important;
+  position: relative !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.quarto-listing-category-title {
+  background-color: var(--bs-body-bg) !important;
+  z-index: 100 !important;
+  position: relative !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.quarto-listing-category .category {
+  background-color: transparent !important;
+  border: 1px solid $secondary !important;
+  color: $secondary !important;
+  transition: all 0.2s ease-in-out !important;
+  
+  &:hover {
+    background-color: $secondary !important;
+    color: white !important;
+    border-color: $secondary !important;
+  }
+  
+  &.active {
+    background-color: $secondary !important;
+    color: white !important;
+    border-color: $secondary !important;
+  }
+}
+
 // Navbar
 
 // header
@@ -252,6 +288,15 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   &:hover {
     color: $secondary-light !important;
   }
+}
+
+// Ensure consistent icon sizing for navbar tools
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
 }
 
 // Listing cards
@@ -531,5 +576,54 @@ body.quarto-light {
   .card-title,
   .research-card p {
     color: $primary-dark !important;
+  }
+
+  // Additional category fixes for light theme
+  .quarto-listing-category,
+  .quarto-listing-category-title,
+  .quarto-listing-category .category {
+    background-color: var(--bs-body-bg) !important;
+    z-index: 100 !important;
+    position: relative !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  // Ensure proper spacing for category containers
+  .quarto-listing-category {
+    margin-bottom: 1rem !important;
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+  }
+
+  // Ensure category titles have proper background
+  .quarto-listing-category-title {
+    background-color: var(--bs-body-bg) !important;
+    padding: 0.5rem 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  // Style individual category tags
+  .quarto-listing-category .category {
+    background-color: transparent !important;
+    border: 1px solid $secondary !important;
+    color: $secondary !important;
+    transition: all 0.2s ease-in-out !important;
+    margin: 0.25rem !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 0.25rem !important;
+    display: inline-block !important;
+    
+    &:hover {
+      background-color: $secondary !important;
+      color: white !important;
+      border-color: $secondary !important;
+    }
+    
+    &.active {
+      background-color: $secondary !important;
+      color: white !important;
+      border-color: $secondary !important;
+    }
   }
 }

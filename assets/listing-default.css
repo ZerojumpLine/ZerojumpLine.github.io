@@ -113,6 +113,21 @@ body.quarto-dark .card-footer {
 }
 
 /* Category filter styling with active state */
+.quarto-listing-category {
+  background: var(--bs-body-bg) !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure the entire categories section has background */
+.quarto-listing-category,
+.quarto-listing-category * {
+  background: var(--bs-body-bg) !important;
+}
+
 .quarto-listing-category .category {
   cursor: pointer;
   padding: 0.25rem 0.5rem;
@@ -167,12 +182,36 @@ body.quarto-dark .quarto-listing-category .category.active {
 /* Additional fix for any remaining border issues in dark mode */
 body.quarto-dark .quarto-listing-category {
   border: none !important;
-  background: transparent !important;
+  background: #141414 !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure the entire categories section has background in dark mode */
+body.quarto-dark .quarto-listing-category,
+body.quarto-dark .quarto-listing-category * {
+  background: #141414 !important;
 }
 
 body.quarto-dark .quarto-listing-category-title {
   color: #e9ecef !important;
   border: none !important;
+  background: #141414 !important;
+}
+
+/* Light theme category title background */
+.quarto-listing-category-title {
+  background: var(--bs-body-bg) !important;
+}
+
+/* Comprehensive fix for light theme categories */
+.quarto-listing-category,
+.quarto-listing-category-title,
+.quarto-listing-category .category {
+  background: var(--bs-body-bg) !important;
 }
 
 /* Additional dark mode fixes for sidebar borders to prevent vertical light lines */
@@ -217,7 +256,15 @@ body.quarto-dark #quarto-margin-sidebar {
 }
 
 /* Additional fixes for TOC container elements */
-#quarto-margin-sidebar .quarto-listing-category,
+#quarto-margin-sidebar .quarto-listing-category {
+  border: none !important;
+  background: var(--bs-body-bg) !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+}
+
 #quarto-margin-sidebar .quarto-listing-category-title,
 #quarto-margin-sidebar .quarto-listing-category .category {
   border: none !important;
@@ -235,6 +282,16 @@ body.quarto-dark .sidebar {
   border-bottom: none !important;
   box-shadow: none !important;
   background-color: #141414 !important;
+}
+
+/* Dark mode category menu background for margin sidebar */
+body.quarto-dark #quarto-margin-sidebar .quarto-listing-category {
+  border: none !important;
+  background: #141414 !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
 }
 
 /* Ensure TOC elements don't have any borders */

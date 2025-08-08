@@ -94,6 +94,14 @@ body {
   font-size: 1.4rem;
 }
 
+// Ensure navbar icons are not affected by body font-size
+.navbar .quarto-navbar-tools .navbar-nav .nav-link,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+}
+
 // Code
 
 // code block
@@ -254,6 +262,15 @@ pre code {
   &:hover {
     color: $secondary-light !important;
   }
+}
+
+// Ensure consistent icon sizing for navbar tools
+.navbar .quarto-navbar-tools .navbar-nav .nav-link i,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link svg,
+.navbar .quarto-navbar-tools .navbar-nav .nav-link .bi {
+  font-size: 1.1rem !important;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
 }
 
 // Footer

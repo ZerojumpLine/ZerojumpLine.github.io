@@ -25,8 +25,21 @@
 }
 
 /* Additional fixes for TOC container elements */
-#quarto-margin-sidebar .quarto-listing-category,
-#quarto-margin-sidebar .quarto-listing-category-title,
+#quarto-margin-sidebar .quarto-listing-category {
+  border: none !important;
+  background: var(--bs-body-bg) !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+#quarto-margin-sidebar .quarto-listing-category-title {
+  border: none !important;
+  background: var(--bs-body-bg) !important;
+}
+
 #quarto-margin-sidebar .quarto-listing-category .category {
   border: none !important;
   background: transparent !important;
@@ -108,6 +121,23 @@ body.quarto-dark .quarto-margin-sidebar-content {
   border-bottom: none !important;
   box-shadow: none !important;
   background-color: #141414 !important;
+}
+
+/* Dark mode category menu background */
+body.quarto-dark #quarto-margin-sidebar .quarto-listing-category {
+  border: none !important;
+  background: #141414 !important;
+  z-index: 10 !important;
+  position: relative !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Dark mode category title background */
+body.quarto-dark #quarto-margin-sidebar .quarto-listing-category-title {
+  border: none !important;
+  background: #141414 !important;
 }
 
 /* Blog-specific TOC fixes */
