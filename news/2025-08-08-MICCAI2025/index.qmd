@@ -1,6 +1,6 @@
 ---
 title: "Dehazing Echocardiography Challenge 2025"
-subtitle: "We are organing a challenge in conjunction with MICCAI 2025."
+subtitle: "We are organizing a challenge in conjunction with MICCAI 2025."
 date: 2025-08-08
 categories: [Challenge, GenAI]
 image: featured.jpg

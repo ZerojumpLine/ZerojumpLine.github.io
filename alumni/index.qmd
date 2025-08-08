@@ -46,7 +46,7 @@ resources:
   </thead>
   <tbody>
   
-    <tr data-name="Bowen Guo" data-role="UG Student" data-start="202-09" data-end="2023-12">
+    <tr data-name="Bowen Guo" data-role="UG Student" data-start="2025-02" data-end="2025-07">
       <td class="name-cell">
         <img src="bowen_guo/bowen_guo.jpg" alt="Bowen Guo" class="profile-image">
         <a href="bowen_guo/" class="alumni-name">Bowen Guo</a>

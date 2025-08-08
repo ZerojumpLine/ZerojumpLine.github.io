@@ -45,7 +45,7 @@ Jun 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Zhongrui Fan is an undergraduate student working on generative model in medical imaging.
+Zhongrui Fan is an undergraduate student working on generative models in medical imaging.
 
 :::
 
