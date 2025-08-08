@@ -94,9 +94,9 @@ We are pushing the boundaries of biomedical image analysis using AI.
 :::
 
 ::: {.column width="65%"}
-We boardly interested in machine learning, medical image computing and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes. 
+We are broadly interested in machine learning, medical image computing, and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes. 
 
-Currently, we are working on building AI models that can 1) operate reliably and stably (e.g. interpretability, uncertainty), 2) advance medical imaging pipelines (e.g. reconstruction, segmentation) 3) and eventually enhance our understanding of brain functions (e.g. fMRI, dMRI).
+Currently, we are working on building AI models that can: 1) operate reliably and stably (e.g., interpretability, uncertainty), 2) advance medical imaging pipelines (e.g., reconstruction, segmentation), and 3) eventually enhance our understanding of brain functions (e.g., fMRI, dMRI).
 :::
 
 :::
@@ -142,7 +142,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Introducing MOVAL**](/blog/2025-01-15-moval-estimating-performance/){.featured-link}
 
 ::: {.featured-meta}
-[Research]{.featured-type} • Auguest 8, 2025
+[Research]{.featured-type} • August 8, 2025
 :::
 :::
 
@@ -150,7 +150,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Context Label Learning**](/publication/2023-06-27-context-label-learning/){.featured-link}
 
 ::: {.featured-meta}
-[Publication]{.featured-type} • Auguest 6, 2025
+[Publication]{.featured-type} • August 6, 2025
 :::
 :::
 
@@ -158,7 +158,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**DehazingEcho2025**](/news/2025-08-08-MICCAI2025/){.featured-link}
 
 ::: {.featured-meta}
-[Challenge]{.featured-type} • Auguest 5, 2025
+[Challenge]{.featured-type} • August 5, 2025
 :::
 :::
 
@@ -166,7 +166,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Generative Machine Learning Models in Medical Image Computing**](/news/2025-08-08-GenAI-Book/){.featured-link}
 
 ::: {.featured-meta}
-[Book]{.featured-type} • Auguest 4, 2025
+[Book]{.featured-type} • August 4, 2025
 :::
 :::
 
@@ -175,7 +175,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**MICS 2025**](/news/2025-08-08-MICS/){.featured-link}
 
 ::: {.featured-meta}
-[Seminar]{.featured-type} • Auguest 3, 2025
+[Seminar]{.featured-type} • August 3, 2025
 :::
 :::
 
@@ -183,7 +183,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**AI Foundations**](/teaching/2025-08-08-AI/){.featured-link}
 
 ::: {.featured-meta}
-[Teaching]{.featured-type} • Auguest 2, 2025
+[Teaching]{.featured-type} • August 2, 2025
 :::
 :::
 

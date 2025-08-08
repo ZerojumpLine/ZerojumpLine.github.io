@@ -94,7 +94,7 @@ Shanghai, China
 
 Zeju Li's research focuses on machine learning and its applications in medical image processing, with an emphasis on neuroimaging analysis and addressing clinical problems. 
 
-He has published over 30 academic papers, many of which appeared in TMI and MICCAI. 
+He has published over 30 peer-reviewed publications, many of which have been published in top-tier journals and conferences including TMI and MICCAI. 
 
 His work has garnered over 4,000 citations on [Google Scholar](https://scholar.google.co.uk/citations?user=zeuflXEAAAAJ&hl=en&oi=ao). He has won championships in the Huawei AI Challenge and the MICCAI Challenge, and serves as an area chair for conferences such as MICCAI and MIDL.
 
@@ -104,7 +104,7 @@ His work has garnered over 4,000 citations on [Google Scholar](https://scholar.g
 
 Zeju was a Post-Doctoral Researcher in the [FMRIB Analysis Group](https://www.win.ox.ac.uk/research/analysis-research) at the University of Oxford before joining Fudan in February 2025. 
 
-He obtained PhD in Computing from [BioMedIA Group](https://biomedia.doc.ic.ac.uk/). He spent time in Institute of Computing Technology and Huawei Noah's Ark Lab (London).
+He obtained his PhD in Computing from the [BioMedIA Group](https://biomedia.doc.ic.ac.uk/). He spent time at the Institute of Computing Technology and Huawei Noah's Ark Lab (London).
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. in Computing ∙ Imperial College London ∙ 2023</li>

@@ -52,7 +52,7 @@ links:
 #       - journalism
 ---
 
-I am teaching an AI course for a general audience, designed for students from all majors.
+I am teaching an AI course designed for a general audience, suitable for students from all majors.
 
 ## AI Foundations
 
