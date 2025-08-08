@@ -142,7 +142,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**DehazingEcho2025**](/news/2025-08-08-MICCAI2025/){.featured-link}
 
 ::: {.featured-meta}
-[Challenge]{.featured-type} • Auguest 8, 2025
+[Challenge]{.featured-type} • Auguest 5, 2025
 :::
 :::
 
@@ -150,7 +150,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Generative Machine Learning Models in Medical Image Computing**](/news/2025-08-08-GenAI-Book/){.featured-link}
 
 ::: {.featured-meta}
-[Book]{.featured-type} • Auguest 8, 2025
+[Book]{.featured-type} • Auguest 4, 2025
 :::
 :::
 
@@ -159,7 +159,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**MICS 2025**](/news//news/2025-08-08-MICS/){.featured-link}
 
 ::: {.featured-meta}
-[Seminar]{.featured-type} • Auguest 8, 2025
+[Seminar]{.featured-type} • Auguest 3, 2025
 :::
 :::
 
@@ -167,7 +167,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**AI Foundations**](/teaching/2025-08-08-AI/){.featured-link}
 
 ::: {.featured-meta}
-[Teaching]{.featured-type} • Auguest 8, 2025
+[Teaching]{.featured-type} • Auguest 2, 2025
 :::
 :::
 
@@ -175,15 +175,15 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Pattern Recognition**](/teaching/2025-08-08-Pattern Recognition/){.featured-link}
 
 ::: {.featured-meta}
-[Teaching]{.featured-type} • Auguest 8, 2025
+[Teaching]{.featured-type} • Auguest 1, 2025
 :::
 :::
 
 ::: {.featured-item}
-[**Undergraduate Project**](/teaching/2025-08-08-Undergraduate Project/){.featured-link}
+[**Introducing MOVAL**](/moval.html){.featured-link}
 
 ::: {.featured-meta}
-[Teaching]{.featured-type} • Auguest 8, 2025
+[Research]{.featured-type} • Auguest 8, 2025
 :::
 :::
 
