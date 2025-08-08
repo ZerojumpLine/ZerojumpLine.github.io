@@ -26,33 +26,6 @@ comments: false
 header-includes: >
   <link rel="stylesheet" href="../assets/listing-default.css">
   <script src="../assets/custom-category-toggle.js"></script>
-  <script>
-    // Ensure our custom script runs before Quarto's listing script
-    window.addEventListener('DOMContentLoaded', function() {
-      console.log('News page DOM loaded, setting up custom handlers');
-      if (window.setupCategoryHandlers) {
-        window.setupCategoryHandlers();
-      }
-    });
-    
-    // Also ensure categories are loaded before our custom script runs
-    window.addEventListener('load', function() {
-      console.log('News page loaded, checking for quarto-listing-loaded');
-      if (window['quarto-listing-loaded']) {
-        console.log('Calling quarto-listing-loaded');
-        window['quarto-listing-loaded']();
-      } else {
-        console.log('quarto-listing-loaded not found, will retry');
-        // Retry after a short delay
-        setTimeout(function() {
-          if (window['quarto-listing-loaded']) {
-            console.log('Calling quarto-listing-loaded (delayed)');
-            window['quarto-listing-loaded']();
-          }
-        }, 500);
-      }
-    });
-  </script>
 resources:
   - ../assets/listing-default.css
 ---
