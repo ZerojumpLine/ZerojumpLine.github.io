@@ -164,7 +164,7 @@ body.quarto-dark .research-card.card-3 {
 
 /* Main title styling */
 .hero-content-center h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.1;
   color: #2c3e50;
@@ -173,7 +173,7 @@ body.quarto-dark .research-card.card-3 {
 
 /* Subtitle styling */
 .hero-content-center h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -183,7 +183,7 @@ body.quarto-dark .research-card.card-3 {
 
 /* Research description styling */
 .research-description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: #2c3e50;
   margin-bottom: 2.5rem;
@@ -303,7 +303,7 @@ body.quarto-dark .research-card.card-3 {
 
 /* Title and subtitle styling */
 .about-entity .about-contents h1 {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   font-weight: 700 !important;
   line-height: 1.1 !important;
   margin-bottom: 0.5rem !important;
@@ -311,7 +311,7 @@ body.quarto-dark .research-card.card-3 {
 }
 
 .about-entity .about-contents h2 {
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
@@ -384,7 +384,7 @@ body.quarto-dark .research-card.card-3 {
 .about-entity .about-links {
   justify-content: flex-end !important;
   column-gap: 0em !important;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
 }
 
 /* social links: individual links */
@@ -395,7 +395,7 @@ body.quarto-dark .research-card.card-3 {
 
 /* Learn More About Me */
 .about-links.subtitle {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
   font-family: "Red Hat Text";
   justify-content: flex-end !important;
 }
@@ -669,16 +669,16 @@ body.quarto-dark .research-card p {
         min-height: auto;
     }
     
-    .hero-content-center h1 {
-        font-size: 2.8rem;
+        .hero-content-center h1 {
+      font-size: 2.5rem;
     }
     
     .hero-content-center h2 {
-        font-size: 1rem;
+      font-size: 1.1rem;
     }
     
     .research-description {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.7;
     }
 }
@@ -711,11 +711,11 @@ body.quarto-dark .research-card p {
     }
     
     .hero-content-center h2 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     
     .research-description {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 

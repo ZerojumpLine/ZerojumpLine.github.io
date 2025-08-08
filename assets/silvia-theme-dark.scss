@@ -94,6 +94,11 @@ body {
   font-size: 1.4rem;
 }
 
+// Ensure all text elements inherit the base font size
+p, span, div, li, td, th {
+  font-size: inherit;
+}
+
 // Ensure navbar icons are not affected by body font-size
 .navbar .quarto-navbar-tools .navbar-nav .nav-link,
 .navbar .quarto-navbar-tools .navbar-nav .nav-link i,
