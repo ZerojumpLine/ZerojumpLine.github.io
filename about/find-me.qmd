@@ -307,7 +307,8 @@ header-includes: |
       color: #ede8de !important;
     }
     
-    /* Make Directions heading more prominent */
+    /* Make Directions heading more prominent - using higher specificity */
+    body.quarto-dark .about-entity .about-contents h2#directions,
     body.quarto-dark h2#directions {
       color: #ffffff !important;
       font-weight: 700 !important;
@@ -316,6 +317,7 @@ header-includes: |
       margin-bottom: 1.5rem !important;
     }
     
+    body.quarto-light .about-entity .about-contents h2#directions,
     body.quarto-light h2#directions {
       color: #2c3e50 !important;
       font-weight: 700 !important;
@@ -323,7 +325,39 @@ header-includes: |
       margin-bottom: 1.5rem !important;
     }
     
-    /* General h2 styling for better visibility */
+    /* Override any other h2 styling with maximum specificity */
+    body.quarto-dark .about-entity .about-contents h2 {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 2.2em !important;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    body.quarto-light .about-entity .about-contents h2 {
+      color: #2c3e50 !important;
+      font-weight: 700 !important;
+      font-size: 2.2em !important;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    /* Additional specificity for the find-me page specifically */
+    body.quarto-dark .about-entity .about-contents h2#directions {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 2.2em !important;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    body.quarto-light .about-entity .about-contents h2#directions {
+      color: #2c3e50 !important;
+      font-weight: 700 !important;
+      font-size: 2.2em !important;
+      margin-bottom: 1.5rem !important;
+    }
+    
+    /* Force override with !important for all h2 elements in this page */
     body.quarto-dark h2 {
       color: #ffffff !important;
       font-weight: 700 !important;
