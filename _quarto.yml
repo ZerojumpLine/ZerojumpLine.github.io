@@ -1,9 +1,6 @@
 project:
   type: website
   output-dir: _site
-  post-render:
-    - "cp -rnv static/. _site" # source: https://github.com/quarto-dev/quarto-cli/discussions/4162#discussioncomment-4831352
-    - "cp -v moval.html _site/" # Copy moval.html from root to _site
 
 website:
   title: "**ZEJU** Li"
