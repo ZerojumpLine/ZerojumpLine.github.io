@@ -172,10 +172,10 @@ Currently, we are working on building AI models that can 1) operate reliably and
 :::
 
 ::: {.featured-item}
-[**Pattern Recognition**](/teaching/2025-08-08-Pattern Recognition/){.featured-link}
+[**Context Label Learning**](/publication/2023-06-27-context-label-learning/){.featured-link}
 
 ::: {.featured-meta}
-[Teaching]{.featured-type} • Auguest 1, 2025
+[Research]{.featured-type} • Auguest 6, 2025
 :::
 :::
 
