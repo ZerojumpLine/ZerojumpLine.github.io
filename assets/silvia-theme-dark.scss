@@ -246,6 +246,16 @@ pre code {
 // Navbar dropdown menu - removed general styling to prevent affecting light theme
 // Dark theme dropdown styling is handled in the body.quarto-dark section below
 
+// Navbar tools (GitHub icon, theme toggle, etc.)
+.navbar .quarto-navbar-tools .navbar-nav .nav-link {
+  font-size: 1.1rem !important;
+  color: $secondary !important;
+  
+  &:hover {
+    color: $secondary-light !important;
+  }
+}
+
 // Footer
 
 // links on left side
@@ -367,6 +377,11 @@ details > summary {
 
   .navbar .quarto-navbar-tools {
     text-align: left;
+  }
+
+  // Ensure navbar icons have consistent size
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link {
+    font-size: 1.1rem !important;
   }
 
   // Mobile navbar adjustments
