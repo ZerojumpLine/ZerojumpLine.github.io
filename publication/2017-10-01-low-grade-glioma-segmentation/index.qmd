@@ -36,13 +36,20 @@ The proposed framework represents a significant advancement in brain tumor segme
 
 ## BibTeX
 
-```bibtex
-@article{li2017low,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2017low,
   title={Low-grade glioma segmentation based on CNN with fully connected CRF},
   author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Shi, Zhifeng and Guo, Yi and Chen, Liang and Mao, Ying},
   journal={Journal of Healthcare Engineering},
   year={2017},
   publisher={Hindawi},
   doi={10.1155/2017/9283480}
-}
+}"><code>@article{li2017low,
+  title={Low-grade glioma segmentation based on CNN with fully connected CRF},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Shi, Zhifeng and Guo, Yi and Chen, Liang and Mao, Ying},
+  journal={Journal of Healthcare Engineering},
+  year={2017},
+  publisher={Hindawi},
+  doi={10.1155/2017/9283480}
+}</code></pre>
 ``` 

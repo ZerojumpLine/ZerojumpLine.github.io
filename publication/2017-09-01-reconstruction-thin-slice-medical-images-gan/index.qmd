@@ -32,12 +32,18 @@ The proposed framework represents a significant advancement in medical image rec
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2017reconstruction,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2017reconstruction,
   title={Reconstruction of thin-slice medical images using generative adversarial network},
   author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
   booktitle={International Workshop on Machine Learning in Medical Imaging (MICCAI-MLMI 2017)},
   year={2017},
   doi={10.1007/978-3-319-67389-9_38}
-}
+}"><code>@inproceedings{li2017reconstruction,
+  title={Reconstruction of thin-slice medical images using generative adversarial network},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
+  booktitle={International Workshop on Machine Learning in Medical Imaging (MICCAI-MLMI 2017)},
+  year={2017},
+  doi={10.1007/978-3-319-67389-9_38}
+}</code></pre>
 ``` 

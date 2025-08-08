@@ -35,12 +35,18 @@ The proposed framework represents a significant advancement in domain shift dete
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2022ds,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2022ds,
   title={Estimating Model Performance under Domain Shifts with Class-Specific Confidence Scores},
   author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
   year={2022},
   doi={10.1007/978-3-031-16449-1_66}
-}
+}"><code>@inproceedings{li2022ds,
+  title={Estimating Model Performance under Domain Shifts with Class-Specific Confidence Scores},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
+  year={2022},
+  doi={10.1007/978-3-031-16449-1_66}
+}</code></pre>
 ``` 

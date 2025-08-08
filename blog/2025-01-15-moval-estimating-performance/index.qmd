@@ -44,16 +44,23 @@ MOVAL highlights a key feature—class-wise calibration, recognized as essential
   <img src="static/images/Fig_software_2.gif" style="max-width: 100%; height: auto;">
 </div>
 
-## BibTeX
+## Related Publications
 
-```bibtex
-@inproceedings{li2022estimating,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2022estimating,
   title={Estimating model performance under domain shifts with class-specific confidence scores},
   author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
   pages={693--703},
   year={2022},
   organization={Springer}
-}
+}"><code>@inproceedings{li2022estimating,
+  title={Estimating model performance under domain shifts with class-specific confidence scores},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={693--703},
+  year={2022},
+  organization={Springer}
+}</code></pre>
 ```
 

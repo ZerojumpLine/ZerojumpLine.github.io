@@ -30,12 +30,18 @@ DeepVolume represents a significant advancement in brain MRI super-resolution, p
 
 ## BibTeX
 
-```bibtex
-@article{li2019deep,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2019deep,
   title={DeepVolume: brain structure and spatial connection-aware network for brain MRI super-resolution},
   author={Li, Zeju and Yu, Jinhua and Wang, Yuanyuan and Zhou, Hanzhang and Yang, Haowei and Qiao, Zhuowei},
   year={2019},
   journal={IEEE Transactions on Cybernetics},
   doi={10.1109/TCYB.2019.2933633}
-}
+}"><code>@article{li2019deep,
+  title={DeepVolume: brain structure and spatial connection-aware network for brain MRI super-resolution},
+  author={Li, Zeju and Yu, Jinhua and Wang, Yuanyuan and Zhou, Hanzhang and Yang, Haowei and Qiao, Zhuowei},
+  year={2019},
+  journal={IEEE Transactions on Cybernetics},
+  doi={10.1109/TCYB.2019.2933633}
+}</code></pre>
 ``` 

@@ -32,12 +32,18 @@ The proposed framework represents a significant advancement in medical AI evalua
 
 ## BibTeX
 
-```bibtex
-@inproceedings{islam2023robustness,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{islam2023robustness,
   title={Robustness Stress Testing in Medical Image Classification},
   author={Islam, Mobarakol and Li, Zeju and Glocker, Ben},
   year={2023},
   booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2023)},
   doi={10.1007/978-3-031-44336-7_17}
-}
+}"><code>@inproceedings{islam2023robustness,
+  title={Robustness Stress Testing in Medical Image Classification},
+  author={Islam, Mobarakol and Li, Zeju and Glocker, Ben},
+  year={2023},
+  booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2023)},
+  doi={10.1007/978-3-031-44336-7_17}
+}</code></pre>
 ``` 

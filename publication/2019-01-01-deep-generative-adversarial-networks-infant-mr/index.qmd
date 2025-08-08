@@ -35,13 +35,20 @@ The proposed framework represents a significant advancement in infant MRI recons
 
 ## BibTeX
 
-```bibtex
-@article{gu2019deep,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{gu2019deep,
   title={Deep Generative Adversarial Networks for Thinsection Infant MR Image Reconstruction},
   author={Gu, Jiaqi and Li, Zeju and Wang, Yuanyuan and Yang, Haowei and Qiao, Zhongwei and Yu, Jinhua},
   journal={IEEE Access},
   year={2019},
   publisher={IEEE},
   doi={10.1109/ACCESS.2019.2918926}
-}
+}"><code>@article{gu2019deep,
+  title={Deep Generative Adversarial Networks for Thinsection Infant MR Image Reconstruction},
+  author={Gu, Jiaqi and Li, Zeju and Wang, Yuanyuan and Yang, Haowei and Qiao, Zhongwei and Yu, Jinhua},
+  journal={IEEE Access},
+  year={2019},
+  publisher={IEEE},
+  doi={10.1109/ACCESS.2019.2918926}
+}</code></pre>
 ``` 

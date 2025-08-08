@@ -27,13 +27,21 @@ We evaluate our method on a comprehensive dataset of low-grade glioma patients w
 DLR represents a significant advancement in noninvasive glioma characterization, providing a more accurate and clinically practical approach to IDH1 prediction that could reduce the need for invasive procedures and improve patient outcomes.
 
 ## BibTeX
-```bibtex
-@article{li2017deep,
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2017deep,
   title={Deep Learning based Radiomics (DLR) and its usage in noninvasive IDH1 prediction for low grade glioma},
   author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Guo, Yi and Cao, Wei},
   journal={Scientific Reports},
   year={2017},
   publisher={Nature Publishing Group},
   doi={10.1038/s41598-017-05848-2}
-}
+}"><code>@article{li2017deep,
+  title={Deep Learning based Radiomics (DLR) and its usage in noninvasive IDH1 prediction for low grade glioma},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Guo, Yi and Cao, Wei},
+  journal={Scientific Reports},
+  year={2017},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41598-017-05848-2}
+}</code></pre>
 ``` 

@@ -29,13 +29,20 @@ The proposed framework provides a more principled approach to data augmentation 
 
 ## BibTeX
 
-```bibtex
-@article{li2022da,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2022da,
   title={Joint Optimization of Class-Specific Training- and Test-Time Data Augmentation in Segmentation},
   author={Li, Zeju and Kamnitsas, Konstantinos and Dou, Qi and Qin, Chen and Glocker, Ben},
   journal={IEEE Transactions on Medical Imaging},
   year={2023},
   publisher={IEEE},
   doi={10.1109/TMI.2023.3282728}
-}
+}"><code>@article{li2022da,
+  title={Joint Optimization of Class-Specific Training- and Test-Time Data Augmentation in Segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Dou, Qi and Qin, Chen and Glocker, Ben},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2023},
+  publisher={IEEE},
+  doi={10.1109/TMI.2023.3282728}
+}</code></pre>
 ``` 

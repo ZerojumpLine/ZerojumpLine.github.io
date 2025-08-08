@@ -38,12 +38,18 @@ The proposed framework represents a significant advancement in medical image aug
 
 ## BibTeX
 
-```bibtex
-@article{chen2022da,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{chen2022da,
   title={Enhancing MR Image Segmentation with Realistic Adversarial Data Augmentation},
   author={Chen, Chen and Ouyang, Cheng and Li, Zeju and Wang, Shuo and Qiu, Huaqi and Chen, Liang and Tarroni, Giacomo and Bai, Wenjia and Rueckert, Daniel},
   year={2022},
   journal={Medical Image Analysis},
   doi={10.1016/j.media.2022.102597}
-}
+}"><code>@article{chen2022da,
+  title={Enhancing MR Image Segmentation with Realistic Adversarial Data Augmentation},
+  author={Chen, Chen and Ouyang, Cheng and Li, Zeju and Wang, Shuo and Qiu, Huaqi and Chen, Liang and Tarroni, Giacomo and Bai, Wenjia and Rueckert, Daniel},
+  year={2022},
+  journal={Medical Image Analysis},
+  doi={10.1016/j.media.2022.102597}
+}</code></pre>
 ``` 

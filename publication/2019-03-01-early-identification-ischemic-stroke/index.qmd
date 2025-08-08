@@ -36,13 +36,20 @@ The proposed framework represents a significant advancement in stroke diagnosis,
 
 ## BibTeX
 
-```bibtex
-@article{wu2019early,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{wu2019early,
   title={Early identification of ischemic stroke in noncontrast computed tomography},
   author={Wu, Guoqing and Lin, Jixian and Chen, Xi and Li, Zeju and Wang, Yuanyuan and Zhao, Jing and Yu, Jinhua},
   journal={Biomedical Signal Processing and Control},
   year={2019},
   publisher={Elsevier},
   doi={10.1016/j.bspc.2019.03.008}
-}
+}"><code>@article{wu2019early,
+  title={Early identification of ischemic stroke in noncontrast computed tomography},
+  author={Wu, Guoqing and Lin, Jixian and Chen, Xi and Li, Zeju and Wang, Yuanyuan and Zhao, Jing and Yu, Jinhua},
+  journal={Biomedical Signal Processing and Control},
+  year={2019},
+  publisher={Elsevier},
+  doi={10.1016/j.bspc.2019.03.008}
+}</code></pre>
 ``` 

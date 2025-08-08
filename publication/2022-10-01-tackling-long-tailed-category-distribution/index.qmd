@@ -37,12 +37,18 @@ The proposed framework represents a significant advancement in handling complex 
 
 ## BibTeX
 
-```bibtex
-@inproceedings{gu2022ci,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{gu2022ci,
   title={Tackling Long-Tailed Category Distribution Under Domain Shifts},
   author={Gu, Xiao and Guo, Yao and Li, Zeju and Qiu Jianning and Dou, Qi and Liu, Yuxuan and Lo, Benny and Yang, Guang-Zhong},
   year={2022},
   booktitle={European Conference on Computer Vision (ECCV 2022)},
   doi={10.1007/978-3-031-20050-2_42}
-}
+}"><code>@inproceedings{gu2022ci,
+  title={Tackling Long-Tailed Category Distribution Under Domain Shifts},
+  author={Gu, Xiao and Guo, Yao and Li, Zeju and Qiu Jianning and Dou, Qi and Liu, Yuxuan and Lo, Benny and Yang, Guang-Zhong},
+  year={2022},
+  booktitle={European Conference on Computer Vision (ECCV 2022)},
+  doi={10.1007/978-3-031-20050-2_42}
+}</code></pre>
 ``` 

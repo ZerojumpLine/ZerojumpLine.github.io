@@ -40,8 +40,8 @@ The proposed framework represents a significant advancement in privacy-preservin
 
 ## BibTeX
 
-```bibtex
-@article{dou2021federated,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{dou2021federated,
   title={Federated deep learning for detecting COVID-19 lung abnormalities in CT: a privacy-preserving multinational validation study},
   author={Dou, Qi and So, Tiffany Y and Jiang, Meirui and Liu, Quande and Vardhanabhuti, Varut and Kaissis, Georgios and Li, Zeju and Si, Weixin and Lee, Heather HC and Yu, Kevin and others},
   journal={NPJ digital medicine},
@@ -51,5 +51,15 @@ The proposed framework represents a significant advancement in privacy-preservin
   year={2021},
   publisher={Nature Publishing Group},
   doi={10.1038/s41746-021-00431-6}
-}
+}"><code>@article{dou2021federated,
+  title={Federated deep learning for detecting COVID-19 lung abnormalities in CT: a privacy-preserving multinational validation study},
+  author={Dou, Qi and So, Tiffany Y and Jiang, Meirui and Liu, Quande and Vardhanabhuti, Varut and Kaissis, Georgios and Li, Zeju and Si, Weixin and Lee, Heather HC and Yu, Kevin and others},
+  journal={NPJ digital medicine},
+  volume={4},
+  number={1},
+  pages={1--11},
+  year={2021},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41746-021-00431-6}
+}</code></pre>
 ``` 

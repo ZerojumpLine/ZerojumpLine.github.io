@@ -35,12 +35,18 @@ The proposed framework represents a significant advancement in robust medical im
 
 ## BibTeX
 
-```bibtex
-@inproceedings{chen2022ro,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{chen2022ro,
   title={MaxStyle: Adversarial Style Composition for Robust Medical Image Segmentation},
   author={Chen, Chen and Li, Zeju and Ouyang, Cheng and Sinclair, Matt and Bai, Wenjia and Rueckert, Daniel},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
   year={2022},
   doi={10.1007/978-3-031-16443-9_15}
-}
+}"><code>@inproceedings{chen2022ro,
+  title={MaxStyle: Adversarial Style Composition for Robust Medical Image Segmentation},
+  author={Chen, Chen and Li, Zeju and Ouyang, Cheng and Sinclair, Matt and Bai, Wenjia and Rueckert, Daniel},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
+  year={2022},
+  doi={10.1007/978-3-031-16443-9_15}
+}</code></pre>
 ``` 

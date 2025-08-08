@@ -35,13 +35,20 @@ The proposed framework represents a significant advancement in CNS lymphoma diag
 
 ## BibTeX
 
-```bibtex
-@article{chen2018primary,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{chen2018primary,
   title={Primary central nervous system lymphoma and glioblastoma differentiation based on conventional magnetic resonance imaging by high-throughput SIFT features},
   author={Chen, Yinsheng and Li, Zeju and Wu, Guoqing and Yu, Jinhua and Wang, Yuanyuan and Lv, Xiaofei and Ju, Xue and Chen, Zhongping},
   journal={International Journal of Neuroscience},
   year={2018},
   publisher={Taylor \& Francis},
   doi={10.1080/00207454.2017.1408613}
-}
+}"><code>@article{chen2018primary,
+  title={Primary central nervous system lymphoma and glioblastoma differentiation based on conventional magnetic resonance imaging by high-throughput SIFT features},
+  author={Chen, Yinsheng and Li, Zeju and Wu, Guoqing and Yu, Jinhua and Wang, Yuanyuan and Lv, Xiaofei and Ju, Xue and Chen, Zhongping},
+  journal={International Journal of Neuroscience},
+  year={2018},
+  publisher={Taylor \& Francis},
+  doi={10.1080/00207454.2017.1408613}
+}</code></pre>
 ``` 

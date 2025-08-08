@@ -32,12 +32,18 @@ The proposed framework represents a significant advancement in brain tumor segme
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2017brain,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2017brain,
   title={Brain tumor segmentation using an adversarial network},
   author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
   booktitle={International MICCAI Brainlesion Workshop (MICCAI-Brainlesion 2017)},
   year={2017},
   doi={10.1007/978-3-319-75238-9_11}
-}
+}"><code>@inproceedings{li2017brain,
+  title={Brain tumor segmentation using an adversarial network},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
+  booktitle={International MICCAI Brainlesion Workshop (MICCAI-Brainlesion 2017)},
+  year={2017},
+  doi={10.1007/978-3-319-75238-9_11}
+}</code></pre>
 ``` 
