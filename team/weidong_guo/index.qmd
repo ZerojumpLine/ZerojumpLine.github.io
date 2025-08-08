@@ -21,7 +21,7 @@ format:
 ::: {#hero-heading}
 
 &nbsp;
-<div class="h1">范中睿</div>
+<div class="h1">郭炜栋</div>
 
 **博士生研究员**  
 
