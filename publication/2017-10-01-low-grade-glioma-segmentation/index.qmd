@@ -32,4 +32,17 @@ Our framework consists of two main components: (1) a deep CNN that learns discri
 
 We evaluate our method on a comprehensive dataset of low-grade glioma patients with expert annotations. Experimental results demonstrate that our approach significantly outperforms traditional segmentation methods and CNN-only approaches. The method shows excellent performance in handling the challenging aspects of glioma segmentation, including boundary ambiguity and tissue heterogeneity.
 
-The proposed framework represents a significant advancement in glioma segmentation, providing more accurate and clinically relevant results that could improve treatment planning and patient outcomes. 
+The proposed framework represents a significant advancement in brain tumor segmentation, providing more accurate results that could improve treatment planning and patient outcomes. 
+
+## BibTeX
+
+```bibtex
+@article{li2017low,
+  title={Low-grade glioma segmentation based on CNN with fully connected CRF},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Shi, Zhifeng and Guo, Yi and Chen, Liang and Mao, Ying},
+  journal={Journal of Healthcare Engineering},
+  year={2017},
+  publisher={Hindawi},
+  doi={10.1155/2017/9283480}
+}
+``` 

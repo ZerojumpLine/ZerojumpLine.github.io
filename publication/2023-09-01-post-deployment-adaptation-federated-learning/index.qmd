@@ -29,4 +29,16 @@ Our method introduces a source-target remote gradient alignment framework that e
 
 We evaluate our approach on multiple medical imaging datasets with domain shifts, including cross-scanner and cross-institution scenarios. Experimental results demonstrate that our federated adaptation approach significantly improves model performance in new environments compared to traditional methods. The method shows robust performance while maintaining strict privacy standards.
 
-The proposed framework represents a significant advancement in privacy-preserving model adaptation, providing effective post-deployment adaptation that could improve model performance in clinical settings. 
+The proposed framework represents a significant advancement in privacy-preserving model adaptation, providing effective post-deployment adaptation that could improve model performance in clinical settings.
+
+## BibTeX
+
+```bibtex
+@inproceedings{wagner2023post,
+  title={Post-Deployment Adaptation with Access to Source Data via Federated Learning and Source-Target Remote Gradient Alignment},
+  author={Wagner, Felix and Li, Zeju and Saha, Pramit and Kamnitsas, Konstantinos},
+  booktitle={International Workshop on Machine Learning in Medical Imaging (MICCAI-MLMI 2023)},
+  year={2023},
+  doi={10.1007/978-3-031-45676-3_26}
+}
+``` 

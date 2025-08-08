@@ -32,4 +32,16 @@ Our method introduces a calibration framework that accounts for the presence of 
 
 We evaluate our approach on MRI datasets with various types of artifacts, including motion artifacts and noise. Experimental results demonstrate that our artifact-aware calibration approach significantly improves probability calibration compared to traditional methods. The method shows excellent performance in providing reliable confidence estimates even in the presence of artifacts.
 
-The proposed framework represents a significant advancement in probability calibration for medical imaging, providing more reliable uncertainty estimates that could improve clinical decision-making and model interpretability. 
+The proposed framework represents a significant advancement in probability calibration for medical imaging, providing more reliable uncertainty estimates that could improve clinical decision-making and model interpretability.
+
+## BibTeX
+
+```bibtex
+@inproceedings{cheng2022cal,
+  title={Improved post-hoc probability calibration for artifact-corrupted MRI segmentation},
+  author={Ouyang, Cheng and Wang, Shuo and Chen, Chen and Li, Zeju and Bai, Wenjia and Kainz, Bernhard and Rueckert, Daniel},
+  year={2022},
+  booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2022)},
+  doi={10.1007/978-3-031-16749-2_6}
+}
+``` 

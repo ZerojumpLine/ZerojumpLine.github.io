@@ -12,13 +12,7 @@ slug: overfitting-class-imbalance
 image: featured.png
 description: 'IEEE Transactions on Medical Imaging'
 subtitle: A comprehensive analysis of overfitting behavior in neural networks under class imbalance conditions for medical image segmentation.
-links:
-- icon: file-richtext-fill
-  name: Publication
-  url: https://doi.org/10.1109/TMI.2020.3046692
-- icon: calendar-check
-  name: IEEE TMI
-  url: https://ieeexplore.ieee.org/document/9283480
+bibliography: ../publications.bib
 ---
 
 ## Abstract
@@ -29,4 +23,17 @@ Our study investigates the relationship between class imbalance ratios and overf
 
 We propose several strategies to mitigate overfitting under class imbalance, including adaptive learning rates, class-specific regularization, and curriculum learning approaches. Our analysis provides insights into the fundamental mechanisms driving overfitting in imbalanced medical image segmentation tasks and offers practical guidelines for model development.
 
-The findings from this work contribute to a better understanding of neural network behavior under class imbalance conditions and provide a foundation for developing more robust segmentation models in medical imaging applications. 
+The findings from this work contribute to a better understanding of neural network behavior under class imbalance conditions and provide a foundation for developing more robust segmentation models in medical imaging applications.
+
+## BibTeX
+
+```bibtex
+@article{lianalyzing,
+  title={Analyzing Overfitting under Class Imbalance in Neural Networks for Image Segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE},
+  doi={10.1109/TMI.2020.3046692}
+}
+``` 

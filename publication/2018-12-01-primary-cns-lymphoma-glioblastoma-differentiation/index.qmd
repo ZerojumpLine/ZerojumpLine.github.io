@@ -33,4 +33,16 @@ Our method leverages Scale-Invariant Feature Transform (SIFT) features to captur
 
 We evaluate our approach on a comprehensive dataset of PCNSL and glioblastoma cases with confirmed diagnoses. Experimental results demonstrate that our SIFT-based method significantly improves differentiation accuracy compared to traditional approaches. The method shows robust performance across different imaging protocols and patient populations.
 
-The proposed framework represents a significant advancement in brain tumor differentiation, providing more accurate classification that could improve treatment planning and patient outcomes. 
+The proposed framework represents a significant advancement in brain tumor classification, providing more accurate and reliable differentiation that could improve clinical decision-making and patient outcomes. 
+
+## BibTeX
+
+```bibtex
+@article{Wu2018PrimaryCN,
+  title={Primary central nervous system lymphoma and glioblastoma image differentiation based on sparse representation system},
+  author={Guoqing Wu and Zeju Li and Yuanyuan Wang and Jinhua Yu and Yinsheng Chen and Zhongping Chen},
+  journal={Journal of Biomedical Engineering},
+  year={2018},
+  doi={10.7507/1001-5515.201705061}
+}
+``` 

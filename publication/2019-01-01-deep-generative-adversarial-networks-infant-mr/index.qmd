@@ -31,4 +31,17 @@ Our method leverages the power of generative adversarial networks to produce hig
 
 We evaluate our approach on a comprehensive dataset of infant brain MRI scans with various imaging protocols. Experimental results demonstrate that our GAN-based method significantly improves image quality compared to traditional reconstruction approaches. The method shows particular effectiveness in handling the unique challenges of infant brain imaging, including rapid developmental changes and small anatomical structures.
 
-The proposed framework represents a significant advancement in infant brain MRI processing, providing higher quality images that could improve diagnostic accuracy and research applications in pediatric neuroimaging. 
+The proposed framework represents a significant advancement in infant MRI reconstruction, providing higher quality images that could improve diagnostic accuracy and reduce the need for additional imaging procedures.
+
+## BibTeX
+
+```bibtex
+@article{gu2019deep,
+  title={Deep Generative Adversarial Networks for Thinsection Infant MR Image Reconstruction},
+  author={Gu, Jiaqi and Li, Zeju and Wang, Yuanyuan and Yang, Haowei and Qiao, Zhongwei and Yu, Jinhua},
+  journal={IEEE Access},
+  year={2019},
+  publisher={IEEE},
+  doi={10.1109/ACCESS.2019.2918926}
+}
+``` 

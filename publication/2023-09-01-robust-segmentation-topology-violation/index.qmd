@@ -36,4 +36,16 @@ Our method introduces a topology-aware framework that detects and corrects topol
 
 We evaluate our approach on multiple medical imaging datasets, including brain MRI and fetal ultrasound. Experimental results demonstrate that our topology-aware approach significantly improves segmentation robustness compared to traditional methods. The method shows excellent performance in maintaining anatomical consistency and reducing topological errors.
 
-The proposed framework represents a significant advancement in medical image segmentation, providing more anatomically accurate results that could improve clinical applications and research studies. 
+The proposed framework represents a significant advancement in medical image segmentation, providing more anatomically accurate results that could improve clinical applications and research studies.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2023ro,
+  title={Robust Segmentation via Topology Violation Detection and Feature Synthesis},
+  author={Li, Liu and Ma, Qiang and Ouyang, Cheng and Li, Zeju and Meng, Qingjie and Zhang, Weitong and Qiao, Mengyun and Kyriakopoulou, Vanessa and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2023)},
+  year={2023},
+  doi={10.1007/978-3-031-43901-8_7}
+}
+``` 

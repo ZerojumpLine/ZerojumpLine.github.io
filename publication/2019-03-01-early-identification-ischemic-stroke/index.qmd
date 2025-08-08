@@ -32,4 +32,17 @@ Our method leverages advanced image processing and machine learning techniques t
 
 We evaluate our approach on a comprehensive dataset of stroke patients with confirmed diagnoses and follow-up imaging. Experimental results demonstrate that our method significantly improves early stroke detection compared to traditional approaches. The method shows particular effectiveness in detecting subtle signs of ischemia that may precede obvious clinical manifestations.
 
-The proposed framework represents a significant advancement in stroke detection, providing earlier identification that could improve treatment timing and patient outcomes. 
+The proposed framework represents a significant advancement in stroke diagnosis, providing earlier detection that could improve treatment outcomes and patient survival rates.
+
+## BibTeX
+
+```bibtex
+@article{wu2019early,
+  title={Early identification of ischemic stroke in noncontrast computed tomography},
+  author={Wu, Guoqing and Lin, Jixian and Chen, Xi and Li, Zeju and Wang, Yuanyuan and Zhao, Jing and Yu, Jinhua},
+  journal={Biomedical Signal Processing and Control},
+  year={2019},
+  publisher={Elsevier},
+  doi={10.1016/j.bspc.2019.03.008}
+}
+``` 

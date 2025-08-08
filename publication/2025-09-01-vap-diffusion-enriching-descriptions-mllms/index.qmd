@@ -31,4 +31,15 @@ Our method introduces a description enrichment framework that uses MLLMs to enha
 
 We evaluate our approach on multiple medical imaging datasets, including brain MRI and chest X-ray images. Experimental results demonstrate that our MLLM-enriched approach significantly improves image quality and anatomical accuracy compared to traditional text-to-image generation methods. The method shows excellent performance in generating diverse and clinically relevant medical images.
 
-The proposed framework represents a significant advancement in medical image generation, providing more accurate and useful synthetic data that could improve AI model training and clinical education. 
+The proposed framework represents a significant advancement in medical image generation, providing more accurate and useful synthetic data that could improve AI model training and clinical education.
+
+## BibTeX
+
+```bibtex
+@inproceedings{huang2025vap,
+  title={VAP-Diffusion: Enriching Descriptions with MLLMs for Enhanced Medical Image Generation},
+  author={Huang, Peng and Fu, Junhu and Guo, Bowen and Li, Zeju and Wang, Yuanyuan and Guo, Yi},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2025)},
+  year={2025}
+}
+``` 

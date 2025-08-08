@@ -28,4 +28,16 @@ Our method introduces systematic stress testing procedures that evaluate model p
 
 We evaluate our approach on multiple medical image classification datasets with various stress conditions, including noise, artifacts, and domain shifts. Experimental results demonstrate that our stress testing framework effectively identifies model vulnerabilities and provides insights into failure modes. The method shows particular effectiveness in detecting robustness issues that may not be apparent through standard evaluation procedures.
 
-The proposed framework represents a significant advancement in medical AI evaluation, providing more comprehensive assessment that could improve the safe deployment of medical image classification systems. 
+The proposed framework represents a significant advancement in medical AI evaluation, providing more comprehensive assessment that could improve the safe deployment of medical image classification systems.
+
+## BibTeX
+
+```bibtex
+@inproceedings{islam2023robustness,
+  title={Robustness Stress Testing in Medical Image Classification},
+  author={Islam, Mobarakol and Li, Zeju and Glocker, Ben},
+  year={2023},
+  booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2023)},
+  doi={10.1007/978-3-031-44336-7_17}
+}
+``` 

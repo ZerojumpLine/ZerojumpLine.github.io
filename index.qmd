@@ -139,7 +139,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 ::: {.featured-items}
 
 ::: {.featured-item}
-[**Introducing MOVAL**](/moval.html){.featured-link}
+[**Introducing MOVAL**](/blog/2025-01-15-moval-estimating-performance/){.featured-link}
 
 ::: {.featured-meta}
 [Research]{.featured-type} • Auguest 8, 2025
@@ -150,7 +150,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 [**Context Label Learning**](/publication/2023-06-27-context-label-learning/){.featured-link}
 
 ::: {.featured-meta}
-[Research]{.featured-type} • Auguest 6, 2025
+[Publication]{.featured-type} • Auguest 6, 2025
 :::
 :::
 
@@ -172,7 +172,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 
 
 ::: {.featured-item}
-[**MICS 2025**](/news//news/2025-08-08-MICS/){.featured-link}
+[**MICS 2025**](/news/2025-08-08-MICS/){.featured-link}
 
 ::: {.featured-meta}
 [Seminar]{.featured-type} • Auguest 3, 2025

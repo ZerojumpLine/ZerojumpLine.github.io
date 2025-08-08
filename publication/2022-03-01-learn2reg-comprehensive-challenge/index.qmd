@@ -36,4 +36,20 @@ Our challenge encompasses multiple registration tasks including inter-patient, i
 
 We evaluate the challenge on a large-scale dataset involving multiple institutions and imaging protocols. Results demonstrate the effectiveness of deep learning approaches in medical image registration while highlighting the importance of standardized evaluation frameworks. The challenge provides valuable insights into the current state of the field and identifies areas for future improvement.
 
-Learn2Reg represents a significant contribution to the medical image registration community, providing a standardized platform for method comparison and advancement of the field. 
+Learn2Reg represents a significant contribution to the medical image registration community, providing a standardized platform for method comparison and advancement of the field.
+
+## BibTeX
+
+```bibtex
+@article{hering2022learn2reg,
+  title={Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
+  author={Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert CS and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
+  journal={IEEE Transactions on Medical Imaging},
+  volume={42},
+  number={3},
+  pages={697--712},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/TMI.2022.3213983}
+}
+``` 

@@ -31,4 +31,16 @@ Our method introduces a class-specific confidence estimation framework that prov
 
 We evaluate our approach on multiple medical image segmentation datasets with known domain shifts, including cross-scanner and cross-institution scenarios. Experimental results demonstrate that our class-specific confidence scores provide more accurate performance estimates compared to global confidence measures. The method shows particular effectiveness for minority classes, which are often most affected by domain shifts.
 
-The proposed framework represents a significant advancement in domain shift detection and performance estimation, providing more reliable confidence measures that could improve the safe deployment of medical AI systems. 
+The proposed framework represents a significant advancement in domain shift detection and performance estimation, providing more reliable confidence measures that could improve the safe deployment of medical AI systems.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2022ds,
+  title={Estimating Model Performance under Domain Shifts with Class-Specific Confidence Scores},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
+  year={2022},
+  doi={10.1007/978-3-031-16449-1_66}
+}
+``` 

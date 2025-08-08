@@ -32,4 +32,16 @@ Our method leverages causal inference principles to identify and preserve domain
 
 We evaluate our approach on multiple medical image segmentation datasets with domain shifts, including cross-scanner and cross-institution scenarios. Experimental results demonstrate that our causality-inspired approach significantly outperforms existing domain generalization methods, particularly in single-source scenarios. The method shows robust performance across different types of domain shifts and maintains segmentation accuracy in unseen domains.
 
-The proposed framework represents a significant advancement in domain generalization for medical imaging, providing a more principled approach that could improve the deployment of segmentation models across different clinical settings. 
+The proposed framework represents a significant advancement in domain generalization for medical imaging, providing a more principled approach that could improve the deployment of segmentation models across different clinical settings.
+
+## BibTeX
+
+```bibtex
+@article{ouyang2021causality,
+  title={Causality-inspired Single-source Domain Generalization for Medical Image Segmentation},
+  author={Ouyang, Cheng and Chen, Chen and Li, Surui and Li, Zeju and Qin, Chen and Bai, Wenjia and Rueckert, Daniel},
+  year={2022},
+  journal={IEEE Transactions on Medical Imaging},
+  doi={10.1109/TMI.2022.3224067}
+}
+``` 

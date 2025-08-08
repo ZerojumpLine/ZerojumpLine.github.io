@@ -15,13 +15,7 @@ slug: deepvolume-brain-mri
 image: featured.png
 description: 'IEEE Transactions on Cybernetics'
 subtitle: A novel deep learning approach for brain MRI super-resolution that incorporates brain structure and spatial connection awareness.
-links:
-- icon: file-richtext-fill
-  name: Publication
-  url: https://doi.org/10.1109/TCYB.2019.2933633
-- icon: calendar-check
-  name: IEEE TCYB
-  url: https://ieeexplore.ieee.org/document/8756789
+bibliography: ../publications.bib
 ---
 
 ## Abstract
@@ -32,4 +26,16 @@ Our approach leverages anatomical knowledge by integrating brain structure prior
 
 We evaluate DeepVolume on multiple brain MRI datasets, including T1-weighted, T2-weighted, and FLAIR sequences. Experimental results demonstrate that our method significantly outperforms existing super-resolution approaches in terms of both quantitative metrics and visual quality. The generated high-resolution images preserve fine anatomical details and maintain the spatial relationships between brain structures.
 
-DeepVolume represents a significant advancement in brain MRI super-resolution, providing a more anatomically accurate and clinically relevant approach to improving image resolution while preserving the complex structural characteristics of brain tissue. 
+DeepVolume represents a significant advancement in brain MRI super-resolution, providing a more anatomically accurate and clinically relevant approach to improving image resolution while preserving the complex structural characteristics of brain tissue.
+
+## BibTeX
+
+```bibtex
+@article{li2019deep,
+  title={DeepVolume: brain structure and spatial connection-aware network for brain MRI super-resolution},
+  author={Li, Zeju and Yu, Jinhua and Wang, Yuanyuan and Zhou, Hanzhang and Yang, Haowei and Qiao, Zhuowei},
+  year={2019},
+  journal={IEEE Transactions on Cybernetics},
+  doi={10.1109/TCYB.2019.2933633}
+}
+``` 

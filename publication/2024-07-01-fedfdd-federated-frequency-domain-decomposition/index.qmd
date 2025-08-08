@@ -31,4 +31,17 @@ Our method introduces a frequency domain decomposition framework that enables ef
 
 We evaluate our approach on multiple low-dose CT datasets from different institutions. Experimental results demonstrate that our frequency domain approach significantly improves denoising performance in federated settings compared to traditional methods. The method shows robust performance across different noise levels and imaging protocols while maintaining strict privacy standards.
 
-The proposed framework represents a significant advancement in privacy-preserving medical image processing, providing effective denoising that could improve diagnostic quality while reducing radiation exposure. 
+The proposed framework represents a significant advancement in privacy-preserving medical image processing, providing effective denoising that could improve diagnostic quality while reducing radiation exposure.
+
+## BibTeX
+
+```bibtex
+@inproceedings{
+chen2024fedfdd,
+title={Fed{FDD}: Federated Learning with Frequency Domain Decomposition for Low-Dose {CT} Denoising},
+author={Xuhang Chen and Zeju Li and Zikun Xu and Kaijie Xu and Cheng Ouyang and Chen Qin},
+booktitle={Medical Imaging with Deep Learning (MIDL 2024)},
+year={2024},
+url={https://openreview.net/forum?id=Zg0mfl10o2},
+}
+``` 

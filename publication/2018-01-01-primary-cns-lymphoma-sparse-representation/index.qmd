@@ -31,4 +31,17 @@ Our approach leverages sparse representation theory to capture the underlying st
 
 We evaluate our method on a comprehensive dataset of PCNSL and glioblastoma cases with confirmed diagnoses. Experimental results demonstrate that our sparse representation approach significantly improves differentiation accuracy compared to traditional methods. The system shows robust performance across different imaging protocols and provides interpretable results.
 
-The proposed framework represents a significant advancement in brain tumor classification, providing more accurate and reliable differentiation that could improve clinical decision-making and patient outcomes. 
+The proposed framework represents a significant advancement in CNS lymphoma diagnosis, providing more accurate differentiation that could improve treatment planning and patient outcomes.
+
+## BibTeX
+
+```bibtex
+@article{chen2018primary,
+  title={Primary central nervous system lymphoma and glioblastoma differentiation based on conventional magnetic resonance imaging by high-throughput SIFT features},
+  author={Chen, Yinsheng and Li, Zeju and Wu, Guoqing and Yu, Jinhua and Wang, Yuanyuan and Lv, Xiaofei and Ju, Xue and Chen, Zhongping},
+  journal={International Journal of Neuroscience},
+  year={2018},
+  publisher={Taylor \& Francis},
+  doi={10.1080/00207454.2017.1408613}
+}
+``` 

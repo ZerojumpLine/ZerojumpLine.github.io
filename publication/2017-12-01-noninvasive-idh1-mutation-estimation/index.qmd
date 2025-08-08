@@ -35,3 +35,18 @@ Our method leverages quantitative imaging features extracted from conventional M
 We evaluate our approach on a large cohort of grade II glioma patients with confirmed IDH1 mutation status. Experimental results demonstrate that our quantitative radiomics approach significantly improves prediction accuracy compared to traditional methods. The method shows robust performance across different MRI protocols and provides valuable insights into the relationship between imaging features and molecular characteristics.
 
 The proposed framework represents a significant advancement in noninvasive glioma characterization, providing more accurate IDH1 prediction that could reduce the need for invasive procedures and improve patient outcomes. 
+
+The findings from this study provide valuable insights into noninvasive glioma characterization and could inform the development of more accurate diagnostic tools for IDH1 mutation prediction.
+
+## BibTeX
+
+```bibtex
+@article{yu2017noninvasive,
+  title={Noninvasive IDH1 mutation estimation based on a quantitative radiomics approach for grade II glioma},
+  author={Yu, Jinhua and Shi, Zhifeng and Lian, Yuxi and Li, Zeju and Liu, Tongtong and Gao, Yuan and Wang, Yuanyuan and Chen, Liang and Mao, Ying},
+  journal={European Radiology},
+  year={2017},
+  publisher={Springer},
+  doi={10.1007/s00330-016-4653-3}
+}
+``` 

@@ -32,4 +32,16 @@ Our method leverages the rich anatomical information available in CT scans to gu
 
 We evaluate our approach on a large dataset of chest X-ray images with expert annotations. Experimental results demonstrate that our anatomy-guided approach significantly improves decomposition quality compared to existing methods. The method shows excellent performance in maintaining anatomical accuracy while providing clear separation of different tissue types.
 
-The proposed framework represents a significant advancement in chest X-ray processing, providing more accurate decomposition that could improve diagnostic interpretation and clinical decision-making. 
+The proposed framework represents a significant advancement in chest X-ray analysis, providing more accurate decomposition that could improve diagnostic accuracy and clinical interpretation.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2018ct,
+  title={Encoding CT Anatomy Knowledge for Unpaired Chest X-ray Image Decomposition},
+  author={Li, Zeju and Li, Han and Han, Hu and Shi, Gonglei and Wang, Jiannan and Zhou, Shaohua Kervin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
+  year={2019},
+  doi={10.1007/978-3-030-32226-7_31}
+}
+``` 

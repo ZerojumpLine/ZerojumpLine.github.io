@@ -33,4 +33,16 @@ Our method introduces a comprehensive framework that addresses both long-tailed 
 
 We evaluate our approach on multiple medical imaging datasets with long-tailed distributions and domain shifts. Experimental results demonstrate that our method significantly improves performance on rare categories while maintaining robustness across domains. The approach shows particular effectiveness in handling the challenging combination of long-tailed distribution and domain shifts.
 
-The proposed framework represents a significant advancement in handling complex real-world scenarios in medical imaging, providing more robust and balanced performance across different categories and domains. 
+The proposed framework represents a significant advancement in handling complex real-world scenarios in medical imaging, providing more robust and balanced performance across different categories and domains.
+
+## BibTeX
+
+```bibtex
+@inproceedings{gu2022ci,
+  title={Tackling Long-Tailed Category Distribution Under Domain Shifts},
+  author={Gu, Xiao and Guo, Yao and Li, Zeju and Qiu Jianning and Dou, Qi and Liu, Yuxuan and Lo, Benny and Yang, Guang-Zhong},
+  year={2022},
+  booktitle={European Conference on Computer Vision (ECCV 2022)},
+  doi={10.1007/978-3-031-20050-2_42}
+}
+``` 

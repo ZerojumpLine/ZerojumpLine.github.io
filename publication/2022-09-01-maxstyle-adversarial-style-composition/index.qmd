@@ -31,4 +31,16 @@ Our method introduces an adversarial training framework that generates diverse s
 
 We evaluate our approach on multiple medical imaging datasets with style variations, including cross-scanner and cross-institution scenarios. Experimental results demonstrate that our MaxStyle approach significantly improves segmentation robustness compared to traditional methods. The method shows excellent performance in handling style variations while maintaining segmentation accuracy.
 
-The proposed framework represents a significant advancement in robust medical image segmentation, providing more reliable results that could improve clinical applications across different imaging protocols. 
+The proposed framework represents a significant advancement in robust medical image segmentation, providing more reliable results that could improve clinical applications across different imaging protocols.
+
+## BibTeX
+
+```bibtex
+@inproceedings{chen2022ro,
+  title={MaxStyle: Adversarial Style Composition for Robust Medical Image Segmentation},
+  author={Chen, Chen and Li, Zeju and Ouyang, Cheng and Sinclair, Matt and Bai, Wenjia and Rueckert, Daniel},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2022)},
+  year={2022},
+  doi={10.1007/978-3-031-16443-9_15}
+}
+``` 
