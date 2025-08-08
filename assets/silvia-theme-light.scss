@@ -244,6 +244,16 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   background-color: $spc-bg-0 ;
 }
 
+// Navbar tools (GitHub icon, theme toggle, etc.)
+.navbar .quarto-navbar-tools .navbar-nav .nav-link {
+  font-size: 1.1rem !important;
+  color: $secondary !important;
+  
+  &:hover {
+    color: $secondary-light !important;
+  }
+}
+
 // Listing cards
 .card {
   background: transparent;
@@ -348,6 +358,11 @@ $font-size-3xl:              2.7rem !default;
 
   .navbar .quarto-navbar-tools {
     text-align: left;
+  }
+
+  // Ensure navbar icons have consistent size
+  .navbar .quarto-navbar-tools .navbar-nav .nav-link {
+    font-size: 1.1rem !important;
   }
 
   // Mobile navbar adjustments
