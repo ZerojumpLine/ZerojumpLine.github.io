@@ -632,6 +632,7 @@ body.quarto-light {
     padding: 0.25rem 0.5rem !important;
     border-radius: 0.25rem !important;
     display: inline-block !important;
+    font-size: 12px !important; /* Force consistent font size */
     
     &:hover {
       background-color: $secondary !important;
@@ -644,5 +645,19 @@ body.quarto-light {
       color: white !important;
       border-color: $secondary !important;
     }
+  }
+
+  // Force consistent font size for all category elements
+  .quarto-listing-category .category,
+  .quarto-category {
+    font-size: 12px !important;
+  }
+
+  // Comprehensive font-size fix for all category elements across the entire site
+  .quarto-category,
+  .quarto-listing-category .category,
+  .listing-category,
+  .quarto-listing .listing-categories .listing-category {
+    font-size: 12px !important;
   }
 }

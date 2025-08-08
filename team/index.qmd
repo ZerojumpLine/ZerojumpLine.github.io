@@ -35,6 +35,7 @@ format:
 title-block-banner: false
 
 header-includes: >
+  <link rel="stylesheet" href="../assets/category-font-fix.css">
   <link rel="stylesheet" href="../assets/listing-default.css">
   <link rel="stylesheet" href="../assets/team-listing.css">
   <link rel="stylesheet" href="../assets/alumni-simple.css?v=1.1">
@@ -48,6 +49,7 @@ header-includes: >
     });
   </script>
 resources:
+  - ../assets/category-font-fix.css
   - ../assets/listing-default.css
   - ../assets/team-listing.css
   - ../assets/alumni-simple.css?v=1.1

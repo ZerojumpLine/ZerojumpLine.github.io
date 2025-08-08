@@ -65,14 +65,14 @@ website:
   
   page-footer:  
     left: >-
-     <span style="font-size: 1.2em;">&#169; 2025 Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
+     <span style="font-size: 1em;">&#169; 2025 Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
 
     center: >-
-      <span style="font-size: 1.2em;"> Fudan University, Shanghai, China.
+      <span style="font-size: 1em;"> Fudan University, Shanghai, China.
 
     right: >-
-      <a class="link-dark me-1" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener" style="font-size: 2em;">{{< fa brands linkedin >}}</a>
-      <a class="link-dark me-1" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener" style="font-size: 2em;">{{< fa brands x-twitter >}}</a>
+      <a class="link-dark me-1" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener" style="font-size: 1.5em;">{{< fa brands linkedin >}}</a>
+      <a class="link-dark me-1" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener" style="font-size: 1.5em;">{{< fa brands x-twitter >}}</a>
 
 format: 
   html:
@@ -88,6 +88,7 @@ format:
         - assets/zerojump/colors-dark.scss
         - assets/zerojump/fonts.scss
     css: 
+      - assets/category-font-fix.css
       - assets/citation-custom.css
       - assets/toc-fixes.css
       - assets/navbar-icons.css

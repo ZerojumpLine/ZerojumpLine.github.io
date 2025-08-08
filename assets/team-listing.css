@@ -67,7 +67,7 @@
 .quarto-listing .listing-categories .listing-category {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-  font-size: 0.65rem;
+  font-size: 12px !important; /* Force consistent font size */
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   display: inline-block;
@@ -96,6 +96,7 @@ body.quarto-dark .quarto-listing .listing-categories .listing-category {
   border-color: #495057 !important;
   color: #adb5bd !important;
   background-color: transparent !important;
+  font-size: 12px !important; /* Force consistent font size in dark mode */
 }
 
 body.quarto-dark .quarto-listing .listing-categories .listing-category:hover {
@@ -108,6 +109,81 @@ body.quarto-dark .quarto-listing .listing-categories .listing-category.active {
   background-color: #343a40 !important;
   border-color: #6c757d !important;
   color: #e9ecef !important;
+}
+
+/* Force consistent font size for all category elements regardless of theme inheritance */
+.quarto-listing .listing-categories .listing-category,
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Additional high-specificity rules to override any conflicting styles */
+body .quarto-listing .listing-categories .listing-category,
+html body .quarto-listing .listing-categories .listing-category,
+.quarto-listing-container .quarto-listing .listing-categories .listing-category,
+.quarto-listing-container-default .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Force font size for all possible category variations in team listings */
+.quarto-listing [class*="category"],
+.quarto-listing [class*="Category"] {
+  font-size: 12px !important;
+}
+
+/* Category Spacing Consistency Fix for Team Listings */
+/* Ensure consistent spacing and layout for categories across themes */
+
+/* Consistent padding and margins for team category elements */
+.quarto-listing .listing-categories .listing-category {
+  padding: 0.25rem 0.5rem !important;
+  margin: 0.25rem !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Ensure consistent spacing in both light and dark themes for team listings */
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  padding: 0.25rem 0.5rem !important;
+  margin: 0.25rem !important;
+  line-height: 1.2 !important;
+}
+
+/* Force consistent spacing for team category containers */
+.quarto-listing .listing-categories .listing-category {
+  margin-right: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Vertical Alignment and Positioning Fix for Team Listings */
+/* Ensure categories are positioned consistently across themes */
+
+/* Consistent vertical alignment for team category elements */
+.quarto-listing .listing-categories .listing-category {
+  vertical-align: baseline !important;
+  line-height: 1.2 !important;
+  position: relative !important;
+  top: 0 !important;
+}
+
+/* Force consistent vertical positioning in both themes for team listings */
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  vertical-align: baseline !important;
+  line-height: 1.2 !important;
+  position: relative !important;
+  top: 0 !important;
+}
+
+/* Fix for any floating or positioning issues in team listings */
+.quarto-listing .listing-categories .listing-category {
+  float: none !important;
+  position: relative !important;
+  top: 0 !important;
+  transform: none !important;
 }
 
 body.quarto-dark .quarto-listing-grid .card-subtitle {

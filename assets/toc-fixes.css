@@ -43,6 +43,7 @@
 #quarto-margin-sidebar .quarto-listing-category .category {
   border: none !important;
   background: transparent !important;
+  font-size: 0.8rem !important; /* Force consistent font size */
 }
 
 /* Fix for any remaining border issues in TOC area */
@@ -68,6 +69,13 @@ body.quarto-dark .quarto-toc {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
+}
+
+/* Force consistent font size for all category elements in sidebar regardless of theme */
+#quarto-margin-sidebar .quarto-listing-category .category,
+body.quarto-light #quarto-margin-sidebar .quarto-listing-category .category,
+body.quarto-dark #quarto-margin-sidebar .quarto-listing-category .category {
+  font-size: 0.8rem !important;
 }
 
 /* Additional fixes for Bootstrap grid system that might add borders */

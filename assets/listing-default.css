@@ -132,28 +132,28 @@ body.quarto-dark .card-footer {
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-  font-size: 0.8rem;
+  font-size: 12px !important; /* Force consistent font size */
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   display: inline-block;
   border: 1px solid #dee2e6;
-  color: #6c757d;
+  color: #000;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 
 .quarto-listing-category .category:hover {
-  background-color: #7f8c8d;
-  color: #000 !important;
-  border-color: #7f8c8d;
+  background-color: #495057;
+  color: #fff !important;
+  border-color: #495057;
   text-decoration: none;
 }
 
 .quarto-listing-category .category.active {
-  background-color: #7f8c8d !important;
-  color: #000 !important;
-  border-color: #7f8c8d !important;
+  background-color: #495057 !important;
+  color: #fff !important;
+  border-color: #495057 !important;
   text-decoration: none;
 }
 
@@ -163,6 +163,7 @@ body.quarto-dark .quarto-listing-category .category {
   color: #adb5bd !important;
   background-color: transparent !important;
   border: 1px solid #495057 !important;
+  font-size: 12px !important; /* Force consistent font size in dark mode */
 }
 
 body.quarto-dark .quarto-listing-category .category:hover {
@@ -214,21 +215,283 @@ body.quarto-dark .quarto-listing-category-title {
   background: var(--bs-body-bg) !important;
 }
 
+/* Ensure category text is black in light theme */
+body.quarto-light .quarto-listing-category .category,
+body:not(.quarto-dark) .quarto-listing-category .category {
+  color: #000 !important;
+}
+
+/* Light theme hover and active states with black text */
+body.quarto-light .quarto-listing-category .category:hover,
+body:not(.quarto-dark) .quarto-listing-category .category:hover {
+  background-color: #e9ecef !important;
+  color: #000 !important;
+  border-color: #6c757d !important;
+}
+
+body.quarto-light .quarto-listing-category .category.active,
+body:not(.quarto-dark) .quarto-listing-category .category.active {
+  background-color: #e9ecef !important;
+  color: #000 !important;
+  border-color: #6c757d !important;
+}
+
+/* Force consistent font size for all category elements regardless of theme inheritance */
+.quarto-listing-category .category,
+body.quarto-light .quarto-listing-category .category,
+body.quarto-dark .quarto-listing-category .category {
+  font-size: 12px !important;
+}
+
+/* Additional high-specificity rules to override any conflicting styles */
+body .quarto-category,
+body .quarto-listing-category .category,
+body .listing-category,
+body .quarto-listing .listing-categories .listing-category,
+html body .quarto-category,
+html body .quarto-listing-category .category,
+html body .listing-category,
+html body .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Force font size for all possible category variations */
+[class*="category"],
+[class*="Category"] {
+  font-size: 12px !important;
+}
+
+/* Specific override for any Bootstrap or Quarto default category styles */
+.btn.quarto-category,
+.btn.listing-category,
+.btn.quarto-listing-category .category {
+  font-size: 12px !important;
+}
+
+/* Comprehensive font-size fix for all category elements across the entire site */
+/* This ensures consistent 12px font size for all category elements regardless of page type or theme */
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category,
+.quarto-listing .listing-categories .listing-category,
+body.quarto-light .quarto-category,
+body.quarto-light .quarto-listing-category .category,
+body.quarto-light .listing-category,
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-category,
+body.quarto-dark .quarto-listing-category .category,
+body.quarto-dark .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Category Spacing Consistency Fix */
+/* Ensure consistent spacing and layout for categories across themes */
+
+/* Consistent padding and margins for all category elements */
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category,
+.quarto-listing .listing-categories .listing-category {
+  padding: 0.25rem 0.5rem !important;
+  margin: 0.25rem !important;
+  line-height: 1.2 !important;
+  display: inline-block !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Consistent container spacing for category sections */
+.quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure consistent spacing in both light and dark themes */
+body.quarto-light .quarto-listing-category,
+body.quarto-dark .quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Force consistent spacing for category containers */
+.quarto-listing-category .category,
+.quarto-listing .listing-categories .listing-category {
+  margin-right: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Ensure consistent spacing in sidebar categories */
+#quarto-margin-sidebar .quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+  vertical-align: top !important;
+  line-height: 1.6 !important;
+}
+
+#quarto-margin-sidebar .quarto-listing-category .category {
+  margin: 2px !important;
+  padding: 4px 8px !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  min-height: 24px !important;
+  display: inline-block !important;
+  box-sizing: border-box !important;
+}
+
+/* Additional sidebar category alignment fixes */
+#quarto-margin-sidebar .quarto-listing-category .category span {
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  display: inline !important;
+}
+
+/* Vertical Alignment and Positioning Fix */
+/* Ensure categories are positioned consistently across themes */
+
+/* Consistent vertical alignment for all category elements */
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category,
+.quarto-listing .listing-categories .listing-category {
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  position: relative !important;
+  top: 0 !important;
+  display: inline-block !important;
+  box-sizing: border-box !important;
+}
+
+/* Force consistent vertical positioning in both themes */
+body.quarto-light .quarto-category,
+body.quarto-light .quarto-listing-category .category,
+body.quarto-light .listing-category,
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-category,
+body.quarto-dark .quarto-listing-category .category,
+body.quarto-dark .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  position: relative !important;
+  top: 0 !important;
+  display: inline-block !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure category containers have consistent vertical alignment */
+.quarto-listing-category,
+body.quarto-light .quarto-listing-category,
+body.quarto-dark .quarto-listing-category {
+  vertical-align: top !important;
+  line-height: 1.6 !important;
+  display: block !important;
+}
+
+/* Fix for any floating or positioning issues */
+.quarto-listing-category .category,
+.quarto-listing .listing-categories .listing-category {
+  float: none !important;
+  position: relative !important;
+  top: 0 !important;
+  transform: none !important;
+  margin: 2px !important;
+}
+
+/* Additional fix for category text alignment */
+.quarto-listing-category .category span,
+.quarto-listing .listing-categories .listing-category span {
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+  display: inline !important;
+}
+
+/* Ensure consistent height for all category elements */
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category,
+.quarto-listing .listing-categories .listing-category {
+  min-height: 24px !important;
+  height: auto !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Comprehensive category text alignment fix */
+.quarto-listing-category .category,
+.quarto-listing .listing-categories .listing-category {
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* Fix for category text and numbers alignment */
+.quarto-listing-category .category *,
+.quarto-listing .listing-categories .listing-category * {
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+}
+
+/* Ensure consistent alignment for both light and dark themes */
+body.quarto-light .quarto-listing-category .category,
+body.quarto-dark .quarto-listing-category .category {
+  text-align: center !important;
+  white-space: nowrap !important;
+  vertical-align: middle !important;
+  line-height: 1.4 !important;
+}
+
 /* Additional dark mode fixes for sidebar borders to prevent vertical light lines */
 body.quarto-dark .sidebar,
 body.quarto-dark .margin-sidebar,
 body.quarto-dark #quarto-margin-sidebar {
+  border: none !important;
   border-right: none !important;
   border-left: none !important;
   border-top: none !important;
   border-bottom: none !important;
+  box-shadow: none !important;
+  background-color: #141414 !important;
 }
 
-/* Ensure sidebar background matches dark theme */
-body.quarto-dark .sidebar,
-body.quarto-dark .margin-sidebar,
-body.quarto-dark #quarto-margin-sidebar {
-  background-color: #141414 !important;
+/* Comprehensive font-size fix for all category elements across the entire site */
+/* This ensures consistent 12px font size for all category elements regardless of page type or theme */
+.quarto-category,
+.quarto-listing-category .category,
+.listing-category,
+.quarto-listing .listing-categories .listing-category,
+body.quarto-light .quarto-category,
+body.quarto-light .quarto-listing-category .category,
+body.quarto-light .listing-category,
+body.quarto-light .quarto-listing .listing-categories .listing-category,
+body.quarto-dark .quarto-category,
+body.quarto-dark .quarto-listing-category .category,
+body.quarto-dark .listing-category,
+body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Additional high-specificity rules to override any conflicting styles */
+body .quarto-category,
+body .quarto-listing-category .category,
+body .listing-category,
+body .quarto-listing .listing-categories .listing-category,
+html body .quarto-category,
+html body .quarto-listing-category .category,
+html body .listing-category,
+html body .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Force font size for all possible category variations */
+[class*="category"],
+[class*="Category"] {
+  font-size: 12px !important;
+}
+
+/* Specific override for any Bootstrap or Quarto default category styles */
+.btn.quarto-category,
+.btn.listing-category,
+.btn.quarto-listing-category .category {
+  font-size: 12px !important;
 }
 
 /* Comprehensive TOC border fixes for both light and dark modes */
@@ -304,4 +567,129 @@ body.quarto-dark .quarto-toc {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
+}
+
+/* ===== LIGHT THEME PARAMETERS ===== */
+/* Light theme category styling */
+body.quarto-light .quarto-listing-category .category,
+body:not(.quarto-dark) .quarto-listing-category .category {
+  border-color: #dee2e6;
+  color: #000;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+body.quarto-light .quarto-listing-category .category:hover,
+body:not(.quarto-dark) .quarto-listing-category .category:hover {
+  background-color: #e9ecef;
+  color: #000;
+  border-color: #6c757d;
+}
+
+body.quarto-light .quarto-listing-category .category.active,
+body:not(.quarto-dark) .quarto-listing-category .category.active {
+  background-color: #e9ecef;
+  color: #000;
+  border-color: #6c757d;
+}
+
+/* Light theme category container */
+body.quarto-light .quarto-listing-category,
+body:not(.quarto-dark) .quarto-listing-category {
+  background: var(--bs-body-bg);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+body.quarto-light .quarto-listing-category-title,
+body:not(.quarto-dark) .quarto-listing-category-title {
+  background: var(--bs-body-bg);
+  color: inherit;
+}
+
+/* ===== DARK THEME PARAMETERS ===== */
+/* Dark theme category styling */
+body.quarto-dark .quarto-listing-category .category {
+  border-color: #495057;
+  color: #adb5bd;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+body.quarto-dark .quarto-listing-category .category:hover {
+  background-color: #343a40;
+  border-color: #6c757d;
+  color: #e9ecef;
+}
+
+body.quarto-dark .quarto-listing-category .category.active {
+  background-color: #343a40;
+  border-color: #6c757d;
+  color: #e9ecef;
+}
+
+/* Dark theme category container */
+body.quarto-dark .quarto-listing-category {
+  background: #141414;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+body.quarto-dark .quarto-listing-category-title {
+  background: #141414;
+  color: #e9ecef;
+  border: none;
+}
+
+/* ===== COMMON CATEGORY STYLING ===== */
+/* Base category styling that applies to both themes */
+.quarto-listing-category .category {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+  border: 1px solid;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1.4;
+  box-sizing: border-box;
+  min-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Category container base styling */
+.quarto-listing-category {
+  vertical-align: top;
+  line-height: 1.6;
+  display: block;
+}
+
+/* Category text and numbers alignment */
+.quarto-listing-category .category * {
+  vertical-align: middle;
+  line-height: 1.4;
+  display: inline;
+}
+
+/* Fix for any remaining border issues in TOC area */
+
+body.quarto-light .sidebar {
+  position: relative !important;
+  top: 0 !important; /* Adjust this value */
+}
+
+body.quarto-dark .sidebar {
+  position: relative !important;
+  top: 0.5rem !important; /* Adjust this value */
 }
