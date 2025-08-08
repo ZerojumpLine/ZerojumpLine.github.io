@@ -306,72 +306,6 @@ header-includes: |
     body.quarto-dark .tab-pane {
       color: #ede8de !important;
     }
-    
-    /* Make Directions heading more prominent - using higher specificity */
-    body.quarto-dark .about-entity .about-contents h2#directions,
-    body.quarto-dark h2#directions {
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    body.quarto-light .about-entity .about-contents h2#directions,
-    body.quarto-light h2#directions {
-      color: #2c3e50 !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    /* Override any other h2 styling with maximum specificity */
-    body.quarto-dark .about-entity .about-contents h2 {
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    body.quarto-light .about-entity .about-contents h2 {
-      color: #2c3e50 !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    /* Additional specificity for the find-me page specifically */
-    body.quarto-dark .about-entity .about-contents h2#directions {
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    body.quarto-light .about-entity .about-contents h2#directions {
-      color: #2c3e50 !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    /* Force override with !important for all h2 elements in this page */
-    body.quarto-dark h2 {
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.3) !important;
-      margin-bottom: 1.5rem !important;
-    }
-    
-    body.quarto-light h2 {
-      color: #2c3e50 !important;
-      font-weight: 700 !important;
-      font-size: 2.2em !important;
-      margin-bottom: 1.5rem !important;
-    }
   </style>
 ---
 
@@ -398,9 +332,13 @@ Same as office location.
 ::: {.panel-tabset}
 
 ### Campus Overview
-::: {.callout-note}
-## Jiangwan Campus, Fudan University
 
+::: {.location-card}
+::: {.location-header}
+## Jiangwan Campus, Fudan University
+:::
+
+::: {.location-content}
 The Jiangwan Campus is located in the northeastern part of Shanghai, featuring modern research facilities and a beautiful academic environment.
 
 ![Campus View](sidebar/campus.jpg)
@@ -410,11 +348,16 @@ The Jiangwan Campus is located in the northeastern part of Shanghai, featuring m
 - **Bus:** Routes 966, 537, 854, 942
 - **Address:** 2005 Songhu Road, Yangpu District, Shanghai
 :::
+:::
 
 ### Building Location
-::: {.callout-note}
-## No. 2 Interdisciplinary Research Building
 
+::: {.location-card}
+::: {.location-header}
+## No. 2 Interdisciplinary Research Building
+:::
+
+::: {.location-content}
 Our building houses cutting-edge research facilities and collaborative spaces for interdisciplinary research.
 
 ![Building View](sidebar/building.jpg)
@@ -425,11 +368,16 @@ Our building houses cutting-edge research facilities and collaborative spaces fo
 - Advanced equipment facilities
 - Secure access control
 :::
+:::
 
 ### Lab Space
-::: {.callout-note}
-## Room C2008 - Biomedical Engineering Lab
 
+::: {.location-card}
+::: {.location-header}
+## Room C2008 - Biomedical Engineering Lab
+:::
+
+::: {.location-content}
 Our dedicated research space where innovation meets collaboration.
 
 ![Lab View](sidebar/lab.jpg)
@@ -439,6 +387,7 @@ Our dedicated research space where innovation meets collaboration.
 - Collaborative workspace
 - Data analysis stations
 - Meeting area for team discussions
+:::
 :::
 
 :::
