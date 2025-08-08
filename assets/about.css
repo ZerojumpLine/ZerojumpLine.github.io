@@ -5,7 +5,7 @@
 
 /* Custom subtitle styling for hero section */
 #hero-heading .subtitle {
-  font-size: 1.3em;
+  font-size: 1.2rem;
   color: #7f8c8d;
   margin-bottom: 1em;
   font-weight: 400;
@@ -26,7 +26,7 @@ body.quarto-dark #hero-heading .subtitle {
 .about-entity .about-links {
   justify-content: center !important;
   column-gap: 0em !important;
-  font-size: 1.4em !important;
+  font-size: 1.1rem !important;
 }
 
 /* social links: individual links */
@@ -45,7 +45,7 @@ body.quarto-dark #hero-heading .subtitle {
 
 /* Professional profile styling */
 #hero-heading .h1 {
-  font-size: 2.5em;
+  font-size: 2.2rem;
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 0.5em;
@@ -53,7 +53,7 @@ body.quarto-dark #hero-heading .subtitle {
 }
 
 #hero-heading p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #2c3e50;
   margin-bottom: 0.3em;
   line-height: 1.4;
@@ -80,7 +80,7 @@ body.quarto-dark #hero-heading .subtitle {
 
   /* social links: block of links */
   .about-entity .about-links {
-    font-size: 1.4em !important;
+    font-size: 1.1rem !important;
   }
 }
 
@@ -106,7 +106,7 @@ body.quarto-dark #hero-heading .subtitle {
 
   /* social links: block of links */
   .about-entity .about-links {
-    font-size: 1.2em !important;
+    font-size: 1rem !important;
   }
 
   /* about area */
