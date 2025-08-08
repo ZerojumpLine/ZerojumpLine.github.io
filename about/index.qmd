@@ -116,7 +116,7 @@ He obtained PhD in Computing from [BioMedIA Group](https://biomedia.doc.ic.ac.uk
 
 ::: {.g-col-12 #about-me-2}
 <div class="prospective-student" style="color: darkred !important; font-weight: bold;">
-To Prospective Student: I have multiple positions available (PhD, Master's, interns, and Post-doc) at Fudan University. If you are interested, please read [this](../hiring.html)). If you cannot read Chinese but are still interested, feel free to contact me directly.
+To Prospective Student: I have multiple positions available (PhD, Master's, interns, and Post-doc) at Fudan University. If you are interested, please read [this](../vacancies.html)). If you cannot read Chinese but are still interested, feel free to contact me directly.
 </div>
 
 :::

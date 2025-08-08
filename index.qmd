@@ -211,7 +211,7 @@ Currently, we are working on building AI models that can 1) operate reliably and
 ::: {.hiring-items}
 
 ::: {.hiring-item}
-[**Join Our Team**](/hiring.html){.hiring-link}
+[**Join Our Team**](/vacancies.html){.hiring-link}
 
 ::: {.hiring-meta}
 [Opportunities]{.hiring-type} • Open Positions
