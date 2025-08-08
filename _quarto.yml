@@ -89,7 +89,9 @@ format:
         - assets/silvia-theme-dark.scss
         - assets/zerojump/colors-dark.scss
         - assets/zerojump/fonts.scss
-    css: assets/citation-custom.css
+    css: 
+      - assets/citation-custom.css
+      - assets/toc-fixes.css
     highlight-style:
       light: assets/zerojump/a11y-light.theme
       dark: assets/zerojump/a11y-dark.theme
