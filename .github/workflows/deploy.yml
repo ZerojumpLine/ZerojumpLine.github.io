@@ -43,6 +43,9 @@ jobs:
       - name: Build
         run: quarto render
 
+      - name: Setup redirects
+        run: bash copy-redirects.sh
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
