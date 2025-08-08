@@ -99,35 +99,35 @@ body.quarto-dark [class*="ai-"] {
   color: #ede8de !important;
 }
 
-/* Dark mode research cards */
+/* Dark mode research cards - using same styling as light theme */
 body.quarto-dark .research-card {
-  background-color: #1a1a1a !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+  background-color: #f8f9fa !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
 }
 
 body.quarto-dark .research-card:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
 }
 
 body.quarto-dark .research-card p {
-  color: #ede8de !important;
+  color: #5a5a5a !important;
 }
 
 body.quarto-dark .card-title {
-  color: #ede8de !important;
+  color: #502c2c !important;
 }
 
-/* Dark mode card colors */
+/* Dark mode card colors - using same colors as light theme */
 body.quarto-dark .research-card.card-1 {
-  background-color: #1a1a1a !important;
+  background-color: #f5e9fa !important;
 }
 
 body.quarto-dark .research-card.card-2 {
-  background-color: #1a1a1a !important;
+  background-color: #c1e0e5 !important;
 }
 
 body.quarto-dark .research-card.card-3 {
-  background-color: #1a1a1a !important;
+  background-color: #c4ecef !important;
 }
 
 /* Hero banner - image at top */
