@@ -51,7 +51,7 @@ Weidong Guo is a doctor student working on advanced computational approaches for
 
 ::: {.g-col-6 #about-me-2}
 
-Weidong joined the lab in 2025 and is currently pursuing his Bachelor's degree in Biomedical Engineering at the Fudan University.
+Weidong joined the lab in 2025 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2029</li>
