@@ -30,4 +30,16 @@ Our method introduces an optical-flow network that captures motion patterns acro
 
 We evaluate our approach on short-axis cine MRI datasets with expert annotations. Experimental results demonstrate that our optical-flow-based approach significantly improves segmentation accuracy compared to frame-independent methods. The method shows excellent performance in maintaining temporal coherence and capturing cardiac motion patterns.
 
-The proposed framework represents a significant advancement in cardiac image analysis, providing more accurate and temporally consistent segmentation that could improve cardiac function assessment and clinical diagnosis. 
+The proposed framework represents a significant advancement in cardiac motion analysis, providing more accurate segmentation that could improve cardiac function assessment and patient outcomes.
+
+## BibTeX
+
+```bibtex
+@inproceedings{yan2018left,
+  title={Left ventricle segmentation via optical-flow-net from short-axis cine MRI: preserving the temporal coherence of cardiac motion},
+  author={Yan, Wenjun and Wang, Yuanyuan and Li, Zeju and van der Geest, Rob J and Tao, Qian},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2018)},
+  year={2018},
+  doi={10.1007/978-3-030-00937-3_70}
+}
+``` 

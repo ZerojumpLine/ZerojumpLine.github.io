@@ -32,4 +32,17 @@ Our method leverages the rich structural information available in CT scans to gu
 
 We evaluate our approach on a large dataset of chest X-ray images with expert annotations. Experimental results demonstrate that our method significantly improves bone suppression quality compared to existing approaches, particularly in high-resolution scenarios. The method maintains anatomical accuracy while providing enhanced soft tissue visibility.
 
-The proposed framework represents a significant advancement in chest X-ray processing, providing more effective bone suppression that could improve diagnostic accuracy in clinical practice. 
+The proposed framework represents a significant advancement in chest X-ray processing, providing higher quality images that could improve diagnostic accuracy and clinical interpretation.
+
+## BibTeX
+
+```bibtex
+@article{li2020high,
+  title={High-Resolution Chest X-ray Bone Suppression Using Unpaired CT Structural Priors},
+  author={Li, Han and Han, Hu and Li, Zeju and Wang, Lei and Wu, Zhe and Lu, Jingjing and Zhou, S Kevin},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE},
+  doi={10.1109/TMI.2020.2986242}
+}
+``` 

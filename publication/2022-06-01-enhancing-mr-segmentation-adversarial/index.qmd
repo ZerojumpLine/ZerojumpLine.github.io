@@ -34,4 +34,16 @@ Our method introduces an adversarial training framework that generates realistic
 
 We evaluate our approach on multiple MR image segmentation tasks, including brain tumor segmentation and cardiac structure segmentation. Experimental results demonstrate that our realistic adversarial augmentation significantly improves segmentation performance compared to traditional augmentation methods. The generated samples maintain anatomical consistency while introducing meaningful variations that enhance model robustness.
 
-The proposed framework represents a significant advancement in medical image augmentation, providing more effective training data that leads to improved segmentation performance and better generalization to unseen data. 
+The proposed framework represents a significant advancement in medical image augmentation, providing more effective training data that leads to improved segmentation performance and better generalization to unseen data.
+
+## BibTeX
+
+```bibtex
+@article{chen2022da,
+  title={Enhancing MR Image Segmentation with Realistic Adversarial Data Augmentation},
+  author={Chen, Chen and Ouyang, Cheng and Li, Zeju and Wang, Shuo and Qiu, Huaqi and Chen, Liang and Tarroni, Giacomo and Bai, Wenjia and Rueckert, Daniel},
+  year={2022},
+  journal={Medical Image Analysis},
+  doi={10.1016/j.media.2022.102597}
+}
+``` 

@@ -36,4 +36,20 @@ Our federated learning framework enables collaborative model training without sh
 
 We evaluate our approach on a multinational dataset involving multiple institutions across different countries. Experimental results demonstrate that federated learning achieves comparable performance to centralized training while maintaining data privacy. The method shows robust performance across different populations and imaging protocols, providing a scalable solution for COVID-19 detection.
 
-The proposed framework represents a significant advancement in privacy-preserving medical AI, demonstrating the potential for collaborative model development while maintaining strict privacy standards. 
+The proposed framework represents a significant advancement in privacy-preserving medical AI, demonstrating the potential for collaborative model development while maintaining strict privacy standards.
+
+## BibTeX
+
+```bibtex
+@article{dou2021federated,
+  title={Federated deep learning for detecting COVID-19 lung abnormalities in CT: a privacy-preserving multinational validation study},
+  author={Dou, Qi and So, Tiffany Y and Jiang, Meirui and Liu, Quande and Vardhanabhuti, Varut and Kaissis, Georgios and Li, Zeju and Si, Weixin and Lee, Heather HC and Yu, Kevin and others},
+  journal={NPJ digital medicine},
+  volume={4},
+  number={1},
+  pages={1--11},
+  year={2021},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41746-021-00431-6}
+}
+``` 

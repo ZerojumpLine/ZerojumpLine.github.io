@@ -22,7 +22,7 @@ format:
   html: 
     page-layout: full
 title-block-banner: false
-citation: false
+bibliography: publications.bib
 
 header-includes: >
   <link rel="stylesheet" href="../assets/listing-default.css">

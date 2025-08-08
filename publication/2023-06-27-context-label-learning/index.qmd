@@ -14,13 +14,7 @@ slug: context-label-learning
 image: featured.png
 description: 'IEEE Transactions on Medical Imaging'
 subtitle: A novel approach for improving background class representations in semantic segmentation through context label learning.
-links:
-- icon: file-richtext-fill
-  name: Publication
-  url: https://doi.org/10.1109/TMI.2023.3242838
-- icon: calendar-check
-  name: IEEE TMI
-  url: https://ieeexplore.ieee.org/document/10123456
+bibliography: ../publications.bib
 ---
 
 ## Abstract
@@ -31,4 +25,17 @@ Our approach introduces a context-aware labeling mechanism that dynamically adap
 
 We evaluate our method on multiple medical image segmentation datasets, including brain tumor segmentation and multi-organ segmentation. Experimental results demonstrate that CLL significantly improves segmentation accuracy, particularly for challenging cases where background context is crucial for accurate delineation.
 
-The proposed framework provides a more principled approach to handling background classes in medical image segmentation, leading to improved performance and better clinical interpretability. 
+The proposed framework provides a more principled approach to handling background classes in medical image segmentation, leading to improved performance and better clinical interpretability.
+
+## BibTeX
+
+```bibtex
+@article{li2022colab,
+  title={Context Label Learning: Improving Background Class Representations in Semantic Segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Ouyang, Cheng and Chen, Chen and Glocker, Ben},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2023},
+  publisher={IEEE},
+  doi={10.1109/TMI.2023.3242838}
+}
+``` 

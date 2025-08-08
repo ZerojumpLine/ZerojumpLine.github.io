@@ -35,4 +35,17 @@ Our framework introduces a modality disentanglement module that separates modali
 
 We evaluate our method on a comprehensive dataset of breast tumor cases with both MRI and ultrasound imaging. Experimental results demonstrate that our modality disentanglement approach significantly improves classification accuracy compared to traditional multi-modal fusion methods. The method shows robust performance across different tumor types and imaging conditions.
 
-The proposed framework represents a significant advancement in multi-modal breast cancer diagnosis, providing more accurate classification while maintaining interpretability of modality-specific contributions. 
+The proposed framework represents a significant advancement in multi-modal breast cancer diagnosis, providing more accurate classification while maintaining interpretability of modality-specific contributions.
+
+## BibTeX
+
+```bibtex
+@article{qiao2022breast,
+  title={Breast Tumor Classification based on MRI-US Images by Disentangling Modality Features},
+  author={Qiao, Mengyun and Liu, Chengcheng and Li, Zeju and Zhou, Jin and Xiao, Qin and Zhou, Shichong and Chang, Cai and Yajia, Gu and Guo, Yi and Wang, Yuanyuan},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2022.3140236}
+}
+``` 

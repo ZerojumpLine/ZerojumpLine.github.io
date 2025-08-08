@@ -14,13 +14,7 @@ slug: joint-optimization-segmentation
 image: featured.png
 description: 'IEEE Transactions on Medical Imaging'
 subtitle: A novel approach for joint optimization of class-specific training and test-time data augmentation in medical image segmentation tasks.
-links:
-- icon: file-richtext-fill
-  name: Publication
-  url: https://doi.org/10.1109/TMI.2023.3282728
-- icon: calendar-check
-  name: IEEE TMI
-  url: https://ieeexplore.ieee.org/document/10123456
+bibliography: ../publications.bib
 ---
 
 ## Abstract
@@ -31,4 +25,17 @@ Our approach introduces class-specific augmentation policies that are learned du
 
 We evaluate our method on multiple medical image segmentation datasets, including brain tumor segmentation and multi-organ segmentation. Experimental results demonstrate that our class-specific augmentation approach significantly outperforms standard augmentation techniques, achieving improved segmentation accuracy and robustness across different anatomical structures.
 
-The proposed framework provides a more principled approach to data augmentation in medical image segmentation, offering better performance while maintaining interpretability and clinical relevance. 
+The proposed framework provides a more principled approach to data augmentation in medical image segmentation, offering better performance while maintaining interpretability and clinical relevance.
+
+## BibTeX
+
+```bibtex
+@article{li2022da,
+  title={Joint Optimization of Class-Specific Training- and Test-Time Data Augmentation in Segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Dou, Qi and Qin, Chen and Glocker, Ben},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2023},
+  publisher={IEEE},
+  doi={10.1109/TMI.2023.3282728}
+}
+``` 

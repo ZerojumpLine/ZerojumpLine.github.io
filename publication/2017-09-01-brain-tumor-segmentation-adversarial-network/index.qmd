@@ -28,4 +28,16 @@ Our method introduces an adversarial training framework that consists of a segme
 
 We evaluate our approach on the BraTS challenge dataset with expert annotations. Experimental results demonstrate that our adversarial network approach significantly improves segmentation accuracy compared to traditional methods. The method shows excellent performance in handling the challenging aspects of brain tumor segmentation, including boundary ambiguity and tissue heterogeneity.
 
-The proposed framework represents a significant advancement in brain tumor segmentation, providing more accurate results that could improve treatment planning and patient outcomes. 
+The proposed framework represents a significant advancement in brain tumor segmentation, providing more accurate results that could improve treatment planning and patient outcomes.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2017brain,
+  title={Brain tumor segmentation using an adversarial network},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
+  booktitle={International MICCAI Brainlesion Workshop (MICCAI-Brainlesion 2017)},
+  year={2017},
+  doi={10.1007/978-3-319-75238-9_11}
+}
+``` 

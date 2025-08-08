@@ -28,4 +28,16 @@ Our method leverages the power of generative adversarial networks to produce hig
 
 We evaluate our approach on multiple medical imaging datasets, including brain MRI and chest CT scans. Experimental results demonstrate that our GAN-based method significantly improves reconstruction quality compared to traditional approaches. The method shows excellent performance in preserving fine anatomical details and reducing artifacts commonly found in thin-slice imaging.
 
-The proposed framework represents a significant advancement in medical image reconstruction, providing higher quality images that could improve diagnostic accuracy and reduce the need for additional imaging procedures. 
+The proposed framework represents a significant advancement in medical image reconstruction, providing more accurate results that could improve diagnostic quality and patient outcomes.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2017reconstruction,
+  title={Reconstruction of thin-slice medical images using generative adversarial network},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua},
+  booktitle={International Workshop on Machine Learning in Medical Imaging (MICCAI-MLMI 2017)},
+  year={2017},
+  doi={10.1007/978-3-319-67389-9_38}
+}
+``` 

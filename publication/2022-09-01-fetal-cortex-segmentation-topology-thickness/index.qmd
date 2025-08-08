@@ -38,4 +38,16 @@ Our method introduces anatomical constraints that ensure the segmented cortex ma
 
 We evaluate our approach on fetal brain MRI datasets with expert annotations. Experimental results demonstrate that our topology and thickness-constrained approach significantly improves segmentation accuracy compared to traditional methods. The method shows excellent performance in maintaining anatomical consistency and providing reliable thickness measurements.
 
-The proposed framework represents a significant advancement in fetal brain analysis, providing more accurate segmentation that could improve our understanding of brain development and early detection of developmental disorders. 
+The proposed framework represents a significant advancement in fetal brain analysis, providing more accurate segmentation that could improve our understanding of brain development and early detection of developmental disorders.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2022co,
+  title={Fetal Cortex Segmentation with Topology and Thickness Loss Constraints},
+  author={Li, Liu and Ma, Qiang and Li, Zeju and Ouyang, Cheng and Zhang, Weitong and Price, Anthony and Kyriakopoulou, Vanessa and Cordero-Grande, Lucilio and Makropoulos, Antonis and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard and Alansary, Amir},
+  year={2022},
+  booktitle={Topological Data Analysis and Its Applications for Medical Data (miccai-tda 2022)},
+  doi={10.1007/978-3-031-23223-7_11}
+}
+``` 

@@ -1,0 +1,59 @@
+---
+title: "MOVAL: Estimating Performance for Safe Deployment of Machine Learning Models"
+author: "Zeju Li"
+date: '2025-01-15'
+slug: moval-estimating-performance
+image: featured.jpg
+alias:
+  - /blog/moval-estimating-performance
+categories:
+  - AI safety
+  - python
+subtitle: 'A Python package for assessing model performance in the absence of ground truth labels'
+summary: 'MOVAL is a Python package designed for assessing model performance in the absence of ground truth labels. It computes calibrated confidence scores to accurately reflect the likelihood of predictions and estimates overall model performance.'
+lastmod: '2025-01-15'
+links:
+  - icon: file-code
+    name: Paper
+    url: https://arxiv.org/abs/2403.19629
+  - icon: github
+    name: Code
+    url: https://github.com/ZerojumpLine/MOVAL
+  - icon: journal-text
+    name: Document
+    url: https://moval.readthedocs.io/en/latest/index.html
+---
+
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="https://github.com/ZerojumpLine/MOVAL/blob/main/docs/logo.png?raw=True" width="220px" style="margin: 0 30px;">
+</div>
+
+## Introduction
+
+MOVAL is a Python package designed for assessing model performance in the absence of ground truth labels. It computes and calibrated confidence scores to accurately reflect the likelihood of predictions, leveraging these calibrated confidence scores to estimate the model's overall performance. Notably, MOVAL operates without the need for ground truth labels in the target domains and supports the evaluation of model performance in classification, 2D segmentation, and 3D segmentation.
+
+### What it offers:
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="static/images/features.png" style="max-width: 100%; height: auto;">
+</div>
+
+MOVAL highlights a key feature—class-wise calibration, recognized as essential for addressing long-tailed distributions commonly found in real-world datasets. This proves especially significant in segmentation tasks where background samples often outnumber foregrounds. The inclusion of class-specific variants becomes crucial for accurately estimating segmentation performance. Additionally, MOVAL offers support for various types of confidence scores, enhancing its versatility.
+
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="static/images/Fig_software_2.gif" style="max-width: 100%; height: auto;">
+</div>
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2022estimating,
+  title={Estimating model performance under domain shifts with class-specific confidence scores},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Islam, Mobarakol and Chen, Chen and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={693--703},
+  year={2022},
+  organization={Springer}
+}
+```
+

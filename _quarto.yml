@@ -52,6 +52,9 @@ website:
       - text: News
         aria-label: "Latest News"
         href: news/index.qmd
+      - text: Blog
+        aria-label: "Blogs"
+        href: blog/index.qmd
       - text: Team
         aria-label: "Our Team"
         href: team/index.qmd
@@ -67,7 +70,7 @@ website:
      <span style="font-size: 1.2em;">&#169; 2025 Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
 
     center: >-
-      <span style="font-size: 1.2em;"> Jiangwan Campus, Fudan University, Shanghai, China.
+      <span style="font-size: 1.2em;"> Fudan University, Shanghai, China.
 
     right: >-
       <a class="link-dark me-1" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener" style="font-size: 2em;">{{< fa brands linkedin >}}</a>

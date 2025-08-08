@@ -29,3 +29,15 @@ Our study investigates the relationship between class imbalance ratios and overf
 We propose several strategies to mitigate overfitting under class imbalance, including adaptive learning rates, class-specific regularization, and curriculum learning approaches. Our analysis provides insights into the fundamental mechanisms driving overfitting in imbalanced medical image segmentation tasks and offers practical guidelines for model development.
 
 The findings from this work contribute to a better understanding of neural network behavior under class imbalance conditions and provide a foundation for developing more robust segmentation models in medical imaging applications. 
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2018overfitting,
+  title={Overfitting of neural nets under class imbalance: Analysis and improvements for segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
+  year={2019},
+  doi={10.1007/978-3-030-32248-9_45}
+}
+``` 

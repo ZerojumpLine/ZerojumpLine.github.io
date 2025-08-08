@@ -31,4 +31,16 @@ Our method introduces a multi-scope architecture that processes cardiac images a
 
 We evaluate our approach on cardiac MRI datasets with expert annotations. Experimental results demonstrate that our multi-scope approach significantly improves segmentation accuracy compared to single-scale methods. The method shows excellent performance in capturing both fine details and global structure of the left ventricle.
 
-The proposed framework represents a significant advancement in cardiac image analysis, providing more accurate segmentation that could improve cardiac function assessment and clinical diagnosis. 
+The proposed framework represents a significant advancement in cardiac image analysis, providing more accurate segmentation that could improve cardiac function assessment and patient outcomes.
+
+## BibTeX
+
+```bibtex
+@inproceedings{li2018multi,
+  title={A Multi-Scope Convolutional Neural Network for Automatic Left Ventricle Segmentation from Magnetic Resonance Images: Deep-Learning at Multiple Scopes},
+  author={Li, Xinyi and Wang, Yuanyuan and Yan, Wenjun and Van der Geest, Rob J and Li, Zeju and Tao, Qian},
+  booktitle={International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI 2018)},
+  year={2018},
+  doi={10.1109/CISP-BMEI.2018.8633185}
+}
+``` 
