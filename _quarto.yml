@@ -94,7 +94,7 @@ format:
       light: assets/zerojump/a11y-light.theme
       dark: assets/zerojump/a11y-dark.theme
     code-link: true
-    pagetitle: "{{< meta title >}}"
+    pagetitle: "Zeju Li"
     lightbox: true
 
 
