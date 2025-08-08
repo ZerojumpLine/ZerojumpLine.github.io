@@ -108,8 +108,8 @@ He obtained PhD in Computing from [BioMedIA Group](https://biomedia.doc.ic.ac.uk
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. in Computing ∙ Imperial College London ∙ 2023</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. in Biomedical Engineering ∙ Fudan University ∙ 2023</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Electronic Engineering ∙ Fudan University ∙ 2023</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. in Biomedical Engineering ∙ Fudan University ∙ 2018</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. in Electronic Engineering ∙ Fudan University ∙ 2015</li>
 </ul>
 
 :::
