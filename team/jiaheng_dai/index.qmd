@@ -56,7 +56,7 @@ Jiaheng joined the lab in 2025 and is currently pursuing his doctoral degree in 
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2029</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ University of Edinburgh ∙ 2025</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ University of Edinburgh ∙ 2025</li>
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ University of Edinburgh ∙ 2024</li>
 </ul>
 
