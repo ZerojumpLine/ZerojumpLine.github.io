@@ -581,5 +581,81 @@ body.quarto-dark {
     border-color: #141414 !important;
   }
 
+  // Ensure callouts use proper dark theme colors
+  .callout,
+  .callout-note,
+  .callout-warning,
+  .callout-important,
+  .callout-tip,
+  .callout-caution {
+    color: #ede8de !important;
+  }
+
+  .callout h1,
+  .callout h2,
+  .callout h3,
+  .callout h4,
+  .callout h5,
+  .callout h6,
+  .callout-note h1,
+  .callout-note h2,
+  .callout-note h3,
+  .callout-note h4,
+  .callout-note h5,
+  .callout-note h6,
+  .callout-warning h1,
+  .callout-warning h2,
+  .callout-warning h3,
+  .callout-warning h4,
+  .callout-warning h5,
+  .callout-warning h6,
+  .callout-important h1,
+  .callout-important h2,
+  .callout-important h3,
+  .callout-important h4,
+  .callout-important h5,
+  .callout-important h6,
+  .callout-tip h1,
+  .callout-tip h2,
+  .callout-tip h3,
+  .callout-tip h4,
+  .callout-tip h5,
+  .callout-tip h6,
+  .callout-caution h1,
+  .callout-caution h2,
+  .callout-caution h3,
+  .callout-caution h4,
+  .callout-caution h5,
+  .callout-caution h6 {
+    color: #ede8de !important;
+  }
+
+  .callout p,
+  .callout-note p,
+  .callout-warning p,
+  .callout-important p,
+  .callout-tip p,
+  .callout-caution p {
+    color: #ede8de !important;
+  }
+
+  .callout a,
+  .callout-note a,
+  .callout-warning a,
+  .callout-important a,
+  .callout-tip a,
+  .callout-caution a {
+    color: #ede8de !important;
+  }
+
+  .callout a:hover,
+  .callout-note a:hover,
+  .callout-warning a:hover,
+  .callout-important a:hover,
+  .callout-tip a:hover,
+  .callout-caution a:hover {
+    color: #ede8de !important;
+  }
+
 
 }
