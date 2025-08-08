@@ -36,12 +36,18 @@ The proposed framework represents a significant advancement in probability calib
 
 ## BibTeX
 
-```bibtex
-@inproceedings{cheng2022cal,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{cheng2022cal,
   title={Improved post-hoc probability calibration for artifact-corrupted MRI segmentation},
   author={Ouyang, Cheng and Wang, Shuo and Chen, Chen and Li, Zeju and Bai, Wenjia and Kainz, Bernhard and Rueckert, Daniel},
   year={2022},
   booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2022)},
   doi={10.1007/978-3-031-16749-2_6}
-}
+}"><code>@inproceedings{cheng2022cal,
+  title={Improved post-hoc probability calibration for artifact-corrupted MRI segmentation},
+  author={Ouyang, Cheng and Wang, Shuo and Chen, Chen and Li, Zeju and Bai, Wenjia and Kainz, Bernhard and Rueckert, Daniel},
+  year={2022},
+  booktitle={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (miccai-unsure 2022)},
+  doi={10.1007/978-3-031-16749-2_6}
+}</code></pre>
 ``` 

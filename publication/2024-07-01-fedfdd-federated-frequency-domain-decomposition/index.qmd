@@ -35,13 +35,20 @@ The proposed framework represents a significant advancement in privacy-preservin
 
 ## BibTeX
 
-```bibtex
-@inproceedings{
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{
 chen2024fedfdd,
 title={Fed{FDD}: Federated Learning with Frequency Domain Decomposition for Low-Dose {CT} Denoising},
 author={Xuhang Chen and Zeju Li and Zikun Xu and Kaijie Xu and Cheng Ouyang and Chen Qin},
 booktitle={Medical Imaging with Deep Learning (MIDL 2024)},
 year={2024},
 url={https://openreview.net/forum?id=Zg0mfl10o2},
-}
+}"><code>@inproceedings{
+chen2024fedfdd,
+title={Fed{FDD}: Federated Learning with Frequency Domain Decomposition for Low-Dose {CT} Denoising},
+author={Xuhang Chen and Zeju Li and Zikun Xu and Kaijie Xu and Cheng Ouyang and Chen Qin},
+booktitle={Medical Imaging with Deep Learning (MIDL 2024)},
+year={2024},
+url={https://openreview.net/forum?id=Zg0mfl10o2},
+}</code></pre>
 ``` 

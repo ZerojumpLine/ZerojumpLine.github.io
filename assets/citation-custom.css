@@ -82,19 +82,126 @@ body.quarto-dark #quarto-appendix .quarto-appendix-contents #quarto-citation {
  */
 
 .quarto-appendix-bibtex {
-  background: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 4px;
-  padding: 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 0;
   font-family: 'Courier New', monospace;
   font-size: 0.9rem;
-  color: #141414; /* Change this to your desired color */
+  color: #495057;
+  margin: 1rem 0;
+  overflow-x: auto;
+  position: relative;
 }
 
 body.quarto-dark .quarto-appendix-bibtex {
-  background: #141414;
-  border-color: #4a5568;
-  color: #ede8de; /* Change this to your desired dark mode color */
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+}
+
+/* Remove any borders or underlines from code elements within BibTeX blocks */
+.quarto-appendix-bibtex code {
+  border: none !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+/* Override theme's inline code border for BibTeX blocks */
+.quarto-appendix-bibtex code:not(.sourceCode) {
+  border: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+/* Copy button styling */
+.quarto-appendix-bibtex::before {
+  content: "📋";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+body.quarto-dark .quarto-appendix-bibtex::before {
+  background: rgba(45, 55, 72, 0.8);
+  color: #e2e8f0;
+}
+
+.quarto-appendix-bibtex:hover::before {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+body.quarto-dark .quarto-appendix-bibtex:hover::before {
+  background: rgba(45, 55, 72, 1);
+}
+
+/* Enhanced citation container styling */
+#quarto-citation {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  box-shadow: none;
+}
+
+body.quarto-dark #quarto-citation {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Citation heading styling */
+.quarto-appendix-secondary-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+body.quarto-dark .quarto-appendix-secondary-label {
+  color: #a0aec0;
+}
+
+/* Formatted citation styling */
+.quarto-appendix-citeas {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+body.quarto-dark .quarto-appendix-citeas {
+  background: transparent;
+}
+
+/* Copy button with CSS custom property for dynamic content */
+.quarto-appendix-bibtex::before {
+  content: var(--copy-icon, "📋");
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  z-index: 10;
 }
 
 

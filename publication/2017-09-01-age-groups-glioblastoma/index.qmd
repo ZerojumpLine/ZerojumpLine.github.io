@@ -34,13 +34,20 @@ The findings from this study provide valuable insights into age-related glioblas
 
 ## BibTeX
 
-```bibtex
-@article{li2017age,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2017age,
   title={Age groups related glioblastoma study based on radiomics approach},
   author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Guo, Yi and Zhang, Qi},
   journal={Computer Assisted Surgery},
   year={2017},
   publisher={Taylor \& Francis},
   doi={10.1080/24699322.2017.1378722}
-}
+}"><code>@article{li2017age,
+  title={Age groups related glioblastoma study based on radiomics approach},
+  author={Li, Zeju and Wang, Yuanyuan and Yu, Jinhua and Guo, Yi and Zhang, Qi},
+  journal={Computer Assisted Surgery},
+  year={2017},
+  publisher={Taylor \& Francis},
+  doi={10.1080/24699322.2017.1378722}
+}</code></pre>
 ``` 

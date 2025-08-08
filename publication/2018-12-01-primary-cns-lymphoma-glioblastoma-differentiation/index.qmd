@@ -37,12 +37,18 @@ The proposed framework represents a significant advancement in brain tumor class
 
 ## BibTeX
 
-```bibtex
-@article{Wu2018PrimaryCN,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{Wu2018PrimaryCN,
   title={Primary central nervous system lymphoma and glioblastoma image differentiation based on sparse representation system},
   author={Guoqing Wu and Zeju Li and Yuanyuan Wang and Jinhua Yu and Yinsheng Chen and Zhongping Chen},
   journal={Journal of Biomedical Engineering},
   year={2018},
   doi={10.7507/1001-5515.201705061}
-}
+}"><code>@article{Wu2018PrimaryCN,
+  title={Primary central nervous system lymphoma and glioblastoma image differentiation based on sparse representation system},
+  author={Guoqing Wu and Zeju Li and Yuanyuan Wang and Jinhua Yu and Yinsheng Chen and Zhongping Chen},
+  journal={Journal of Biomedical Engineering},
+  year={2018},
+  doi={10.7507/1001-5515.201705061}
+}</code></pre>
 ``` 

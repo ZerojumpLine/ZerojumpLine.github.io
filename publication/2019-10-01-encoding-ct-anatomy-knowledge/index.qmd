@@ -36,12 +36,18 @@ The proposed framework represents a significant advancement in chest X-ray analy
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2018ct,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2018ct,
   title={Encoding CT Anatomy Knowledge for Unpaired Chest X-ray Image Decomposition},
   author={Li, Zeju and Li, Han and Han, Hu and Shi, Gonglei and Wang, Jiannan and Zhou, Shaohua Kervin},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
   year={2019},
   doi={10.1007/978-3-030-32226-7_31}
-}
+}"><code>@inproceedings{li2018ct,
+  title={Encoding CT Anatomy Knowledge for Unpaired Chest X-ray Image Decomposition},
+  author={Li, Zeju and Li, Han and Han, Hu and Shi, Gonglei and Wang, Jiannan and Zhou, Shaohua Kervin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
+  year={2019},
+  doi={10.1007/978-3-030-32226-7_31}
+}</code></pre>
 ``` 

@@ -34,12 +34,18 @@ The proposed framework represents a significant advancement in cardiac motion an
 
 ## BibTeX
 
-```bibtex
-@inproceedings{yan2018left,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{yan2018left,
   title={Left ventricle segmentation via optical-flow-net from short-axis cine MRI: preserving the temporal coherence of cardiac motion},
   author={Yan, Wenjun and Wang, Yuanyuan and Li, Zeju and van der Geest, Rob J and Tao, Qian},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2018)},
   year={2018},
   doi={10.1007/978-3-030-00937-3_70}
-}
+}"><code>@inproceedings{yan2018left,
+  title={Left ventricle segmentation via optical-flow-net from short-axis cine MRI: preserving the temporal coherence of cardiac motion},
+  author={Yan, Wenjun and Wang, Yuanyuan and Li, Zeju and van der Geest, Rob J and Tao, Qian},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2018)},
+  year={2018},
+  doi={10.1007/978-3-030-00937-3_70}
+}</code></pre>
 ``` 

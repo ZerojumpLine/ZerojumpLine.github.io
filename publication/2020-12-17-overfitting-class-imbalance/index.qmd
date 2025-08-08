@@ -27,13 +27,20 @@ The findings from this work contribute to a better understanding of neural netwo
 
 ## BibTeX
 
-```bibtex
-@article{lianalyzing,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{lianalyzing,
   title={Analyzing Overfitting under Class Imbalance in Neural Networks for Image Segmentation},
   author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
   journal={IEEE Transactions on Medical Imaging},
   year={2020},
   publisher={IEEE},
   doi={10.1109/TMI.2020.3046692}
-}
+}"><code>@article{lianalyzing,
+  title={Analyzing Overfitting under Class Imbalance in Neural Networks for Image Segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE},
+  doi={10.1109/TMI.2020.3046692}
+}</code></pre>
 ``` 

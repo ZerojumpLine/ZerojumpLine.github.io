@@ -34,13 +34,20 @@ The proposed framework represents a significant advancement in ultrasound image 
 
 ## BibTeX
 
-```bibtex
-@article{zhou2019super,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{zhou2019super,
   title={Super-Resolution Reconstruction of Plane-Wave Ultrasound Image Based on a Multi-Angle Parallel U-Net with Maxout Unit and Novel Loss Function},
   author={Zhou, Zixia and Wang, Yuanyuan and Yu, Jinhua and Guo, Wei and Li, Zeju},
   journal={Journal of Medical Imaging and Health Informatics},
   year={2019},
   publisher={American Scientific Publishers},
   doi={10.1166/jmihi.2019.2548}
-}
+}"><code>@article{zhou2019super,
+  title={Super-Resolution Reconstruction of Plane-Wave Ultrasound Image Based on a Multi-Angle Parallel U-Net with Maxout Unit and Novel Loss Function},
+  author={Zhou, Zixia and Wang, Yuanyuan and Yu, Jinhua and Guo, Wei and Li, Zeju},
+  journal={Journal of Medical Imaging and Health Informatics},
+  year={2019},
+  publisher={American Scientific Publishers},
+  doi={10.1166/jmihi.2019.2548}
+}</code></pre>
 ``` 

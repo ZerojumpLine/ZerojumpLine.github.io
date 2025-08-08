@@ -40,12 +40,18 @@ The proposed framework represents a significant advancement in medical image seg
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2023ro,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2023ro,
   title={Robust Segmentation via Topology Violation Detection and Feature Synthesis},
   author={Li, Liu and Ma, Qiang and Ouyang, Cheng and Li, Zeju and Meng, Qingjie and Zhang, Weitong and Qiao, Mengyun and Kyriakopoulou, Vanessa and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2023)},
   year={2023},
   doi={10.1007/978-3-031-43901-8_7}
-}
+}"><code>@inproceedings{li2023ro,
+  title={Robust Segmentation via Topology Violation Detection and Feature Synthesis},
+  author={Li, Liu and Ma, Qiang and Ouyang, Cheng and Li, Zeju and Meng, Qingjie and Zhang, Weitong and Qiao, Mengyun and Kyriakopoulou, Vanessa and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2023)},
+  year={2023},
+  doi={10.1007/978-3-031-43901-8_7}
+}</code></pre>
 ``` 

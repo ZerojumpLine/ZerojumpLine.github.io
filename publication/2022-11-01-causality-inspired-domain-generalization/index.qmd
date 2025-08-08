@@ -36,12 +36,18 @@ The proposed framework represents a significant advancement in domain generaliza
 
 ## BibTeX
 
-```bibtex
-@article{ouyang2021causality,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{ouyang2021causality,
   title={Causality-inspired Single-source Domain Generalization for Medical Image Segmentation},
   author={Ouyang, Cheng and Chen, Chen and Li, Surui and Li, Zeju and Qin, Chen and Bai, Wenjia and Rueckert, Daniel},
   year={2022},
   journal={IEEE Transactions on Medical Imaging},
   doi={10.1109/TMI.2022.3224067}
-}
+}"><code>@article{ouyang2021causality,
+  title={Causality-inspired Single-source Domain Generalization for Medical Image Segmentation},
+  author={Ouyang, Cheng and Chen, Chen and Li, Surui and Li, Zeju and Qin, Chen and Bai, Wenjia and Rueckert, Daniel},
+  year={2022},
+  journal={IEEE Transactions on Medical Imaging},
+  doi={10.1109/TMI.2022.3224067}
+}</code></pre>
 ``` 

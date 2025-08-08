@@ -39,13 +39,20 @@ The proposed framework represents a significant advancement in multi-modal breas
 
 ## BibTeX
 
-```bibtex
-@article{qiao2022breast,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{qiao2022breast,
   title={Breast Tumor Classification based on MRI-US Images by Disentangling Modality Features},
   author={Qiao, Mengyun and Liu, Chengcheng and Li, Zeju and Zhou, Jin and Xiao, Qin and Zhou, Shichong and Chang, Cai and Yajia, Gu and Guo, Yi and Wang, Yuanyuan},
   journal={IEEE Journal of Biomedical and Health Informatics},
   year={2022},
   publisher={IEEE},
   doi={10.1109/JBHI.2022.3140236}
-}
+}"><code>@article{qiao2022breast,
+  title={Breast Tumor Classification based on MRI-US Images by Disentangling Modality Features},
+  author={Qiao, Mengyun and Liu, Chengcheng and Li, Zeju and Zhou, Jin and Xiao, Qin and Zhou, Shichong and Chang, Cai and Yajia, Gu and Guo, Yi and Wang, Yuanyuan},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2022.3140236}
+}</code></pre>
 ``` 

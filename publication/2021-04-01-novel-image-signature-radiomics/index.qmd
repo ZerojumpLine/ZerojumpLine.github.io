@@ -40,8 +40,8 @@ The proposed framework represents a significant advancement in glioma characteri
 
 ## BibTeX
 
-```bibtex
-@article{luo2021novel,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{luo2021novel,
   title={A novel image signature-based radiomics method to achieve precise diagnosis and prognostic stratification of gliomas},
   author={Luo, Huigao and Zhuang, Qiyuan and Wang, Yuanyuan and Abudumijiti, Aibaidula and Shi, Kuangyu and Rominger, Axel and Chen, Hong and Yang, Zhong and Tran, Vanessa and Wu, Guoqing and others},
   journal={Laboratory investigation},
@@ -51,5 +51,15 @@ The proposed framework represents a significant advancement in glioma characteri
   year={2021},
   publisher={Nature Publishing Group},
   doi={10.1038/s41374-020-0472-x}
-}
+}"><code>@article{luo2021novel,
+  title={A novel image signature-based radiomics method to achieve precise diagnosis and prognostic stratification of gliomas},
+  author={Luo, Huigao and Zhuang, Qiyuan and Wang, Yuanyuan and Abudumijiti, Aibaidula and Shi, Kuangyu and Rominger, Axel and Chen, Hong and Yang, Zhong and Tran, Vanessa and Wu, Guoqing and others},
+  journal={Laboratory investigation},
+  volume={101},
+  number={4},
+  pages={450--462},
+  year={2021},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41374-020-0472-x}
+}</code></pre>
 ``` 

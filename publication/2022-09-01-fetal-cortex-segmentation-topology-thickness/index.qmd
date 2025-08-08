@@ -42,12 +42,18 @@ The proposed framework represents a significant advancement in fetal brain analy
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2022co,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2022co,
   title={Fetal Cortex Segmentation with Topology and Thickness Loss Constraints},
   author={Li, Liu and Ma, Qiang and Li, Zeju and Ouyang, Cheng and Zhang, Weitong and Price, Anthony and Kyriakopoulou, Vanessa and Cordero-Grande, Lucilio and Makropoulos, Antonis and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard and Alansary, Amir},
   year={2022},
   booktitle={Topological Data Analysis and Its Applications for Medical Data (miccai-tda 2022)},
   doi={10.1007/978-3-031-23223-7_11}
-}
+}"><code>@inproceedings{li2022co,
+  title={Fetal Cortex Segmentation with Topology and Thickness Loss Constraints},
+  author={Li, Liu and Ma, Qiang and Li, Zeju and Ouyang, Cheng and Zhang, Weitong and Price, Anthony and Kyriakopoulou, Vanessa and Cordero-Grande, Lucilio and Makropoulos, Antonis and Hajnal, Joseph and Rueckert, Daniel and Kainz, Bernhard and Alansary, Amir},
+  year={2022},
+  booktitle={Topological Data Analysis and Its Applications for Medical Data (miccai-tda 2022)},
+  doi={10.1007/978-3-031-23223-7_11}
+}</code></pre>
 ``` 

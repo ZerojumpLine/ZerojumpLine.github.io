@@ -40,8 +40,8 @@ Learn2Reg represents a significant contribution to the medical image registratio
 
 ## BibTeX
 
-```bibtex
-@article{hering2022learn2reg,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{hering2022learn2reg,
   title={Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
   author={Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert CS and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
   journal={IEEE Transactions on Medical Imaging},
@@ -51,5 +51,15 @@ Learn2Reg represents a significant contribution to the medical image registratio
   year={2022},
   publisher={IEEE},
   doi={10.1109/TMI.2022.3213983}
-}
+}"><code>@article{hering2022learn2reg,
+  title={Learn2Reg: comprehensive multi-task medical image registration challenge, dataset and evaluation in the era of deep learning},
+  author={Hering, Alessa and Hansen, Lasse and Mok, Tony CW and Chung, Albert CS and Siebert, Hanna and H{\"a}ger, Stephanie and Lange, Annkristin and Kuckertz, Sven and Heldmann, Stefan and Shao, Wei and others},
+  journal={IEEE Transactions on Medical Imaging},
+  volume={42},
+  number={3},
+  pages={697--712},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/TMI.2022.3213983}
+}</code></pre>
 ``` 

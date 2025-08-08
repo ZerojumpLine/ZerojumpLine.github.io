@@ -35,11 +35,16 @@ The proposed framework represents a significant advancement in medical image gen
 
 ## BibTeX
 
-```bibtex
-@inproceedings{huang2025vap,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{huang2025vap,
   title={VAP-Diffusion: Enriching Descriptions with MLLMs for Enhanced Medical Image Generation},
   author={Huang, Peng and Fu, Junhu and Guo, Bowen and Li, Zeju and Wang, Yuanyuan and Guo, Yi},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2025)},
   year={2025}
-}
+}"><code>@inproceedings{huang2025vap,
+  title={VAP-Diffusion: Enriching Descriptions with MLLMs for Enhanced Medical Image Generation},
+  author={Huang, Peng and Fu, Junhu and Guo, Bowen and Li, Zeju and Wang, Yuanyuan and Guo, Yi},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2025)},
+  year={2025}
+}</code></pre>
 ``` 

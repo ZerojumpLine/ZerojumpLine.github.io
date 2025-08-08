@@ -32,12 +32,18 @@ The findings from this work contribute to a better understanding of neural netwo
 
 ## BibTeX
 
-```bibtex
-@inproceedings{li2018overfitting,
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2018overfitting,
   title={Overfitting of neural nets under class imbalance: Analysis and improvements for segmentation},
   author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
   booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
   year={2019},
   doi={10.1007/978-3-030-32248-9_45}
-}
+}"><code>@inproceedings{li2018overfitting,
+  title={Overfitting of neural nets under class imbalance: Analysis and improvements for segmentation},
+  author={Li, Zeju and Kamnitsas, Konstantinos and Glocker, Ben},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2019)},
+  year={2019},
+  doi={10.1007/978-3-030-32248-9_45}
+}</code></pre>
 ``` 
