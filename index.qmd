@@ -201,7 +201,7 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 ::: {.columns}
 
 ::: {.column width="30%"}
-## Hiring
+## Vacancies
 :::
 
 ::: {.column width="20%"}

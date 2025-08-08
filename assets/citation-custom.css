@@ -386,6 +386,7 @@ body.quarto-dark:not([class*="listing"]) .subtitle {
 body.quarto-light:not([class*="listing"]) .quarto-category {
   background-color: #ffffff !important; /* Dark mode category background */
   border-color: #718096 !important; /* Dark mode category border */
+  font-size: 12px !important; /* Force consistent font size */
 }
 
 body.quarto-light:not([class*="listing"]) .quarto-category:hover {
@@ -397,11 +398,19 @@ body.quarto-light:not([class*="listing"]) .quarto-category:hover {
 body.quarto-dark:not([class*="listing"]) .quarto-category {
   background-color: #4a5568 !important; /* Dark mode category background */
   border-color: #718096 !important; /* Dark mode category border */
+  font-size: 12px !important; /* Force consistent font size */
 }
 
 body.quarto-dark:not([class*="listing"]) .quarto-category:hover {
   background-color: #718096 !important; /* Dark mode category hover background */
   border-color: #a0aec0 !important; /* Dark mode category hover border */
+}
+
+/* Force consistent font size for all category elements */
+.quarto-category,
+body.quarto-light .quarto-category,
+body.quarto-dark .quarto-category {
+  font-size: 12px !important;
 }
 
 

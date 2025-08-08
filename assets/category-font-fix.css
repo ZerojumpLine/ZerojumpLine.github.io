@@ -1,0 +1,156 @@
+/* Category Font Size Consistency Fix */
+/* This file ensures all category elements have consistent 12px font size */
+
+/* Global category font size fix with maximum specificity */
+html body .quarto-category,
+html body .quarto-listing-category .category,
+html body .listing-category,
+html body .quarto-listing .listing-categories .listing-category,
+html body .quarto-listing-category .category,
+html body .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Light theme specific */
+html body.quarto-light .quarto-category,
+html body.quarto-light .quarto-listing-category .category,
+html body.quarto-light .listing-category,
+html body.quarto-light .quarto-listing .listing-categories .listing-category,
+html body.quarto-light .quarto-listing-category .category,
+html body.quarto-light .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Dark theme specific */
+html body.quarto-dark .quarto-category,
+html body.quarto-dark .quarto-listing-category .category,
+html body.quarto-dark .listing-category,
+html body.quarto-dark .quarto-listing .listing-categories .listing-category,
+html body.quarto-dark .quarto-listing-category .category,
+html body.quarto-dark .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Force font size for any element with "category" in its class name */
+html body [class*="category"],
+html body [class*="Category"] {
+  font-size: 12px !important;
+}
+
+/* Override any Bootstrap or framework default styles */
+html body .btn.quarto-category,
+html body .btn.listing-category,
+html body .btn.quarto-listing-category .category,
+html body .badge.quarto-category,
+html body .badge.listing-category {
+  font-size: 12px !important;
+}
+
+/* Ensure the rule applies even with additional specificity */
+html body .quarto-container .quarto-category,
+html body .quarto-container .quarto-listing-category .category,
+html body .quarto-container .listing-category,
+html body .quarto-container .quarto-listing .listing-categories .listing-category {
+  font-size: 12px !important;
+}
+
+/* Override any inline styles that might be set by JavaScript */
+html body .quarto-category[style*="font-size"],
+html body .quarto-listing-category .category[style*="font-size"],
+html body .listing-category[style*="font-size"],
+html body .quarto-listing .listing-categories .listing-category[style*="font-size"] {
+  font-size: 12px !important;
+}
+
+/* Category Spacing Consistency Fix */
+/* Ensure consistent spacing and layout for categories across themes */
+
+/* Consistent padding for all category elements */
+html body .quarto-category,
+html body .quarto-listing-category .category,
+html body .listing-category,
+html body .quarto-listing .listing-categories .listing-category {
+  padding: 0.25rem 0.5rem !important;
+  margin: 0.25rem !important;
+  line-height: 1.2 !important;
+}
+
+/* Consistent container spacing */
+html body .quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure consistent spacing in both themes */
+html body.quarto-light .quarto-listing-category,
+html body.quarto-dark .quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Force consistent display and spacing for category containers */
+html body .quarto-listing-category .category,
+html body .quarto-listing .listing-categories .listing-category {
+  display: inline-block !important;
+  margin-right: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Ensure consistent spacing in sidebar categories */
+html body #quarto-margin-sidebar .quarto-listing-category {
+  padding: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+html body #quarto-margin-sidebar .quarto-listing-category .category {
+  margin: 0.25rem !important;
+  padding: 0.25rem 0.5rem !important;
+}
+
+/* Vertical Alignment and Positioning Fix */
+/* Ensure categories are positioned consistently across themes */
+
+/* Consistent vertical alignment for all category elements */
+html body .quarto-category,
+html body .quarto-listing-category .category,
+html body .listing-category,
+html body .quarto-listing .listing-categories .listing-category {
+  vertical-align: baseline !important;
+  line-height: 1.2 !important;
+  position: relative !important;
+  top: 0 !important;
+}
+
+/* Force consistent vertical positioning in both themes */
+html body.quarto-light .quarto-category,
+html body.quarto-light .quarto-listing-category .category,
+html body.quarto-light .listing-category,
+html body.quarto-light .quarto-listing .listing-categories .listing-category,
+html body.quarto-dark .quarto-category,
+html body.quarto-dark .quarto-listing-category .category,
+html body.quarto-dark .listing-category,
+html body.quarto-dark .quarto-listing .listing-categories .listing-category {
+  vertical-align: baseline !important;
+  line-height: 1.2 !important;
+  position: relative !important;
+  top: 0 !important;
+}
+
+/* Ensure category containers have consistent vertical alignment */
+html body .quarto-listing-category,
+html body.quarto-light .quarto-listing-category,
+html body.quarto-dark .quarto-listing-category {
+  vertical-align: top !important;
+  line-height: 1.4 !important;
+}
+
+/* Fix for any floating or positioning issues */
+html body .quarto-listing-category .category,
+html body .quarto-listing .listing-categories .listing-category {
+  float: none !important;
+  position: relative !important;
+  top: 0 !important;
+  transform: none !important;
+} 

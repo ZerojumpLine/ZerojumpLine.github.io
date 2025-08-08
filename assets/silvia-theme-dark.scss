@@ -582,6 +582,20 @@ body.quarto-dark {
     color: #ede8de !important;
   }
 
+  // Force consistent font size for all category elements in dark mode
+  .quarto-listing-category .category,
+  .quarto-category {
+    font-size: 12px !important;
+  }
+
+  // Comprehensive font-size fix for all category elements across the entire site
+  .quarto-category,
+  .quarto-listing-category .category,
+  .listing-category,
+  .quarto-listing .listing-categories .listing-category {
+    font-size: 12px !important;
+  }
+
   // Ensure navbar dropdown uses dark theme colors
   .navbar-nav .dropdown-menu {
     background-color: #141414 !important;

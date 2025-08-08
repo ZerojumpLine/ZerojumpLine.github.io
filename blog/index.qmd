@@ -28,7 +28,9 @@ format:
 title-block-banner: false
 
 header-includes: >
+  <link rel="stylesheet" href="../assets/category-font-fix.css">
   <link rel="stylesheet" href="../assets/listing-default.css">
 resources:
+  - ../assets/category-font-fix.css
   - ../assets/listing-default.css 
 ---
