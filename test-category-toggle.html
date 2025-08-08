@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Toggle Test</title>
+    <link rel="stylesheet" href="assets/listing-default.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .quarto-listing-category {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .quarto-listing-category-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .listing-item {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .listing-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .listing-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .listing-description {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .listing-categories {
+            margin-top: 10px;
+        }
+        
+        .listing-categories .category {
+            display: inline-block;
+            padding: 2px 8px;
+            margin-right: 5px;
+            background: #e9ecef;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #495057;
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+        
+        .demo-instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .demo-instructions h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Enhanced Category Toggle Demo</h1>
+        
+        <div class="demo-instructions">
+            <h3>How it works:</h3>
+            <ul>
+                <li><strong>Click "Book" category</strong> - Shows only Book items, Book icons become shaded</li>
+                <li><strong>Click "Book" again</strong> - Shows all items again, removes shading</li>
+                <li><strong>Click "Article" category</strong> - Shows only Article items, Article icons become shaded</li>
+                <li><strong>Visual feedback</strong> - Active categories have enhanced styling and icon shading</li>
+            </ul>
+        </div>
+
+        <!-- Category Filter Section -->
+        <div class="quarto-listing-category">
+            <div class="quarto-listing-category-title">Filter by Category:</div>
+            <div class="category" data-category="Book" onclick="quartoListingCategory(btoa(encodeURIComponent('Book')))">
+                📚 Book
+            </div>
+            <div class="category" data-category="Article" onclick="quartoListingCategory(btoa(encodeURIComponent('Article')))">
+                📄 Article
+            </div>
+            <div class="category" data-category="Conference" onclick="quartoListingCategory(btoa(encodeURIComponent('Conference')))">
+                🎤 Conference
+            </div>
+            <div class="category" data-category="Journal" onclick="quartoListingCategory(btoa(encodeURIComponent('Journal')))">
+                📖 Journal
+            </div>
+        </div>
+        
+        <!-- Debug Info -->
+        <div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 4px; font-family: monospace; font-size: 12px;">
+            <strong>Debug Info:</strong><br>
+            <span id="debug-info">No category selected</span>
+        </div>
+
+        <!-- Listing Items -->
+        <div class="quarto-listing">
+            <div class="listing-item" data-categories="Book,Research">
+                <div class="listing-title">Deep Learning Fundamentals</div>
+                <div class="listing-description">A comprehensive guide to deep learning concepts and applications.</div>
+                <div class="listing-categories">
+                    <span class="category">Book</span>
+                    <span class="category">Research</span>
+                </div>
+            </div>
+
+            <div class="listing-item" data-categories="Article,AI">
+                <div class="listing-title">Neural Network Architectures</div>
+                <div class="listing-description">Analysis of modern neural network architectures and their performance.</div>
+                <div class="listing-categories">
+                    <span class="category">Article</span>
+                    <span class="category">AI</span>
+                </div>
+            </div>
+
+            <div class="listing-item" data-categories="Book,Education">
+                <div class="listing-title">Machine Learning Basics</div>
+                <div class="listing-description">Introduction to machine learning concepts for beginners.</div>
+                <div class="listing-categories">
+                    <span class="category">Book</span>
+                    <span class="category">Education</span>
+                </div>
+            </div>
+
+            <div class="listing-item" data-categories="Conference,AI">
+                <div class="listing-title">ICML 2024 Paper</div>
+                <div class="listing-description">Novel approaches to reinforcement learning in dynamic environments.</div>
+                <div class="listing-categories">
+                    <span class="category">Conference</span>
+                    <span class="category">AI</span>
+                </div>
+            </div>
+
+            <div class="listing-item" data-categories="Article,Research">
+                <div class="listing-title">Computer Vision Advances</div>
+                <div class="listing-description">Recent developments in computer vision and image processing.</div>
+                <div class="listing-categories">
+                    <span class="category">Article</span>
+                    <span class="category">Research</span>
+                </div>
+            </div>
+
+            <div class="listing-item" data-categories="Journal,AI">
+                <div class="listing-title">Nature AI Publication</div>
+                <div class="listing-description">Breakthrough in artificial general intelligence research.</div>
+                <div class="listing-categories">
+                    <span class="category">Journal</span>
+                    <span class="category">AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/custom-category-toggle.js"></script>
+    <script>
+        // Mock Quarto functions for testing
+        window.categoriesLoaded = true;
+        window.activateCategory = function(category) {
+            console.log('Mock activateCategory called with:', category);
+            
+            const items = document.querySelectorAll('.listing-item');
+            const debugInfo = document.getElementById('debug-info');
+            
+            items.forEach(item => {
+                const itemCategories = item.getAttribute('data-categories').split(',');
+                
+                if (!category || category === "") {
+                    // Show all items
+                    item.classList.remove('hidden');
+                    debugInfo.textContent = 'Showing all items';
+                } else {
+                    // Show only items with matching category
+                    if (itemCategories.includes(category)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                    debugInfo.textContent = `Filtering by: ${category}`;
+                }
+            });
+        };
+        
+        window.getHash = function() {
+            return {};
+        };
+        
+        window.setHash = function(hash) {
+            console.log('Mock setHash called with:', hash);
+        };
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Test page loaded');
+            
+            // Override the toggleCategory function to add debug info
+            const originalToggleCategory = window.toggleCategory;
+            if (originalToggleCategory) {
+                window.toggleCategory = function(category) {
+                    const debugInfo = document.getElementById('debug-info');
+                    if (window.currentActiveCategory === category) {
+                        debugInfo.textContent = `Deactivating: ${category} (showing all items)`;
+                    } else {
+                        debugInfo.textContent = `Activating: ${category}`;
+                    }
+                    return originalToggleCategory.call(this, category);
+                };
+            }
+        });
+    </script>
+</body>
+</html> 

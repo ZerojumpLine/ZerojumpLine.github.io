@@ -130,14 +130,14 @@ body.quarto-dark .card-footer {
 
 .quarto-listing-category .category:hover {
   background-color: #7f8c8d;
-  color: #fff !important;
+  color: #000 !important;
   border-color: #7f8c8d;
   text-decoration: none;
 }
 
 .quarto-listing-category .category.active {
   background-color: #7f8c8d !important;
-  color: #fff !important;
+  color: #000 !important;
   border-color: #7f8c8d !important;
   text-decoration: none;
 }
