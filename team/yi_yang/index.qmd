@@ -56,7 +56,7 @@ Yi joined the lab in 2025 and is currently pursuing his Master's degree in Biome
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2028</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Xiamen University ∙ Expected 2025</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Xiamen University ∙ 2025</li>
 </ul>
 
 :::
