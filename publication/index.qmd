@@ -13,7 +13,7 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
-  fields: [title, author, categories, date]
+  fields: [title, author, categories, date, description]
   image-align: left
   # image-height: 10em
   # page-size: 5
