@@ -7,7 +7,7 @@ image: featured.png
 categories:
   - Ph.D.
   - BME
-subtitle: "An advanced practical course for senior undergraduate students."
+subtitle: "An advanced, discussion-based course for Ph.D. students."
 description: ''
 links:
 # listing: 

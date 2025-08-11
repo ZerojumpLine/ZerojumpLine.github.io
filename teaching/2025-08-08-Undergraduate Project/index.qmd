@@ -7,7 +7,7 @@ image: featured.jpg
 categories:
   - UG
   - BME
-subtitle: "An advanced practical course for senior undergraduate students."
+subtitle: "An practical course for BME senior undergraduate students."
 description: ''
 links:
 # listing: 
