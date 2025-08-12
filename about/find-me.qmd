@@ -344,9 +344,8 @@ The Jiangwan Campus is located in the northeastern part of Shanghai, featuring m
 ![Campus View](sidebar/campus.jpg)
 
 **Getting Here:**
-- **Metro:** Line 10 to Jiangwan Stadium Station (江湾体育场站)
-- **Bus:** Routes 966, 537, 854, 942
-- **Address:** 2005 Songhu Road, Yangpu District, Shanghai
+- **Metro:** Take Line 10 to Guofan Road Station (国帆路) – Exit 3 (3号口)
+- **Address:**  2005 Songhu Road, Yangpu District, Shanghai (Enter at Gate 2 / 2号门)
 :::
 :::
 
@@ -395,7 +394,8 @@ Our dedicated research space where innovation meets collaboration.
 ## Social Media & Professional Networks
 
 - **University Website:** [Fudan-BME](https://bme-college.fudan.edu.cn/lzj/main.htm)
-- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/zeju-li-a42676102/)
 - **Twitter/X:** [@li_zeju](https://twitter.com/li_zeju)
+- **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/zeju-li-a42676102/)
+- **Github:** [Github](https://github.com/ZerojumpLine/)
 - **Google Scholar:** [Zeju Li](https://scholar.google.co.uk/citations?user=zeuflXEAAAAJ&hl=en&oi=ao)
 - **ORCID:** [0000-0002-4608-2959](https://orcid.org/0000-0002-4608-2959)
