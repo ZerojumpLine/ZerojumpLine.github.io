@@ -2,7 +2,7 @@
 title: Publications
 description: |
   This is home for my research publications, each linked with accompanying preprints, posters, and/or news pieces.
-author: "Silvia Canelón"
+author: "Zeju Li"
 show_post_thumbnail: false
 thumbnail_left: true # for list-sidebar only
 show_author_byline: true
@@ -16,14 +16,14 @@ sidebar:
   description: |
     A home for my research publications.
     
-  author: "Silvia Canelón"
+  author: "Zeju Li"
   text_link_label: Subscribe via RSS
   text_link_url: /index.xml
   show_sidebar_adunit: true # show ad container
 
 # set up common front matter for all pages inside publication/
 cascade:
-  author: "Silvia Canelón"
+  author: "Zeju Li"
   show_author_byline: true
   show_post_date: true
   show_comments: false # see site config to choose Disqus or Utterances

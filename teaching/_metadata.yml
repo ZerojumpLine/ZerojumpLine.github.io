@@ -22,12 +22,12 @@ format:
       - ../_partials/title-block-link-buttons/title-block.html
 
 # Post info
-author: Silvia Canelón
+author: Zeju Li
 
 # Enable comments
 # comments:
 #   utterances:
-#     repo: spcanelon/silvia
+#     repo: ZerojumpLine/ZerojumpLine.github.io
 #     issue-term: title
 #     theme: boxy-light
 #     label: "comments :crystal_ball:"

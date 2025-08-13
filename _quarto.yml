@@ -11,12 +11,12 @@ website:
   back-to-top-navigation: true
 
   twitter-card:
-    creator: "@spcanelon"
-    site: "@spcanelon"
+    creator: "@ZerojumpLine"
+    site: "@ZerojumpLine"
     card-style: summary_large_image
   comments: 
     utterances: 
-      repo: yourusername/yourrepo
+      repo: ZerojumpLine/ZerojumpLine.github.io
       label: utterances
       theme: body-light
       issue-term: title
