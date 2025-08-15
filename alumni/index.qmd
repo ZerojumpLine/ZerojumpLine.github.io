@@ -56,6 +56,16 @@ resources:
       <td>Jul 2025</td>
     </tr>
 
+    <tr data-name="Jiahe Wang" data-role="Intern" data-start="2025-06" data-end="2025-08">
+      <td class="name-cell">
+        <img src="jiahe_wang/jiahe_wang.jpg" alt="Jiahe Wang" class="profile-image">
+        <a href="jiahe_wang/" class="alumni-name">Jiahe Wang</a>
+      </td>
+      <td>Intern, Tulane University</td>
+      <td>Jun 2025</td>
+      <td>Aug 2025</td>
+    </tr>
+
 
 
   </tbody>
