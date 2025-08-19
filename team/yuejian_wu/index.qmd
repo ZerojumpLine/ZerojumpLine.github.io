@@ -46,7 +46,7 @@ Feb 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Yuejian Wu is a doctor student working on multi-modal learning and class imabalance.
+Yuejian Wu is a doctor student working on multi-modal learning and class imbalance.
 
 :::
 
