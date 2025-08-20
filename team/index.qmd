@@ -9,7 +9,7 @@ listing:
     - "danqing_gu/index.qmd"
     - "haoyan_ma/index.qmd"
     - "jie_xu/index.qmd"
-    - "jiahe_wang/index.qmd"
+    - "zekai_yu/index.qmd"
     - "jiaheng_dai/index.qmd"
     - "lei_liu/index.qmd"
     - "weidong_guo/index.qmd"

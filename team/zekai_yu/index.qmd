@@ -1,0 +1,61 @@
+---
+title: "Zekai Yu"
+subtitle: "Undergraduate Student"
+image: zekai_yu.jpg
+date: 2025-08-01
+image-alt: "Zekai Yu"
+categories:
+  - UG
+  - 2025
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">余泽锴</div>
+
+**本科生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Aug 2025 - Present
+
+📧 **Email** 24300720002(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Zekai Yu is an undergraduate student working on quantifying and understanding brain aging.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Zekai joined the lab in 2025 and is currently pursuing his Bachelor's degree in Biomedical Engineering at the Fudan University.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2028</li>
+</ul>
+
+:::
+:::
