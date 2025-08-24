@@ -1,5 +1,5 @@
 ---
-title: "AI Foundations 2025"
+title: "AI Fundamentals 2025"
 author: Zeju Li
 date: 2025-09-01
 slug: AI-2025
@@ -54,7 +54,7 @@ links:
 
 I am teaching an AI course designed for a general audience, suitable for students from all majors.
 
-## AI Foundations
+## AI Fundamentals
 
 In this course, I will cover some basic concepts of AI.
 
