@@ -52,7 +52,7 @@ Yuejian Wu is a doctor student working on multi-modal learning and class imbalan
 
 ::: {.g-col-6 #about-me-2}
 
-Yuejian joined the lab in 2025 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+Yuejian joined the lab in 2025 and is currently pursuing her doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2030</li>

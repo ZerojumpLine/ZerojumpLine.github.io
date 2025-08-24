@@ -52,7 +52,7 @@ Wutong Li is a doctor student working on domain robust learning.
 
 ::: {.g-col-6 #about-me-2}
 
-Wutong joined the lab in 2022 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+Wutong joined the lab in 2022 and is currently pursuing her doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2027</li>
