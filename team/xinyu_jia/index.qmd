@@ -51,9 +51,10 @@ Xinyu Jia is an undergraduate student working on improving model generation base
 
 ::: {.g-col-6 #about-me-2}
 
-Xinyu joined the lab in 2025 and is currently pursuing his Bachelor's degree in Electronic Engineering at the Fudan University.
+Xinyu joined the lab in 2025 and is completing his Bachelor's degree in Electronic Engineering at Fudan University before he pursues a Ph.D. with us.
 
 <ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2031</li>
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
 </ul>
 

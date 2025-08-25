@@ -1,0 +1,64 @@
+---
+title: "Shangkun Li"
+subtitle: "Undergraduate Student"
+image: shangkun_li.jpg
+date: 2025-06-01
+image-alt: "Shangkun Li"
+categories:
+  - UG
+  - 2025
+  - He/Him
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">李尚昆</div>
+
+**本科生研究员**  
+
+&nbsp;
+
+[College of Future Information Technology](https://ercalt.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+June 2025 - Present
+
+📧 **Email** 22307130255(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Shangkun Li is an undergraduate student working on medical LLMs.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Shangkun joined the lab in 2025 and is currently completing his Bachelor's degree in Electronic Engineering at Fudan University before pursuing a Master's degree with us.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2029</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
+</ul>
+
+:::
+:::
+
+

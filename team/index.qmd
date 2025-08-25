@@ -12,6 +12,7 @@ listing:
     - "zekai_yu/index.qmd"
     - "jiaheng_dai/index.qmd"
     - "lei_liu/index.qmd"
+    - "shangkun_li/index.qmd"
     - "weidong_guo/index.qmd"
     - "wutong_li/index.qmd"
     - "xinyu_jia/index.qmd"
