@@ -54,7 +54,7 @@ Shangkun Li is an undergraduate student working on medical LLMs.
 Shangkun joined the lab in 2025 and is currently completing his Bachelor's degree in Electronic Engineering at Fudan University before pursuing a Master's degree with us.
 
 <ul class="fa-ul">
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2029</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2029</li>
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
 </ul>
 
