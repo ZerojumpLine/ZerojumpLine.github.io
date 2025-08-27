@@ -33,6 +33,31 @@ body.quarto-dark #hero-heading .subtitle {
 .about-entity .about-link {
   padding: 0.25em 0.25em !important;
   border: none !important;  
+  font-size: 1.5rem !important; /* Make icons larger */
+  transition: all 0.2s ease-in-out !important; /* Smooth transition for hover effects */
+}
+
+/* Make icons even larger on hover for better interactivity */
+.about-entity .about-link:hover {
+  font-size: 1.8rem !important;
+  transform: scale(1.1) !important;
+}
+
+/* Ensure the icon containers have enough space */
+.about-entity .about-link i,
+.about-entity .about-link .fa,
+.about-entity .about-link .ai {
+  font-size: inherit !important;
+  line-height: 1 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Increase spacing between icons for better visual separation */
+.about-entity .about-links {
+  justify-content: center !important;
+  column-gap: 0.5em !important; /* Increased from 0em */
+  font-size: 1.1rem !important;
 }
 
 /* about area */
@@ -82,6 +107,16 @@ body.quarto-dark #hero-heading .subtitle {
   .about-entity .about-links {
     font-size: 1.1rem !important;
   }
+    
+  /* social links: individual links - mobile adjustments */
+  .about-entity .about-link {
+    font-size: 1.3rem !important; /* Slightly smaller on mobile but still larger than original */
+  }
+  
+  .about-entity .about-link:hover {
+    font-size: 1.5rem !important; /* Smaller hover effect on mobile */
+    transform: scale(1.05) !important;
+  }
 }
 
 /* mobile query up for screens up to ~576px wide */
@@ -108,7 +143,16 @@ body.quarto-dark #hero-heading .subtitle {
   .about-entity .about-links {
     font-size: 1rem !important;
   }
-
+  
+  /* social links: individual links - small mobile adjustments */
+  .about-entity .about-link {
+    font-size: 1.2rem !important; /* Even smaller on very small screens but still larger than original */
+  }
+  
+  .about-entity .about-link:hover {
+    font-size: 1.4rem !important; /* Smaller hover effect on very small screens */
+    transform: scale(1.03) !important;
+  }
   /* about area */
   .about-entity {
     margin: 0em 0em 0em 0em;
