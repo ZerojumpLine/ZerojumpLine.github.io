@@ -27,6 +27,14 @@ header-includes: >
   .container .research-intro,
   .container-fluid .research-intro,
   .row .research-intro,
+  
+  /* Main content text styling - larger font for better readability */
+  .research-intro .column[width="65%"] p {
+    font-size: 1.3rem !important;
+    line-height: 1.7;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+  }
   body .research-cards,
   html .research-cards,
   .quarto-container .research-cards,

@@ -15,7 +15,7 @@ lastmod: '2025-01-15'
 links:
   - icon: file-code
     name: Paper
-    url: https://arxiv.org/abs/2403.19629
+    url: https://arxiv.org/abs/2207.09957
   - icon: github
     name: Code
     url: https://github.com/ZerojumpLine/MOVAL
