@@ -94,7 +94,7 @@ We are pushing the boundaries of biomedical image analysis using AI.
 :::
 
 ::: {.column width="65%"}
-We are broadly interested in machine learning, medical image computing, and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes. 
+We are broadly interested in machine learning, medical imaging, and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes. 
 
 Currently, we are working on building AI models that can: 1) operate reliably and stably (e.g., interpretability, uncertainty), 2) advance medical imaging pipelines (e.g., reconstruction, segmentation), and 3) eventually enhance our understanding of brain functions (e.g., fMRI, dMRI).
 :::
