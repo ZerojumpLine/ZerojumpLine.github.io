@@ -14,7 +14,16 @@ slug: joint-optimization-segmentation
 image: featured.png
 description: 'IEEE Transactions on Medical Imaging'
 subtitle: A novel approach for joint optimization of class-specific training and test-time data augmentation in medical image segmentation tasks.
-bibliography: ../publications.bib
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1109/TMI.2023.3282728
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2305.19084
+- icon: github
+  name: Code
+  url: https://github.com/ZerojumpLine/JCSAugment
 ---
 
 ## Abstract

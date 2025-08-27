@@ -17,9 +17,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1080/24699322.2017.1378722
-- icon: calendar-check
-  name: Computer Assisted Surgery
-  url: https://www.tandfonline.com/doi/full/10.1080/24699322.2017.1378722
 ---
 
 ## Abstract

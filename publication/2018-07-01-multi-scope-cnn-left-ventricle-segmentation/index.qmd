@@ -18,9 +18,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1109/CISP-BMEI.2018.8633185
-- icon: calendar-check
-  name: CISP-BMEI 2018
-  url: https://ieeexplore.ieee.org/document/8633185
 ---
 
 ## Abstract

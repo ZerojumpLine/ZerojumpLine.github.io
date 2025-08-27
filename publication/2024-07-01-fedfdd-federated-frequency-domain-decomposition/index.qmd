@@ -18,9 +18,9 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://openreview.net/forum?id=Zg0mfl10o2
-- icon: calendar-check
-  name: MIDL 2024
-  url: https://openreview.net/forum?id=Zg0mfl10o2
+- icon: github
+  name: Code
+  url: https://github.com/xuhang2019/FedFDD
 ---
 
 ## Abstract

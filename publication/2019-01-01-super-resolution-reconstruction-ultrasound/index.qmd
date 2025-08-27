@@ -17,9 +17,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1166/jmihi.2019.2548
-- icon: calendar-check
-  name: Journal of Medical Imaging and Health Informatics
-  url: https://www.ingentaconnect.com/content/asp/jmihi/2019/00000009/00000001/art00001
 ---
 
 ## Abstract

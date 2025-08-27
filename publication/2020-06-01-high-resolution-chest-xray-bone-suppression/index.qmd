@@ -19,9 +19,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1109/TMI.2020.2986242
-- icon: calendar-check
-  name: IEEE TMI
-  url: https://ieeexplore.ieee.org/document/9045678
 ---
 
 ## Abstract

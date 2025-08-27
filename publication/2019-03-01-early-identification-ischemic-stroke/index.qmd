@@ -19,9 +19,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1016/j.bspc.2019.03.008
-- icon: calendar-check
-  name: Biomedical Signal Processing and Control
-  url: https://www.sciencedirect.com/science/article/abs/pii/S1746809419300894
 ---
 
 ## Abstract

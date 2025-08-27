@@ -13,7 +13,10 @@ slug: deep-learning-radiomics-idh1
 image: featured.png
 description: 'Scientific Reports'
 subtitle: A novel deep learning radiomics approach for noninvasive prediction of IDH1 mutation status in low-grade gliomas.
-bibliography: ../publications.bib
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1038/s41598-017-05848-2
 ---
 
 ## Abstract

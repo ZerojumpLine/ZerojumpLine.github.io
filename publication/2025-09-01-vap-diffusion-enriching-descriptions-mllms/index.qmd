@@ -15,12 +15,12 @@ image: featured.png
 description: 'MICCAI 2025'
 subtitle: A novel diffusion-based approach for medical image generation using MLLM-enriched descriptions.
 links:
-- icon: file-richtext-fill
-  name: Publication
-  url: https://miccai2025.org/
-- icon: calendar-check
-  name: MICCAI 2025
-  url: https://miccai2025.org/
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2506.23641
+- icon: github
+  name: Code
+  url: https://github.com/YiBaiHP/VAP-Diffusion
 ---
 
 ## Abstract

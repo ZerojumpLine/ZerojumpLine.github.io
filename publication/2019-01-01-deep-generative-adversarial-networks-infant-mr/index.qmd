@@ -18,9 +18,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1109/ACCESS.2019.2918926
-- icon: calendar-check
-  name: IEEE Access
-  url: https://ieeexplore.ieee.org/document/8712345
 ---
 
 ## Abstract
