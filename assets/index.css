@@ -193,6 +193,18 @@ body.quarto-dark .research-card.card-3 {
   text-align: center;
 }
 
+/* Main content text styling - larger font for better readability */
+.column[width="65%"] p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+body.quarto-dark .column[width="65%"] p {
+  color: #ede8de;
+}
+
 /* CTA section */
 .cta-section {
   margin-top: 2rem;
