@@ -23,9 +23,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1038/s41374-020-0472-x
-- icon: calendar-check
-  name: Laboratory Investigation
-  url: https://www.nature.com/articles/s41374-020-0472-x
 ---
 
 ## Abstract

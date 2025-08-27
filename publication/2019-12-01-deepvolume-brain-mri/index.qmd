@@ -15,7 +15,13 @@ slug: deepvolume-brain-mri
 image: featured.png
 description: 'IEEE Transactions on Cybernetics'
 subtitle: A novel deep learning approach for brain MRI super-resolution that incorporates brain structure and spatial connection awareness.
-bibliography: ../publications.bib
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1109/TCYB.2019.2933633
+- icon: github
+  name: Code
+  url: https://github.com/ZerojumpLine/DeepVolume
 ---
 
 ## Abstract

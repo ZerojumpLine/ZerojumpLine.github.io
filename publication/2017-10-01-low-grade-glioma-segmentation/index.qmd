@@ -19,9 +19,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1155/2017/9283480
-- icon: calendar-check
-  name: Journal of Healthcare Engineering
-  url: https://www.hindawi.com/journals/jhe/2017/9283480/
 ---
 
 ## Abstract

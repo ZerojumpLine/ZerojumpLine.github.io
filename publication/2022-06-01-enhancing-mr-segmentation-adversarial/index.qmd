@@ -21,9 +21,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1016/j.media.2022.102597
-- icon: calendar-check
-  name: Medical Image Analysis
-  url: https://www.sciencedirect.com/science/article/abs/pii/S1361841522001028
 ---
 
 ## Abstract

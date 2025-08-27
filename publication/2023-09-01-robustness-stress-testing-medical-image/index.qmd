@@ -15,9 +15,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1007/978-3-031-44336-7_17
-- icon: calendar-check
-  name: MICCAI-UNSURE 2023
-  url: https://link.springer.com/chapter/10.1007/978-3-031-44336-7_17
 ---
 
 ## Abstract

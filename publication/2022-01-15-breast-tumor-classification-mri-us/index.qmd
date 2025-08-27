@@ -22,9 +22,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1109/JBHI.2022.3140236
-- icon: calendar-check
-  name: IEEE JBHI
-  url: https://ieeexplore.ieee.org/document/9674567
 ---
 
 ## Abstract

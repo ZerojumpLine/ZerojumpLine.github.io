@@ -15,9 +15,9 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1007/978-3-030-32248-9_45
-- icon: calendar-check
-  name: MICCAI 2019
-  url: https://link.springer.com/chapter/10.1007/978-3-030-32248-9_45
+- icon: github
+  name: Code
+  url: https://github.com/ZerojumpLine/OverfittingUnderClassImbalance
 ---
 
 ## Abstract
