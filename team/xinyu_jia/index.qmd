@@ -1,6 +1,6 @@
 ---
 title: "Xinyu Jia"
-subtitle: "Ph.D. Student"
+subtitle: "Undergraduate Student"
 image: xinyu_jia.jpg
 date: 2025-05-01
 image-alt: "Xinyu Jia"
@@ -27,7 +27,7 @@ format:
 
 &nbsp;
 
-[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+[College of Future Information Technology](https://ercalt.fudan.edu.cn/)  
 Fudan University
 
 &nbsp;
