@@ -205,6 +205,221 @@ fig.show()
 
 This 3D visualization demonstrates Plotly's advanced capabilities for regression analysis, showing both the actual data points and the learned regression surface. You can rotate, zoom, and interact with the 3D plot to explore the relationship between sepal dimensions and petal width.
 
+### Flow Matching Animation Between Two Densities
+
+Flow matching is a powerful technique for learning continuous normalizing flows between probability distributions. Here's an interactive example showing the transformation from a Gaussian distribution to a more complex multimodal distribution:
+
+```{python}
+#| echo: false
+#| output: true
+import plotly.graph_objects as go
+import plotly.express as px
+from plotly.subplots import make_subplots
+import numpy as np
+from scipy.stats import multivariate_normal
+import pandas as pd
+
+# Set random seed for reproducibility
+np.random.seed(42)
+
+# Define the source and target distributions
+def source_density(x, y):
+    """Source: 2D Gaussian distribution"""
+    mean = [0, 0]
+    cov = [[1, 0.3], [0.3, 1]]
+    return multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean, cov).reshape(x.shape)
+
+def target_density(x, y):
+    """Target: Mixture of two Gaussians"""
+    mean1, cov1 = [2, 2], [[0.5, 0.1], [0.1, 0.5]]
+    mean2, cov2 = [-2, -2], [[0.8, -0.2], [-0.2, 0.8]]
+    
+    pdf1 = multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean1, cov1).reshape(x.shape)
+    pdf2 = multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean2, cov2).reshape(x.shape)
+    return 0.6 * pdf1 + 0.4 * pdf2
+
+# Create grid for density visualization
+x = np.linspace(-4, 4, 50)
+y = np.linspace(-4, 4, 50)
+X, Y = np.meshgrid(x, y)
+
+# Generate flow matching trajectory
+def flow_matching_trajectory(t):
+    """Simple linear interpolation between source and target"""
+    return (1 - t) * source_density(X, Y) + t * target_density(X, Y)
+
+# Create animation frames
+n_frames = 30
+frames = []
+for i in range(n_frames):
+    t = i / (n_frames - 1)
+    density = flow_matching_trajectory(t)
+    
+    # Create contour plot for each frame
+    frame = go.Frame(
+        data=[
+            go.Contour(
+                x=x, y=y, z=density,
+                colorscale='Plasma',
+                showscale=False,
+                opacity=0.9,
+                line=dict(width=0.5, color='rgba(255,255,255,0.3)'),
+                contours=dict(
+                    showlines=True,
+                    start=0,
+                    end=np.max(density),
+                    size=np.max(density)/12,
+                    coloring='heatmap'
+                )
+            )
+        ],
+        name=f"frame_{i}"
+    )
+    frames.append(frame)
+
+# Create initial figure
+fig = go.Figure(
+    data=[
+        go.Contour(
+            x=x, y=y, z=source_density(X, Y),
+            colorscale='Plasma',
+            showscale=False,
+            opacity=0.9,
+            line=dict(width=0.5, color='rgba(255,255,255,0.3)'),
+            contours=dict(
+                showlines=True,
+                start=0,
+                end=np.max(source_density(X, Y)),
+                size=np.max(source_density(X, Y))/12,
+                coloring='heatmap'
+            )
+        )
+    ],
+    frames=frames
+)
+
+# Add animation controls
+fig.update_layout(
+    title=dict(
+        text="Flow Matching: Gaussian → Multimodal Distribution",
+        font=dict(size=20, color="#1a1a1a", family="Inter, -apple-system, BlinkMacSystemFont, sans-serif"),
+        x=0.5
+    ),
+    xaxis_title="X",
+    yaxis_title="Y",
+    width=700,
+    height=650,
+    plot_bgcolor='#fafafa',
+    paper_bgcolor='#ffffff',
+    font=dict(family="Inter, -apple-system, BlinkMacSystemFont, sans-serif", size=13, color="#1a1a1a"),
+    xaxis=dict(
+        gridcolor='rgba(0,0,0,0.1)',
+        linecolor='rgba(0,0,0,0.2)',
+        tickcolor='rgba(0,0,0,0.2)',
+        title_font=dict(size=14, color="#1a1a1a")
+    ),
+    yaxis=dict(
+        gridcolor='rgba(0,0,0,0.1)',
+        linecolor='rgba(0,0,0,0.2)',
+        tickcolor='rgba(0,0,0,0.2)',
+        title_font=dict(size=14, color="#1a1a1a")
+    ),
+    updatemenus=[
+        dict(
+            type="buttons",
+            direction="left",
+            buttons=list([
+                dict(
+                    args=[None, {"frame": {"duration": 100, "redraw": True},
+                                "fromcurrent": True, "transition": {"duration": 50}}],
+                    label="▶️ Play",
+                    method="animate"
+                ),
+                dict(
+                    args=[[None], {"frame": {"duration": 0, "redraw": True},
+                                   "mode": "immediate", "transition": {"duration": 0}}],
+                    label="⏸️ Pause",
+                    method="animate"
+                )
+            ]),
+            pad={"r": 15, "t": 100},
+            showactive=False,
+            x=0.2,
+            xanchor="right",
+            y=0.10,
+            yanchor="top",
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.1)',
+            borderwidth=1
+        )
+    ],
+    sliders=[
+        dict(
+            active=0,
+            yanchor="top",
+            xanchor="left",
+            currentvalue={"font": {"size": 16, "color": "#1a1a1a", "family": "Inter, sans-serif"}, "prefix": "Time: ", "visible": True, "xanchor": "right"},
+            transition={"duration": 300, "easing": "cubic-in-out"},
+            pad={"b": 20, "t": 60},
+            len=0.9,
+            x=0.05,
+            y=0,
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.1)',
+            borderwidth=1,
+            tickcolor='#6366f1',
+            ticklen=8,
+            tickwidth=2,
+            steps=[
+                dict(
+                    args=[[f"frame_{i}"], {"frame": {"duration": 100, "redraw": True},
+                                           "mode": "immediate", "transition": {"duration": 50}}],
+                    label=f"{i/(n_frames-1):.2f}",
+                    method="animate"
+                )
+                for i in range(n_frames)
+            ]
+        )
+    ]
+)
+
+# Add annotations for source and target
+fig.add_annotation(
+    x=0, y=0, xref="x", yref="y",
+    text="Source<br>(Gaussian)",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=1.2,
+    arrowwidth=2.5,
+    arrowcolor="#6366f1",
+    ax=25, ay=-35,
+    font=dict(size=13, color="#1a1a1a", family="Inter, sans-serif"),
+    bgcolor='rgba(255,255,255,0.9)',
+    bordercolor='rgba(99,102,241,0.3)',
+    borderwidth=1
+)
+
+fig.add_annotation(
+    x=2, y=2, xref="x", yref="y",
+    text="Target<br>(Multimodal)",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=1.2,
+    arrowwidth=2.5,
+    arrowcolor="#ef4444",
+    ax=25, ay=-35,
+    font=dict(size=13, color="#1a1a1a", family="Inter, sans-serif"),
+    bgcolor='rgba(255,255,255,0.9)',
+    bordercolor='rgba(239,68,68,0.3)',
+    borderwidth=1
+)
+
+fig.show()
+```
+
+This interactive animation demonstrates the concept of flow matching, where we learn a continuous transformation between two probability distributions. The animation shows how particles (represented by the density contours) flow from a simple Gaussian distribution to a more complex multimodal distribution. You can use the play/pause buttons or the slider to control the animation and observe the smooth transformation process.
+
+Flow matching is particularly useful in generative modeling, where we want to learn to transform noise into realistic data samples while maintaining the ability to compute exact likelihoods and perform efficient sampling.
 
 ## Schedule
 
