@@ -5,8 +5,11 @@ execute:
 # Enable banner style title blocks
 title-block-banner: true
 
+# Enable CC licence appendix
+license: "CC BY-SA"
+
 # Default fields for citation
-citation: false
+citation: true
 appendix-cite-as: display
 
 # Default for table of contents
@@ -25,9 +28,9 @@ format:
 author: Zeju Li
 
 # Enable comments
-# comments:
-#   utterances:
-#     repo: ZerojumpLine/ZerojumpLine.github.io
-#     issue-term: title
-#     theme: boxy-light
-#     label: "comments :crystal_ball:"
+comments: 
+  utterances:
+    repo: ZerojumpLine/ZerojumpLine.github.io
+    issue-term: title
+    theme: boxy-light
+    label: "comments :crystal_ball:"
