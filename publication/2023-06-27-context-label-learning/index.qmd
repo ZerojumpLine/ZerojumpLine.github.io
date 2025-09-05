@@ -24,6 +24,9 @@ links:
 - icon: github
   name: Code
   url: https://github.com/ZerojumpLine/CoLab
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

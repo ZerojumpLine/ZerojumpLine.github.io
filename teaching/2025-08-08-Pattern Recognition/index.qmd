@@ -9,48 +9,9 @@ categories:
   - BME
 subtitle: "An advanced, discussion-based course for Ph.D. students."
 description: ''
-css: assets/teaching.css
-links:
-# listing: 
-# - id: blog
-#   contents: 
-#     - "../../blog/*/index.qmd"
-#     - "../../blog/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: talk
-#   contents: 
-#     - "../../talk/*/index.qmd"
-#     - "../../talk/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: project
-#   contents: 
-#     - "../../project/*/index.qmd"
-#     - "../../project/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
+format: 
+  html: 
+    page-layout: full
 ---
 I teach a pattern recognition course for BME Ph.D. students. In this course, I will cover some advanced concepts of AI.
 
@@ -59,63 +20,53 @@ This is course for Ph.D. students with
 
 The course has a code as EST60033.02, discussions and feedbacks can be posted via [Canvas](https://elearning.fudan.edu.cn/courses/100620).
 
-The course happens.
+The course happens.[You are free to do the coding at whereever you feel more free, but I will be in class to help you understand.]{.aside}
 
 
 ## Schedule
 
 ### Module 1: Basic Theory
 
-::: {.table-responsive}
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **1** | 09/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **2** | 16/09/2025 | *Lecture* | *Pres. I* | *Coding I* | Slides, Code, Answer |
-| **3** | 23/09/2025 | *Reading*^1^ | *Reading* | *Reading* | |
-| **4** | 30/09/2025 | *Reading* | *Reading* | *Reading* | |
-:::
+| **2** | 16/09/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | Slides, Code, Answer |
+| **3** | 23/09/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
+| **4** | 30/09/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
 
-^1^ Gaussian Mixtures and Dead Leave
+^1^ Gaussian Mixtures and Dead Leave [Those papers are fundementals to this research fiel and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
 
 ### Module 2: Discriminative Models
 
-::: {.table-responsive}
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **5** | 07/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **6** | 14/10/2025 | *Lecture* | *Pres. II* | *Coding II* | Slides, Code, Answer |
-| **7** | 21/10/2025 | *Reading*^1^ | *Reading* | *Reading* | |
-:::
+| **6** | 14/10/2025 | *Lecture* |<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides, Code, Answer |
+| **7** | 21/10/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
 
 ### Module 3: Reinforcement Learning
 
-::: {.table-responsive}
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **8** | 28/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **9** | 04/11/2025 | *Lecture* | *Pres. III* | *Coding III* | Slides, Code, Answer |
-| **10** | 11/11/2025 | *Reading* | *Reading* | *Reading* | |
-:::
+| **9** | 04/11/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | Slides, Code, Answer |
+| **10** | 11/11/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
 
 ### Module 4: Generative Models
 
-::: {.table-responsive}
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **11** | 18/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **12** | 25/11/2025 | *Reading* | *Reading* | *Reading* | |
-| **13** | 02/12/2025 | *Lecture* | *Pres. IV* | *Coding IV* | Slides, Code, Answer |
-:::
+| **12** | 25/11/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
+| **13** | 02/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | Slides, Code, Answer |
 
 ### Module 5: Emerging Topics
 
-::: {.table-responsive}
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **14** | 09/12/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **15** | 16/12/2025 | *Lecture* | *Pres. V* | *Coding V* | Slides, Code, Answer |
-| **16** | 23/12/2025 | *Reading* | *Reading* | *Reading* | |
-:::
+| **15** | 16/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | Slides, Code, Answer |
+| **16** | 23/12/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
 
 
 

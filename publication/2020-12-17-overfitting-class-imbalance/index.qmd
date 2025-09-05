@@ -25,6 +25,9 @@ links:
 - icon: github
   name: Tool
   url: https://github.com/ZerojumpLine/Robust-Medical-Segmentation
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

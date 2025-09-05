@@ -21,6 +21,9 @@ links:
 - icon: github
   name: Code
   url: https://github.com/YiBaiHP/VAP-Diffusion
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

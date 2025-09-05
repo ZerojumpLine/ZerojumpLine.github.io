@@ -18,6 +18,9 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.7507/1001-5515.201705061
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

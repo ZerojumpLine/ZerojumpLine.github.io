@@ -22,6 +22,9 @@ links:
 - icon: github
   name: Code
   url: https://github.com/ZerojumpLine/DecGAN
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

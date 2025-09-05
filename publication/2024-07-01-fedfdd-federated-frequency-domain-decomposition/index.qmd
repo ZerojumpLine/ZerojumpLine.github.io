@@ -21,6 +21,9 @@ links:
 - icon: github
   name: Code
   url: https://github.com/xuhang2019/FedFDD
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

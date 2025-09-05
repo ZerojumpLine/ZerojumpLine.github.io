@@ -21,6 +21,9 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1016/j.media.2022.102597
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

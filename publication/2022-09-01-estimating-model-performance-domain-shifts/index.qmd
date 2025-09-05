@@ -27,6 +27,9 @@ links:
 - icon: database
   name: Dataset
   url: https://github.com/ZerojumpLine/Robust-Skin-Lesion-Classification
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

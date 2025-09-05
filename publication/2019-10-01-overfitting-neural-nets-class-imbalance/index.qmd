@@ -18,6 +18,9 @@ links:
 - icon: github
   name: Code
   url: https://github.com/ZerojumpLine/OverfittingUnderClassImbalance
+format: 
+  html: 
+    page-layout: full
 ---
 
 ## Abstract

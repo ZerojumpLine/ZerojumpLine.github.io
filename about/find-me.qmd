@@ -1,6 +1,9 @@
 ---
 title: "Find Me"
 subtitle: "Contact Information & Location"
+format: 
+  html: 
+    page-layout: full
 header-includes: |
   <style>
     .quarto-title-block {
