@@ -10,9 +10,46 @@ categories:
 subtitle: "A hands-on course designed for senior BME undergraduates."
 description: ''
 links:
-format: 
-  html: 
-    page-layout: full
+# listing: 
+# - id: blog
+#   contents: 
+#     - "../../blog/*/index.qmd"
+#     - "../../blog/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: talk
+#   contents: 
+#     - "../../talk/*/index.qmd"
+#     - "../../talk/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
+# - id: project
+#   contents: 
+#     - "../../project/*/index.qmd"
+#     - "../../project/*/index.markdown"
+#   sort: date desc
+#   type: table
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle]
+#   include:
+#     categories:
+#       - journalism
 ---
 
 I mentor a practical course for senior BME undergraduate students.

@@ -19,9 +19,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1109/TMI.2022.3224067
-format: 
-  html: 
-    page-layout: full
 ---
 
 ## Abstract

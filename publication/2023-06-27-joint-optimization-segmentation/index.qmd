@@ -24,9 +24,6 @@ links:
 - icon: github
   name: Code
   url: https://github.com/ZerojumpLine/JCSAugment
-format: 
-  html: 
-    page-layout: full
 ---
 
 ## Abstract

@@ -22,9 +22,6 @@ links:
 - icon: github
   name: Code
   url: https://github.com/ZerojumpLine/DeepVolume
-format: 
-  html: 
-    page-layout: full
 ---
 
 ## Abstract

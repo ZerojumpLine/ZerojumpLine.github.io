@@ -17,9 +17,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1038/s41598-017-05848-2
-format: 
-  html: 
-    page-layout: full
 ---
 
 ## Abstract

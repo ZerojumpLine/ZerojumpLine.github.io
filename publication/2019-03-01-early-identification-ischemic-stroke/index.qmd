@@ -19,9 +19,6 @@ links:
 - icon: file-richtext-fill
   name: Publication
   url: https://doi.org/10.1016/j.bspc.2019.03.008
-format: 
-  html: 
-    page-layout: full
 ---
 
 ## Abstract

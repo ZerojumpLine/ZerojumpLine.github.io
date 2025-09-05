@@ -5,10 +5,8 @@ execute:
 # Enable banner style title blocks
 title-block-banner: true
 
-license: "CC BY-SA"
-
 # Default fields for citation
-citation: true
+citation: false
 appendix-cite-as: display
 
 # Default for table of contents
