@@ -9,6 +9,7 @@ categories:
   - BME
 subtitle: "An advanced, discussion-based course for Ph.D. students."
 description: ''
+css: assets/teaching.css
 links:
 # listing: 
 # - id: blog
@@ -51,14 +52,129 @@ links:
 #     categories:
 #       - journalism
 ---
+I teach a pattern recognition course for BME Ph.D. students. In this course, I will cover some advanced concepts of AI.
 
-I am teaching an pattern regnition course for BME Ph.D. students.
+## Description
+This is course for Ph.D. students with 
 
-## Pattern Recognition
+The course has a code as EST60033.02, discussions and feedbacks can be posted via [Canvas](https://elearning.fudan.edu.cn/courses/100620).
 
-In this course, I will cover some advanced concepts of AI.
+The course happens.
+
+
+## Schedule
+
+### Module 1: Basic Theory
+
+::: {.table-responsive}
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **1** | 09/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **2** | 16/09/2025 | *Lecture* | *Pres. I* | *Coding I* | Slides, Code, Answer |
+| **3** | 23/09/2025 | *Reading*^1^ | *Reading* | *Reading* | |
+| **4** | 30/09/2025 | *Reading* | *Reading* | *Reading* | |
+:::
+
+^1^ Gaussian Mixtures and Dead Leave
+
+### Module 2: Discriminative Models
+
+::: {.table-responsive}
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **5** | 07/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **6** | 14/10/2025 | *Lecture* | *Pres. II* | *Coding II* | Slides, Code, Answer |
+| **7** | 21/10/2025 | *Reading*^1^ | *Reading* | *Reading* | |
+:::
+
+### Module 3: Reinforcement Learning
+
+::: {.table-responsive}
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **8** | 28/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **9** | 04/11/2025 | *Lecture* | *Pres. III* | *Coding III* | Slides, Code, Answer |
+| **10** | 11/11/2025 | *Reading* | *Reading* | *Reading* | |
+:::
+
+### Module 4: Generative Models
+
+::: {.table-responsive}
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **11** | 18/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **12** | 25/11/2025 | *Reading* | *Reading* | *Reading* | |
+| **13** | 02/12/2025 | *Lecture* | *Pres. IV* | *Coding IV* | Slides, Code, Answer |
+:::
+
+### Module 5: Emerging Topics
+
+::: {.table-responsive}
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **14** | 09/12/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **15** | 16/12/2025 | *Lecture* | *Pres. V* | *Coding V* | Slides, Code, Answer |
+| **16** | 23/12/2025 | *Reading* | *Reading* | *Reading* | |
+:::
+
+
+
+## Course Components
+
+### Presentation Sections
+
+::: {.presentation-info}
+- **Group Size**: Maximum 2 people per group
+- **Class Size**: ~20 students
+- **Presentation Slots**: 5 sessions throughout the semester
+- **Format**: Interactive presentations with Q&A sessions
+:::
+
+### Coding Sections
+
+::: {.coding-info}
+- **Hands-on Programming**: Practical implementation of algorithms
+- **Languages**: Python, with optional R/Julia
+- **Environment**: Jupyter notebooks and Google Colab
+- **Assessment**: Code quality, documentation, and results
+:::
+
+### Final Project
+
+::: {.course-description}
+**Due Date**: Week 17
+
+The final project is a comprehensive research project where students will:
+- Choose a pattern recognition problem
+- Implement and compare multiple algorithms
+- Write a technical report
+- Present findings to the class
+:::
+
+### Grading Policy
+
+| Component | Weight | Description |
+|:---------:|:------:|:------------|
+| **Presentations** | 25% | Quality of presentation and engagement |
+| **Coding Assignments** | 30% | Implementation and documentation |
+| **Final Project** | 35% | Research depth and technical writing |
+| **Participation** | 10% | Class engagement and discussions |
+
 
 ## Recommended Reading Materials
 
-- [Mathematics for Machine Learning](https://mml-book.github.io/).
-- [Dive into Deep Learning](https://d2l.ai/).
+### Core Pattern Recognition & Machine Learning
+- [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/) - Christopher Bishop's comprehensive textbook on pattern recognition
+- [机器学习](https://github.com/Mikoto10032/DeepLearning/blob/master/books/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%91%A8%E5%BF%97%E5%8D%8E.pdf) - 周志华's foundational machine learning textbook (in Chinese)
+
+### Deep Learning
+- [Deep Learning](https://www.deeplearningbook.org/) - Ian Goodfellow, Yoshua Bengio, and Aaron Courville's authoritative deep learning textbook
+- [Dive into Deep Learning](https://d2l.ai/) - Interactive deep learning book with practical implementations
+
+### Mathematical Foundations
+- [Mathematics for Machine Learning](https://mml-book.github.io/) - Essential mathematical concepts for machine learning
+- [Machine Learning: A Probabilistic Perspective](https://github.com/Jing--Li/book/blob/master/ML%20Machine%20Learning-A%20Probabilistic%20Perspective.pdf) - Kevin Murphy's detailed treatment of machine learning from a probabilistic viewpoint
+
+### Medical Imaging & Domain-Specific Applications
+- [Generative Machine Learning Models in Medical Image Computing](https://link.springer.com/book/10.1007/978-3-031-80965-1) - Specialized book on generative models in medical imaging
+- [Machine Learning in MRI](https://shop.elsevier.com/books/machine-learning-in-mri/kuestner/978-0-443-14109-6) - Focused on machine learning applications in magnetic resonance imaging

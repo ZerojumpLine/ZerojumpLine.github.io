@@ -52,7 +52,7 @@ links:
 #       - journalism
 ---
 
-I am teaching a practical course for BME senior undergraduate students.
+I mentor a practical course for senior BME undergraduate students.
 
 ## Medical LLMs
 
