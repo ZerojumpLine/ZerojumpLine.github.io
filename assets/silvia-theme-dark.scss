@@ -708,5 +708,33 @@ body.quarto-dark {
     color: #ede8de !important;
   }
 
+  // Ensure aside elements are visible in dark mode
+  .aside,
+  .margin-aside {
+    color: #ede8de !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 0.9em;
+  }
+
+  // Ensure aside elements within other elements are also visible
+  p .aside,
+  span .aside,
+  div .aside,
+  li .aside,
+  td .aside,
+  th .aside,
+  p .margin-aside,
+  span .margin-aside,
+  div .margin-aside,
+  li .margin-aside,
+  td .margin-aside,
+  th .margin-aside {
+    color: #ede8de !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 0.9em;
+  }
+
 
 }
