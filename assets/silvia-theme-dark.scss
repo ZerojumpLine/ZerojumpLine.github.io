@@ -710,11 +710,15 @@ body.quarto-dark {
 
   // Ensure aside elements are visible in dark mode
   .aside,
-  .margin-aside {
+  .margin-aside,
+  .quarto-aside,
+  .quarto-margin-aside {
     color: #ede8de !important;
     font-style: italic;
     opacity: 0.8;
     font-size: 0.9em;
+    z-index: 20 !important;
+    position: relative !important;
   }
 
   // Ensure aside elements within other elements are also visible
@@ -729,11 +733,31 @@ body.quarto-dark {
   div .margin-aside,
   li .margin-aside,
   td .margin-aside,
-  th .margin-aside {
+  th .margin-aside,
+  p .quarto-aside,
+  span .quarto-aside,
+  div .quarto-aside,
+  li .quarto-aside,
+  td .quarto-aside,
+  th .quarto-aside,
+  p .quarto-margin-aside,
+  span .quarto-margin-aside,
+  div .quarto-margin-aside,
+  li .quarto-margin-aside,
+  td .quarto-margin-aside,
+  th .quarto-margin-aside {
     color: #ede8de !important;
     font-style: italic;
     opacity: 0.8;
     font-size: 0.9em;
+    z-index: 20 !important;
+    position: relative !important;
+  }
+
+  // Catch-all rule for any aside elements that might be generated with different class names
+  [class*="aside"] {
+    z-index: 20 !important;
+    position: relative !important;
   }
 
 

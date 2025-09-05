@@ -56,7 +56,7 @@ body.quarto-dark .sidebar {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  background-color: #141414 !important;
+  background-color: transparent !important;
 }
 
 /* Ensure TOC elements don't have any borders */
@@ -69,6 +69,10 @@ body.quarto-dark .quarto-toc {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
+  background-color: #141414 !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
 }
 
 /* Force consistent font size for all category elements in sidebar regardless of theme */
@@ -141,6 +145,7 @@ body.quarto-dark #quarto-margin-sidebar .quarto-listing-category {
   border-radius: 5px !important;
   margin-bottom: 10px !important;
 }
+
 
 /* Dark mode category title background */
 body.quarto-dark #quarto-margin-sidebar .quarto-listing-category-title {
