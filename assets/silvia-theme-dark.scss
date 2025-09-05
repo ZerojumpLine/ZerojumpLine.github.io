@@ -184,13 +184,49 @@ pre code {
   border-color: $secondary;
 }
 
-// pagination
-.page-link {
+// pagination for dark theme
+body.quarto-dark .page-link {
   color: $primary;
   &:hover {
     color: white;
     background-color: $primary;
     border-color: $primary;
+  }
+}
+
+// Quarto pagination specific styling for dark theme
+body.quarto-dark .pagination {
+  .page-item {
+    .page-link {
+      color: $primary !important;
+      background-color: transparent !important;
+      border-color: $primary !important;
+      
+      &:hover {
+        color: white !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
+      }
+      
+      &:focus {
+        color: white !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.25) !important;
+      }
+    }
+    
+    &.active .page-link {
+      color: white !important;
+      background-color: $primary !important;
+      border-color: $primary !important;
+    }
+    
+    &.disabled .page-link {
+      color: lighten($primary, 30%) !important;
+      background-color: transparent !important;
+      border-color: lighten($primary, 30%) !important;
+    }
   }
 }
 

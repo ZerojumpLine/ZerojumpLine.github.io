@@ -1194,3 +1194,28 @@ body.quarto-dark .hiring-type {
       font-size: 1.5rem !important;
   }
 }
+
+/* Dark theme pagination fixes */
+body.quarto-dark .pagination .page-item .page-link {
+  color: #ede8de !important;
+  background-color: transparent !important;
+  border-color: #ede8de !important;
+}
+
+body.quarto-dark .pagination .page-item .page-link:hover {
+  color: #141414 !important;
+  background-color: #ede8de !important;
+  border-color: #ede8de !important;
+}
+
+body.quarto-dark .pagination .page-item.active .page-link {
+  color: #141414 !important;
+  background-color: #ede8de !important;
+  border-color: #ede8de !important;
+}
+
+body.quarto-dark .pagination .page-item.disabled .page-link {
+  color: #666 !important;
+  background-color: transparent !important;
+  border-color: #666 !important;
+}

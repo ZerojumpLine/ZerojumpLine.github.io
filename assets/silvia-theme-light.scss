@@ -143,8 +143,8 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   border-color: $secondary;
 }
 
-// pagination
-.page-link {
+// pagination for light theme
+body:not(.quarto-dark) .page-link {
   color: $primary;
   &:hover {
     color: white;
