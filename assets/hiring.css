@@ -4,12 +4,12 @@
 .hiring-hero {
     text-align: center;
     max-width: 1400px;
-    margin: 0 auto 5rem auto;
-    padding: 3rem 2rem;
+    margin: 0 auto 1.5rem auto;
+    padding: 1.5rem 2rem;
     position: relative;
     color: #333;
-    height: 350px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.1)), url('/assets/zerojump/img/fudan.jpg') no-repeat center center;
+    height: 250px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.1)), url('zerojump/img/fudan.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 12px;
     display: flex;
@@ -57,8 +57,8 @@
 .final-words-section,
 .contact-section {
     max-width: 1400px;
-    margin: 0 auto 4rem auto;
-    padding: 0 3rem;
+    margin: 0 auto 1rem auto;
+    padding: 0 1.5rem;
     line-height: 1.8;
 }
 
@@ -71,9 +71,9 @@
     font-size: 2.5rem;
     font-weight: 700;
     color: #0056b3;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 0;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     border-bottom: 3px solid #0056b3;
     display: inline-block;
 }
@@ -82,7 +82,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: #0056b3;
-    margin: 2rem 0 1.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     padding-left: 1rem;
     border-left: 4px solid #0056b3;
 }
@@ -94,8 +94,8 @@
 .apply-section p,
 .final-words-section p,
 .contact-section p {
-    margin: 1.5rem 0;
-    line-height: 1.8;
+    margin: 0.8rem 0;
+    line-height: 1.6;
     color: #333;
     font-size: 1.3rem;
 }
@@ -103,14 +103,14 @@
 .about-section ul,
 .positions-section ul,
 .why-join-section ul {
-    margin: 1.5rem 0;
+    margin: 0.8rem 0;
     padding-left: 2rem;
 }
 
 .about-section li,
 .positions-section li,
 .why-join-section li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
     line-height: 1.8;
     color: #333;
     font-size: 1.3rem;
@@ -134,10 +134,10 @@
 /* Contact section special styling */
 .contact-section {
     background: linear-gradient(135deg, #eaf3ff 0%, #f0f8ff 100%);
-    padding: 3rem;
+    padding: 1.5rem;
     border-left: 5px solid #0056b3;
     border-radius: 12px;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     box-shadow: 0 4px 16px rgba(0, 86, 179, 0.1);
 }
 
@@ -176,7 +176,7 @@
 
 /* Dark mode support */
 body.quarto-dark .hiring-hero {
-    background: linear-gradient(rgba(40, 40, 40, 0.1), rgba(30, 30, 30, 0.1)), url('/assets/zerojump/img/fudan.jpg') no-repeat center center;
+    background: linear-gradient(rgba(40, 40, 40, 0.1), rgba(30, 30, 30, 0.1)), url('zerojump/img/fudan.jpg') no-repeat center center;
     background-size: cover;
     border-color: #555;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -240,6 +240,17 @@ body.quarto-dark .highlight {
     color: #ff6b6b;
 }
 
+/* Dark theme section backgrounds for better contrast */
+body.quarto-dark .about-section,
+body.quarto-dark .positions-section,
+body.quarto-dark .why-join-section,
+body.quarto-dark .apply-section,
+body.quarto-dark .final-words-section {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid rgba(79, 195, 247, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* Add some visual enhancements */
 .about-section,
 .positions-section,
@@ -248,7 +259,7 @@ body.quarto-dark .highlight {
 .final-words-section {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 12px;
-    padding: 3rem;
+    padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 86, 179, 0.1);
 }
@@ -256,9 +267,9 @@ body.quarto-dark .highlight {
 /* Responsive design */
 @media (max-width: 768px) {
     .hiring-hero {
-        height: 280px;
-        padding: 2rem 1rem;
-        margin: 0 auto 3rem auto;
+        height: 200px;
+        padding: 1rem 1rem;
+        margin: 0 auto 1rem auto;
     }
     
     .hiring-hero h1 {
@@ -292,14 +303,14 @@ body.quarto-dark .highlight {
     .apply-section,
     .final-words-section,
     .contact-section {
-        padding: 2rem 1.5rem;
-        margin: 0 auto 3rem auto;
+        padding: 1rem 0.8rem;
+        margin: 0 auto 1rem auto;
     }
 }
 
 @media (max-width: 576px) {
     .hiring-hero {
-        height: 200px;
+        height: 150px;
         padding: 0.5rem;
     }
     
@@ -317,7 +328,7 @@ body.quarto-dark .highlight {
     .apply-section,
     .final-words-section,
     .contact-section {
-        padding: 0 0.5rem;
+        padding: 0.8rem 0.5rem;
     }
     
     .contact-section {
