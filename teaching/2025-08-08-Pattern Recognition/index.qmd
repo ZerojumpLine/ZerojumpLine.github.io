@@ -22,6 +22,189 @@ The course has a code as EST60033.02, discussions and feedbacks can be posted vi
 
 The course happens.[You are free to do the coding at whereever you feel more free, but I will be in class to help you understand.]{.aside}
 
+## Example: Interactive Data Visualization with Plotly
+
+### Unsupervised Machine Learning
+
+Plotly excels at visualizing machine learning concepts. Here's an advanced example showing decision boundaries and model predictions:
+
+```{python}
+#| echo: false
+#| output: true
+import plotly.graph_objects as go
+import numpy as np
+from sklearn.datasets import make_moons
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+
+# Parameters for visualization
+mesh_size = .02
+margin = 0.25
+
+# Load and split data
+X, y = make_moons(noise=0.3, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y.astype(str), test_size=0.25, random_state=0)
+
+# Create a mesh grid for decision boundary
+x_min, x_max = X[:, 0].min() - margin, X[:, 0].max() + margin
+y_min, y_max = X[:, 1].min() - margin, X[:, 1].max() + margin
+xrange = np.arange(x_min, x_max, mesh_size)
+yrange = np.arange(y_min, y_max, mesh_size)
+xx, yy = np.meshgrid(xrange, yrange)
+
+# Train K-Nearest Neighbors classifier
+clf = KNeighborsClassifier(15, weights='uniform')
+clf.fit(X, y)
+Z = clf.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1]
+Z = Z.reshape(xx.shape)
+
+# Define trace specifications for different data splits
+trace_specs = [
+    [X_train, y_train, '0', 'Train', 'square'],
+    [X_train, y_train, '1', 'Train', 'circle'],
+    [X_test, y_test, '0', 'Test', 'square-dot'],
+    [X_test, y_test, '1', 'Test', 'circle-dot']
+]
+
+# Create the main figure
+fig = go.Figure(data=[
+    go.Scatter(
+        x=X[y==label, 0], y=X[y==label, 1],
+        name=f'{split} Split, Label {label}',
+        mode='markers', marker_symbol=marker
+    )
+    for X, y, label, split, marker in trace_specs
+])
+
+# Style the markers
+fig.update_traces(
+    marker_size=12, marker_line_width=1.5,
+    marker_color="lightyellow"
+)
+
+# Add decision boundary contour
+fig.add_trace(
+    go.Contour(
+        x=xrange,
+        y=yrange,
+        z=Z,
+        showscale=False,
+        colorscale='RdBu',
+        opacity=0.4,
+        name='Decision Boundary',
+        hoverinfo='skip'
+    )
+)
+
+# Apply beautiful styling
+fig.update_layout(
+    title=dict(
+        text="Machine Learning: Decision Boundary Visualization",
+        font=dict(size=18, color="#2c3e50"),
+        x=0.5
+    ),
+    xaxis_title="Feature 1",
+    yaxis_title="Feature 2",
+    width=700,
+    height=500,
+    plot_bgcolor='white',
+    font=dict(family="Arial, sans-serif", size=12, color="#2c3e50"),
+    showlegend=True,
+    legend=dict(
+        yanchor="top", y=0.99, xanchor="left", x=0.01,
+        bgcolor="rgba(255,255,255,0.9)", bordercolor="#bdc3c7", borderwidth=1
+    )
+)
+
+fig.show()
+```
+
+This advanced visualization demonstrates Plotly's capability to show machine learning concepts including decision boundaries, training/test splits, and model predictions. The contour plot shows the decision boundary learned by the K-Nearest Neighbors classifier.
+
+### 3D Regression Surface Visualization
+
+Plotly also excels at 3D visualizations for regression problems. Here's an example using Support Vector Regression on the famous Iris dataset:
+
+```{python}
+#| echo: false
+#| output: true
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from sklearn.svm import SVR
+
+# Parameters for visualization
+mesh_size = .02
+margin = 0
+
+# Load the famous Iris dataset
+df = px.data.iris()
+
+# Prepare features and target
+X = df[['sepal_width', 'sepal_length']]
+y = df['petal_width']
+
+# Train Support Vector Regression model
+model = SVR(C=1.)
+model.fit(X, y)
+
+# Create a mesh grid for surface prediction
+x_min, x_max = X.sepal_width.min() - margin, X.sepal_width.max() + margin
+y_min, y_max = X.sepal_length.min() - margin, X.sepal_length.max() + margin
+xrange = np.arange(x_min, x_max, mesh_size)
+yrange = np.arange(y_min, y_max, mesh_size)
+xx, yy = np.meshgrid(xrange, yrange)
+
+# Generate predictions on the mesh grid
+# Convert mesh grid to DataFrame to avoid feature name warning
+mesh_df = pd.DataFrame(np.c_[xx.ravel(), yy.ravel()], columns=['sepal_width', 'sepal_length'])
+pred = model.predict(mesh_df)
+pred = pred.reshape(xx.shape)
+
+# Create the 3D scatter plot
+fig = px.scatter_3d(df, x='sepal_width', y='sepal_length', z='petal_width',
+                    title="3D Regression: Petal Width Prediction",
+                    labels={'sepal_width': 'Sepal Width', 'sepal_length': 'Sepal Length', 'petal_width': 'Petal Width'})
+
+# Style the scatter points
+fig.update_traces(marker=dict(size=5, opacity=0.8))
+
+# Add the regression surface
+fig.add_traces(go.Surface(
+    x=xrange, 
+    y=yrange, 
+    z=pred, 
+    name='Regression Surface',
+    opacity=0.6,
+    colorscale='Viridis'
+))
+
+# Apply beautiful 3D styling
+fig.update_layout(
+    scene=dict(
+        bgcolor='white',
+        xaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        yaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        zaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        camera=dict(eye=dict(x=1.5, y=1.5, z=1.5))
+    ),
+    font=dict(family="Arial, sans-serif", size=12, color="#2c3e50"),
+    title=dict(
+        text="3D Regression: Petal Width Prediction",
+        font=dict(size=18, color="#2c3e50"),
+        x=0.5
+    ),
+    width=700,
+    height=500
+)
+
+fig.show()
+```
+
+This 3D visualization demonstrates Plotly's advanced capabilities for regression analysis, showing both the actual data points and the learned regression surface. You can rotate, zoom, and interact with the 3D plot to explore the relationship between sepal dimensions and petal width.
+
 
 ## Schedule
 

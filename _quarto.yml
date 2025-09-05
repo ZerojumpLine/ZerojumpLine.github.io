@@ -102,6 +102,8 @@ format:
 
 execute: 
   freeze: auto
+  python: /opt/anaconda3/bin/python
+  kernel: python3
 
 include-in-header: 
   - assets/zerojump/umami.html
