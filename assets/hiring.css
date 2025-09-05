@@ -9,7 +9,7 @@
     position: relative;
     color: #333;
     height: 350px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.1)), url('zerojump/img/fudan.jpg') no-repeat center center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(240, 240, 240, 0.1)), url('/assets/zerojump/img/fudan.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 12px;
     display: flex;
@@ -176,7 +176,7 @@
 
 /* Dark mode support */
 body.quarto-dark .hiring-hero {
-    background: linear-gradient(rgba(40, 40, 40, 0.1), rgba(30, 30, 30, 0.1)), url('zerojump/img/fudan.jpg') no-repeat center center;
+    background: linear-gradient(rgba(40, 40, 40, 0.1), rgba(30, 30, 30, 0.1)), url('/assets/zerojump/img/fudan.jpg') no-repeat center center;
     background-size: cover;
     border-color: #555;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
