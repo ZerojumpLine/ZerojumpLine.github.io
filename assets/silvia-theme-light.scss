@@ -370,7 +370,7 @@ p, span, div, li, td, th {
 
 // title
 .title {
-  font-size: 2.5em !important;
+  font-size: 2.5em;
   font-weight: 500;
   line-height: 1.1em;
 }
@@ -548,14 +548,6 @@ body.quarto-light {
   // Ensure all text elements use light theme colors
   h1, h2, h3, h4, h5, h6 {
     color: $primary-dark !important;
-  }
-
-  // Ensure title size consistency
-  .quarto-title .title,
-  .quarto-title-block .title,
-  h1.title,
-  .title.h1 {
-    font-size: 2.5em !important; // Ensure consistent title size
   }
 
   p, span, div {

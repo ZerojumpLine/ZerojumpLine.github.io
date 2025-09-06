@@ -8,9 +8,15 @@
 
 /* page title  */
 #title-block-header.quarto-title-block.default .quarto-title .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 0 0 -0.5em 0;
+}
+
+/* Ensure consistent title font size across both themes */
+body.quarto-light #title-block-header.quarto-title-block.default .quarto-title .title,
+body.quarto-dark #title-block-header.quarto-title-block.default .quarto-title .title {
+  font-size: 2.5rem !important;
 }
 
 /* text below page title */
