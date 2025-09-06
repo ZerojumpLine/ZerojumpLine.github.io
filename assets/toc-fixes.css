@@ -1,5 +1,16 @@
 /* TOC Border Fixes - Prevents vertical light lines in table of contents */
 
+/* Fix TOC heading font size - reduce from default h2 size */
+#toc-title,
+#TOC h2,
+#quarto-toc h2,
+.quarto-toc h2,
+.toc-title,
+[class*="toc"] h2,
+[class*="TOC"] h2 {
+  font-size: 1.2rem !important;
+}
+
 /* Comprehensive TOC border fixes for both light and dark modes */
 #quarto-margin-sidebar,
 .margin-sidebar,
