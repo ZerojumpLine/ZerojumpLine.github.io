@@ -661,6 +661,11 @@ body.quarto-light {
     font-size: 12px !important;
   }
 
+  // Ensure H2 elements have consistent font size across themes
+  h2, .h2 {
+    font-size: 2rem !important;
+  }
+
   // Ensure aside elements are visible in light mode
   .aside,
   .margin-aside {

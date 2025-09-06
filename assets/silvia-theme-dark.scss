@@ -632,6 +632,11 @@ body.quarto-dark {
     font-size: 12px !important;
   }
 
+  // Ensure H2 elements have consistent font size across themes
+  h2, .h2 {
+    font-size: 2rem !important;
+  }
+
   // Ensure navbar dropdown uses dark theme colors
   .navbar-nav .dropdown-menu {
     background-color: #141414 !important;

@@ -164,18 +164,6 @@ body.quarto-dark #quarto-margin-sidebar .quarto-listing-category-title {
   background: #141414 !important;
 }
 
-/* Ensure consistent title font size across both themes */
-body.quarto-light .quarto-title .title,
-body.quarto-light .quarto-title-block .title,
-body.quarto-light #title-block-header .title,
-body.quarto-light #title-block-header h1.title,
-body.quarto-dark .quarto-title .title,
-body.quarto-dark .quarto-title-block .title,
-body.quarto-dark #title-block-header .title,
-body.quarto-dark #title-block-header h1.title {
-  font-size: 2.5rem !important;
-}
-
 /* Blog-specific TOC fixes */
 body[class*="blog"] #quarto-margin-sidebar,
 body[class*="blog"] .margin-sidebar,

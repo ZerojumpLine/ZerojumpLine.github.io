@@ -80,6 +80,25 @@ h3 {
   margin-bottom: 1rem;
 }
 
+/* Ensure H2 elements have consistent font size across themes */
+h2, .h2 {
+  font-size: 2rem !important;
+}
+
+/* Dark theme support for H2 elements */
+body.quarto-dark h2,
+body.quarto-dark .h2 {
+  font-size: 2rem !important;
+  color: #ede8de !important;
+}
+
+/* Light theme support for H2 elements */
+body.quarto-light h2,
+body.quarto-light .h2 {
+  font-size: 2rem !important;
+  color: #2c3e50 !important;
+}
+
 /* Course description improvements */
 .course-description {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
