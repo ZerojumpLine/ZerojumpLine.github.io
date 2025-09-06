@@ -12,17 +12,7 @@
   box-shadow: none !important;
 }
 
-/* TOC specific styling to remove any borders */
-#TOC,
-#quarto-toc,
-.quarto-toc {
-  border: none !important;
-  border-right: none !important;
-  border-left: none !important;
-  border-top: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
+/* TOC specific styling to remove any borders - moved to consistent positioning section below */
 
 /* Additional fixes for TOC container elements */
 #quarto-margin-sidebar .quarto-listing-category {
@@ -33,6 +23,29 @@
   padding: 15px !important;
   border-radius: 5px !important;
   margin-bottom: 10px !important;
+}
+
+/* Ensure consistent TOC positioning for both light and dark themes */
+#TOC,
+#quarto-toc,
+.quarto-toc {
+  border: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding: 15px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px !important;
+  background-color: var(--bs-body-bg) !important;
+}
+
+/* Light theme specific TOC background */
+body.quarto-light #TOC,
+body.quarto-light #quarto-toc,
+body.quarto-light .quarto-toc {
+  background-color: var(--bs-body-bg) !important;
 }
 
 #quarto-margin-sidebar .quarto-listing-category-title {
@@ -59,7 +72,7 @@ body.quarto-dark .sidebar {
   background-color: transparent !important;
 }
 
-/* Ensure TOC elements don't have any borders */
+/* Ensure TOC elements don't have any borders - consistent with light theme positioning */
 body.quarto-dark #TOC,
 body.quarto-dark #quarto-toc,
 body.quarto-dark .quarto-toc {
@@ -70,9 +83,7 @@ body.quarto-dark .quarto-toc {
   border-bottom: none !important;
   box-shadow: none !important;
   background-color: #141414 !important;
-  padding: 15px !important;
-  border-radius: 5px !important;
-  margin-bottom: 10px !important;
+  /* Padding, border-radius, and margin are inherited from the general TOC rules above */
 }
 
 /* Force consistent font size for all category elements in sidebar regardless of theme */
