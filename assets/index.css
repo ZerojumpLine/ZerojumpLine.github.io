@@ -181,17 +181,6 @@ body.quarto-dark .research-card.card-3 {
   margin-bottom: 2.5rem;
 }
 
-/* Two-line title styling */
-.hero-content-center h2.two-lines {
-  line-height: 1.2;
-  margin-bottom: 2.5rem;
-}
-
-.hero-content-center h2.two-lines br {
-  display: block;
-  margin: 0.2em 0;
-}
-
 /* Research description styling */
 .research-description {
   font-size: 1.4rem;
