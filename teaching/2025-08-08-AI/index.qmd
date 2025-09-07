@@ -1,7 +1,7 @@
 ---
 title: "AI Fundamentals 2025"
 author: Zeju Li
-date: 2025-09-01
+date: 2025-09-08
 slug: AI-2025
 image: featured.jpg
 categories:
