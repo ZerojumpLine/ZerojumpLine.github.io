@@ -1,0 +1,123 @@
+/* Teaching Course Table Styling */
+
+.table-responsive {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-responsive th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.table-responsive td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.table-responsive tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table-responsive tr:hover {
+  background-color: #e3f2fd;
+  transition: background-color 0.2s ease;
+}
+
+.table-responsive td:first-child {
+  font-weight: 600;
+  background-color: #f1f3f4;
+  color: #1976d2;
+}
+
+.table-responsive td:nth-child(2) {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Icon styling */
+.table-responsive td[data-icon] {
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+  
+  .table-responsive th,
+  .table-responsive td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+/* Module headers */
+h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Ensure H2 elements have consistent font size across themes */
+h2, .h2 {
+  font-size: 2rem !important;
+}
+
+/* Dark theme support for H2 elements */
+body.quarto-dark h2,
+body.quarto-dark .h2 {
+  font-size: 2rem !important;
+  color: #ede8de !important;
+}
+
+/* Light theme support for H2 elements */
+body.quarto-light h2,
+body.quarto-light .h2 {
+  font-size: 2rem !important;
+  color: #2c3e50 !important;
+}
+
+/* Course description improvements */
+.course-description {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid #3498db;
+}
+
+/* Presentation and coding sections styling */
+.presentation-info,
+.coding-info {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  border-left: 3px solid #28a745;
+}
+
+.coding-info {
+  border-left-color: #17a2b8;
+}

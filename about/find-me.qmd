@@ -1,6 +1,9 @@
 ---
 title: "Find Me"
 subtitle: "Contact Information & Location"
+format:
+  html:
+    page-layout: full
 header-includes: |
   <style>
     .quarto-title-block {
@@ -341,7 +344,7 @@ Same as office location.
 ::: {.location-content}
 The Jiangwan Campus is located in the northeastern part of Shanghai, featuring modern research facilities and a beautiful academic environment.
 
-![Campus View](sidebar/campus.jpg)
+![Campus View](sidebar/campus.jpg){width=1200px}
 
 **Getting Here:**
 - **Metro:** Take Line 10 to Guofan Road Station (国帆路) – Exit 3 (3号口)
@@ -359,7 +362,7 @@ The Jiangwan Campus is located in the northeastern part of Shanghai, featuring m
 ::: {.location-content}
 Our building houses cutting-edge research facilities and collaborative spaces for interdisciplinary research.
 
-![Building View](sidebar/building.jpg)
+![Building View](sidebar/building.jpg){width=1200px}
 
 **Building Features:**
 - Modern research laboratories
@@ -379,7 +382,7 @@ Our building houses cutting-edge research facilities and collaborative spaces fo
 ::: {.location-content}
 Our dedicated research space where innovation meets collaboration.
 
-![Lab View](sidebar/lab.jpg)
+![Lab View](sidebar/lab.jpg){width=1200px}
 
 **Lab Features:**
 - State-of-the-art research equipment

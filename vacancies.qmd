@@ -2,12 +2,12 @@
 title: "Research Vacancies at Fudan University"
 format:
   html:
-    page-layout: article
+    page-layout: full
 title-block-banner: false
 header-includes: >
-  <link rel="stylesheet" href="assets/hiring.css">
+  <link rel="stylesheet" href="/assets/hiring.css">
 resources:
-  - assets/hiring.css
+  - /assets/hiring.css
 ---
 
 ::: {.hiring-hero}

@@ -184,13 +184,49 @@ pre code {
   border-color: $secondary;
 }
 
-// pagination
-.page-link {
+// pagination for dark theme
+body.quarto-dark .page-link {
   color: $primary;
   &:hover {
     color: white;
     background-color: $primary;
     border-color: $primary;
+  }
+}
+
+// Quarto pagination specific styling for dark theme
+body.quarto-dark .pagination {
+  .page-item {
+    .page-link {
+      color: $primary !important;
+      background-color: transparent !important;
+      border-color: $primary !important;
+      
+      &:hover {
+        color: white !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
+      }
+      
+      &:focus {
+        color: white !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.25) !important;
+      }
+    }
+    
+    &.active .page-link {
+      color: white !important;
+      background-color: $primary !important;
+      border-color: $primary !important;
+    }
+    
+    &.disabled .page-link {
+      color: lighten($primary, 30%) !important;
+      background-color: transparent !important;
+      border-color: lighten($primary, 30%) !important;
+    }
   }
 }
 
@@ -596,6 +632,11 @@ body.quarto-dark {
     font-size: 12px !important;
   }
 
+  // Ensure H2 elements have consistent font size across themes
+  h2, .h2 {
+    font-size: 2rem !important;
+  }
+
   // Ensure navbar dropdown uses dark theme colors
   .navbar-nav .dropdown-menu {
     background-color: #141414 !important;
@@ -706,6 +747,58 @@ body.quarto-dark {
   .callout-tip a:hover,
   .callout-caution a:hover {
     color: #ede8de !important;
+  }
+
+  // Ensure aside elements are visible in dark mode
+  .aside,
+  .margin-aside,
+  .quarto-aside,
+  .quarto-margin-aside {
+    color: #ede8de !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 1.2em !important;
+    z-index: 20 !important;
+    position: relative !important;
+  }
+
+  // Ensure aside elements within other elements are also visible
+  p .aside,
+  span .aside,
+  div .aside,
+  li .aside,
+  td .aside,
+  th .aside,
+  p .margin-aside,
+  span .margin-aside,
+  div .margin-aside,
+  li .margin-aside,
+  td .margin-aside,
+  th .margin-aside,
+  p .quarto-aside,
+  span .quarto-aside,
+  div .quarto-aside,
+  li .quarto-aside,
+  td .quarto-aside,
+  th .quarto-aside,
+  p .quarto-margin-aside,
+  span .quarto-margin-aside,
+  div .quarto-margin-aside,
+  li .quarto-margin-aside,
+  td .quarto-margin-aside,
+  th .quarto-margin-aside {
+    color: #ede8de !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 0.9em;
+    z-index: 20 !important;
+    position: relative !important;
+  }
+
+  // Catch-all rule for any aside elements that might be generated with different class names
+  [class*="aside"] {
+    z-index: 20 !important;
+    position: relative !important;
   }
 
 

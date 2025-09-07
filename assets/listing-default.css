@@ -449,7 +449,7 @@ body.quarto-dark #quarto-margin-sidebar {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;
-  background-color: #141414 !important;
+  background-color: transparent !important;
 }
 
 /* Comprehensive font-size fix for all category elements across the entire site */

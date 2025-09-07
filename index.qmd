@@ -73,7 +73,7 @@ resources:
 
 # Zeju Li, PhD {.text-center}
 
-## ASSOCIATE PROFESSOR AT FUDAN UNIVERSITY {.text-center}
+## ASSOCIATE PROFESSOR<br>AT FUDAN UNIVERSITY {style="text-align: center;"}
 
 ::: {.research-description}
 I am a researcher at the intersection of machine learning and medical imaging. My **research** focuses on designing novel computational approaches for biomedical image analysis, with applications in image reconstruction, brain function analysis and disease diagnosis.
