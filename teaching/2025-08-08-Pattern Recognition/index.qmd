@@ -9,56 +9,525 @@ categories:
   - BME
 subtitle: "An advanced, discussion-based course for Ph.D. students."
 description: ''
+format: 
+  html: 
+    page-layout: full
 links:
-# listing: 
-# - id: blog
-#   contents: 
-#     - "../../blog/*/index.qmd"
-#     - "../../blog/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: talk
-#   contents: 
-#     - "../../talk/*/index.qmd"
-#     - "../../talk/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: project
-#   contents: 
-#     - "../../project/*/index.qmd"
-#     - "../../project/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
+  - icon: journal-text
+    name: Canvas
+    url: https://elearning.fudan.edu.cn/courses/100620
 ---
+I teach a pattern recognition course for BME Ph.D. students. In this course, I will cover some advanced concepts of AI.
 
-I am teaching an pattern regnition course for BME Ph.D. students.
+## Description
+This is course for Ph.D. students with 
 
-## Pattern Recognition
+The course has a code as EST60033.02, discussions and feedbacks can be posted via [Canvas]().
 
-In this course, I will cover some advanced concepts of AI.
+The course happens.[You are free to do the coding at whereever you feel more free, but I will be in class to help you understand.]{.aside}
+
+## Example: Interactive Data Visualization with Plotly
+
+### Unsupervised Machine Learning
+
+Plotly excels at visualizing machine learning concepts. Here's an advanced example showing decision boundaries and model predictions:
+
+```{python}
+#| echo: false
+#| output: true
+import plotly.graph_objects as go
+import numpy as np
+from sklearn.datasets import make_moons
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+
+# Parameters for visualization
+mesh_size = .02
+margin = 0.25
+
+# Load and split data
+X, y = make_moons(noise=0.3, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y.astype(str), test_size=0.25, random_state=0)
+
+# Create a mesh grid for decision boundary
+x_min, x_max = X[:, 0].min() - margin, X[:, 0].max() + margin
+y_min, y_max = X[:, 1].min() - margin, X[:, 1].max() + margin
+xrange = np.arange(x_min, x_max, mesh_size)
+yrange = np.arange(y_min, y_max, mesh_size)
+xx, yy = np.meshgrid(xrange, yrange)
+
+# Train K-Nearest Neighbors classifier
+clf = KNeighborsClassifier(15, weights='uniform')
+clf.fit(X, y)
+Z = clf.predict_proba(np.c_[xx.ravel(), yy.ravel()])[:, 1]
+Z = Z.reshape(xx.shape)
+
+# Define trace specifications for different data splits
+trace_specs = [
+    [X_train, y_train, '0', 'Train', 'square'],
+    [X_train, y_train, '1', 'Train', 'circle'],
+    [X_test, y_test, '0', 'Test', 'square-dot'],
+    [X_test, y_test, '1', 'Test', 'circle-dot']
+]
+
+# Create the main figure
+fig = go.Figure(data=[
+    go.Scatter(
+        x=X[y==label, 0], y=X[y==label, 1],
+        name=f'{split} Split, Label {label}',
+        mode='markers', marker_symbol=marker
+    )
+    for X, y, label, split, marker in trace_specs
+])
+
+# Style the markers
+fig.update_traces(
+    marker_size=12, marker_line_width=1.5,
+    marker_color="lightyellow"
+)
+
+# Add decision boundary contour
+fig.add_trace(
+    go.Contour(
+        x=xrange,
+        y=yrange,
+        z=Z,
+        showscale=False,
+        colorscale='RdBu',
+        opacity=0.4,
+        name='Decision Boundary',
+        hoverinfo='skip'
+    )
+)
+
+# Apply beautiful styling
+fig.update_layout(
+    title=dict(
+        text="Machine Learning: Decision Boundary Visualization",
+        font=dict(size=18, color="#2c3e50"),
+        x=0.5
+    ),
+    xaxis_title="Feature 1",
+    yaxis_title="Feature 2",
+    width=700,
+    height=500,
+    plot_bgcolor='white',
+    font=dict(family="Arial, sans-serif", size=12, color="#2c3e50"),
+    showlegend=True,
+    legend=dict(
+        yanchor="top", y=0.99, xanchor="left", x=0.01,
+        bgcolor="rgba(255,255,255,0.9)", bordercolor="#bdc3c7", borderwidth=1
+    )
+)
+
+fig.show()
+```
+
+This advanced visualization demonstrates Plotly's capability to show machine learning concepts including decision boundaries, training/test splits, and model predictions. The contour plot shows the decision boundary learned by the K-Nearest Neighbors classifier.
+
+### 3D Regression Surface Visualization
+
+Plotly also excels at 3D visualizations for regression problems. Here's an example using Support Vector Regression on the famous Iris dataset:
+
+```{python}
+#| echo: false
+#| output: true
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from sklearn.svm import SVR
+
+# Parameters for visualization
+mesh_size = .02
+margin = 0
+
+# Load the famous Iris dataset
+df = px.data.iris()
+
+# Prepare features and target
+X = df[['sepal_width', 'sepal_length']]
+y = df['petal_width']
+
+# Train Support Vector Regression model
+model = SVR(C=1.)
+model.fit(X, y)
+
+# Create a mesh grid for surface prediction
+x_min, x_max = X.sepal_width.min() - margin, X.sepal_width.max() + margin
+y_min, y_max = X.sepal_length.min() - margin, X.sepal_length.max() + margin
+xrange = np.arange(x_min, x_max, mesh_size)
+yrange = np.arange(y_min, y_max, mesh_size)
+xx, yy = np.meshgrid(xrange, yrange)
+
+# Generate predictions on the mesh grid
+# Convert mesh grid to DataFrame to avoid feature name warning
+mesh_df = pd.DataFrame(np.c_[xx.ravel(), yy.ravel()], columns=['sepal_width', 'sepal_length'])
+pred = model.predict(mesh_df)
+pred = pred.reshape(xx.shape)
+
+# Create the 3D scatter plot
+fig = px.scatter_3d(df, x='sepal_width', y='sepal_length', z='petal_width',
+                    title="3D Regression: Petal Width Prediction",
+                    labels={'sepal_width': 'Sepal Width', 'sepal_length': 'Sepal Length', 'petal_width': 'Petal Width'})
+
+# Style the scatter points
+fig.update_traces(marker=dict(size=5, opacity=0.8))
+
+# Add the regression surface
+fig.add_traces(go.Surface(
+    x=xrange, 
+    y=yrange, 
+    z=pred, 
+    name='Regression Surface',
+    opacity=0.6,
+    colorscale='Viridis'
+))
+
+# Apply beautiful 3D styling
+fig.update_layout(
+    scene=dict(
+        bgcolor='white',
+        xaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        yaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        zaxis=dict(showgrid=True, gridcolor='#ecf0f1'),
+        camera=dict(eye=dict(x=1.5, y=1.5, z=1.5))
+    ),
+    font=dict(family="Arial, sans-serif", size=12, color="#2c3e50"),
+    title=dict(
+        text="3D Regression: Petal Width Prediction",
+        font=dict(size=18, color="#2c3e50"),
+        x=0.5
+    ),
+    width=700,
+    height=500
+)
+
+fig.show()
+```
+
+This 3D visualization demonstrates Plotly's advanced capabilities for regression analysis, showing both the actual data points and the learned regression surface. You can rotate, zoom, and interact with the 3D plot to explore the relationship between sepal dimensions and petal width.
+
+### Flow Matching Animation Between Two Densities
+
+Flow matching is a powerful technique for learning continuous normalizing flows between probability distributions. Here's an interactive example showing the transformation from a Gaussian distribution to a more complex multimodal distribution:
+
+```{python}
+#| echo: false
+#| output: true
+import plotly.graph_objects as go
+import plotly.express as px
+from plotly.subplots import make_subplots
+import numpy as np
+from scipy.stats import multivariate_normal
+import pandas as pd
+
+# Set random seed for reproducibility
+np.random.seed(42)
+
+# Define the source and target distributions
+def source_density(x, y):
+    """Source: 2D Gaussian distribution"""
+    mean = [0, 0]
+    cov = [[1, 0.3], [0.3, 1]]
+    return multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean, cov).reshape(x.shape)
+
+def target_density(x, y):
+    """Target: Mixture of two Gaussians"""
+    mean1, cov1 = [2, 2], [[0.5, 0.1], [0.1, 0.5]]
+    mean2, cov2 = [-2, -2], [[0.8, -0.2], [-0.2, 0.8]]
+    
+    pdf1 = multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean1, cov1).reshape(x.shape)
+    pdf2 = multivariate_normal.pdf(np.column_stack([x.ravel(), y.ravel()]), mean2, cov2).reshape(x.shape)
+    return 0.6 * pdf1 + 0.4 * pdf2
+
+# Create grid for density visualization
+x = np.linspace(-4, 4, 50)
+y = np.linspace(-4, 4, 50)
+X, Y = np.meshgrid(x, y)
+
+# Generate flow matching trajectory
+def flow_matching_trajectory(t):
+    """Simple linear interpolation between source and target"""
+    return (1 - t) * source_density(X, Y) + t * target_density(X, Y)
+
+# Create animation frames
+n_frames = 30
+frames = []
+for i in range(n_frames):
+    t = i / (n_frames - 1)
+    density = flow_matching_trajectory(t)
+    
+    # Create contour plot for each frame
+    frame = go.Frame(
+        data=[
+            go.Contour(
+                x=x, y=y, z=density,
+                colorscale='Plasma',
+                showscale=False,
+                opacity=0.9,
+                line=dict(width=0.5, color='rgba(255,255,255,0.3)'),
+                contours=dict(
+                    showlines=True,
+                    start=0,
+                    end=np.max(density),
+                    size=np.max(density)/12,
+                    coloring='heatmap'
+                )
+            )
+        ],
+        name=f"frame_{i}"
+    )
+    frames.append(frame)
+
+# Create initial figure
+fig = go.Figure(
+    data=[
+        go.Contour(
+            x=x, y=y, z=source_density(X, Y),
+            colorscale='Plasma',
+            showscale=False,
+            opacity=0.9,
+            line=dict(width=0.5, color='rgba(255,255,255,0.3)'),
+            contours=dict(
+                showlines=True,
+                start=0,
+                end=np.max(source_density(X, Y)),
+                size=np.max(source_density(X, Y))/12,
+                coloring='heatmap'
+            )
+        )
+    ],
+    frames=frames
+)
+
+# Add animation controls
+fig.update_layout(
+    title=dict(
+        text="Flow Matching: Gaussian → Multimodal Distribution",
+        font=dict(size=20, color="#1a1a1a", family="Inter, -apple-system, BlinkMacSystemFont, sans-serif"),
+        x=0.5
+    ),
+    xaxis_title="X",
+    yaxis_title="Y",
+    width=700,
+    height=650,
+    plot_bgcolor='#fafafa',
+    paper_bgcolor='#ffffff',
+    font=dict(family="Inter, -apple-system, BlinkMacSystemFont, sans-serif", size=13, color="#1a1a1a"),
+    xaxis=dict(
+        gridcolor='rgba(0,0,0,0.1)',
+        linecolor='rgba(0,0,0,0.2)',
+        tickcolor='rgba(0,0,0,0.2)',
+        title_font=dict(size=14, color="#1a1a1a")
+    ),
+    yaxis=dict(
+        gridcolor='rgba(0,0,0,0.1)',
+        linecolor='rgba(0,0,0,0.2)',
+        tickcolor='rgba(0,0,0,0.2)',
+        title_font=dict(size=14, color="#1a1a1a")
+    ),
+    updatemenus=[
+        dict(
+            type="buttons",
+            direction="left",
+            buttons=list([
+                dict(
+                    args=[None, {"frame": {"duration": 100, "redraw": True},
+                                "fromcurrent": True, "transition": {"duration": 50}}],
+                    label="▶️ Play",
+                    method="animate"
+                ),
+                dict(
+                    args=[[None], {"frame": {"duration": 0, "redraw": True},
+                                   "mode": "immediate", "transition": {"duration": 0}}],
+                    label="⏸️ Pause",
+                    method="animate"
+                )
+            ]),
+            pad={"r": 15, "t": 100},
+            showactive=False,
+            x=0.2,
+            xanchor="right",
+            y=0.10,
+            yanchor="top",
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.1)',
+            borderwidth=1
+        )
+    ],
+    sliders=[
+        dict(
+            active=0,
+            yanchor="top",
+            xanchor="left",
+            currentvalue={"font": {"size": 16, "color": "#1a1a1a", "family": "Inter, sans-serif"}, "prefix": "Time: ", "visible": True, "xanchor": "right"},
+            transition={"duration": 300, "easing": "cubic-in-out"},
+            pad={"b": 20, "t": 60},
+            len=0.9,
+            x=0.05,
+            y=0,
+            bgcolor='rgba(255,255,255,0.9)',
+            bordercolor='rgba(0,0,0,0.1)',
+            borderwidth=1,
+            tickcolor='#6366f1',
+            ticklen=8,
+            tickwidth=2,
+            steps=[
+                dict(
+                    args=[[f"frame_{i}"], {"frame": {"duration": 100, "redraw": True},
+                                           "mode": "immediate", "transition": {"duration": 50}}],
+                    label=f"{i/(n_frames-1):.2f}",
+                    method="animate"
+                )
+                for i in range(n_frames)
+            ]
+        )
+    ]
+)
+
+# Add annotations for source and target
+fig.add_annotation(
+    x=0, y=0, xref="x", yref="y",
+    text="Source<br>(Gaussian)",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=1.2,
+    arrowwidth=2.5,
+    arrowcolor="#6366f1",
+    ax=25, ay=-35,
+    font=dict(size=13, color="#1a1a1a", family="Inter, sans-serif"),
+    bgcolor='rgba(255,255,255,0.9)',
+    bordercolor='rgba(99,102,241,0.3)',
+    borderwidth=1
+)
+
+fig.add_annotation(
+    x=2, y=2, xref="x", yref="y",
+    text="Target<br>(Multimodal)",
+    showarrow=True,
+    arrowhead=2,
+    arrowsize=1.2,
+    arrowwidth=2.5,
+    arrowcolor="#ef4444",
+    ax=25, ay=-35,
+    font=dict(size=13, color="#1a1a1a", family="Inter, sans-serif"),
+    bgcolor='rgba(255,255,255,0.9)',
+    bordercolor='rgba(239,68,68,0.3)',
+    borderwidth=1
+)
+
+fig.show()
+```
+
+This interactive animation demonstrates the concept of flow matching, where we learn a continuous transformation between two probability distributions. The animation shows how particles (represented by the density contours) flow from a simple Gaussian distribution to a more complex multimodal distribution. You can use the play/pause buttons or the slider to control the animation and observe the smooth transformation process.
+
+Flow matching is particularly useful in generative modeling, where we want to learn to transform noise into realistic data samples while maintaining the ability to compute exact likelihoods and perform efficient sampling.
+
+## Schedule
+
+### Module 1: Basic Theory
+
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **1** | 09/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **2** | 16/09/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | Slides, Code, Answer |
+| **3** | 23/09/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
+| **4** | 30/09/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
+
+^1^ Gaussian Mixtures and Dead Leave [Those papers are fundementals to this research fiel and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
+
+### Module 2: Discriminative Models
+
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **5** | 07/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **6** | 14/10/2025 | *Lecture* |<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides, Code, Answer |
+| **7** | 21/10/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
+
+### Module 3: Reinforcement Learning
+
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **8** | 28/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **9** | 04/11/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | Slides, Code, Answer |
+| **10** | 11/11/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
+
+### Module 4: Generative Models
+
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **11** | 18/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **12** | 25/11/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
+| **13** | 02/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | Slides, Code, Answer |
+
+### Module 5: Emerging Topics
+
+| Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
+|:----:|:----:|:--------:|:--------:|:--------:|:---------:|
+| **14** | 09/12/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **15** | 16/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | Slides, Code, Answer |
+| **16** | 23/12/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
+
+
+
+## Course Components
+
+### Presentation Sections
+
+::: {.presentation-info}
+- **Group Size**: Maximum 2 people per group
+- **Class Size**: ~20 students
+- **Presentation Slots**: 5 sessions throughout the semester
+- **Format**: Interactive presentations with Q&A sessions
+:::
+
+### Coding Sections
+
+::: {.coding-info}
+- **Hands-on Programming**: Practical implementation of algorithms
+- **Languages**: Python, with optional R/Julia
+- **Environment**: Jupyter notebooks and Google Colab
+- **Assessment**: Code quality, documentation, and results
+:::
+
+### Final Project
+
+::: {.course-description}
+**Due Date**: Week 17
+
+The final project is a comprehensive research project where students will:
+- Choose a pattern recognition problem
+- Implement and compare multiple algorithms
+- Write a technical report
+- Present findings to the class
+:::
+
+### Grading Policy
+
+| Component | Weight | Description |
+|:---------:|:------:|:------------|
+| **Presentations** | 25% | Quality of presentation and engagement |
+| **Coding Assignments** | 30% | Implementation and documentation |
+| **Final Project** | 35% | Research depth and technical writing |
+| **Participation** | 10% | Class engagement and discussions |
+
 
 ## Recommended Reading Materials
 
-- [Mathematics for Machine Learning](https://mml-book.github.io/).
-- [Dive into Deep Learning](https://d2l.ai/).
+### Core Pattern Recognition & Machine Learning
+- [Pattern Recognition and Machine Learning](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/) - Christopher Bishop's comprehensive textbook on pattern recognition
+- [机器学习](https://github.com/Mikoto10032/DeepLearning/blob/master/books/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%91%A8%E5%BF%97%E5%8D%8E.pdf) - 周志华's foundational machine learning textbook (in Chinese)
+
+### Deep Learning
+- [Deep Learning](https://www.deeplearningbook.org/) - Ian Goodfellow, Yoshua Bengio, and Aaron Courville's authoritative deep learning textbook
+- [Dive into Deep Learning](https://d2l.ai/) - Interactive deep learning book with practical implementations
+
+### Mathematical Foundations
+- [Mathematics for Machine Learning](https://mml-book.github.io/) - Essential mathematical concepts for machine learning
+- [Machine Learning: A Probabilistic Perspective](https://github.com/Jing--Li/book/blob/master/ML%20Machine%20Learning-A%20Probabilistic%20Perspective.pdf) - Kevin Murphy's detailed treatment of machine learning from a probabilistic viewpoint
+
+### Medical Imaging & Domain-Specific Applications
+- [Generative Machine Learning Models in Medical Image Computing](https://link.springer.com/book/10.1007/978-3-031-80965-1) - Specialized book on generative models in medical imaging
+- [Machine Learning in MRI](https://shop.elsevier.com/books/machine-learning-in-mri/kuestner/978-0-443-14109-6) - Focused on machine learning applications in magnetic resonance imaging

@@ -10,49 +10,12 @@ categories:
 subtitle: "An AI course for junior undergraduate students."
 description: ''
 links:
-# listing: 
-# - id: blog
-#   contents: 
-#     - "../../blog/*/index.qmd"
-#     - "../../blog/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: talk
-#   contents: 
-#     - "../../talk/*/index.qmd"
-#     - "../../talk/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
-# - id: project
-#   contents: 
-#     - "../../project/*/index.qmd"
-#     - "../../project/*/index.markdown"
-#   sort: date desc
-#   type: table
-#   categories: false
-#   sort-ui: false
-#   filter-ui: false
-#   fields: [title, subtitle]
-#   include:
-#     categories:
-#       - journalism
+format:
+  html:
+    page-layout: full
 ---
 
-I am teaching an AI course designed for a general audience, suitable for students from all majors.
+I teach a AI course designed for a general audience, suitable for students from all majors.
 
 ## AI Fundamentals
 
