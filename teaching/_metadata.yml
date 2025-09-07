@@ -34,3 +34,25 @@ comments:
     issue-term: title
     theme: boxy-light
     label: "comments :crystal_ball:"
+
+# Include JavaScript for category functionality
+include-in-header: 
+  - text: |
+      <script>
+        // Make category elements clickable on individual pages
+        document.addEventListener('DOMContentLoaded', function() {
+          const categoryElements = document.querySelectorAll('.quarto-category');
+          categoryElements.forEach(function(category) {
+            category.style.cursor = 'pointer';
+            category.addEventListener('click', function() {
+              const categoryText = category.textContent.trim();
+              // Navigate to teaching index with category filter
+              const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
+              const teachingIndexUrl = baseUrl + 'index.html';
+              // Encode the category for URL parameter
+              const encodedCategory = btoa(encodeURIComponent(categoryText));
+              window.location.href = teachingIndexUrl + '?category=' + encodedCategory;
+            });
+          });
+        });
+      </script>
