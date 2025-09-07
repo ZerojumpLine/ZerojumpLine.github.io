@@ -49,9 +49,9 @@ include-in-header:
               // Navigate to teaching index with category filter
               const baseUrl = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '/');
               const teachingIndexUrl = baseUrl + 'index.html';
-              // Encode the category for URL parameter
+              // Encode the category the same way Quarto does it
               const encodedCategory = btoa(encodeURIComponent(categoryText));
-              window.location.href = teachingIndexUrl + '?category=' + encodedCategory;
+              window.location.href = teachingIndexUrl + '#' + encodedCategory;
             });
           });
         });
