@@ -427,3 +427,12 @@ body:has(.quarto-listing-container) h1.title {
 #title-block-header h1.title:only-child {
   color: inherit !important; /* Restore color if it's the only title in header */
 }
+
+/* Desktop-only alignment fix - only apply on larger screens */
+@media (min-width: 768px) {
+  .quarto-title-block .mt-4.d-flex.flex-row.flex-wrap.gap-1.justify-content-left.justify-content-sm-start {
+    justify-content: flex-start !important; /* Force left alignment */
+    margin-left: -6rem !important; /* Remove any left margin */
+    padding-left: 0 !important; /* Remove any left padding */
+  }
+}
