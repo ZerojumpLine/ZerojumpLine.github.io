@@ -300,6 +300,41 @@ body:not(.quarto-dark) .page-link {
   line-height: 1 !important;
 }
 
+// Title Block Link Button Icons - Fix size consistency during theme transitions
+.quarto-title-block .btn-secondary .bi,
+.quarto-title-block .btn-secondary i[class*="bi-"],
+.quarto-title-block .btn-secondary i[class^="bi-"] {
+  font-size: 1rem !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  line-height: 1 !important;
+}
+
+// H3 Heading Consistency - Ensure consistent font sizes across theme transitions
+h3, .h3 {
+  font-size: 1.75rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
+// Force H3 consistency across all contexts in light theme
+body.quarto-light h3,
+body.quarto-light .h3,
+.quarto-title-block h3,
+.quarto-title-block .h3,
+.content h3,
+.content .h3,
+main h3,
+main .h3,
+#quarto-content h3,
+#quarto-content .h3 {
+  font-size: 1.75rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
 // Listing cards
 .card {
   background: transparent;
