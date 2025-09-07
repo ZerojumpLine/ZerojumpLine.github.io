@@ -27,11 +27,25 @@ header-includes: >
   <script src="../assets/custom-category-toggle.js"></script>
   <script>
     // Ensure categories are loaded before our custom script runs
-    window.addEventListener('load', function() {
+    // Enhanced for freeze compatibility
+    function initializeCategories() {
       if (window['quarto-listing-loaded']) {
         window['quarto-listing-loaded']();
       }
-    });
+      // Force category initialization after a delay to ensure DOM is ready
+      setTimeout(function() {
+        if (window.quartoListingCategory) {
+          console.log('Category system initialized with freeze compatibility');
+        }
+      }, 1000);
+    }
+    
+    // Multiple initialization attempts for freeze compatibility
+    window.addEventListener('load', initializeCategories);
+    document.addEventListener('DOMContentLoaded', initializeCategories);
+    
+    // Fallback initialization
+    setTimeout(initializeCategories, 2000);
   </script>
 resources:
   - ../assets/listing-default.css

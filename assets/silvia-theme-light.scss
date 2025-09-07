@@ -143,8 +143,8 @@ p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   border-color: $secondary;
 }
 
-// pagination
-.page-link {
+// pagination for light theme
+body:not(.quarto-dark) .page-link {
   color: $primary;
   &:hover {
     color: white;
@@ -659,5 +659,38 @@ body.quarto-light {
   .listing-category,
   .quarto-listing .listing-categories .listing-category {
     font-size: 12px !important;
+  }
+
+  // Ensure H2 elements have consistent font size across themes
+  h2, .h2 {
+    font-size: 2rem !important;
+  }
+
+  // Ensure aside elements are visible in light mode
+  .aside,
+  .margin-aside {
+    color: $body-color !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 1.2em !important;
+  }
+
+  // Ensure aside elements within other elements are also visible
+  p .aside,
+  span .aside,
+  div .aside,
+  li .aside,
+  td .aside,
+  th .aside,
+  p .margin-aside,
+  span .margin-aside,
+  div .margin-aside,
+  li .margin-aside,
+  td .margin-aside,
+  th .margin-aside {
+    color: $body-color !important;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 0.9em;
   }
 }

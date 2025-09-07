@@ -12,6 +12,7 @@ citation: false
 format: 
   html: 
     code-overflow: wrap
+    page-layout: full
     template-partials: 
       - ../_partials/title-block-link-buttons/title-block.html
       

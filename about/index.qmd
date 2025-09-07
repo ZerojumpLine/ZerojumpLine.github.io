@@ -1,5 +1,5 @@
 ---
-title: "李泽榉"
+title: "&nbsp;&nbsp;&nbsp;李泽榉&nbsp;&nbsp;&nbsp;"
 # subtitle: 青年研究员
 image: sidebar/IDPhoto.jpeg
 image-alt: "Your photo description"
@@ -67,22 +67,22 @@ resources:
 ::: {#hero-heading}
 <div class="h1">Zeju Li (He/Him)</div>
 
-**Associate Professor**  
+<b>Associate Professor</b>  
 [College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
 Fudan University
 
 &nbsp;
 
-**Office Location**  
+<b>Office Location</b>  
 Room C2008, No. 2 Interdisciplinary Research Building  
 Jiangwan Campus, Fudan University  
 Shanghai, China
 
 &nbsp;
 
-**Email**  
-📧 **Work:** zejuli(at)fudan.edu.cn  
-📧 **Personal:** lizeju79(at)sina.cn
+<b>Email</b>  
+📧 <b>Work:</b> zejuli(at)fudan.edu.cn  
+📧 <b>Personal:</b> lizeju79(at)sina.cn
 
 :::
 

@@ -92,6 +92,7 @@ format:
       - assets/citation-custom.css
       - assets/toc-fixes.css
       - assets/navbar-icons.css
+      - assets/hiring.css
     highlight-style:
       light: assets/zerojump/a11y-light.theme
       dark: assets/zerojump/a11y-dark.theme
@@ -102,6 +103,8 @@ format:
 
 execute: 
   freeze: auto
+  python: /opt/anaconda3/bin/python
+  kernel: python3
 
 include-in-header: 
   - assets/zerojump/umami.html

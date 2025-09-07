@@ -1,6 +1,6 @@
-# Freeze computed outputs
-execute: 
-  freeze: true
+# Freeze computed outputs - disabled to preserve category functionality
+# execute: 
+#   freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
