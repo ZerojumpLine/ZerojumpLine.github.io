@@ -14,23 +14,40 @@ format:
     page-layout: full
 links:
   - icon: journal-text
-    name: Canvas
+    name: EST60033.02
     url: https://elearning.fudan.edu.cn/courses/100620
 ---
 I teach a pattern recognition course for BME Ph.D. students. In this course, I will cover some advanced concepts of AI.
 
 ## Description
-This is course for Ph.D. students with 
+This course aims to equip Ph.D. students with a deep understanding of modern pattern recognition theory and cutting-edge innovation capabilities. The curriculum covers five key areas: fundamental theories, discriminative models, reinforcement learning, generative models, and emerging topics such as robustness and fairness.
 
-The course has a code as EST60033.02, discussions and feedbacks can be posted via [Canvas]().
+The course emphasizes the integration of theory and practice, requiring students to master end-to-end research methodologies—from mathematical derivation to engineering implementation—while fostering cross-domain innovation. Upon completion, Ph.D. students will possess the academic competence to publish in top-tier conferences.
 
-The course happens.[You are free to do the coding at whereever you feel more free, but I will be in class to help you understand.]{.aside}
+This course takes place in JA302 every Thursday afternoon (14:15-17:15) during the first semester of the 2025-2026 academic year.
 
-## Example: Interactive Data Visualization with Plotly
+## Expectations
 
-### Unsupervised Machine Learning
+### Prerequisites
 
-Plotly excels at visualizing machine learning concepts. Here's an advanced example showing decision boundaries and model predictions:
+- **Ph.D. student** in a relevant field
+- **Python proficiency** is required
+- **Strong foundation** in mathematics and AI fundamentals
+
+### Course Requirements
+
+- **Paper presentation** (in pairs of 2)
+- **Final deliverable**: research draft paper or scientific blog post
+
+## Welcome & What's Ahead 
+
+Here is some examples of what will be covered in this course.
+
+### Representation Learning
+
+Instead of a human engineer manually designing features (like edges, shapes, or specific keywords), the machine learns to identify the most useful ways to represent the data for the problem at hand.
+
+Here is an example of the two-moon representation: [This figure is interactive and was created using Plotly. It's great, isn't it?]{.aside}
 
 ```{python}
 #| echo: false
@@ -124,11 +141,11 @@ fig.update_layout(
 fig.show()
 ```
 
-This advanced visualization demonstrates Plotly's capability to show machine learning concepts including decision boundaries, training/test splits, and model predictions. The contour plot shows the decision boundary learned by the K-Nearest Neighbors classifier.
+### Discriminative Models
 
-### 3D Regression Surface Visualization
+It directly learns to map input features ($X$) to output labels or classes ($Y$) by modeling the conditional probability $P(Y|X)$.
 
-Plotly also excels at 3D visualizations for regression problems. Here's an example using Support Vector Regression on the famous Iris dataset:
+Here's an example using Support Vector Regression on the famous Iris dataset: [Try to rotate this figure and observe how the surface is fitted to the dots.]{.aside}
 
 ```{python}
 #| echo: false
@@ -206,12 +223,11 @@ fig.update_layout(
 
 fig.show()
 ```
+### Generative Models
 
-This 3D visualization demonstrates Plotly's advanced capabilities for regression analysis, showing both the actual data points and the learned regression surface. You can rotate, zoom, and interact with the 3D plot to explore the relationship between sepal dimensions and petal width.
+It is a statistical model that learns the underlying probability distribution of the data with the goal of understanding how the data is "generated."
 
-### Flow Matching Animation Between Two Densities
-
-Flow matching is a powerful technique for learning continuous normalizing flows between probability distributions. Here's an interactive example showing the transformation from a Gaussian distribution to a more complex multimodal distribution:
+Here's an interactive example based on flow matching showing the transformation from a Gaussian distribution to a more complex multimodal distribution: [I like the idea of flow matching as it is particularly useful in generative modeling, where we want to learn to transform noise into realistic data samples while maintaining the ability to compute exact likelihoods and perform efficient sampling.]{.aside}
 
 ```{python}
 #| echo: false
@@ -421,98 +437,126 @@ fig.add_annotation(
 fig.show()
 ```
 
-This interactive animation demonstrates the concept of flow matching, where we learn a continuous transformation between two probability distributions. The animation shows how particles (represented by the density contours) flow from a simple Gaussian distribution to a more complex multimodal distribution. You can use the play/pause buttons or the slider to control the animation and observe the smooth transformation process.
-
-Flow matching is particularly useful in generative modeling, where we want to learn to transform noise into realistic data samples while maintaining the ability to compute exact likelihoods and perform efficient sampling.
-
 ## Schedule
 
 ### Module 1: Basic Theory
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **1** | 09/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **2** | 16/09/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | Slides, Code, Answer |
-| **3** | 23/09/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
-| **4** | 30/09/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
+| **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. I*</span> | *Coding I* | Slides, Code |
+| **3** | 09/25/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
+| **4** | 10/02/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
 
-^1^ Gaussian Mixtures and Dead Leave [Those papers are fundementals to this research fiel and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
+^1^ Understanding black-box predictions via influence functions, 2017 [Read paper](https://proceedings.mlr.press/v70/koh17a?ref=https://githubhelp.com)<br>[Those classic papers are fundementals to this research fiel and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
+^2^ Matching networks for one shot learning, 2016 [Read paper](https://proceedings.neurips.cc/paper/2016/hash/90e1357833654983612fb05e3ec9148c-Abstract.html)<br>
+^3^ Understanding deep learning requires rethinking generalization, 2016 [Read paper](https://arxiv.org/abs/1611.03530)<br>
+^4^ Deep double descent: Where bigger models and more data hur, 2021 [Read paper](https://iopscience.iop.org/article/10.1088/1742-5468/ac3a74/meta)<br>
+^5^ Auto-Encoding Variational Bayes, 2013 [Read paper](https://arxiv.org/abs/1312.6114)<br>
+^6^ Visualizing the loss landscape of neural nets, 2018 [Read paper](https://proceedings.neurips.cc/paper/2018/hash/a41b3bb3e6b050b6c9067c67f663b915-Abstract.html)
 
 ### Module 2: Discriminative Models
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **5** | 07/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **6** | 14/10/2025 | *Lecture* |<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides, Code, Answer |
-| **7** | 21/10/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
+| **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. II*</span> | *Coding II* | Slides, Code |
+| **7** | 10/23/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
+
+^7^ A simple framework for contrastive learning of visual representations, 2020 [Read paper](https://proceedings.mlr.press/v119/chen20j.html)<br>
+^8^ An image is worth 16x16 words: Transformers for image recognition at scale, 2020 [Read paper](https://arxiv.org/abs/2010.11929)<br>
+^9^ Flamingo: a visual language model for few-shot learning, 2022 [Read paper](https://proceedings.neurips.cc/paper_files/paper/2022/hash/960a172bc7fbf0177ccccbb411a7d800-Abstract-Conference.html)
 
 ### Module 3: Reinforcement Learning
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **8** | 28/10/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **9** | 04/11/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | Slides, Code, Answer |
-| **10** | 11/11/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
+| **8** | 10/30/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **9** | 11/06/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. III*</span> | *Coding III* | Slides, Code |
+| **10** | 11/13/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
+
+^10^ Proximal policy optimization algorithms, 2017 [Read paper](https://arxiv.org/abs/1707.06347)<br>
+^11^ BOHB: Robust and efficient hyperparameter optimization at scale, 2018 [Read paper](https://proceedings.mlr.press/v80/falkner18a.html)<br>
+^12^ Deep reinforcement learning from human preferences, 2017 [Read paper](https://proceedings.neurips.cc/paper/7017-deep-reinforcement-learning-from-human-preferences)
 
 ### Module 4: Generative Models
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **11** | 18/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **12** | 25/11/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
-| **13** | 02/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | Slides, Code, Answer |
+| **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **12** | 11/27/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
+| **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. IV*</span> | *Coding IV* | Slides, Code |
+
+^13^ Pixel Recurrent Neural Networks, 2016 [Read paper](https://proceedings.mlr.press/v48/oord16.html)<br>
+^14^ Deep Image Prior, 2018 [Read paper](http://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html) <br>
+^15^ Scaling Rectified Flow Transformers for High-Resolution Image Synthesis, 2024 [Read paper](https://openreview.net/forum?id=FPnUhsQJ5B)
 
 ### Module 5: Emerging Topics
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **14** | 09/12/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **15** | 16/12/2025 | *Lecture* | <span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | Slides, Code, Answer |
-| **16** | 23/12/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
+| **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. V*</span> | *Coding V* | Slides, Code |
+| **16** | 12/25/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
+| **17** | 01/01/2026 | | |📆Final | |
 
-
+^16^ Highly accurate protein structure prediction with AlphaFold, 2021 [Read paper](https://www.nature.com/articles/s41586-021-03819-2)<br>
+^17^ Learnable latent embeddings for joint behavioural and neural analysis, 2023 [Read paper](https://www.nature.com/articles/s41586-023-06031-6)<br>
+^18^ Generative models improve fairness of medical classifiers under distribution shifts, 2024 [Read paper](https://www.nature.com/articles/s41591-024-02838-6)
 
 ## Course Components
 
 ### Presentation Sections
 
 ::: {.presentation-info}
+- **Slots**: **5** sessions (~10 slots, 20 students) (🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres.*</span>) throughout the semester
 - **Group Size**: Maximum 2 people per group
-- **Class Size**: ~20 students
-- **Presentation Slots**: 5 sessions throughout the semester
+- **Duration**: 15 minutes presentation + 5 minutes Q&A
 - **Format**: Interactive presentations with Q&A sessions
 :::
 
 ### Coding Sections
 
 ::: {.coding-info}
+- **Slots**: **5** sessions (I will prepare the materials) throughout the semester
 - **Hands-on Programming**: Practical implementation of algorithms
-- **Languages**: Python, with optional R/Julia
-- **Environment**: Jupyter notebooks and Google Colab
-- **Assessment**: Code quality, documentation, and results
+- **Languages**: Python
+- **Environment**: Jupyter notebooks, potentially with Google Colab
+
+**Note**: These coding sessions are **optional**. Students are not required to stay in the classroom during these sessions.
+:::
+
+### Reading Sections
+
+::: {.reading-info}
+- **Slots**: **18** sessions throughout the semester
+I will provide a list of reading papers, and you should read them independently at your own pace.
+
+**Note**: Please submit annotated PDFs of at least two papers to demonstrate your in-depth reading and analysis alongside your final project submission.
 :::
 
 ### Final Project
 
 ::: {.course-description}
-**Due Date**: Week 17
+- **Due Date**: Week 17, January 1, 2026, 23:59 China Standard Time (CST)  
+- **Submission**: Please submit the following via email to zejuli@fudan.edu.cn:
+-- 1. Your final project draft
+-- 2. At least two annotated reading papers
 
-The final project is a comprehensive research project where students will:
-- Choose a pattern recognition problem
-- Implement and compare multiple algorithms
-- Write a technical report
-- Present findings to the class
+**Note**: The final project can be completed in **one** of the following formats:
+
+- **Scientific Blog**: Present important course-related concepts in a rigorous, comprehensive, and pedagogically meaningful manner. Examples: [Distill](https://distill.pub/), [ICLR Blog](https://iclr-blogposts.github.io/2025/blog/).
+
+- **Research Report**: Conduct innovative research in the field of pattern recognition, with results that meet the standards of top-tier AI conference workshops.
 :::
 
 ### Grading Policy
 
 | Component | Weight | Description |
 |:---------:|:------:|:------------|
-| **Presentations** | 25% | Quality of presentation and engagement |
-| **Coding Assignments** | 30% | Implementation and documentation |
-| **Final Project** | 35% | Research depth and technical writing |
-| **Participation** | 10% | Class engagement and discussions |
-
+| **Presentations** | 30% | Clarity, relevance, and presentation layout |
+| **Final Project** | 60% | Research depth and technical writing |
+| **Participation** | 10% | Demonstrate engagement with paper reading |
 
 ## Recommended Reading Materials
 
