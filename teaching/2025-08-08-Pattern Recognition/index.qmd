@@ -444,11 +444,13 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_1.pdf) |
-| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. I*</span> | *Coding I* | Slides, Code |
+| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. I*</span> | *Coding I* | Slides, [PCA](code_1_pca.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1Dau3QEhs99xRDTf2-BMqHln-Jjsl_npy/view?usp=sharing)), [Linear Regression](code_1_linear_regression.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1cWqFYtWyG5aafXSAso08WS3Xh3gwBoN7/view?usp=sharing)), [GMM](code_1_gmm.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1otzxdJUrh0JJpwH0HhQGF2VMbFLOuRoe/view?usp=sharing)) |
 | **3** | 09/25/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
 | **4** | 10/02/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
 
-^1^ Understanding black-box predictions via influence functions, 2017 [Read paper](https://proceedings.mlr.press/v70/koh17a?ref=https://githubhelp.com)<br>[Those classic papers are fundementals to this research fiel and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
+
+
+^1^ Understanding black-box predictions via influence functions, 2017 [Read paper](https://proceedings.mlr.press/v70/koh17a?ref=https://githubhelp.com)<br>[Those classic papers are fundementals to this research field and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
 ^2^ Matching networks for one shot learning, 2016 [Read paper](https://proceedings.neurips.cc/paper/2016/hash/90e1357833654983612fb05e3ec9148c-Abstract.html)<br>
 ^3^ Understanding deep learning requires rethinking generalization, 2016 [Read paper](https://arxiv.org/abs/1611.03530)<br>
 ^4^ Deep double descent: Where bigger models and more data hur, 2021 [Read paper](https://iopscience.iop.org/article/10.1088/1742-5468/ac3a74/meta)<br>
