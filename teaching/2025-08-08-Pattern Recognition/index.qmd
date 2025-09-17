@@ -444,10 +444,9 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_1.pdf) |
-| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. I*</span> | *Coding I* | Slides, [PCA](code_1_pca.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1Dau3QEhs99xRDTf2-BMqHln-Jjsl_npy/view?usp=sharing)), [Linear Regression](code_1_linear_regression.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1cWqFYtWyG5aafXSAso08WS3Xh3gwBoN7/view?usp=sharing)), [GMM](code_1_gmm.ipynb)([🧑🏼‍💻](https://drive.google.com/file/d/1otzxdJUrh0JJpwH0HhQGF2VMbFLOuRoe/view?usp=sharing)) |
+| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | Slides<br> **PCA**: [View](code_1_pca.ipynb), [Download](code_1_pca.ipynb){download="code_1_pca.ipynb"}, [Colab](https://drive.google.com/file/d/1Dau3QEhs99xRDTf2-BMqHln-Jjsl_npy/view?usp=sharing) <br> **Linear Regression**: [View](code_1_linear_regression.ipynb), [Download](code_1_linear_regression.ipynb){download="code_1_linear_regression.ipynb"}, [Colab](https://drive.google.com/file/d/1cWqFYtWyG5aafXSAso08WS3Xh3gwBoN7/view?usp=sharing) <br> **GMM**: [View](code_1_gmm.ipynb), [Download](code_1_gmm.ipynb){download="code_1_gmm.ipynb"}, [Colab](https://drive.google.com/file/d/1otzxdJUrh0JJpwH0HhQGF2VMbFLOuRoe/view?usp=sharing) |
 | **3** | 09/25/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
 | **4** | 10/02/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
-
 
 
 ^1^ Understanding black-box predictions via influence functions, 2017 [Read paper](https://proceedings.mlr.press/v70/koh17a?ref=https://githubhelp.com)<br>[Those classic papers are fundementals to this research field and a must know for a qualified Ph.D. student for AI related majors.]{.aside}
@@ -462,7 +461,7 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. II*</span> | *Coding II* | Slides, Code |
+| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides |
 | **7** | 10/23/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
 
 ^7^ A simple framework for contrastive learning of visual representations, 2020 [Read paper](https://proceedings.mlr.press/v119/chen20j.html)<br>
@@ -474,7 +473,7 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **8** | 10/30/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **9** | 11/06/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. III*</span> | *Coding III* | Slides, Code |
+| **9** | 11/06/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | Slides |
 | **10** | 11/13/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
 
 ^10^ Proximal policy optimization algorithms, 2017 [Read paper](https://arxiv.org/abs/1707.06347)<br>
@@ -487,7 +486,7 @@ fig.show()
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
 | **12** | 11/27/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
-| **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. IV*</span> | *Coding IV* | Slides, Code |
+| **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | Slides |
 
 ^13^ Pixel Recurrent Neural Networks, 2016 [Read paper](https://proceedings.mlr.press/v48/oord16.html)<br>
 ^14^ Deep Image Prior, 2018 [Read paper](http://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html) <br>
@@ -498,7 +497,7 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
-| **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Pres. V*</span> | *Coding V* | Slides, Code |
+| **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | Slides |
 | **16** | 12/25/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
 | **17** | 01/01/2026 | | |📆Final | |
 
