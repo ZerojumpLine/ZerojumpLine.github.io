@@ -444,7 +444,7 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_1.pdf) |
-| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | Slides<br> **PCA**: [View](code_1_pca.ipynb), [Download](code_1_pca.ipynb){download="code_1_pca.ipynb"}, [Colab](https://drive.google.com/file/d/1Dau3QEhs99xRDTf2-BMqHln-Jjsl_npy/view?usp=sharing) <br> **Linear Regression**: [View](code_1_linear_regression.ipynb), [Download](code_1_linear_regression.ipynb){download="code_1_linear_regression.ipynb"}, [Colab](https://drive.google.com/file/d/1cWqFYtWyG5aafXSAso08WS3Xh3gwBoN7/view?usp=sharing) <br> **GMM**: [View](code_1_gmm.ipynb), [Download](code_1_gmm.ipynb){download="code_1_gmm.ipynb"}, [Colab](https://drive.google.com/file/d/1otzxdJUrh0JJpwH0HhQGF2VMbFLOuRoe/view?usp=sharing) |
+| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | [Slides](Lecture_2.pdf)<br> [PCA](code_1_pca.ipynb), [Linear Regression](code_1_linear_regression.ipynb), [GMM](code_1_gmm.ipynb) |
 | **3** | 09/25/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
 | **4** | 10/02/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
 
