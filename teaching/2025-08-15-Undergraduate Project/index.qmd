@@ -43,6 +43,8 @@ The example projects can be previewed below:
 **Download Materials**: The complete project code and datasets can be downloaded from [Baidu Yun](https://pan.baidu.com/s/160QrLRIOqflm6AH7trC5ZA?pwd=xd3w) using password `xd3w`.
 :::
 
+This course takes place in Room B5011, No. 2 Interdisciplinary Research Building on Tuesday afternoons (15:00–16:00) during the first semester of the 2025–2026 academic year on the following dates.
+
 ## Schedule
 
 | Week | Date | Plan |
