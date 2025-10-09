@@ -460,7 +460,7 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_3.pdf) |
 | **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides |
 | **7** | 10/23/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
 
