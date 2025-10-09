@@ -49,10 +49,10 @@ This course takes place in Room B5011, No. 2 Interdisciplinary Research Building
 
 | Week | Date | Plan |
 |:----:|:----:|:--------:|
-| **5** | 09/30/2025 | [Course Introduction](Lecturer_intro.pdf) |
-| **9** | 10/28/2025 | Stage Discussion I | 
-| **13** | 11/25/2025 | Stage Discussion II | 
-| **17** | 12/23/2025 | Student Presentation |
+| **4** | 09/30/2025 | [Course Introduction](Lecturer_intro.pdf) |
+| **8** | 10/28/2025 | Stage Discussion I | 
+| **12** | 11/25/2025 | Stage Discussion II | 
+| **16** | 12/23/2025 | Student Presentation |
 
 ## Recommended Reading Materials
 
