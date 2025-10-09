@@ -17,11 +17,25 @@ format:
 
 I teach a AI course designed for a general audience, suitable for students from all majors.
 
-## AI Fundamentals
+## Description
 
-In this course, I will cover some basic concepts of AI.
+The course will gently introduce foundational AI topics. It is co-taught with [Prof. Yajie Qin](https://bme-college.fudan.edu.cn/qyj/). I will be giving lectures on the following dates and topics.
+
+## Schedule
+
+| Week | Date | Plan |
+|:----:|:----:|:--------:|
+| **5** | 10/10/2025 | Traditional AI |
+| **6** | 10/17/2025 | Artifical Neural Networks | 
+| **11** | 11/21/2025 | Transformer | 
+| **13** | 12/5/2025 | Reinforcement Learning |
+| **14** | 12/12/2025 | Ethics and Safety |
+| **16** | 12/26/2025 | Open Discussion |
+
+The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](https://cs.fudan.edu.cn/b7/70/c25925a440176/page.htm).
 
 ## Recommended Reading Materials
 
+- [The Matrix Cookbook](https://www2.imm.dtu.dk/pubdb/pubs/3274-full.html).
 - [Mathematics for Machine Learning](https://mml-book.github.io/).
 - [Dive into Deep Learning](https://d2l.ai/).
