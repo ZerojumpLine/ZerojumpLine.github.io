@@ -461,7 +461,7 @@ fig.show()
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
 | **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_3.pdf) |
-| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides |
+| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | Slides [GP](code_2_gp.ipynb), [PyTorch](code_2_PyTorch.ipynb), [Neural Networks](code_2_neural_network.ipynb) |
 | **7** | 10/23/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
 
 ^7^ A simple framework for contrastive learning of visual representations, 2020 [Read paper](https://proceedings.mlr.press/v119/chen20j.html)<br>
