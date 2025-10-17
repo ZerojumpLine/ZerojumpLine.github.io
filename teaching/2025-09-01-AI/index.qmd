@@ -26,7 +26,7 @@ The course will gently introduce foundational AI topics. It is co-taught with [P
 | Week | Date | Plan |
 |:----:|:----:|:--------:|
 | **5** | 10/10/2025 | [Traditional AI](lecture_traditionalAI.pdf) |
-| **6** | 10/17/2025 | Artifical Neural Networks | 
+| **6** | 10/17/2025 | [Artifical Neural Networks](lecture_ArtificalNeuralNetwork.pdf) | 
 | **11** | 11/21/2025 | Transformer | 
 | **13** | 12/5/2025 | Reinforcement Learning |
 | **14** | 12/12/2025 | Ethics and Safety |
