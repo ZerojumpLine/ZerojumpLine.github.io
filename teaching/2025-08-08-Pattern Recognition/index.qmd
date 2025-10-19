@@ -24,7 +24,7 @@ This course aims to equip Ph.D. students with a deep understanding of modern pat
 
 The course emphasizes the integration of theory and practice, requiring students to master end-to-end research methodologies—from mathematical derivation to engineering implementation—while fostering cross-domain innovation. Upon completion, Ph.D. students will possess the academic competence to publish in top-tier conferences.
 
-This course takes place in JA302 every Thursday afternoon (14:15-17:15) during the first semester of the 2025-2026 academic year.
+This course takes place in JA302 every Thursday afternoon (14:25-17:05) during the first semester of the 2025-2026 academic year.
 
 ## Expectations
 
