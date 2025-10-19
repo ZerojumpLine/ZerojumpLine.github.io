@@ -21,6 +21,8 @@ I teach a AI course designed for a general audience, suitable for students from 
 
 The course will gently introduce foundational AI topics. It is co-taught with [Prof. Yajie Qin](https://bme-college.fudan.edu.cn/qyj/). I will be giving lectures on the following dates and topics.
 
+This course takes place in H4201 every Friday afternoon (13:30-16:10) during the first semester of the 2025-2026 academic year.
+
 ## Schedule
 
 | Week | Date | Plan |
