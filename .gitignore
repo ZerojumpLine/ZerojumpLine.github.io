@@ -2,8 +2,6 @@
 /_site/
 .DS_Store
 # Repo cleanup
-.DS_Store
-_site/
-_freeze/
+_freeze/site_libs/
 *.tmp
 *.bak
