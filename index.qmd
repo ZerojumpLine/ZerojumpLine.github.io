@@ -188,7 +188,7 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 :::
 
 ::: {.featured-item}
-[**AI Foundations**](/teaching/2025-08-08-AI/){.featured-link}
+[**AI Fundamentals**](/teaching/2025-09-01-AI/){.featured-link}
 
 ::: {.featured-meta}
 [Teaching]{.featured-type} • August 2, 2025
