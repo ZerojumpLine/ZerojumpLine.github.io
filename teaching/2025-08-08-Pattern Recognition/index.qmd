@@ -484,7 +484,7 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_7.pdf) |
 | **12** | 11/27/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
 | **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | Slides |
 
