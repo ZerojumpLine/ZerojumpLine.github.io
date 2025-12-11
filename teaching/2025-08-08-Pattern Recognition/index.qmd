@@ -496,7 +496,7 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | Slides |
+| **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecturer_9.pdf) |
 | **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | Slides |
 | **16** | 12/25/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
 | **17** | 01/01/2026 | | |📆Final | |
