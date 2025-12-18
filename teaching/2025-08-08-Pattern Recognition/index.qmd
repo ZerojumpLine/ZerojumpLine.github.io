@@ -443,8 +443,8 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](lecture_1.pdf) |
-| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | [Slides](lecture_2.pdf)<br> [PCA](code_1_pca.ipynb), [Linear Regression](code_1_linear_regression.ipynb), [GMM](code_1_gmm.ipynb) |
+| **1** | 09/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecture_1.pdf) |
+| **2** | 09/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation I*</span> | *Coding I* | [Slides](Lecture_2.pdf)<br> [PCA](code_1_pca.ipynb), [Linear Regression](code_1_linear_regression.ipynb), [GMM](code_1_gmm.ipynb) |
 | **3** | 09/25/2025 | *Reading*^1^ | *Reading*^2^ | *Reading*^3^ | |
 | **4** | 10/02/2025 | *Reading*^4^ | *Reading*^5^ | *Reading*^6^ | |
 
@@ -460,8 +460,8 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](lecture_3.pdf) |
-| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | [Slides](lecture_4.pdf) [GP](code_2_gp.ipynb), [PyTorch](code_2_PyTorch.ipynb), [Neural Networks](code_2_neural_network.ipynb) |
+| **5** | 10/09/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecture_3.pdf) |
+| **6** | 10/16/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation II*</span> | *Coding II* | [Slides](Lecture_4.pdf) [GP](code_2_gp.ipynb), [PyTorch](code_2_PyTorch.ipynb), [Neural Networks](code_2_neural_network.ipynb) |
 | **7** | 10/23/2025 | *Reading*^7^ | *Reading*^8^ | *Reading*^9^ | |
 
 ^7^ A simple framework for contrastive learning of visual representations, 2020 [Read paper](https://proceedings.mlr.press/v119/chen20j.html)<br>
@@ -472,8 +472,8 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **8** | 10/30/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](lecture_5.pdf) |
-| **9** | 11/06/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | [Slides](lecture_6.pdf) [Q_Learning](code_3_q_learning.ipynb), [REINFORCE](code_3_reinforce.ipynb) |
+| **8** | 10/30/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecture_5.pdf) |
+| **9** | 11/06/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation III*</span> | *Coding III* | [Slides](Lecture_6.pdf) [Q_Learning](code_3_q_learning.ipynb), [REINFORCE](code_3_reinforce.ipynb) |
 | **10** | 11/13/2025 | *Reading*^10^ | *Reading*^11^ | *Reading*^12^ | |
 
 ^10^ Proximal policy optimization algorithms, 2017 [Read paper](https://arxiv.org/abs/1707.06347)<br>
@@ -484,9 +484,9 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](lecture_7.pdf) |
+| **11** | 11/20/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecture_7.pdf) |
 | **12** | 11/27/2025 | *Reading*^13^ | *Reading*^14^ | *Reading*^15^ | |
-| **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | [Slides](lecture_8.pdf) [VAE](code_4_vae.ipynb), [VQ_VAE](code_4_vqvae.ipynb) |
+| **13** | 12/04/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation IV*</span> | *Coding IV* | [Slides](Lecture_8.pdf) [VAE](code_4_vae.ipynb), [VQ_VAE](code_4_vqvae.ipynb) |
 
 ^13^ Pixel Recurrent Neural Networks, 2016 [Read paper](https://proceedings.mlr.press/v48/oord16.html)<br>
 ^14^ Deep Image Prior, 2018 [Read paper](http://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html) <br>
@@ -496,8 +496,8 @@ fig.show()
 
 | Week | Date | Lesson 1 | Lesson 2 | Lesson 3 | Materials |
 |:----:|:----:|:--------:|:--------:|:--------:|:---------:|
-| **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](lecture_9.pdf) |
-| **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | [Slides](lecture_10.pdf) [ICL_CLS](code_5_icl_classification.ipynb), [ICL_REG](code_5_icl_regression.ipynb) |
+| **14** | 12/11/2025 | *Lecture* | *Lecture* | *Lecture* | [Slides](Lecture_9.pdf) |
+| **15** | 12/18/2025 | *Lecture* | 🧑🏼‍🏫👩🏼‍🏫<span style="color: darkred !important;">*Presentation V*</span> | *Coding V* | [Slides](Lecture_10.pdf) [ICL_CLS](code_5_icl_classification.ipynb), [ICL_REG](code_5_icl_regression.ipynb) |
 | **16** | 12/25/2025 | *Reading*^16^ | *Reading*^17^ | *Reading*^18^ | |
 | **17** | 01/01/2026 | | |📆Final | |
 
