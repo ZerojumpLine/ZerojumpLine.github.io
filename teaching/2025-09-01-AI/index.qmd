@@ -31,7 +31,7 @@ This course takes place in H4201 every Friday afternoon (13:30-16:10) during the
 | **6** | 10/17/2025 | [Artifical Neural Networks](lecture_ArtificalNeuralNetwork.pdf) | 
 | **11** | 11/21/2025 | [Reinforcement Learning](lecture_ReinforcementLearning.pdf) | 
 | **13** | 12/5/2025 | [Transformer](lecture_Transformer.pdf) |
-| **15** | 12/19/2025 | Ethics and Safety |
+| **15** | 12/19/2025 | [Ethics and Safety](lecture_SafetyAndEthics.pdf) |
 
 The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](https://cs.fudan.edu.cn/b7/70/c25925a440176/page.htm).
 
