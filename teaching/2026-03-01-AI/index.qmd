@@ -1,0 +1,60 @@
+---
+title: "AI Fundamentals 2026"
+author: Zeju Li
+date: 2026-03-01
+slug: AI-2026
+image: featured.jpg
+categories:
+  - UG
+  - General education course
+subtitle: "An AI course for junior undergraduate students."
+description: ''
+links:
+format:
+  html:
+    page-layout: full
+---
+
+I teach a AI course designed for a general audience, suitable for students from all majors.
+
+## Description
+
+The course will gently introduce foundational AI topics.
+
+This course takes place in GHX208 every Wednesday afternoon (13:30-16:10) during the first semester of the 2025-2026 academic year.
+
+## Schedule
+
+| Week | Date | Topic |
+|:----:|:----:|:------|
+| **1** | 3/4/2026 | AI Overview |
+| **2** | 3/11/2026 | Machine Learning Basics |
+| **3** | 3/18/2026 | Traditional AI Models |
+| **4** | 3/25/2026 | Model Evaluation and Selection |
+| **5** | 4/1/2026 | Artificial Neural Networks |
+| **6** | 4/8/2026 | Computer Vision |
+| **7** | 4/15/2026 | Course Practice and Programming |
+| **8** | 4/22/2026 | Natural Language Processing |
+| **9** | 4/29/2026 | RNN and LSTM |
+| **10** | 5/6/2026 | Transformer Models |
+| **11** | 5/13/2026 | Search Problems |
+| **12** | 5/20/2026 | Reinforcement Learning |
+| **13** | 5/27/2026 | AI Ethics and Safety |
+| **14** | 6/3/2026 | AI for Science |
+| **15** | 6/10/2026 | Course Summary |
+| **17** | 6/21/2026 | Final Exam |
+
+The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](https://cs.fudan.edu.cn/b7/70/c25925a440176/page.htm).
+
+## Teaching Assistants
+
+This course is supported by two teaching assistants:
+
+- **Lei Liu** — liulei.yossarian(at)gmail.com  
+- **Weidong Guo** — gwd200(at)mail.ustc.edu.cn
+
+## Recommended Reading Materials
+
+- [The Matrix Cookbook](https://www2.imm.dtu.dk/pubdb/pubs/3274-full.html).
+- [Dive into Deep Learning](https://d2l.ai/).
+- [Jianlin Su's Blog](https://kexue.fm/).
