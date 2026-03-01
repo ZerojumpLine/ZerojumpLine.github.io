@@ -27,11 +27,11 @@ This course takes place in H4201 every Friday afternoon (13:30-16:10) during the
 
 | Week | Date | Plan |
 |:----:|:----:|:--------:|
-| **5** | 10/10/2025 | [Traditional AI](https://raw.githubusercontent.com/ZerojumpLine/AI-2025-slides/main/lecture_traditionalAI.pdf) |
-| **6** | 10/17/2025 | [Artifical Neural Networks](https://raw.githubusercontent.com/ZerojumpLine/AI-2025-slides/main/lecture_ArtificalNeuralNetwork.pdf) |
-| **11** | 11/21/2025 | [Reinforcement Learning](https://raw.githubusercontent.com/ZerojumpLine/AI-2025-slides/main/lecture_ReinforcementLearning.pdf) |
-| **13** | 12/5/2025 | [Transformer](https://raw.githubusercontent.com/ZerojumpLine/AI-2025-slides/main/lecture_Transformer.pdf) |
-| **15** | 12/19/2025 | [Ethics and Safety](https://raw.githubusercontent.com/ZerojumpLine/AI-2025-slides/main/lecture_SafetyAndEthics.pdf) |
+| **5** | 10/10/2025 | [Traditional AI](https://zerojumpline.github.io/ai-2025-slides/lecture_traditionalAI.pdf) |
+| **6** | 10/17/2025 | [Artifical Neural Networks](https://zerojumpline.github.io/ai-2025-slides/lecture_ArtificalNeuralNetwork.pdf) |
+| **11** | 11/21/2025 | [Reinforcement Learning](https://zerojumpline.github.io/ai-2025-slides/lecture_ReinforcementLearning.pdf) |
+| **13** | 12/5/2025 | [Transformer](https://zerojumpline.github.io/ai-2025-slides/lecture_Transformer.pdf) |
+| **15** | 12/19/2025 | [Ethics and Safety](https://zerojumpline.github.io/ai-2025-slides/lecture_SafetyAndEthics.pdf) |
 
 The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](https://cs.fudan.edu.cn/b7/70/c25925a440176/page.htm).
 
