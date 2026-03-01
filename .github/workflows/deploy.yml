@@ -45,8 +45,8 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install jupyter
-        run: pip install jupyter nbformat
+      - name: Install Python packages
+        run: pip install jupyter nbformat plotly numpy scipy scikit-learn pandas
 
       - name: Build
         run: quarto render
