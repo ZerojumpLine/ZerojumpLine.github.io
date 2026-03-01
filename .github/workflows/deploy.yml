@@ -40,6 +40,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-
 
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install jupyter
+        run: pip install jupyter nbformat
+
       - name: Build
         run: quarto render
 
