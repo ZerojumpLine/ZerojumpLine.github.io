@@ -9,7 +9,6 @@ categories:
   - General education course
 subtitle: "An AI course for junior undergraduate students."
 description: ''
-links:
 format:
   html:
     page-layout: full
