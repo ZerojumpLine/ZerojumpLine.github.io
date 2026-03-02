@@ -13,6 +13,10 @@ links:
 format:
   html:
     page-layout: full
+links:
+  - icon: journal-text
+    name: AIB210002.03
+    url: https://elearning.fudan.edu.cn/courses/110775
 ---
 
 I teach a AI course designed for a general audience, suitable for students from all majors.
@@ -41,7 +45,7 @@ This course takes place in HGX208 every Wednesday afternoon (13:30-16:10) during
 | **12** | 5/20/2026 | Reinforcement Learning |
 | **13** | 5/27/2026 | AI Ethics and Safety |
 | **14** | 6/3/2026 | AI for Science |
-| **15** | 6/10/2026 | Oepn Discussion |
+| **15** | 6/10/2026 | Open Discussion |
 | **16** | 6/17/2026 | Course Summary |
 | **17** | 6/21/2026 | Final Exam |
 
@@ -51,8 +55,8 @@ The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](ht
 
 This course is supported by two teaching assistants:
 
-- **Lei Liu** — liulei.yossarian(at)gmail.com  
-- **Weidong Guo** — gwd200(at)mail.ustc.edu.cn
+- **Lei Liu** — liulei_yossarian(at)163.com
+- **Weidong Guo** — wdguo25(at)m.fudan.edu.cn 
 
 ## Recommended Reading Materials
 
