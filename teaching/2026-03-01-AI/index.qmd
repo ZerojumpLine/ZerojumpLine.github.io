@@ -41,7 +41,8 @@ This course takes place in HGX208 every Wednesday afternoon (13:30-16:10) during
 | **12** | 5/20/2026 | Reinforcement Learning |
 | **13** | 5/27/2026 | AI Ethics and Safety |
 | **14** | 6/3/2026 | AI for Science |
-| **15** | 6/10/2026 | Course Summary |
+| **15** | 6/10/2026 | Oepn Discussion |
+| **16** | 6/17/2026 | Course Summary |
 | **17** | 6/21/2026 | Final Exam |
 
 The courses and teaching materials are mainly developed by [Prof. Xingjun Ma](https://cs.fudan.edu.cn/b7/70/c25925a440176/page.htm).
