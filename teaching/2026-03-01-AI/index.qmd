@@ -39,7 +39,7 @@ This course takes place in HGX208 every Wednesday afternoon (13:30-16:10) during
 <tr><th style="text-align:center">Week</th><th style="text-align:center">Date</th><th style="text-align:center">Topic</th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align:center"><strong>1</strong></td><td style="text-align:center">3/4/2026</td><td style="text-align:center">[AI Overview]((https://zerojumpline.github.io/AI-2026-slides/lecture_AI_Overview.pdf)) (CW1 released)</td></tr>
+<tr><td style="text-align:center"><strong>1</strong></td><td style="text-align:center">3/4/2026</td><td style="text-align:center"><a href="https://zerojumpline.github.io/AI-2026-slides/lecture_AI_Overview.pdf">AI Overview</a> (CW1 released)</td></tr>
 <tr><td style="text-align:center"><strong>2</strong></td><td style="text-align:center">3/11/2026</td><td style="text-align:center">Machine Learning Basics</td></tr>
 <tr><td style="text-align:center"><strong>3</strong></td><td style="text-align:center">3/18/2026</td><td style="text-align:center">Traditional AI Models</td></tr>
 <tr><td style="text-align:center"><strong>4</strong></td><td style="text-align:center">3/25/2026</td><td style="text-align:center">Model Evaluation and Selection</td></tr>
