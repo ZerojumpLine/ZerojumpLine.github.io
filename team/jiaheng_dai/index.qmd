@@ -46,7 +46,7 @@ Sep 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Jiaheng Dai is a doctor student working on medical image analysis.
+Jiaheng Dai is a doctor student working on robust image segmentation.
 
 :::
 
