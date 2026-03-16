@@ -6,7 +6,7 @@ description: |
 listing: 
   contents: 
     - "zhongrui_fan/index.qmd"
-    - "danqing_gu/index.qmd"
+    - "bingyan_li/index.qmd"
     - "haoyan_ma/index.qmd"
     - "jie_xu/index.qmd"
     - "zekai_yu/index.qmd"
