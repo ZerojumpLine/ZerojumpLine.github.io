@@ -54,7 +54,7 @@ Bingyan Li is a doctor student working on counterfactual image generation.
 Bingyan joined the lab in 2026 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2031</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2031</li>
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Southeast University ∙ 2026</li>
 </ul>
 
