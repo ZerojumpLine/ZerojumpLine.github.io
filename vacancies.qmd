@@ -22,7 +22,7 @@ resources:
 他于2023年1月在帝国理工学院Computing系获得博士学位，此前是牛津大学FMRIB Centre的博士后研究员。
 
 - 研究方向集中在机器学习及其在医学图像处理中的应用，侧重神经影像分析和解决临床问题。
-- 发表学术论文30余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过4000次。
+- 发表学术论文40余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过5000次。
 - 曾获得华为AI挑战赛和MICCAI挑战赛冠军，并担任MICCAI/MIDL等领域主要会议的领域主席。
 - 详情请访问个人主页：[https://zerojumpline.github.io](https://zerojumpline.github.io)。
 
@@ -64,7 +64,7 @@ resources:
 
 ## Why Join Us?
 
-你将加入由[复旦大学副校长汪源源教授](https://bme-college.fudan.edu.cn/wyy/main.htm)领导的医学信号处理实验室，团队现有超过30名研究生。加入我们，你将获得：
+你将加入由[复旦大学副校长汪源源教授](https://bme-college.fudan.edu.cn/wyy/main.htm)领导的医学影像与人工智能实验室，团队现有超过30名研究生。加入我们，你将获得：
 
 - 充足的资金、计算资源和临床资源支持。
 - 开放包容的实验室氛围，导师注重学生个人成长。
@@ -81,7 +81,7 @@ resources:
 请将个人简历（包含教育和研究经历）、相关信息（如GitHub账号、成绩单、论文）发送至：
 [zejuli@fudan.edu.cn](mailto:zejuli@fudan.edu.cn)。
 
-邮件标题格式为**"<u>入学时间</u>-<u>项目</u>-<u>你的姓名</u>"**，如"2025秋-博士-张三"。
+邮件标题格式为**"<u>入学时间</u>-<u>项目</u>-<u>你的姓名</u>"**，如"2027秋-博士-张三"。
 
 若您的背景符合该职位要求，我们将尽快与您取得联系，并安排面试。
 
