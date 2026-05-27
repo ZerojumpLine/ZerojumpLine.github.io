@@ -65,7 +65,7 @@ website:
   
   page-footer:  
     left: >-
-     <span style="font-size: 1.2rem;">&#169; 2025 Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
+     <span style="font-size: 1.2rem;">&#169; 2025&ndash; Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
 
     center: >-
       <span style="font-size: 1.2rem;"> Fudan University, Shanghai, China.
