@@ -4,10 +4,11 @@ description: |
   Meet our former lab members and learn about their career paths.<br>
   Discover where our alumni are now and their contributions to the field.
 
-format: 
-  html: 
+format:
+  html:
     page-layout: full
     title-block-banner: false
+math: false
 
 header-includes: >
   <link rel="stylesheet" href="../assets/alumni-table.css">

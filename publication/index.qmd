@@ -18,10 +18,11 @@ listing:
   # image-height: 10em
   # page-size: 5
 
-format: 
-  html: 
+format:
+  html:
     page-layout: full
 title-block-banner: false
+math: false
 bibliography: publications.bib
 
 header-includes: >

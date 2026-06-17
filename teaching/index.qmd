@@ -17,10 +17,11 @@ listing:
   filter-ui: false
   image-align: left
   image-height: 100%
-format: 
-  html: 
+format:
+  html:
     page-layout: full
 title-block-banner: false
+math: false
 
 header-includes: >
   <link rel="stylesheet" href="../assets/listing-default.css">

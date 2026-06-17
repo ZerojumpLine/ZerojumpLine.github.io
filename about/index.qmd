@@ -31,7 +31,8 @@ about:
 format:
   html:
     page-layout: full
-listing: 
+math: false
+listing:
 - id: news
   contents: 
     - "../news/*/index.qmd"

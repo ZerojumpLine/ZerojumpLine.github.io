@@ -22,10 +22,11 @@ listing:
 citation: false
 toc: false
 comments: false
-format: 
-  html: 
+format:
+  html:
     page-layout: full
 title-block-banner: false
+math: false
 
 header-includes: >
   <link rel="stylesheet" href="../assets/category-font-fix.css">
