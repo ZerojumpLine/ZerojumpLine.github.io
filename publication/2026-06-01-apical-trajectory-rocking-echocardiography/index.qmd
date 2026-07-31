@@ -1,0 +1,48 @@
+---
+title: "Temporally coherent self-supervised apical trajectory learning for apical rocking classification in echocardiographic videos"
+author: 
+- name: Mingshan Li
+- name: Fangyan Tian
+- name: Qin Wang
+- name: Zeju Li
+- name: Xianhong Shu
+- name: Yi Guo
+- name: Yuanyuan Wang
+date: '2026-06-01'
+categories:
+  - 2026
+slug: apical-trajectory-rocking-echocardiography
+image: featured.png
+description: 'Biomedical Signal Processing and Control'
+subtitle: A dual-branch network for self-supervised apical trajectory learning and apical rocking classification in echo videos.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1016/j.bspc.2026.109728
+---
+
+## Abstract
+
+Apical Rocking (AR) is an echocardiography-observable marker of the interventricular dyssynchrony. In clinical routine, it serves as a critical indicator to determine whether the treatment via cardiac resynchronization therapy would be effective for heart failure. However, AR classification based on visual assessment by cardiologists requires clinical expertise and is subject to inter-observer variability, and we find that existing end-to-end machine learning methods are suboptimal on AR classification as they fail to model apical motion – a local but non-trivial key factor for AR. In this study, we propose ARNet for automatic AR classification by explicitly learning apical trajectories from echocardiographic videos. The architecture incorporates a branch that autonomously generates labels for self-supervised apical trajectory learning, eliminating dependency on costly manual annotations. In parallel, ARNet contains another branch which processes echocardiographic frame sequences to capture apical coordinate regression information, thereby enhancing temporal consistency in trajectory estimation. ARNet facilitates knowledge transfer between its dual branches and performs cross-fusion on their features to generate the final predictions. Extensive experiments demonstrate that ARNet achieves superior performance (area under the receiver operating characteristic curve (AUC) = 0.981) compared to state-of-the-art action recognition algorithms (AUC = 0.927) and even cardiologists (AUC = 0.918), highlighting its potential to enhance clinical decision-making and resource allocation in heart failure management.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2026temporally,
+  title={Temporally coherent self-supervised apical trajectory learning for apical rocking classification in echocardiographic videos},
+  author={Li, Mingshan and Tian, Fangyan and Wang, Qin and Li, Zeju and Shu, Xianhong and Guo, Yi and Wang, Yuanyuan},
+  journal={Biomedical Signal Processing and Control},
+  volume={118},
+  pages={109728},
+  year={2026},
+  doi={10.1016/j.bspc.2026.109728}
+}"><code>@article{li2026temporally,
+  title={Temporally coherent self-supervised apical trajectory learning for apical rocking classification in echocardiographic videos},
+  author={Li, Mingshan and Tian, Fangyan and Wang, Qin and Li, Zeju and Shu, Xianhong and Guo, Yi and Wang, Yuanyuan},
+  journal={Biomedical Signal Processing and Control},
+  volume={118},
+  pages={109728},
+  year={2026},
+  doi={10.1016/j.bspc.2026.109728}
+}</code></pre>
+```

@@ -1,0 +1,47 @@
+---
+title: "An Image Quality Transfer Approach for Localising Deep Brain Stimulation Targets"
+author: 
+- name: Ying-Qiu Zheng
+- name: Harith Akram
+- name: Zeju Li
+- name: Stephen Smith
+- name: Saad Jbabdi
+date: '2025-11-12'
+categories:
+  - 2025
+slug: image-quality-transfer-dbs-targets
+image: featured.png
+description: 'Imaging Neuroscience 2025'
+subtitle: An image quality transfer approach for robust Vim localisation on clinical-quality diffusion MRI for deep brain stimulation.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1162/imag.a.1005
+- icon: file-code
+  name: Preprint
+  url: https://doi.org/10.1101/2024.03.18.584979
+---
+
+## Abstract
+
+The ventral intermediate nucleus of the thalamus (Vim) is a well-established surgical target in functional neurosurgery for the treatment of tremor. As the structure lacks intrinsic contrast on conventional MRI sequences, targeting the Vim has predominantly relied on standardised Vim atlases which can fail to account for individual anatomical variability. To overcome this limitation, recent studies define the Vim using its structural connectivity profile generated via tractography. Although successful in accounting for individual variability, these connectivity-based methods are sensitive to variations in image acquisition and processing, and require high-quality diffusion imaging protocols which are usually not available in clinical settings. Here, we propose a novel transfer learning approach to accurately target the Vim particularly on clinical-quality data. The approach transfers anatomical information from publicly-available high-quality datasets to a wide range of white matter connectivity features in low-quality data to augment inference on the Vim. We demonstrate that the approach can robustly and reliably identify Vim even with compromised data quality. Furthermore, it can generalise to unseen clinical data acquired with different protocols with severe quality issues such as incomplete coverage common in clinical settings. The approach is not limited to targeting Vim and can be adapted to other deep brain structures.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{zheng2025image,
+  title={An Image Quality Transfer Approach for Localising Deep Brain Stimulation Targets},
+  author={Zheng, Ying-Qiu and Akram, Harith and Li, Zeju and Smith, Stephen and Jbabdi, Saad},
+  journal={Imaging Neuroscience},
+  volume={3},
+  year={2025},
+  doi={10.1162/imag.a.1005}
+}"><code>@article{zheng2025image,
+  title={An Image Quality Transfer Approach for Localising Deep Brain Stimulation Targets},
+  author={Zheng, Ying-Qiu and Akram, Harith and Li, Zeju and Smith, Stephen and Jbabdi, Saad},
+  journal={Imaging Neuroscience},
+  volume={3},
+  year={2025},
+  doi={10.1162/imag.a.1005}
+}</code></pre>
+```

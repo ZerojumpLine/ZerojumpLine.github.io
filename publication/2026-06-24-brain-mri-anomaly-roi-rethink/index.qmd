@@ -1,0 +1,46 @@
+---
+title: "Enhancing Brain MRI Anomaly Detection and Reasoning with ROI Rethink and Synthetic Data"
+author: 
+- name: Shangkun Li
+- name: Jie Xu
+- name: Yi Guo
+- name: Zeju Li
+- name: Yuanyuan Wang
+date: '2026-06-24'
+categories:
+  - 2026
+slug: brain-mri-anomaly-roi-rethink
+image: featured.png
+description: 'MICCAI 2026'
+subtitle: BrReMark introduces explicit ROI marking and synthetic pathology augmentation for trustworthy brain MRI diagnosis.
+links:
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2606.25894
+- icon: github
+  name: Code
+  url: https://github.com/fdu-farm/BrReMark
+- icon: globe
+  name: Website
+  url: https://fdu-farm.github.io/BrReMark/
+---
+
+## Abstract
+
+Medical vision-language models typically generate diagnoses through single-pass inference without indicating which image regions support their conclusions. This lack of spatial grounding limits clinical utility: outputs cannot be audited, and models may hallucinate findings on normal scans. We present BrReMark (Brain Rethink via ROI Marking), a framework that introduces explicit region marking into brain MRI diagnosis. The model first generates hypotheses about potential abnormalities and grounds them through explicit bounding box marking, then verifies conclusions by re-examining the marked evidence. Training combines supervised fine-tuning on structured reasoning trajectories with reinforcement learning using a composite reward over localization accuracy and diagnostic reasoning. Furthermore, we integrate a domain randomization-based pathology synthesis augmentation strategy to improve the model's generalizability to out-of-distribution (OOD) data. On internal benchmark, BrReMark improves mAP50 from 0.74% to 37.54% compared to the base model, while achieving 21.57% Clinical F1 and 45.26% diagnostic accuracy. On NOVA OOD benchmark, it also achieves competitive overall performance with a 45.7% reduction in false positives compared to the state-of-the-art, indicating reduced hallucination on rare pathologies. These findings suggest that explicit hypothesis-verification grounding is a practical path toward trustworthy open-ended brain MRI diagnosis across both in-distribution and OOD settings.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{li2026enhancing,
+  title={Enhancing Brain MRI Anomaly Detection and Reasoning with ROI Rethink and Synthetic Data},
+  author={Li, Shangkun and Xu, Jie and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}"><code>@inproceedings{li2026enhancing,
+  title={Enhancing Brain MRI Anomaly Detection and Reasoning with ROI Rethink and Synthetic Data},
+  author={Li, Shangkun and Xu, Jie and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}</code></pre>
+```

@@ -1,0 +1,48 @@
+---
+title: "Learning Label Refinement and Threshold Adjustment for Imbalanced Semi-Supervised Learning"
+author: 
+- name: Zeju Li
+- name: Ying-Qiu Zheng
+- name: Chen Chen
+- name: Saad Jbabdi
+date: '2026-06-01'
+categories:
+  - 2026
+slug: learning-label-refinement-imbalanced-ssl
+image: featured.png
+description: 'TMLR 2026'
+subtitle: A unified framework that learns pseudo-label refinement and class-specific thresholds for imbalanced semi-supervised learning.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://openreview.net/forum?id=HbAMQiyK48
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2407.05370
+- icon: github
+  name: Code
+  url: https://github.com/ZerojumpLine/SEVAL
+- icon: globe
+  name: Website
+  url: https://zerojumpline.github.io/SEVAL
+---
+
+## Abstract
+
+Semi-supervised learning (SSL) algorithms often struggle to perform well when trained on imbalanced data. In such scenarios, the generated pseudo-labels tend to exhibit a bias toward the majority class, and models relying on these pseudo-labels can further amplify this bias. Existing imbalanced SSL algorithms explore pseudo-labeling strategies based on either pseudo-label refinement (PLR) or threshold adjustment (THA), aiming to mitigate the bias through heuristic-driven designs. However, through a careful statistical analysis, we find that existing strategies are suboptimal: most PLR algorithms are either overly empirical or rely on the unrealistic assumption that models remain well-calibrated throughout training, while most THA algorithms depend on flawed metrics for pseudo-label selection. To address these shortcomings, we first derive the theoretically optimal form of pseudo-labels under class imbalance. This foundation leads to our key contribution: SEmi-supervised learning with pseudo-label optimization based on VALidation data (SEVAL), a unified framework that learns both PLR and THA parameters from a class-balanced subset of training data. By jointly optimizing these components, SEVAL adapts to specific task requirements while ensuring per-class pseudo-label reliability. Our experiments demonstrate that SEVAL outperforms state-of-the-art SSL methods, producing more accurate and effective pseudo-labels across various imbalanced SSL scenarios while remaining compatible with diverse SSL algorithms.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{li2026semi,
+  title={Learning Label Refinement and Threshold Adjustment for Imbalanced Semi-Supervised Learning},
+  author={Li, Zeju and Zheng, Ying-Qiu and Chen, Chen and Jbabdi, Saad},
+  journal={Transactions on Machine Learning Research},
+  year={2026}
+}"><code>@article{li2026semi,
+  title={Learning Label Refinement and Threshold Adjustment for Imbalanced Semi-Supervised Learning},
+  author={Li, Zeju and Zheng, Ying-Qiu and Chen, Chen and Jbabdi, Saad},
+  journal={Transactions on Machine Learning Research},
+  year={2026}
+}</code></pre>
+```

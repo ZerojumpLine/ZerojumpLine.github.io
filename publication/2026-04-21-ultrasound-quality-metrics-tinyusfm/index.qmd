@@ -1,0 +1,47 @@
+---
+title: "Defining Robust Ultrasound Quality Metrics via an Ultrasound Foundation Model"
+author: 
+- name: Ziyang Huang
+- name: Bingyan Li
+- name: Chen Ma
+- name: Tianyi Liu
+- name: Yihui Zhai
+- name: Hong Xu
+- name: Yi Guo
+- name: Zeju Li
+- name: Yuanyuan Wang
+date: '2026-04-21'
+categories:
+  - 2026
+slug: ultrasound-quality-metrics-tinyusfm
+image: featured.png
+description: 'MICCAI 2026'
+subtitle: Ultrasound-native full-reference and no-reference quality metrics built on TinyUSFM representations.
+links:
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2604.19512
+- icon: github
+  name: Code
+  url: https://github.com/sextant-fable/US-Metrics
+---
+
+## Abstract
+
+Clinicians lack a principled framework to quantify diagnostic utility in ultrasound reconstructions. Existing standards like PSNR and VGG-LPIPS are inadequate, failing to account for modality-specific physics or the structural nuances of acoustic imaging. We close this gap with a TinyUSFM-based evaluation framework featuring two distinct metrics: TinyUSFM-uLPIPS, a full-reference perceptual distance based on multi-layer token relations, and TinyUSFM-NRQ, a deployable no-reference quality score utilizing clean-manifold modeling and worst-region aggregation to detect localized harmful artifacts. We demonstrate that the presented metrics have four unique advantages: 1) Task-linked quality, where TinyUSFM-uLPIPS achieves superior calibration with semantic task damage, accurately reflecting Dice-score drops in segmentation where VGG-based metrics fail; 2) Cross-organ comparability, maintaining stable scoring scales and consistent severity rankings across diverse anatomical sites and domain-shifted data; 3) PSNR-consistent sensitivity, with TinyUSFM-NRQ providing a reliable quality score without ground-truth images that remains consistent with traditional fidelity benchmarks (i.e. PSNR); and 4) Clinical utility, improving the prediction of expert preference from 47.2% to 72.8% accuracy and producing super-resolution reconstructions preferred by sonographers. By integrating these advantages into a unified assessment and optimization loop, this work establishes a modality-aligned standard that finally bridges the gap between algorithmic performance and diagnostic utility.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{huang2026defining,
+  title={Defining Robust Ultrasound Quality Metrics via an Ultrasound Foundation Model},
+  author={Huang, Ziyang and Li, Bingyan and Ma, Chen and Liu, Tianyi and Zhai, Yihui and Xu, Hong and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}"><code>@inproceedings{huang2026defining,
+  title={Defining Robust Ultrasound Quality Metrics via an Ultrasound Foundation Model},
+  author={Huang, Ziyang and Li, Bingyan and Ma, Chen and Liu, Tianyi and Zhai, Yihui and Xu, Hong and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}</code></pre>
+```

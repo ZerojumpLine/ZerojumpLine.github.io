@@ -1,0 +1,47 @@
+---
+title: "DepthPilot: From Controllability to Interpretability in Colonoscopy Video Generation"
+author: 
+- name: Junhu Fu
+- name: Ke Chen
+- name: Weidong Guo
+- name: Shuyu Liang
+- name: Jie Xu
+- name: Chen Ma
+- name: Kehao Wang
+- name: Shengli Lin
+- name: Zeju Li
+- name: Yuanyuan Wang
+- name: Yi Guo
+- name: Shuo Li
+date: '2026-04-29'
+categories:
+  - 2026
+slug: depthpilot-colonoscopy-video-generation
+image: featured.png
+description: 'MICCAI 2026'
+subtitle: An interpretable colonoscopy video generation framework with depth constraints and adaptive spline denoising.
+links:
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2604.26232
+---
+
+## Abstract
+
+Controllable medical video generation has achieved remarkable progress, but it still lacks interpretability, which requires the alignment of generated contents with physical priors and faithful clinical manifestations. To push the boundaries from mere controllability to interpretability, we propose DepthPilot, the first interpretable framework for colonoscopy video generation. This work takes a step toward trustworthy generation through two synergistic paradigms. To achieve explicit geometric grounding, DepthPilot devises a prior distribution alignment strategy, injecting depth constraints into the diffusion backbone via parameter-efficient fine-tuning to ensure anatomical fidelity. To enhance intrinsic nonlinear modeling under these geometric constraints, DepthPilot employs an adaptive spline denoising module, replacing fixed linear weights with learnable spline functions to capture complex spatio-temporal dynamics. Extensive evaluations across three public datasets and in-house clinical data confirm DepthPilot's robust ability to produce physically consistent videos. It achieves FID scores below 15 across all benchmarks and ranks first in clinician assessments, bridging the gap between "visually realistic" and "clinically interpretable". Moreover, DepthPilot-generated videos are expected to enable reliable 3D reconstruction, facilitating surgical navigation and blind region identification, and serve as a foundation toward the colorectal world model.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{fu2026depthpilot,
+  title={DepthPilot: From Controllability to Interpretability in Colonoscopy Video Generation},
+  author={Fu, Junhu and Chen, Ke and Guo, Weidong and Liang, Shuyu and Xu, Jie and Ma, Chen and Wang, Kehao and Lin, Shengli and Li, Zeju and Wang, Yuanyuan and Guo, Yi and Li, Shuo},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}"><code>@inproceedings{fu2026depthpilot,
+  title={DepthPilot: From Controllability to Interpretability in Colonoscopy Video Generation},
+  author={Fu, Junhu and Chen, Ke and Guo, Weidong and Liang, Shuyu and Xu, Jie and Ma, Chen and Wang, Kehao and Lin, Shengli and Li, Zeju and Wang, Yuanyuan and Guo, Yi and Li, Shuo},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}</code></pre>
+```

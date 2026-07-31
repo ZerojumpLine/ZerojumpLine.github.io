@@ -1,0 +1,53 @@
+---
+title: "Wavelet-inspired diffusion model with near-field constraint for real-time echocardiography dehazing"
+author: 
+- name: Xue Gao
+- name: Peng Huang
+- name: Fangyan Tian
+- name: Wei Guo
+- name: He Li
+- name: Fanggang Wu
+- name: Zeju Li
+- name: Yi Guo
+- name: Yuanyuan Wang
+date: '2026-09-01'
+categories:
+  - 2026
+slug: wavelet-diffusion-echocardiography-dehazing
+image: featured.png
+description: 'Medical Image Analysis'
+subtitle: EchoWDiff enables real-time echocardiography dehazing with a wavelet-inspired diffusion model and near-field constraint.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1016/j.media.2026.104204
+- icon: github
+  name: Code
+  url: https://github.com/gaoxue0608/EchoWDiff
+---
+
+## Abstract
+
+Echocardiography is the primary imaging modality for cardiac disease diagnosis. However, sound speed variations across heterogeneous tissue layers induce acoustic reverberation, leading to near-field haze which severely obscures cardiac structures and impairs diagnostic accuracy. Existing dehazing methods for echocardiographic sequences mainly rely on simplified haze distribution assumptions or basic dehazing architectures, resulting in suboptimal haze removal efficacy and computational efficiency. In this paper, we propose EchoWDiff, a real-time echocardiography dehazing framework that leverages a tailored wavelet-inspired Diffusion model with near-field constraint to reconstruct clean cardiac anatomy. First, with unpaired echocardiography sequences, an adversarial pairing module is introduced to learn the complex nonlinear mapping from clean images to hazy ones, thus generating realistic and physically-plausible clean-hazy pairs for diffusion training. Then, we devised a novel wavelet-inspired diffusion model that enables high-fidelity reconstruction of cardiac structures and fine texture details. This approach uniquely integrates multi-scale frequency analysis at both image and feature levels, allowing precise preservation of subtle anatomical boundaries and textural variations while reducing spatial dimensionality by four-fold, significantly enhancing computational efficiency without sacrificing reconstruction quality. Finally, a near-field haze contrastive perceptual loss is designed to guide the dehazing model to focus on near-field haze features through contrastive learning, ensuring more comprehensive and physiologically accurate haze removal. Extensive experiments on three multi-center clinical datasets from high- and low-end imaging machines validate the superiority of EchoWDiff, achieving improvements of up to 20.23 (FID) and 0.21 (gCNR) in echocardiography dehazing, and up to 0.10 (Dice) and 0.89 (ASD) in near-field left ventricle segmentation. It also boosts the processing speed by 27 FPS, demonstrating promising clinical applicability.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{gao2026wavelet,
+  title={Wavelet-inspired diffusion model with near-field constraint for real-time echocardiography dehazing},
+  author={Gao, Xue and Huang, Peng and Tian, Fangyan and Guo, Wei and Li, He and Wu, Fanggang and Li, Zeju and Guo, Yi and Wang, Yuanyuan},
+  journal={Medical Image Analysis},
+  volume={113},
+  pages={104204},
+  year={2026},
+  doi={10.1016/j.media.2026.104204}
+}"><code>@article{gao2026wavelet,
+  title={Wavelet-inspired diffusion model with near-field constraint for real-time echocardiography dehazing},
+  author={Gao, Xue and Huang, Peng and Tian, Fangyan and Guo, Wei and Li, He and Wu, Fanggang and Li, Zeju and Guo, Yi and Wang, Yuanyuan},
+  journal={Medical Image Analysis},
+  volume={113},
+  pages={104204},
+  year={2026},
+  doi={10.1016/j.media.2026.104204}
+}</code></pre>
+```

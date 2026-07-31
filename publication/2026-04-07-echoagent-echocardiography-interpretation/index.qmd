@@ -1,0 +1,46 @@
+---
+title: "EchoAgent: Towards Reliable Echocardiography Interpretation with \"Eyes\", \"Hands\" and \"Minds\""
+author: 
+- name: Qin Wang
+- name: Zhiqing He
+- name: Yu Liu
+- name: Bowen Guo
+- name: Zeju Li
+- name: Miao Zhao
+- name: Wenhao Ju
+- name: Zhiling Luo
+- name: Xianhong Shu
+- name: Yi Guo
+- name: Yuanyuan Wang
+date: '2026-04-07'
+categories:
+  - 2026
+slug: echoagent-echocardiography-interpretation
+image: featured.png
+description: 'CVPR-CV4Clinical 2026'
+subtitle: An agentic eyes-hands-minds system for reliable end-to-end echocardiography interpretation.
+links:
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2604.05541
+---
+
+## Abstract
+
+Reliable interpretation of echocardiography (Echo) is crucial for assessing cardiac function, which demands clinicians to synchronously orchestrate multiple capabilities, including visual observation (eyes), manual measurement (hands), and expert knowledge learning and reasoning (minds). While current task-specific deep-learning approaches and multimodal large language models have demonstrated promise in assisting Echo analysis through automated segmentation or reasoning, they remain focused on restricted skills, i.e., eyes-hands or eyes-minds, thereby limiting clinical reliability and utility. To address these issues, we propose EchoAgent, an agentic system tailored for end-to-end Echo interpretation, which achieves a fully coordinated eyes-hands-minds workflow that learns, observes, operates, and reasons like a cardiac sonographer. First, we introduce an expertise-driven cognition engine where our agent can automatically assimilate credible Echo guidelines into a structured knowledge base, thus constructing an Echo-customized mind. Second, we devise a hierarchical collaboration toolkit to endow EchoAgent with eyes-hands, which can automatically parse Echo video streams, identify cardiac views, perform anatomical segmentation, and quantitative measurement. Third, we integrate the perceived multimodal evidence with the exclusive knowledge base into an orchestrated reasoning hub to conduct explainable inferences. We evaluate EchoAgent on CAMUS and MIMIC-EchoQA datasets, which cover 48 distinct echocardiographic views spanning 14 cardiac anatomical regions. Experimental results show that EchoAgent achieves optimal performance across diverse structure analyses, yielding overall accuracy of up to 80.00%. Importantly, EchoAgent empowers a single system with abilities to learn, observe, operate and reason like an echocardiologist, which holds great promise for reliable Echo interpretation.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{wang2026echoagent,
+  title={EchoAgent: Towards Reliable Echocardiography Interpretation with ``Eyes'', ``Hands'' and ``Minds''},
+  author={Wang, Qin and He, Zhiqing and Liu, Yu and Guo, Bowen and Li, Zeju and Zhao, Miao and Ju, Wenhao and Luo, Zhiling and Shu, Xianhong and Guo, Yi and Wang, Yuanyuan},
+  booktitle={CVPR Workshop on Computer Vision for Clinical Applications (CVPR-CV4Clinical 2026)},
+  year={2026}
+}"><code>@inproceedings{wang2026echoagent,
+  title={EchoAgent: Towards Reliable Echocardiography Interpretation with ``Eyes'', ``Hands'' and ``Minds''},
+  author={Wang, Qin and He, Zhiqing and Liu, Yu and Guo, Bowen and Li, Zeju and Zhao, Miao and Ju, Wenhao and Luo, Zhiling and Shu, Xianhong and Guo, Yi and Wang, Yuanyuan},
+  booktitle={CVPR Workshop on Computer Vision for Clinical Applications (CVPR-CV4Clinical 2026)},
+  year={2026}
+}</code></pre>
+```

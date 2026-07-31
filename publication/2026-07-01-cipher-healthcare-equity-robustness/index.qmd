@@ -1,0 +1,44 @@
+---
+title: "CIPHER: Causal Intervention Pathways for Healthcare Equity and Robustness"
+author: 
+- name: Xinyu Jia
+- name: Weidong Guo
+- name: Wangyuan Zhao
+- name: Yi Guo
+- name: Zeju Li
+- name: Yuanyuan Wang
+date: '2026-07-01'
+categories:
+  - 2026
+slug: cipher-healthcare-equity-robustness
+image: featured.png
+description: 'MICCAI 2026'
+subtitle: A causal multi-pathway intervention framework for fair and robust medical image synthesis and diagnosis.
+links:
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2607.02596
+- icon: github
+  name: Code
+  url: https://github.com/fdu-farm/CIPHER
+---
+
+## Abstract
+
+Deep learning models for medical diagnosis frequently exhibit substantial performance disparities across sensitive subgroups (e.g., race, sex), even when average accuracy is high. While generative data augmentation offers a route to mitigate this, existing strategies are suboptimal; they typically address only one or two dependency channels between sensitive attributes and image features. We formalize the medical image formation process via a structural causal model, revealing that sensitive attributes actually influence image content through four distinct pathways—a structural complexity neglected by prior works. Based on this insight, we introduce CIPHER (Causal Intervention Pathways for Healthcare Equity and Robustness), a framework designed to systematically intervene on all four causal paths. To achieve this, CIPHER utilizes a diffusion backbone equipped with classifier-free guidance and null-text inversion. This technical design enables the faithful reconstruction of patient-specific anatomy while allowing for the precise, editable synthesis of counterfactuals required to break sensitive dependency chains. We tested CIPHER using chest X-ray and dermoscopy benchmarks across both standard and shifted data distributions. By employing a multi-pathway intervention strategy, our model reduced worst-group disparities by an average of 35.8% compared to disease-conditioned synthesis baselines, while also improving total diagnostic accuracy.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@inproceedings{jia2026cipher,
+  title={CIPHER: Causal Intervention Pathways for Healthcare Equity and Robustness},
+  author={Jia, Xinyu and Guo, Weidong and Zhao, Wangyuan and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}"><code>@inproceedings{jia2026cipher,
+  title={CIPHER: Causal Intervention Pathways for Healthcare Equity and Robustness},
+  author={Jia, Xinyu and Guo, Weidong and Zhao, Wangyuan and Guo, Yi and Li, Zeju and Wang, Yuanyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI 2026)},
+  year={2026}
+}</code></pre>
+```
