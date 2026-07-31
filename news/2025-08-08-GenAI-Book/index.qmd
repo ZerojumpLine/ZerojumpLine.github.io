@@ -1,6 +1,6 @@
 ---
 title: "Generative Machine Learning Models in Medical Image Computing"
-subtitle: "A comprehensive exploration of generative modeling techniques tailored to the unique demands of medical imaging."
+subtitle: "A comprehensive exploration of generative modeling techniques tailored to the unique demands of medical imaging"
 date: 2025-08-08
 categories: [Book, GenAI]
 image: featured.jpg

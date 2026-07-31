@@ -1,6 +1,6 @@
 ---
 title: "MICS 2026 at Tsinghua"
-subtitle: "The largest medical image analysis seminar in China"
+subtitle: "Student presentations at MICS"
 date: 2026-07-10
 categories: [Seminar, Medical Image Analysis]
 image: featured.jpg

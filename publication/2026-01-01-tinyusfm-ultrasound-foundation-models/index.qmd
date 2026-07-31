@@ -1,0 +1,53 @@
+---
+title: "TinyUSFM: Towards Compact and Efficient Ultrasound Foundation Models"
+author: 
+- name: Chen Ma
+- name: Jing Jiao
+- name: Shuyu Liang
+- name: Junhu Fu
+- name: Qin Wang
+- name: Zeju Li
+- name: Yuanyuan Wang
+- name: Yi Guo
+date: '2026-01-01'
+categories:
+  - 2026
+slug: tinyusfm-ultrasound-foundation-models
+image: featured.png
+description: 'IEEE Journal of Biomedical and Health Informatics'
+subtitle: A lightweight ultrasound foundation model that preserves USFM performance with far fewer parameters and FLOPs.
+links:
+- icon: file-richtext-fill
+  name: Publication
+  url: https://doi.org/10.1109/JBHI.2026.3678309
+- icon: file-code
+  name: Preprint
+  url: https://arxiv.org/abs/2510.19239
+- icon: github
+  name: Code
+  url: https://github.com/MacDunno/TinyUSFM
+---
+
+## Abstract
+
+Foundation models for medical imaging demonstrate superior generalization capabilities across diverse anatomical structures and clinical applications. Their outstanding performance relies on substantial computational resources, limiting deployment in resource-constrained clinical environments. This paper presents TinyUSFM, the first lightweight ultrasound foundation model that maintains superior organ versatility and task adaptability of our large-scale Ultrasound Foundation Model (USFM) through knowledge distillation with strategically curated small datasets, delivering significant computational efficiency without sacrificing performance. Considering the limited capacity and representation ability of lightweight models, we propose a feature-gradient driven coreset selection strategy to curate high-quality compact training data, avoiding training degradation from low-quality redundant images. To preserve the essential spatial and frequency domain characteristics during knowledge transfer, we develop domain-separated masked image modeling assisted consistency-driven dynamic distillation. This novel framework adaptively transfers knowledge from large foundation models by leveraging teacher model consistency across different domain masks, specifically tailored for ultrasound interpretation. For evaluation, we establish the UniUS-Bench, the largest publicly available ultrasound benchmark comprising 8 classification and 10 segmentation datasets across 15 organs. Using only 200K images in distillation, TinyUSFM matches USFM's performance with just 6.36% of parameters and 6.40% of GFLOPs. TinyUSFM significantly outperforms the vanilla model by 9.45% in classification and 7.72% in segmentation, surpassing all state-of-the-art lightweight models, and achieving 84.91% average classification accuracy and 85.78% average segmentation Dice score across diverse medical devices and centers.
+
+## BibTeX
+
+```{=html}
+<pre class="quarto-appendix-bibtex" data-clipboard-text="@article{ma2026tinyusfm,
+  title={TinyUSFM: Towards Compact and Efficient Ultrasound Foundation Models},
+  author={Ma, Chen and Jiao, Jing and Liang, Shuyu and Fu, Junhu and Wang, Qin and Li, Zeju and Wang, Yuanyuan and Guo, Yi},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2026},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2026.3678309}
+}"><code>@article{ma2026tinyusfm,
+  title={TinyUSFM: Towards Compact and Efficient Ultrasound Foundation Models},
+  author={Ma, Chen and Jiao, Jing and Liang, Shuyu and Fu, Junhu and Wang, Qin and Li, Zeju and Wang, Yuanyuan and Guo, Yi},
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2026},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2026.3678309}
+}</code></pre>
+```
