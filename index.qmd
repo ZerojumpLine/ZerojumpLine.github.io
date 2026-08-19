@@ -147,26 +147,34 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 ::: {.featured-items}
 
 ::: {.featured-item}
-[**Introducing MOVAL**](/blog/2025-01-15-moval-estimating-performance/){.featured-link}
+[**Medical Generative Models Need More Than Realism**](/blog/2026-08-19-generative-models-need-more-than-realism/){.featured-link}
 
 ::: {.featured-meta}
-[Research]{.featured-type} • August 8, 2025
+[Research]{.featured-type} • August 19, 2026
 :::
 :::
 
 ::: {.featured-item}
-[**Context Label Learning**](/publication/2023-06-27-context-label-learning/){.featured-link}
+[**National BME Competition**](/news/2026-07-19-BME-Innovation-Competition/){.featured-link}
 
 ::: {.featured-meta}
-[Publication]{.featured-type} • August 6, 2025
+[Competition]{.featured-type} • July 19, 2026
 :::
 :::
 
 ::: {.featured-item}
-[**DehazingEcho2025**](/news/2025-08-08-MICCAI2025/){.featured-link}
+[**MICS 2026**](/news/2026-07-10-MICS/){.featured-link}
 
 ::: {.featured-meta}
-[Challenge]{.featured-type} • August 5, 2025
+[Seminar]{.featured-type} • July 10, 2026
+:::
+:::
+
+::: {.featured-item}
+[**Introducing SEVAL**](/publication/2026-06-01-learning-label-refinement-imbalanced-ssl/){.featured-link}
+
+::: {.featured-meta}
+[Publication]{.featured-type} • June 1, 2026
 :::
 :::
 
@@ -175,15 +183,6 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 
 ::: {.featured-meta}
 [Book]{.featured-type} • August 4, 2025
-:::
-:::
-
-
-::: {.featured-item}
-[**MICS 2025**](/news/2025-08-08-MICS/){.featured-link}
-
-::: {.featured-meta}
-[Seminar]{.featured-type} • August 3, 2025
 :::
 :::
 
