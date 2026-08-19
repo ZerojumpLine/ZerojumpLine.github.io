@@ -7,9 +7,8 @@ image: featured.jpg
 alias:
   - /blog/generative-models-need-more-than-realism
 categories:
-  - AI safety
-  - medical imaging
-  - generative models
+  - Medical imaging
+  - Generative models
 subtitle: 'Three lenses on generative medical imaging: causal intervention, grounded explanation, and clinically meaningful evaluation'
 summary: 'A generated medical image that looks real is not the same as one that is trustworthy. We revisit generative models in medical imaging through three lenses — how they can be used as causal interventions, how they can produce explainable diagnostic evidence, and how their outputs should be measured in clinical practice — and argue that the three are load-bearing on each other.'
 lastmod: '2026-08-19'
@@ -23,85 +22,105 @@ links:
   - icon: file-code
     name: TinyUSFM Metrics
     url: https://arxiv.org/abs/2604.19512
-  - icon: github
-    name: Code
-    url: https://github.com/sextant-fable/US-Metrics
+
 format:
   html:
     page-layout: full
 ---
 
-## The wrong bar
+## The limits of realism
 
-For most of the last decade, progress in medical image synthesis has been measured by how convincing the output looks. Sharper textures, fewer artifacts, better FID. That bar made sense when the open question was whether these models could produce anything anatomically plausible at all.
+For most of the past decade, progress in medical image synthesis has been measured by how convincing the output looks — sharper textures, fewer artifacts, lower FID. This was a reasonable objective for its time. The open question was whether generative models could produce anatomically plausible images at all, and realism served as a tractable proxy for a goal the field could not yet state precisely.
 
-It is the wrong bar now. A synthetic chest X-ray can be indistinguishable from a real one and still encode the exact shortcut you were trying to remove. A reconstructed ultrasound frame can score well on every perceptual metric and still have quietly destroyed the boundary a clinician needs. Realism is necessary and nowhere near sufficient.
+That proxy has outlived its usefulness. A synthetic chest X-ray can be indistinguishable from a real one and still encode precisely the spurious correlation it was generated to remove. A reconstructed ultrasound frame can score well on every perceptual metric while the boundary a clinician needs has been quietly erased. Realism remains necessary. It has never been sufficient.
 
-Underneath our three recent papers is a single question, asked of the same instrument in three different ways:
+Consider two artifacts. In the first, we hand you a synthetic chest X-ray: anatomically flawless, indistinguishable from real, and free. In the second, we hand you the same image together with a statement — this is that patient's scan, with one specified factor changed, and here is what was changed and what was held fixed.
 
-> **When a generative model changes an image, did it change the right thing — and nothing else?**
+The pixels may be identical. The second artifact is far more useful, because only it supports an inference. **The value does not reside in the generated image. It resides in the relation between that image and the one it came from.**
+
+Establishing that relation is not one problem but three, and they are asked in order. What should change. What the change reveals. Whether it mattered. Each answer constrains the next, and the third returns to the first.
 
 <div style="text-align: center; margin: 2.5rem 0;">
   <img src="static/images/Fig1.png" style="max-width: 100%; height: auto;">
 </div>
 
-Each lens answers a different part of that question. Causality asks what *should* change. Explainability asks what the change *reveals*. Evaluation asks whether the change *mattered*. And the answer from the third feeds back into how the next model should generate.
+## What should change
 
-## 01 · Causality — generation as intervention
+The first question is what "one factor changed" means operationally — and it is where much of the fairness-oriented synthesis literature runs into difficulty.
 
-Deep diagnostic models routinely show large gaps across sensitive subgroups even when average accuracy looks strong. Generative augmentation is the obvious remedy: synthesize the counterfactual, break the dependency. But most approaches edit only one of the ways a sensitive attribute leaks into image content, and quietly leave the rest of the shortcut intact.
+A sensitive attribute does not reach the pixels through a single controllable channel. It arrives through several simultaneously: through which patients entered the dataset, through how disease presents within a subgroup, through what the sampler was conditioned on. Intervening on one channel removes part of the dependency and leaves the remainder intact — while producing images that appear, by every available measure, to have been successfully debiased. This is the failure mode that realism cannot detect, because the resulting images are genuinely realistic.
 
-**CIPHER** starts by writing down the image formation process as a structural causal model — and finds that sensitive attributes reach image content through *four* distinct pathways, not one. Bias on population, bias on prevalence, and two routes through disease factors. Only some of these are things we can act on; the manifestation pathway is not.
+**CIPHER** answers the question by specifying the image formation process as a structural causal model before designing any intervention. The graph exposes four distinct pathways from sensitive attributes to image content, and separates those we can act on from those we cannot.
 
-<div style="text-align: center; margin: 2.5rem 0;">
-  <img src="static/images/Fig2.png" style="max-width: 100%; height: auto;">
-</div>
+![CIPHER intervenes on all four dashed pathways at once. Earlier fairness-oriented augmentation edits only one or two, leaving the rest of the shortcut intact.](static/images/Fig2.png){fig-alt="Causal graph of four pathways from sensitive attributes to image content, with CIPHER intervening on all four simultaneously"}
 
-The intervention itself is a diffusion backbone with classifier-free guidance and null-text inversion, which lets the model reconstruct a patient's anatomy faithfully while still editing the attribute-dependent content precisely. Across chest X-ray and dermoscopy benchmarks, under both standard and shifted conditions, intervening on all four pathways at once reduced worst-group disparities by an average of **35.8%** against disease-conditioned synthesis baselines — while overall diagnostic accuracy went *up*, not down.
+The intervention uses a diffusion backbone with classifier-free guidance and null-text inversion, reconstructing patient anatomy faithfully while permitting precise edits to attribute-dependent content. Across chest X-ray and dermoscopy benchmarks, intervening on all four pathways jointly reduced worst-group disparity by an average of 35.8% relative to disease-conditioned synthesis baselines — and overall diagnostic accuracy improved rather than degraded. Fairness interventions are usually discussed as a trade against average performance. These results suggest the trade is not intrinsic; it is a symptom of interventions that suppress the correlate rather than the mechanism.
 
-The generative model here is not a data augmenter. It is the operator that performs the intervention. That reframing is the contribution.
+But a specified intervention is a claim, not a result. Having asserted what should change, we need some way to see what the change actually did.
 
-## 02 · Explainability — generation as supervision
+## What it reveals
 
-A medical vision-language model that outputs a diagnosis in one pass gives you nothing to check. You cannot tell which region drove the conclusion, and on a normal scan the model may confidently describe a finding that isn't there.
+An instrument whose output cannot be examined is not an instrument but an oracle. Most medical vision-language models are oracles in this sense: a diagnosis is produced in a single forward pass, and there is no principled way to ask which image evidence supported it. On a normal study, the fluency that makes the output readable will also describe a finding that is not present, and nothing in the output distinguishes that case from a correct one.
 
-**BrReMark** makes the region an explicit, committed part of the process. The model proposes a hypothesis, grounds it with a bounding box, receives the marked image back, and only then re-examines the evidence and commits to a diagnosis.
+**BrReMark** makes the readout explicit. The model proposes a hypothesis, commits to a region via a bounding box, receives the marked image back, and only then re-examines the evidence and issues a diagnosis.
 
-<div style="text-align: center; margin: 2.5rem 0;">
-  <img src="static/images/Fig3.png" style="max-width: 100%; height: auto;">
-</div>
+![The conclusion arrives with its citation attached. Because the region is committed to before the verdict, the explanation can be checked — and hallucinated findings fall away.](static/images/Fig3.png){fig-alt="BrReMark workflow: hypothesize a region, ground it with a bounding box, then verify the diagnosis against that region"}
 
-The ordering is what matters. Because the region is named *before* the verdict, the explanation is falsifiable rather than decorative. Training combines supervised fine-tuning on structured reasoning trajectories with reinforcement learning under a composite reward over both localization accuracy and reasoning quality — and, critically, a domain-randomized pathology synthesis strategy that generates lesions whose location and extent are known by construction.
+The ordering gives the design its force. Because the region is committed before the verdict, the explanation constitutes a falsifiable claim rather than a rationalization constructed after the conclusion. This is the property post-hoc saliency lacks, and the reason it has not earned clinical trust. Detection mAP<sub>50</sub> rises from 0.74% to 37.54% over the base model, and on the NOVA out-of-distribution benchmark false positives fall by 45.7% against the prior state of the art.
 
-That last piece is where generation re-enters. You can only teach a model to point at the right region if you controlled what was placed there. Real data cannot give you that supervision at scale; synthesis can.
+Note where generation re-enters. A model learns to localize correctly only if the location was controlled during training, and domain-randomized pathology synthesis supplies exactly that: lesions whose position and extent are known by construction. The answer to the first question is what makes the second question answerable. Here the generative model is not the diagnostic system — it is what makes the diagnostic system checkable.
 
-The effect is large. Detection mAP<sub>50</sub> rises from 0.74% to **37.54%** over the base model, with 21.57 Clinical F1 and 45.26% diagnostic accuracy. On the NOVA out-of-distribution benchmark, false positives drop **45.7%** against the prior state of the art — evidence that grounding suppresses hallucination on pathologies the model has never seen, not merely on the training distribution.
+Yet a grounded, legible change is still not necessarily a change that matters.
 
-## 03 · Evaluation — generation as the object of study
+## Whether it mattered
 
-Suppose the intervention was causally sound and the explanation was properly grounded. We still need to say whether the resulting image is good enough to act on. For ultrasound this is genuinely hard: PSNR and VGG-based LPIPS were built for natural images, and they know nothing about acoustic physics or the structural conventions of sonography.
+This is the question the field currently answers least well, and it is the one that determines whether the other two answers mean anything.
 
-We built two metrics on top of an ultrasound foundation model. **TinyUSFM-uLPIPS** is a full-reference perceptual distance derived from multi-layer token relations. **TinyUSFM-NRQ** is a deployable no-reference score that uses clean-manifold modeling with worst-region aggregation, so localized artifacts are caught rather than averaged away.
+Ultrasound reconstruction is routinely assessed with metrics designed for natural images. PSNR and VGG-based LPIPS encode no knowledge of acoustic physics or the structural conventions of sonography, and they aggregate over precisely the localized degradation that carries clinical consequence. A metric that cannot resolve a failure mode cannot bound it.
 
-<div style="text-align: center; margin: 2.5rem 0;">
-  <img src="static/images/Fig4.png" style="max-width: 100%; height: auto;">
-</div>
+We built two metrics on an ultrasound foundation model instead: **TinyUSFM-uLPIPS**, a full-reference perceptual distance derived from multi-layer token relations, and **TinyUSFM-NRQ**, a deployable no-reference score using clean-manifold modeling with worst-region aggregation, so localized artifacts are surfaced rather than averaged away.
 
-The clearest result is a ranking result. Order every distortion type by how much it actually degrades downstream task performance, then order it again by what each metric says. A metric trained on natural images drifts badly off that agreement line (ρ = 0.34). An ultrasound-native metric stays close to it (ρ = 0.57), tracking Dice-score drops where VGG-LPIPS does not — and staying consistent across organs, which makes cross-site comparison meaningful for the first time.
+![Each point is a distortion type. The dashed line is perfect agreement between how a metric ranks severity and how much downstream task performance actually degrades. A metric built on natural images drifts off that line; one built on ultrasound stays close to it.](static/images/Fig4.png){fig-alt="Scatter plots comparing metric rank against semantic damage rank for VGG-LPIPS versus TinyUSFM-uLPIPS, showing tighter agreement for the ultrasound-native metric"}
 
-## Why the three need each other
+The comparison is clearest posed as a ranking problem. Order each distortion type by how much it degrades downstream clinical task performance, then order it again by each metric's severity score. A natural-image metric departs substantially from the agreement line (ρ = 0.34); the ultrasound-native metric tracks it more closely (ρ = 0.57), consistently across organs.
 
-It is tempting to file these as three separate contributions to three separate literatures. They are not separable, and the dependencies run in both directions.
+ρ = 0.57 is modest in absolute terms, and that is the relevant observation. If our best perceptual metrics correlate only moderately with clinical task damage, then claims of improved synthesis realism throughout the literature — our own included — rest on measurements never validated against the outcome they are meant to predict.
 
-**Causal intervention requires evaluation.** "The counterfactual preserved the anatomy" is a claim about image quality. Without a task-linked metric it is unfalsifiable — and a pixel-similarity score will happily bless a counterfactual that quietly erased a lesion.
+## The loop closes
 
-**Grounded explanation requires causal synthesis.** A model learns to point at the right region only when someone controlled what was placed there. Synthesis with known ground truth is what makes the grounding signal learnable.
+The three questions are not a checklist. They are cyclic, and each depends on the answers to the others.
 
-**Evaluation is only worth doing because of the other two.** A metric earns its keep when there are causal and interpretive claims that need checking. Otherwise it is a number in a table.
+A causal intervention is unfalsifiable without measurement: the claim that a counterfactual preserved diagnostic anatomy is itself a claim about image quality, and a pixel-similarity score will readily certify a counterfactual that has removed a lesion. A grounded explanation is unlearnable without controlled synthesis: the localization supervision must originate somewhere, and observational data does not carry it. And measurement acquires value only when there are causal and interpretive claims requiring verification.
 
-One honest note on framing. The generative model plays a different role in each paper: in CIPHER it *is* the intervention; in BrReMark it supplies supervision for a diagnostic model that is not itself generative; in the ultrasound work it is the object being measured. We think that variety is the interesting part rather than something to flatten — three roles, one instrument, one question asked three ways.
+The return arc is the part most easily overlooked. A task-linked metric does not merely score a finished model — it tells you which of your interventions preserved clinical utility and which quietly destroyed it, which is precisely the signal needed to specify the next intervention better. The loop is not generate-then-check. It is generate, intervene, ground, measure, and generate again with what you learned.
 
-None of this replaces realism. It just refuses to stop there.
+## What this could unlock
+
+If the loop closes even partially, a set of problems that are currently intractable become approachable. We think these are the ones worth naming.
+
+**Auditing models without collecting new data.** Subgroup performance gaps are currently discovered after deployment, once enough cases accumulate. Validated counterfactual generation turns this into a pre-deployment probe: hold the pathology fixed, vary the attribute, and measure whether the prediction moves. This is a test that can be run on a model before a single patient is exposed to it.
+
+**Supervision for pathologies that are too rare to annotate.** For most findings in radiology, the binding constraint is not model capacity but the absence of localized ground truth. Synthesis with known lesion position and extent lifts that constraint — but only if we can verify the synthesized pathology is clinically faithful rather than merely plausible, which is exactly what a task-linked metric provides.
+
+**Acquisition and reconstruction tuned to clinical utility.** How far can an MRI acquisition be accelerated, or an ultrasound frame rate raised, before the downstream segmentation a clinician depends on degrades? Today this is answered with PSNR thresholds that correlate weakly with the thing being protected. A metric that tracks task damage converts protocol design from a perceptual judgment into a measurable trade-off.
+
+**Harmonization with an actual criterion.** Cross-site and cross-scanner harmonization is usually validated by whether the output looks consistent. With task-linked measurement, the criterion becomes whether diagnostic performance transfers — a substantially stronger and more falsifiable standard.
+
+**Clinically grounded stress tests.** Adversarial robustness in medical imaging has largely borrowed threat models from natural images. Counterfactual generation supports something more relevant: benchmark sets that vary scanner, protocol, demographic, and comorbidity in specified ways, so that a model's failure modes are characterized along axes that correspond to real clinical variation.
+
+**A route toward regulatory legibility.** Approving a generative component in clinical software requires a falsifiable statement of what the model changes and what it leaves intact. "It looks realistic" cannot support that. A specified intervention, an inspectable readout, and a validated metric together can begin to.
+
+None of these are delivered by our current results. Each of them, however, is blocked on the same three questions, which is the strongest argument we can offer for treating them as one problem.
+
+## Open questions
+
+We would be careful about how far the framing extends.
+
+The generative model occupies a materially different position in each paper: the intervention itself in CIPHER, a source of supervision in BrReMark, and the object of measurement in the ultrasound work. This variation is substantive and we prefer to retain it rather than resolve it into a single account.
+
+Nor is the loop closed. Our metrics track clinical task damage better than the alternatives but not nearly well enough to certify a system for deployment. The causal graph is a model, and the pathways we can enumerate are not demonstrably exhaustive. Grounding suppresses hallucination without eliminating it.
+
+Realism was a scaffold, and a productive one. The substantive problem begins once it comes down and we ask what the generated image was for.
 
 ## Related Publications
 
