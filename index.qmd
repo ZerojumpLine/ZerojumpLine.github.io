@@ -171,7 +171,7 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 :::
 
 ::: {.featured-item}
-[**Introducing SEVAL**](/publication/2026-06-01-learning-label-refinement-imbalanced-ssl/){.featured-link}
+[**Introducing SEVAL**](/SEVAL/){.featured-link}
 
 ::: {.featured-meta}
 [Publication]{.featured-type} • June 1, 2026
