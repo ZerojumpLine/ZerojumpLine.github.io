@@ -6,7 +6,7 @@ slug: AI-2026
 image: featured.jpg
 categories:
   - UG
-  - General education course
+  - General Education
 subtitle: "An AI course for junior undergraduate students."
 description: ''
 format:

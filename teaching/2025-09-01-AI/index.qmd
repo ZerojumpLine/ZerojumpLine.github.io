@@ -6,7 +6,7 @@ slug: AI-2025
 image: featured.jpg
 categories:
   - UG
-  - General education course
+  - General Education
 subtitle: "An AI course for junior undergraduate students."
 description: ''
 links:

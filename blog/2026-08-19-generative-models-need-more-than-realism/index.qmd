@@ -7,8 +7,8 @@ image: featured.jpg
 alias:
   - /blog/generative-models-need-more-than-realism
 categories:
-  - Medical imaging
-  - Generative models
+  - Medical Image Analysis
+  - GenAI
 subtitle: 'Three lenses on generative medical imaging: causal intervention, grounded explanation, and clinically meaningful evaluation'
 summary: 'A generated medical image that looks real is not the same as one that is trustworthy. We revisit generative models in medical imaging through three lenses — how they can be used as causal interventions, how they can produce explainable diagnostic evidence, and how their outputs should be measured in clinical practice — and argue that the three are load-bearing on each other.'
 lastmod: '2026-08-19'

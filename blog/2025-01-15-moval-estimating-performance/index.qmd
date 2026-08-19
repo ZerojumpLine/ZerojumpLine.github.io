@@ -7,7 +7,7 @@ image: featured.jpg
 alias:
   - /blog/moval-estimating-performance
 categories:
-  - AI safety
+  - AI Safety
   - Python
 subtitle: 'A Python package for assessing model performance in the absence of ground truth labels'
 summary: 'MOVAL is a Python package designed for assessing model performance in the absence of ground truth labels. It computes calibrated confidence scores to accurately reflect the likelihood of predictions and estimates overall model performance.'
