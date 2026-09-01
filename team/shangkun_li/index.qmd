@@ -5,8 +5,9 @@ image: shangkun_li.jpg
 date: 2025-06-01
 image-alt: "Shangkun Li"
 categories:
-  - UG
+  - M.S.
   - 2025
+  - Co-supervision
   - He/Him
 about:
   template: trestles
@@ -23,11 +24,11 @@ format:
 &nbsp;
 <div class="h1">李尚昆</div>
 
-**本科生研究员**  
+**硕士生研究员**  
 
 &nbsp;
 
-[College of Future Information Technology](https://ercalt.fudan.edu.cn/)  
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
 Fudan University
 
 &nbsp;
@@ -45,17 +46,17 @@ June 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Shangkun Li is an undergraduate student working on medical LLMs.
+Shangkun Li is a Master's student developing Medical Multimodal Large Language Models (MLLMs) for brain tumor diagnosis.
 
 :::
 
 ::: {.g-col-6 #about-me-2}
 
-Shangkun joined the lab in 2025 and is currently completing his Bachelor's degree in Electronic Engineering at Fudan University before pursuing a Master's degree with us.
+Shangkun joined the lab in 2025 to complete his undergraduate final project and is now pursuing a Master's degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2029</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ 2026</li>
 </ul>
 
 :::

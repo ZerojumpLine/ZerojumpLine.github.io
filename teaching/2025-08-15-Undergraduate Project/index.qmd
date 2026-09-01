@@ -5,7 +5,7 @@ date: 2025-09-15
 slug: PJ-2025
 image: featured.jpg
 categories:
-  - UG
+  - B.S.
   - Biomedical Engineering
 subtitle: "A hands-on course designed for senior BME undergraduates."
 description: ''

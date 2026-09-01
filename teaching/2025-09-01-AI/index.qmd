@@ -5,7 +5,7 @@ date: 2025-09-08
 slug: AI-2025
 image: featured.jpg
 categories:
-  - UG
+  - B.S.
   - General Education
 subtitle: "An AI course for junior undergraduate students."
 description: ''

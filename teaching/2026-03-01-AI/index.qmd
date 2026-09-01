@@ -5,7 +5,7 @@ date: 2026-03-01
 slug: AI-2026
 image: featured.jpg
 categories:
-  - UG
+  - B.S.
   - General Education
 subtitle: "An AI course for junior undergraduate students."
 description: ''

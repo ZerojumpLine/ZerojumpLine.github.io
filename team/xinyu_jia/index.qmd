@@ -5,8 +5,9 @@ image: xinyu_jia.jpg
 date: 2025-05-01
 image-alt: "Xinyu Jia"
 categories:
-  - UG
+  - Ph.D.
   - 2025
+  - Co-supervision
   - He/Him
 about:
   template: trestles
@@ -23,11 +24,11 @@ format:
 &nbsp;
 <div class="h1">贾新宇</div>
 
-**本科生研究员**  
+**博士生研究员**  
 
 &nbsp;
 
-[College of Future Information Technology](https://ercalt.fudan.edu.cn/)  
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
 Fudan University
 
 &nbsp;
@@ -45,17 +46,17 @@ May 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Xinyu Jia is an undergraduate student working on improving model generation based on generative models.
+Xinyu Jia is a doctor student working on improving model generation based on generative models.
 
 :::
 
 ::: {.g-col-6 #about-me-2}
 
-Xinyu joined the lab in 2025 and is completing his Bachelor's degree in Electronic Engineering at Fudan University before he pursues a Ph.D. with us.
+Xinyu joined the lab in 2025 to complete his undergraduate final project and is now pursuing his doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2031</li>
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ 2026</li>
 </ul>
 
 :::

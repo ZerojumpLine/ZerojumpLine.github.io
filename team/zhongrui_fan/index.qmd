@@ -5,7 +5,7 @@ image: zhongrui_fan.jpg
 date: 2025-06-01
 image-alt: "Zhongrui Fan"
 categories:
-  - UG
+  - M.S.
   - 2025
   - He/Him
 about:
@@ -23,7 +23,7 @@ format:
 &nbsp;
 <div class="h1">范中睿</div>
 
-**本科生研究员**  
+**硕士生研究员**  
 
 &nbsp;
 
@@ -45,16 +45,17 @@ Jun 2025 - Present
 
 ::: {.g-col-6 #about-me-1}
 
-Zhongrui Fan is an undergraduate student working on generative models in medical imaging.
+Zhongrui Fan is a Master's student focused on benchmarking Multimodal Large Language Models (MLLMs) for real-world clinical applications.
 
 :::
 
 ::: {.g-col-6 #about-me-2}
 
-Zhongrui joined the lab in 2025 and is currently pursuing his Bachelor's degree in Biomedical Engineering at the Fudan University.
+Zhongrui joined the lab in 2025 to complete his undergraduate final project and is now pursuing a Master's degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
-   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ Expected 2026</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Fudan University ∙ Expected 2029</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Fudan University ∙ 2026</li>
 </ul>
 
 :::
