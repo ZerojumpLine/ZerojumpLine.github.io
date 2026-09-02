@@ -1,0 +1,63 @@
+---
+title: "Meng Wang"
+subtitle: "Ph.D. Student"
+image: meng_wang.jpg
+date: 2026-09-01
+image-alt: "Meng Wang"
+categories:
+  - Ph.D.
+  - 2026
+  - She/Her
+about:
+  template: trestles
+  image-width: 14em
+  image-shape: round
+  id: hero-heading
+format:
+  html:
+    page-layout: full
+---
+
+::: {#hero-heading}
+
+&nbsp;
+<div class="h1">王梦</div>
+
+**博士生研究员**  
+
+&nbsp;
+
+[College of Biomedical Engineering](https://bme-college.fudan.edu.cn/)  
+Fudan University
+
+&nbsp;
+
+**Lab Period**  
+Sep 2026 - Present
+
+📧 **Email** 26113060065(at)m.fudan.edu.cn
+
+:::
+
+## About
+
+::: {.grid}
+
+::: {.g-col-6 #about-me-1}
+
+Meng Wang is a doctoral student working on the interpretability of Medical LLMs.
+
+:::
+
+::: {.g-col-6 #about-me-2}
+
+Meng joined the lab in 2026 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+
+<ul class="fa-ul">
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2030</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>M.S. ∙ Shanghai University ∙ 2026</li>
+   <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.S. ∙ Shanghai University ∙ 2023</li>
+</ul>
+
+:::
+:::

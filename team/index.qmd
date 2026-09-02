@@ -5,6 +5,10 @@ description: |
   Learn about our diverse backgrounds and expertise.
 listing: 
   contents: 
+    - "shuting_xu/index.qmd"
+    - "hao_zhang/index.qmd"
+    - "meng_wang/index.qmd"
+    - "shijing_chen/index.qmd"
     - "zhongrui_fan/index.qmd"
     - "bingyan_li/index.qmd"
     - "haoyan_ma/index.qmd"
