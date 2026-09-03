@@ -1,6 +1,6 @@
 ---
 title: "Shangkun Li"
-subtitle: "Undergraduate Student"
+subtitle: "Ph.D. Student"
 image: shangkun_li.jpg
 date: 2025-06-01
 image-alt: "Shangkun Li"

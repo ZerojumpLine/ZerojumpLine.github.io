@@ -1,6 +1,6 @@
 ---
 title: "Xinyu Jia"
-subtitle: "Undergraduate Student"
+subtitle: "Ph.D. Student"
 image: xinyu_jia.jpg
 date: 2025-05-01
 image-alt: "Xinyu Jia"
