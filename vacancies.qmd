@@ -19,10 +19,10 @@ resources:
 ## About Me
 
 李泽榉，现[复旦大学生物医学工程与技术创新学院](https://bme-college.fudan.edu.cn/)青年研究员，获国家自然科学基金委（海外）优青项目资助，以及上海市高层次青年人才计划（浦江项目）资助。
-他于2023年1月在帝国理工学院Computing系获得博士学位，此前是牛津大学FMRIB Centre的博士后研究员。
+他于2023年1月在帝国理工学院Computing系获得博士学位，加入复旦大学前曾在牛津大学FMRIB Centre担任博士后研究员。
 
 - 研究方向集中在机器学习及其在医学图像处理中的应用，侧重神经影像分析和解决临床问题。
-- 发表学术论文40余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过5000次。
+- 发表学术论文50余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过6000次。
 - 曾获得华为AI挑战赛和MICCAI挑战赛冠军，并担任MICCAI/MIDL等领域主要会议的领域主席。
 - 详情请访问个人主页：[https://zerojumpline.github.io](https://zerojumpline.github.io)。
 
