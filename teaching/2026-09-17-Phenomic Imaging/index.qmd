@@ -1,0 +1,34 @@
+---
+title: "Phenomic Imaging 2026"
+author: Zeju Li
+date: 2026-09-17
+slug: Phenomic-Imaging-2026
+image: featured.jpg
+categories:
+  - M.S.
+  - General Education
+subtitle: "A course introducing various kinds of medical imaging for graduate students."
+description: ''
+links:
+format:
+  html:
+    page-layout: full
+---
+
+I team-teach a course on medical imaging and related topics designed for a broad audience. It's mainly aimed at biology graduate students, but students from any major are welcome to enroll.
+
+## Description
+
+It is mainly delivered by with [Prof. Chengyan Wang](https://hupi.fudan.edu.cn/d3/cb/c53324a775115/page.htm). I will be giving lectures on ultrasound imaging and its clinical applications on the following date.
+
+This course takes place in Room 302 in the Second Teaching Building of the Fudan Zhangjiang campus every Thursday afternoon (15:20–17:05) during the first semester of the 2026–2027 academic year.
+
+## Schedule
+
+| Week | Date | Plan |
+|:----:|:----:|:--------:|
+| **2** | 9/17/2025 | [Slide](https://zerojumpline.github.io/AI-2025-slides/lecture_traditionalAI.pdf), [PowerPoint](https://docs.google.com/presentation/d/1a1GQGES8je_y3UPJMQDozEqg58JhMkgD/edit?usp=sharing&ouid=116205447374818905928&rtpof=true&sd=true) |
+
+## Recommended Reading Materials
+
+- [Essentials of Ultrasound Imaging](https://www.sciencedirect.com/book/monograph/9780323953719/essentials-of-ultrasound-imaging).
