@@ -93,7 +93,7 @@ Shanghai, China
 
 ::: {.g-col-6 #about-me-1}
 
-Zeju Li's research focuses on machine learning and its applications in medical image processing, with an emphasis on neuroimaging analysis and addressing clinical problems. 
+Zeju Li's research focuses on machine learning and its applications in medical image processing, with an emphasis on neuroimaging analysis and translating advanced machine learning algorithms to real-world clinical settings in a reliable way. 
 
 He has published over 50 peer-reviewed publications, many of which have been published in top-tier journals and conferences including TMI and MICCAI. 
 
@@ -125,7 +125,9 @@ To Prospective Student: I have multiple positions available (PhD, Master's, inte
 ::: {.g-col-12 #about-me-2}
 
 李泽榉，现复旦大学生物医学工程与技术创新学院青年研究员，获国家高层次青年人才项目和上海市高层次青年人才项目资助。 
-他于2023年1月在帝国理工学院Computing系获得博士学位，加入复旦大学前曾在牛津大学FMRIB Centre担任博士后研究员。李泽榉的研究方向集中在机器学习及其在医学图像处理中的应用，侧重神经影像分析和解决临床问题，其发表学术论文50余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过6000次，曾获得华为AI挑战赛和MICCAI挑战赛冠军，并担任MICCAI/MIDL等领域会议的领域主席。
+他于2023年1月在帝国理工学院Computing系获得博士学位，加入复旦大学前曾在牛津大学FMRIB Centre担任博士后研究员。
+李泽榉的研究方向集中在机器学习及其在医学图像处理中的应用，侧重神经影像分析，致力于推动先进机器学习算法在临床场景中的可靠、可解释与高效部署。
+他已发表学术论文50余篇，其中多篇发表于TMI和MICCAI；Google Scholar引用超过6000次，曾获得华为AI挑战赛和MICCAI挑战赛冠军，并担任MICCAI/MIDL等领域会议的领域主席。
 
 :::
 
