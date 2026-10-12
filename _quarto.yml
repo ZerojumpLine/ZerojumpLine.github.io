@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/js/
 
 website:
   title: "**ZEJU** Li"
@@ -33,7 +35,7 @@ website:
       #   text: body
  
   navbar:
-    logo: assets/zerojump/img/brain_logo.png
+    logo: assets/zerojump/img/brain_logo_ink.png
     toggle-color-scheme: true
     tools:
     - icon: github
@@ -63,43 +65,32 @@ website:
         aria-label: "Teaching Materials"
         href: teaching/index.qmd
   
-  page-footer:  
+  page-footer:
     left: >-
-     <span style="font-size: 1.2rem;">&#169; 2025&ndash; Zeju Li &#8729; Made with [Quarto](https://quarto.org)</span>
-
+      &#169; 2025&ndash; Zeju Li &#8729; Made with [Quarto](https://quarto.org)
     center: >-
-      <span style="font-size: 1.2rem;"> Fudan University, Shanghai, China.
-
+      Fudan University, Shanghai, China
     right: >-
-      <a class="link-dark me-1" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener" style="font-size: 1.5rem;">{{< fa brands linkedin >}}</a>
-      <a class="link-dark me-1" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener" style="font-size: 1.5rem;">{{< fa brands x-twitter >}}</a>
+      <a class="zl-footer-icon" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
+      <a class="zl-footer-icon" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener">{{< fa brands x-twitter >}}</a>
 
-format: 
+format:
   html:
+    # Colours: assets/theme/light.scss + dark.scss (palette only).
+    # Everything else is shared, so toggling the scheme never moves the layout.
     theme:
-      light:
-        - cosmo
-        - assets/silvia-theme-light.scss
-        - assets/zerojump/colors-light.scss
-        - assets/zerojump/fonts.scss
-      dark: 
-        - cosmo
-        - assets/silvia-theme-dark.scss
-        - assets/zerojump/colors-dark.scss
-        - assets/zerojump/fonts.scss
-    css: 
-      - assets/category-font-fix.css
-      - assets/citation-custom.css
-      - assets/toc-fixes.css
-      - assets/navbar-icons.css
-      - assets/hiring.css
-    highlight-style:
-      light: assets/zerojump/a11y-light.theme
-      dark: assets/zerojump/a11y-dark.theme
+      light: [cosmo, assets/theme/base.scss, assets/theme/light.scss]
+      dark:  [cosmo, assets/theme/base.scss, assets/theme/dark.scss]
+    css:
+      - assets/css/base.css       # typography, navbar, footer, buttons, page headers
+      - assets/css/listings.css   # News / Blog / Publications lists, Team / Teaching grids
+      - assets/css/article.css    # posts, publications, citation blocks
+      - assets/css/pages.css      # About & member profiles, Find Me, Vacancies, Alumni
+      - assets/css/home.css       # homepage hero and sections
+    highlight-style: a11y
     code-link: true
     pagetitle: "Zeju Li"
     lightbox: true
-
 
 execute: 
   freeze: auto
@@ -107,7 +98,7 @@ execute:
 
 jupyter: python3
 
-include-in-header: 
-  - assets/zerojump/umami.html
+include-in-header:
   - text: |
-      <script src="../../assets/citation-copy.js"></script>
+      <script src="/assets/js/citation-copy.js"></script>
+      <script src="/assets/js/category-links.js"></script>

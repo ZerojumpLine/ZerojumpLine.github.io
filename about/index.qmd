@@ -46,23 +46,6 @@ listing:
   fields: [title, subtitle, image]
   max-items: 3
   image-height: "200"
-
-header-includes: >
-  <link rel="stylesheet" href="../assets/about.css">
-  <style>
-    .prospective-student, 
-    .prospective-student *,
-    .prospective-student a,
-    .prospective-student a:hover,
-    #about-me-2 .prospective-student,
-    #about-me-2 .prospective-student *,
-    #about-me-2 .prospective-student a,
-    #about-me-2 .prospective-student a:hover {
-      color: darkred !important;
-    }
-  </style>
-resources:
-  - ../assets/about.css
 ---
 
 ::: {#hero-heading}
@@ -116,9 +99,10 @@ He obtained his PhD in Computing from the [BioMedIA Group](https://biomedia.doc.
 :::
 
 ::: {.g-col-12 #about-me-2}
-<div class="prospective-student" style="color: darkred !important; font-weight: bold;">
-To Prospective Student: I have multiple positions available (PhD, Master's, interns, and Post-doc) at Fudan University. If you are interested, please read [this](../vacancies.html)). If you cannot read Chinese but are still interested, feel free to contact me directly.
-</div>
+::: {.zl-notice}
+**To prospective students**
+I have multiple positions available (PhD, Master's, interns, and Post-doc) at Fudan University. If you are interested, please read [this](../vacancies.html). If you cannot read Chinese but are still interested, feel free to contact me directly.
+:::
 
 :::
 

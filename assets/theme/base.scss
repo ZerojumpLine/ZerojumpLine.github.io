@@ -1,0 +1,81 @@
+/*-- scss:defaults --*/
+
+// Shared by the light and dark themes (see _quarto.yml).
+// Only maps the palette ($zl-*, defined in light.scss / dark.scss) onto
+// Bootstrap/Quarto variables. NO layout rules live here: anything that
+// differs between the two compiled themes would make the page jump when
+// the colour scheme is toggled. Layout lives in assets/css/*.css.
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Petrona:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// Typography
+$font-family-sans-serif:  "Red Hat Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$font-family-monospace:   "JetBrains Mono", SFMono-Regular, Menlo, Consolas, monospace;
+$headings-font-family:    "Petrona", "Songti SC", serif;
+$headings-font-weight:    600;
+$headings-color:          $zl-ink;
+$font-size-base:          1.125rem;
+$line-height-base:        1.7;
+$h1-font-size:            2.75rem;
+$h2-font-size:            2rem;
+$h3-font-size:            1.5rem;
+$h4-font-size:            1.25rem;
+$h5-font-size:            1.1rem;
+$h6-font-size:            1rem;
+
+// Colours
+$body-bg:                 $zl-bg;
+$body-color:              $zl-text;
+$body-secondary:          $zl-muted;
+$primary:                 $zl-ink;
+$secondary:               $zl-muted;
+$border-color:            $zl-rule;
+$link-color:              $zl-ink;
+$link-hover-color:        $zl-accent;
+$link-decoration:         underline;
+$link-hover-decoration:   underline;
+
+$navbar-bg:               $zl-bg;
+$navbar-fg:               $zl-muted;
+$navbar-hl:               $zl-ink;
+$navbar-brand:            $zl-ink;
+$footer-bg:               $zl-bg;
+$footer-fg:               $zl-muted;
+
+$toc-color:               $zl-ink;    // Quarto uses this (!important) for the active TOC entry
+$toc-active-border:       $zl-accent;
+$toc-inactive-border:     $zl-rule;
+
+$code-color:              $zl-accent;
+$code-bg:                 $zl-surface;
+$code-block-bg:           $zl-surface;
+$input-bg:                $zl-surface;
+$input-border-color:      $zl-rule;
+$table-border-color:      $zl-rule;
+$popover-bg:              $zl-bg;
+$dropdown-bg:             $zl-bg;
+$dropdown-link-color:     $zl-text;
+$dropdown-link-hover-bg:  $zl-surface;
+
+/*-- scss:rules --*/
+
+// Design tokens for the plain-CSS layer (assets/css/*.css).
+:root {
+  --zl-bg: #{$zl-bg};
+  --zl-paper: #{$zl-paper};
+  --zl-surface: #{$zl-surface};
+  --zl-ink: #{$zl-ink};
+  --zl-text: #{$zl-text};
+  --zl-muted: #{$zl-muted};
+  --zl-rule: #{$zl-rule};
+  --zl-accent: #{$zl-accent};
+  --zl-teal: #{$zl-teal};
+  --zl-banner: #{$zl-banner};
+
+  --zl-serif: #{$headings-font-family};
+  --zl-sans: #{$font-family-sans-serif};
+  --zl-mono: #{$font-family-monospace};
+
+  --zl-page-max: 1240px;   // content width of every page
+  --zl-gutter: clamp(1.25rem, 4vw, 2.5rem);
+}

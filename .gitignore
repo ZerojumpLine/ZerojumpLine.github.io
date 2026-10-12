@@ -8,3 +8,6 @@ _freeze/site_libs/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Quarto intermediates
+*.quarto_ipynb

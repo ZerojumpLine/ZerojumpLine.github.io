@@ -1,5 +1,6 @@
 ---
 title: "News"
+subtitle: "Lab updates"
 description: |
   This is where we share the latest news and updates from our lab.<br>
   Stay up to date with our research, publications, and activities.
@@ -23,10 +24,5 @@ format:
 title-block-banner: false
 math: false
 comments: false
-
-header-includes: >
-  <link rel="stylesheet" href="../assets/listing-default.css">
-  <script src="../assets/custom-category-toggle.js"></script>
-resources:
-  - ../assets/listing-default.css
+body-classes: zl-index
 ---

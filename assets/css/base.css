@@ -1,0 +1,479 @@
+/* ==========================================================================
+   base.css — site-wide elements and shared components
+   Colours come only from the --zl-* tokens (assets/theme/*.scss), so
+   nothing here needs a light/dark variant.
+   ========================================================================== */
+
+/* ---------- typography ----------
+   Everything is sized in rem, so this one value sets the scale of the site
+   (Quarto's default is 17px). Bootstrap reads it from --bs-root-font-size. */
+:root {
+  --bs-root-font-size: 19px;
+  scroll-padding-top: 6rem;   /* anchor links land below the fixed navbar */
+}
+@media (max-width: 767.98px) {
+  :root { --bs-root-font-size: 17px; }
+}
+
+body {
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: var(--zl-ink);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* section headings inside articles: serif with a hairline rule */
+main.content h2:not(.quarto-appendix-heading):not(#toc-title) {
+  margin-top: 3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--zl-rule);
+}
+
+a { text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+a:hover { color: var(--zl-accent); }
+
+strong, b { color: var(--zl-ink); font-weight: 600; }
+
+hr { border-color: var(--zl-rule); opacity: 1; }
+
+::selection { background: color-mix(in srgb, var(--zl-accent) 25%, transparent); }
+
+blockquote,
+.blockquote {
+  border-left: 2px solid var(--zl-accent);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  color: var(--zl-muted);
+  font-family: var(--zl-serif);
+  font-size: 1.15em;
+  font-style: italic;
+}
+
+/* inline code + code blocks */
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode) {
+  padding: 0.1em 0.35em;
+  border: 1px solid var(--zl-rule);
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+div.sourceCode {
+  border: 1px solid var(--zl-rule);
+  border-radius: 4px;
+}
+
+/* tables */
+.table, table { --bs-table-bg: transparent; color: var(--zl-text); }
+.table > :not(caption) > * > * { border-bottom-color: var(--zl-rule); }
+thead th {
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+}
+
+/* callouts: flat, accent edge */
+.callout {
+  border: 1px solid var(--zl-rule) !important;
+  border-left: 3px solid var(--zl-accent) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+.callout .callout-header { background: transparent !important; }
+
+/* ---------- small shared components ---------- */
+
+/* mono label with a leading rule: "—— RESEARCH" */
+.zl-eyebrow,
+body p.zl-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1.25rem;
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+}
+.zl-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+}
+
+/* outlined button that fills on hover.
+   `body a.zl-cta` outranks Bootstrap's link colour rules. */
+body a.zl-cta,
+.quarto-title-block .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.4rem;
+  font-family: var(--zl-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--zl-accent);
+  background: transparent;
+  text-decoration: none;
+  border: 1px solid var(--zl-accent);
+  border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body a.zl-cta:hover,
+.quarto-title-block .btn-secondary:hover {
+  background-color: var(--zl-accent);
+  color: var(--zl-bg);
+  border-color: var(--zl-accent);
+}
+body a.zl-cta .zl-cta__arrow {
+  display: inline-block;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+body a.zl-cta:hover .zl-cta__arrow { transform: translateX(0.35rem); }
+
+/* ---------- navbar ----------
+   Fixed metrics so the bar is identical in both colour schemes. */
+.navbar {
+  min-height: 76px;
+  padding: 0.75rem 0;
+  background: var(--zl-bg);
+  border: none;
+  box-shadow: none;
+}
+.navbar .navbar-container {
+  padding-left: var(--zl-gutter);
+  padding-right: var(--zl-gutter);
+}
+.navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar-brand-logo { margin-right: 0.65rem; }
+.navbar .navbar-logo {
+  height: 26px;
+  width: auto;
+  max-height: none;
+  padding: 0;
+  margin: 0;
+}
+body.quarto-dark .navbar .navbar-logo {
+  /* transparent ink mark → cream text tone */
+  filter: brightness(0) invert(1) sepia(0.15) brightness(0.93);
+}
+.navbar .navbar-title {
+  font-family: var(--zl-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--zl-ink);
+}
+.navbar .navbar-nav .nav-link {
+  margin: 0 0.4rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+  /* underline drawn with a shadow so hover never changes the box size */
+  box-shadow: inset 0 -1px 0 transparent;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--zl-ink);
+  box-shadow: inset 0 -1px 0 var(--zl-accent);
+}
+.navbar .quarto-navbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.75rem;
+}
+.navbar .quarto-navbar-tools .nav-link,
+.navbar .quarto-navbar-tools .quarto-color-scheme-toggle,
+.navbar #quarto-search .aa-DetachedSearchButton {
+  margin: 0;
+  padding: 0.4rem;
+  box-shadow: none;
+  font-size: 1.05rem;
+  line-height: 1;
+  color: var(--zl-muted);
+}
+.navbar .quarto-navbar-tools .bi,
+.navbar .quarto-navbar-tools svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.navbar .dropdown-menu {
+  padding: 0.5rem 0;
+  background: var(--zl-bg);
+  border: 1px solid var(--zl-rule);
+  border-radius: 0;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+.navbar .dropdown-item {
+  font-size: 0.9rem;
+  color: var(--zl-text);
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: var(--zl-surface);
+  color: var(--zl-accent);
+}
+
+/* navbar stays pinned to the top while scrolling; Quarto's headroom script
+   would otherwise slide it away on scroll-down */
+#quarto-header.fixed-top { position: fixed; }
+#quarto-header.headroom { transform: none !important; }
+#quarto-header .navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* hairline once the page has scrolled (shadow, so the bar never changes size) */
+#quarto-header.headroom--not-top .navbar { box-shadow: 0 1px 0 var(--zl-rule); }
+
+/* homepage: transparent over the hero, solid once scrolled */
+body.zl-home #quarto-header.headroom--top .navbar { background: transparent; }
+
+/* ---------- footer ---------- */
+.nav-footer {
+  min-height: 0;
+  margin-top: 4rem;
+  padding: 2rem var(--zl-gutter);
+  border-top: 1px solid var(--zl-rule);
+  background: var(--zl-bg);
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--zl-muted);
+}
+.nav-footer a { color: var(--zl-muted); }
+.nav-footer a:hover { color: var(--zl-accent); }
+.nav-footer .zl-footer-icon {
+  margin-left: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--zl-muted);
+  text-decoration: none;
+}
+.nav-footer .zl-footer-icon:hover { color: var(--zl-accent); }
+
+@media (max-width: 991.98px) {
+  .nav-footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+  .nav-footer > div { flex-basis: auto; text-align: center; }
+}
+
+/* ---------- index-page header (News, Blog, Team, ...) ----------
+   Pages opt in with `body-classes: zl-index`. The page's `subtitle`
+   becomes the mono eyebrow above the title. */
+body.zl-index #title-block-header {
+  display: block;
+  margin: 2.5rem 0 3rem;
+  padding: 0 0 2.25rem;
+  border-bottom: 1px solid var(--zl-rule);
+  background: none;
+}
+body.zl-index #title-block-header .quarto-title {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: var(--zl-ink);
+}
+body.zl-index #title-block-header .title {
+  order: 2;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--zl-ink);
+  text-align: left;
+}
+body.zl-index #title-block-header .subtitle {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1.25rem;
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+}
+body.zl-index #title-block-header .subtitle::before {
+  content: "";
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+}
+body.zl-index #title-block-header.quarto-title-block.default .description {
+  max-width: 40rem;
+  margin: 1.75rem 0 0;
+  padding: 0 !important;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--zl-muted);
+  text-align: left;
+}
+body.zl-index #title-block-header .description p { margin: 0; }
+body.zl-index #title-block-header.quarto-title-block.default .quarto-title-meta { display: none; }
+
+/* ---------- article title banner (posts, publications, news) ----------
+   The partial puts the featured image behind the title; the overlay
+   colour comes from --zl-banner. */
+.quarto-title-block .featured-image {
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 100vmax var(--zl-banner);
+  color: #f4f0e8;
+}
+body:not(.zl-index) .quarto-title-block .featured-image {
+  padding: 4.5rem 0 3.5rem !important;
+}
+.quarto-title-block .featured-image .title {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #f4f0e8;
+}
+.quarto-title-block .featured-image .subtitle {
+  max-width: 46rem;
+  margin-top: 1.25rem;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: rgba(244, 240, 232, 0.85);
+}
+.quarto-title-block .featured-image .quarto-categories {
+  margin-top: 1.75rem;
+  gap: 0.5rem;
+}
+.quarto-title-block .featured-image .quarto-category {
+  padding: 0.3rem 0.65rem;
+  font-family: var(--zl-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f4f0e8;
+  background: transparent;
+  border: 1px solid rgba(244, 240, 232, 0.45);
+  border-radius: 0;
+  opacity: 1;
+}
+
+/* metadata row under the banner (Author / Published) */
+.quarto-title-meta {
+  gap: 1.5rem 3rem;
+  margin-top: 2rem;
+}
+.quarto-title-meta-heading {
+  margin-bottom: 0.35rem;
+  font-family: var(--zl-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+}
+.quarto-title-meta-contents p { margin: 0; color: var(--zl-ink); }
+
+/* link buttons (Publication / Preprint / Code ...), aligned with the metadata row */
+.quarto-title-block [aria-label="Links"] {
+  grid-column: page-start / body-content-end;
+  gap: 0.6rem !important;
+  margin-top: 2rem !important;
+}
+.quarto-title-block .btn-secondary {
+  padding: 0.6rem 1rem;
+  font-size: 0.72rem;
+}
+.quarto-title-block .btn-secondary .bi {
+  width: 1em;
+  height: 1em;
+  margin: 0 !important;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* ---------- table of contents ---------- */
+#TOC #toc-title,
+#quarto-margin-sidebar .quarto-listing-category-title {
+  margin: 0 0 1rem;
+  font-family: var(--zl-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+}
+#TOC ul { border-left: 1px solid var(--zl-rule); }
+#quarto-margin-sidebar #TOC a.nav-link {
+  margin-left: -1px;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--zl-muted);
+  border-left: 2px solid transparent;
+}
+#quarto-margin-sidebar #TOC a.nav-link:hover { color: var(--zl-ink); }
+/* current section: bold ink with an accent bar */
+#quarto-margin-sidebar #TOC a.nav-link.active {
+  font-weight: 600;
+  color: var(--zl-ink);
+  border-left-color: var(--zl-accent);
+}
+.sidebar,
+#quarto-margin-sidebar { border: none; box-shadow: none; background: transparent; }
+
+/* The navbar never hides, but Quarto's script still moves sticky sidebars to
+   top:0 when it thinks the bar slid away; keep them below the 76px bar. */
+#quarto-margin-sidebar.sidebar,
+#quarto-sidebar.sidebar {
+  top: calc(76px + 1.5rem) !important;
+  max-height: calc(100vh - 76px - 3rem) !important;
+}
+
+/* ---------- pagination ---------- */
+.pagination .page-link {
+  font-family: var(--zl-mono);
+  font-size: 0.8rem;
+  color: var(--zl-ink);
+  background: transparent;
+  border-color: var(--zl-rule);
+  border-radius: 0 !important;
+}
+.pagination .page-link:hover,
+.pagination .page-item.active .page-link {
+  color: var(--zl-bg);
+  background: var(--zl-ink);
+  border-color: var(--zl-ink);
+}

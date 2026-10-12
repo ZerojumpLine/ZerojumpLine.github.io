@@ -10,7 +10,7 @@ categories:
   - 2026
 slug: learning-label-refinement-imbalanced-ssl
 image: featured.png
-description: 'TMLR 2026'
+description: 'Transactions on Machine Learning Research'
 subtitle: A unified framework that learns pseudo-label refinement and class-specific thresholds for imbalanced semi-supervised learning.
 links:
 - icon: file-richtext-fill

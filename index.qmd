@@ -1,234 +1,136 @@
 ---
-page-title: "Zeju Li"  # This will appear in the browser tab
-format:
-  html:
-    page-layout: article
+pagetitle: "Zeju Li"
+body-classes: zl-home
 title-block-banner: false
-header-includes: >
-  <link rel="stylesheet" href="assets/index.css">
-  <style>
-  /* Force wider content below separator */
-  .research-intro,
-  .research-cards,
-  .featured-section {
-    max-width: 1400px !important;
-    width: 100% !important;
-  }
-  
-  /* Override any parent container constraints */
-  body .research-intro,
-  html .research-intro,
-  .quarto-container .research-intro,
-  #quarto-content .research-intro,
-  .page-layout-article .research-intro,
-  .page-layout-full .research-intro,
-  .column-body .research-intro,
-  .column-page .research-intro,
-  .container .research-intro,
-  .container-fluid .research-intro,
-  .row .research-intro,
-  
-  /* Main content text styling - larger font for better readability */
-  .research-intro .column[width="65%"] p {
-    font-size: 1.3rem !important;
-    line-height: 1.7;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-  }
-  body .research-cards,
-  html .research-cards,
-  .quarto-container .research-cards,
-  #quarto-content .research-cards,
-  .page-layout-article .research-cards,
-  .page-layout-full .research-cards,
-  .column-body .research-cards,
-  .column-page .research-cards,
-  .container .research-cards,
-  .container-fluid .research-cards,
-  .row .research-cards,
-  body .featured-section,
-  html .featured-section,
-  .quarto-container .featured-section,
-  #quarto-content .featured-section,
-  .page-layout-article .featured-section,
-  .page-layout-full .featured-section,
-  .column-body .featured-section,
-  .column-page .featured-section,
-  .container .featured-section,
-  .container-fluid .featured-section,
-  .row .featured-section {
-    max-width: 1400px !important;
-    width: 100% !important;
-  }
-  </style>
-resources:
-  - assets/index.css
 ---
 
-::: {.hero-banner}
-<img src="assets/zerojump/img/medicalimaging.png" class="banner-image" alt="Medical Imaging Research">
-:::
+```{=html}
+<section class="zl-hero" aria-label="Introduction">
+  <div class="zl-hero__sticky">
+    <div class="zl-hero__media" aria-hidden="true">
+      <img class="zl-hero__img zl-hero__img--base" src="assets/zerojump/img/hero-base.webp" alt="">
+      <img class="zl-hero__img zl-hero__img--reveal" src="assets/zerojump/img/hero-reveal.webp" alt="">
+      <div class="zl-hero__veil"></div>
+    </div>
 
-::: {.hero-content-center}
+    <div class="zl-hero__title">
+      <p class="zl-eyebrow">Associate Professor &middot; Fudan University</p>
+      <h1>Zeju Li<em>,</em> PhD</h1>
+      <p class="zl-hero__role">Machine learning &times; medical imaging &mdash; computational tools for image reconstruction, brain function analysis and disease diagnosis.</p>
+    </div>
 
-# Zeju Li, PhD {.text-center}
+    <ol class="zl-hero__chapters" aria-label="Research themes">
+      <li><span>01</span><strong>Reliable AI</strong><em>interpretability &middot; uncertainty</em></li>
+      <li><span>02</span><strong>Imaging pipelines</strong><em>reconstruction &middot; segmentation</em></li>
+      <li><span>03</span><strong>Brain function</strong><em>fMRI &middot; dMRI</em></li>
+    </ol>
 
-## ASSOCIATE PROFESSOR<br>AT FUDAN UNIVERSITY {style="text-align: center;"}
+    <div class="zl-hero__progress" aria-hidden="true"><span></span></div>
+    <a class="zl-hero__cue" href="#about">Scroll</a>
+  </div>
+</section>
+<script src="assets/js/hero.js"></script>
+```
 
-::: {.research-description}
-I am a researcher at the intersection of machine learning and medical imaging. My **research** focuses on designing novel computational approaches for biomedical image analysis, with applications in image reconstruction, brain function analysis and disease diagnosis.
-:::
+::: {.zl-home-body .column-page}
 
-::: {.cta-section}
-[LEARN MORE ABOUT ME →](/about){.hero-link}
-:::
+::: {.zl-split #about}
+::: {.zl-split__head}
+[About]{.zl-eyebrow}
 
-:::
-
-::: {.column-screen .section-separator}
-:::
-
-::: {.column-screen}
-
-
-::: {.research-intro}
-::: {.columns}
-
-::: {.column width="30%"}
 We are pushing the boundaries of biomedical image analysis using AI.
 :::
 
-::: {.column width="5%"}
-:::
-
-::: {.column width="65%"}
-We are broadly interested in machine learning, medical imaging, and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes. 
+::: {.zl-split__body}
+We are broadly interested in machine learning, medical imaging, and neuroimaging. Our research focuses on creating tools that enhance diagnostic accuracy and improve patient outcomes.
 
 Currently, we are working on building AI models that can: 1) operate reliably and stably (e.g., interpretability, uncertainty), 2) advance medical imaging pipelines (e.g., reconstruction, segmentation), and 3) eventually enhance our understanding of brain functions (e.g., fMRI, dMRI).
+
+[Learn more about me [→]{.zl-cta__arrow}](/about){.zl-cta}
+:::
 :::
 
-:::
-:::
+```{=html}
+<section class="zl-areas" aria-label="Research areas">
+  <p class="zl-eyebrow">Research areas</p>
+  <div class="zl-areas__grid">
+    <article class="zl-area">
+      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-ml.webp" alt="Engraved illustration of layered feature maps and a neural network"></figure>
+      <div class="zl-area__meta"><span>01</span><span>Interpretability &middot; Uncertainty</span></div>
+      <h3>Machine Learning</h3>
+      <p>AI models that operate reliably and stably &mdash; and know when they might be wrong.</p>
+    </article>
+    <article class="zl-area">
+      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-mia.webp" alt="Engraved illustration of an MRI slice being reconstructed and segmented"></figure>
+      <div class="zl-area__meta"><span>02</span><span>Reconstruction &middot; Segmentation</span></div>
+      <h3>Medical Image Analysis</h3>
+      <p>Advancing the imaging pipeline, from raw acquisition to clinically meaningful measurements.</p>
+    </article>
+    <article class="zl-area">
+      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-neuro.webp" alt="Engraved illustration of brain tractography and functional signals"></figure>
+      <div class="zl-area__meta"><span>03</span><span>fMRI &middot; dMRI</span></div>
+      <h3>Computational Neuroscience</h3>
+      <p>Modelling how the brain is wired and how it works, to deepen our understanding of brain function.</p>
+    </article>
+  </div>
+</section>
+```
 
-::: {.research-cards}
+::: {.zl-split}
+::: {.zl-split__head}
+[Latest]{.zl-eyebrow}
 
-::: {.research-card .card-3}
-<img src="assets/zerojump/img/Slide3.png" class="card-image" alt="Image Reconstruction">
-
-<p>Machine Learning</p>
-:::
-
-::: {.research-card .card-2}
-<img src="assets/zerojump/img/Slide2.png" class="card-image" alt="Brain Function Analysis">
-
-<p>Medical Image Analysis</p>
-:::
-
-::: {.research-card .card-1}
-<img src="assets/zerojump/img/Slide1.png" class="card-image" alt="Deep Learning for Medical Imaging">
-
-<p>Computational Neuroscience</p>
-:::
-
-:::
-
-::: {.featured-section}
-
-::: {.columns}
-
-::: {.column width="30%"}
 ## Featured
 :::
 
-::: {.column width="20%"}
+::: {.zl-split__body .zl-rows}
+::: {.zl-row}
+[Medical Generative Models Need More Than Realism](/blog/2026-08-19-generative-models-need-more-than-realism/)
+[**Research** August 19, 2026]{.zl-row__meta}
 :::
 
-::: {.column width="50%"}
-::: {.featured-items}
-
-::: {.featured-item}
-[**Medical Generative Models Need More Than Realism**](/blog/2026-08-19-generative-models-need-more-than-realism/){.featured-link}
-
-::: {.featured-meta}
-[Research]{.featured-type} • August 19, 2026
-:::
+::: {.zl-row}
+[National BME Competition](/news/2026-07-19-BME-Innovation-Competition/)
+[**Competition** July 19, 2026]{.zl-row__meta}
 :::
 
-::: {.featured-item}
-[**National BME Competition**](/news/2026-07-19-BME-Innovation-Competition/){.featured-link}
-
-::: {.featured-meta}
-[Competition]{.featured-type} • July 19, 2026
-:::
+::: {.zl-row}
+[MICS 2026](/news/2026-07-10-MICS/)
+[**Seminar** July 10, 2026]{.zl-row__meta}
 :::
 
-::: {.featured-item}
-[**MICS 2026**](/news/2026-07-10-MICS/){.featured-link}
-
-::: {.featured-meta}
-[Seminar]{.featured-type} • July 10, 2026
-:::
+::: {.zl-row}
+[Introducing SEVAL](/SEVAL/)
+[**Publication** June 1, 2026]{.zl-row__meta}
 :::
 
-::: {.featured-item}
-[**Introducing SEVAL**](/SEVAL/){.featured-link}
-
-::: {.featured-meta}
-[Publication]{.featured-type} • June 1, 2026
-:::
+::: {.zl-row}
+[Generative Machine Learning Models in Medical Image Computing](/news/2025-08-08-GenAI-Book/)
+[**Book** August 4, 2025]{.zl-row__meta}
 :::
 
-::: {.featured-item}
-[**Generative Machine Learning Models in Medical Image Computing**](/news/2025-08-08-GenAI-Book/){.featured-link}
-
-::: {.featured-meta}
-[Book]{.featured-type} • August 4, 2025
+::: {.zl-row}
+[Pattern Recognition](/teaching/2025-08-08-Pattern Recognition/)
+[**Teaching** August 2, 2025]{.zl-row__meta}
 :::
-:::
-
-::: {.featured-item}
-[**Pattern Recognition**](/teaching/2025-08-08-Pattern Recognition/){.featured-link}
-
-::: {.featured-meta}
-[Teaching]{.featured-type} • August 2, 2025
-:::
-:::
-
-
 
 :::
 :::
 
-:::
+::: {.zl-split}
+::: {.zl-split__head}
+[Join us]{.zl-eyebrow}
 
-:::
-
-::: {.hiring-section}
-
-::: {.columns}
-
-::: {.column width="30%"}
 ## Vacancies
 :::
 
-::: {.column width="20%"}
-:::
-
-::: {.column width="50%"}
-::: {.hiring-items}
-
-::: {.hiring-item}
-[**Join Our Team**](/vacancies.html){.hiring-link}
-
-::: {.hiring-meta}
-[Opportunities]{.hiring-type} • Open Positions
-:::
+::: {.zl-split__body .zl-rows}
+::: {.zl-row}
+[Join Our Team](/vacancies.html)
+[**Opportunities** Open positions]{.zl-row__meta}
 :::
 
 :::
 :::
 
-:::
-
-:::
 :::

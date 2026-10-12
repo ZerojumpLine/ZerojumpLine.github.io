@@ -1,0 +1,275 @@
+/* ==========================================================================
+   listings.css — News, Blog, Publications (list) and Team, Teaching (grid)
+   ========================================================================== */
+
+/* ---------- category tags on items ---------- */
+.listing-category,
+.quarto-category {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2rem 0.55rem;
+  font-family: var(--zl-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+  background: transparent;
+  border: 1px solid var(--zl-rule);
+  border-radius: 0;
+  opacity: 1;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.listing-category:hover,
+.quarto-category:hover {
+  color: var(--zl-accent);
+  border-color: var(--zl-accent);
+}
+.listing-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+/* ---------- category filter (right margin) ---------- */
+#quarto-margin-sidebar .quarto-listing-category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  padding: 0;
+  border-left: 1px solid var(--zl-rule);
+}
+#quarto-margin-sidebar .quarto-listing-category .category {
+  margin: 0;
+  padding: 0.3rem 0 0.3rem 1rem;
+  margin-left: -1px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--zl-muted);
+  border-left: 1px solid transparent;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+#quarto-margin-sidebar .quarto-listing-category .category:hover { color: var(--zl-ink); }
+#quarto-margin-sidebar .quarto-listing-category .category.active {
+  color: var(--zl-ink);
+  border-left-color: var(--zl-accent);
+}
+.quarto-category-count {
+  font-family: var(--zl-mono);
+  font-size: 0.7rem;
+  color: var(--zl-muted);
+  opacity: 0.8;
+}
+
+/* ---------- sort / filter controls ---------- */
+.quarto-listing-filter .input-group,
+.quarto-listing-sort .input-group { flex-wrap: nowrap; }
+.quarto-listing-filter .input-group-text,
+.quarto-listing-sort .input-group-text,
+.quarto-listing-filter .form-control,
+.quarto-listing-sort .form-select,
+.quarto-listing-sort .form-control {
+  font-size: 0.85rem;
+  color: var(--zl-text);
+  background-color: transparent;
+  border-color: var(--zl-rule);
+  border-radius: 0 !important;
+}
+.quarto-listing-sort .input-group-text { color: var(--zl-muted); }
+.quarto-listing-filter .form-control:focus,
+.quarto-listing-sort .form-select:focus {
+  border-color: var(--zl-accent);
+  box-shadow: none;
+}
+
+/* ---------- default list: News, Blog, Publications ---------- */
+.quarto-listing-default .quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 2.5rem;
+  margin: 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--zl-rule);
+}
+.quarto-listing-default .quarto-post:first-child { padding-top: 0; }
+.quarto-listing-default .quarto-post .body { grid-column: 1; grid-row: 1; padding: 0; }
+.quarto-listing-default .quarto-post .metadata {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 9rem;
+  max-width: 18rem;
+  padding: 0;
+  text-align: right;
+}
+
+/* thumbnails: News on the left, Blog on the right */
+.quarto-listing-default .quarto-post .thumbnail {
+  flex: none;
+  width: 15rem;
+  margin: 0;
+}
+.quarto-listing-default .quarto-post.image-left:has(.thumbnail) {
+  grid-template-columns: 15rem minmax(0, 1fr) auto;
+}
+.quarto-listing-default .quarto-post.image-left:has(.thumbnail) .thumbnail { grid-column: 1; grid-row: 1; }
+.quarto-listing-default .quarto-post.image-left:has(.thumbnail) .body { grid-column: 2; }
+.quarto-listing-default .quarto-post.image-left:has(.thumbnail) .metadata { grid-column: 3; }
+.quarto-listing-default .quarto-post.image-right:has(.thumbnail) {
+  grid-template-columns: 9rem minmax(0, 1fr) 15rem;
+}
+.quarto-listing-default .quarto-post.image-right:has(.thumbnail) .metadata { grid-column: 1; text-align: left; }
+.quarto-listing-default .quarto-post.image-right:has(.thumbnail) .body { grid-column: 2; }
+.quarto-listing-default .quarto-post.image-right:has(.thumbnail) .thumbnail { grid-column: 3; grid-row: 1; }
+
+/* no thumbnail (Publications): date + authors as a quiet line under the entry */
+.quarto-listing-default .quarto-post:not(:has(.thumbnail)) { grid-template-columns: minmax(0, 1fr); }
+.quarto-listing-default .quarto-post:not(:has(.thumbnail)) .metadata {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  max-width: none;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+.quarto-listing-default .quarto-post:not(:has(.thumbnail)) .listing-author {
+  font-family: var(--zl-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+.quarto-listing-default .thumbnail-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.6s cubic-bezier(.2, .7, .2, 1);
+}
+.quarto-listing-default .thumbnail { overflow: hidden; }
+.quarto-listing-default .quarto-post:hover .thumbnail-image { transform: scale(1.03); }
+
+.quarto-listing-default .listing-title {
+  margin: 0;
+  font-family: var(--zl-serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.quarto-listing-default .listing-title a {
+  color: var(--zl-ink);
+  text-decoration: none;
+  background-image: linear-gradient(var(--zl-accent), var(--zl-accent));
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease, color 0.2s ease;
+}
+.quarto-listing-default .quarto-post:hover .listing-title a {
+  color: var(--zl-accent);
+  background-size: 100% 1px;
+}
+.quarto-listing-default .listing-description {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--zl-muted);
+}
+.quarto-listing-default .listing-date,
+.quarto-listing-default .listing-author {
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  color: var(--zl-muted);
+}
+.quarto-listing-default .listing-date {
+  color: var(--zl-accent);
+  text-transform: uppercase;
+}
+.quarto-listing-default .metadata a { text-decoration: none; }
+
+@media (max-width: 767.98px) {
+  .quarto-listing-default .quarto-post,
+  .quarto-listing-default .quarto-post.image-left,
+  .quarto-listing-default .quarto-post.image-right {
+    grid-template-columns: 1fr;
+    row-gap: 0.75rem;
+  }
+  .quarto-listing-default .quarto-post > * { grid-column: 1 !important; grid-row: auto !important; }
+  .quarto-listing-default .quarto-post .metadata { order: -1; max-width: none; text-align: left; }
+  .quarto-listing-default .quarto-post .thumbnail { width: 100%; order: -2; }
+}
+
+/* ---------- grid cards: Team, Teaching ---------- */
+.quarto-listing-container-grid .list.grid { gap: 2.5rem 2rem; }
+.quarto-grid-link { text-decoration: none; }
+.quarto-listing-container-grid .quarto-grid-item.card {
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* Quarto gives the image wrapper a fixed height; square it instead */
+.quarto-listing-container-grid .quarto-grid-item p.card-img-top {
+  height: auto;
+  margin: 0 0 1.25rem;
+  overflow: hidden;
+  aspect-ratio: 3 / 2;
+  background: var(--zl-paper);
+}
+.quarto-grid-item .card-img-top img,
+.quarto-grid-item .thumbnail-image {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.6s cubic-bezier(.2, .7, .2, 1);
+}
+.quarto-grid-item:hover .card-img-top img { transform: scale(1.04); }
+body.zl-team .quarto-listing-container-grid .quarto-grid-item p.card-img-top,
+body.zl-teaching .quarto-listing-container-grid .quarto-grid-item p.card-img-top { aspect-ratio: 1 / 1; }
+/* Quarto sets the text block to height:100%, which overflows the card */
+.quarto-listing-container-grid .quarto-grid-item div.post-contents {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: auto;
+  padding: 0;
+}
+.quarto-grid-item .card-title {
+  margin: 0;
+  font-family: var(--zl-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--zl-ink);
+}
+.quarto-grid-item:hover .card-title { color: var(--zl-accent); }
+.quarto-grid-item .card-subtitle,
+.quarto-grid-item .card-text {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--zl-muted);
+}
+.quarto-grid-item .card-attribution {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  justify-content: flex-start;
+}
+.quarto-grid-item .listing-date {
+  font-family: var(--zl-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+}

@@ -1,9 +1,11 @@
 ---
 title: "Team" 
+subtitle: "People"
 description: |
   Meet our research team and collaborators.<br>
   Learn about our diverse backgrounds and expertise.
 listing: 
+  id: people
   contents: 
     - "shuting_xu/index.qmd"
     - "hao_zhang/index.qmd"
@@ -39,36 +41,20 @@ format:
     page-layout: full
 title-block-banner: false
 math: false
-
-header-includes: >
-  <link rel="stylesheet" href="../assets/category-font-fix.css">
-  <link rel="stylesheet" href="../assets/listing-default.css">
-  <link rel="stylesheet" href="../assets/team-listing.css">
-  <link rel="stylesheet" href="../assets/alumni-simple.css?v=1.1">
-  <script src="../assets/custom-category-toggle.js"></script>
-  <script>
-    // Ensure categories are loaded before our custom script runs
-    window.addEventListener('load', function() {
-      if (window['quarto-listing-loaded']) {
-        window['quarto-listing-loaded']();
-      }
-    });
-  </script>
-resources:
-  - ../assets/category-font-fix.css
-  - ../assets/listing-default.css
-  - ../assets/team-listing.css
-  - ../assets/alumni-simple.css?v=1.1
+body-classes: zl-index zl-team
 ---
 
 ## Current Team
 
 We are a part of research team lead by [Prof. Yuanyuan Wang](https://bme-college.fudan.edu.cn/wyy/main.htm). I feel truly fortunate to collaborate with such a talented and kind team.
 
+::: {#people}
+:::
+
 ## Alumni
 
 Our lab has been fortunate to work with many talented researchers who have moved on to exciting opportunities. Learn more about our alumni and their current positions.
 
-::: {.cta-section}
-[VIEW ALUMNI DIRECTORY →](../alumni/){.hero-link}
+::: {.zl-team-alumni}
+[View alumni directory [→]{.zl-cta__arrow}](../alumni/){.zl-cta}
 :::

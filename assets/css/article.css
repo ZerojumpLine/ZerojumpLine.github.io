@@ -1,0 +1,81 @@
+/* ==========================================================================
+   article.css — posts, publications, news items: body copy, appendix,
+   citation / BibTeX blocks, comments
+   ========================================================================== */
+
+main.content figure img,
+main.content p > img { max-width: 100%; height: auto; }
+.figure-caption,
+figcaption {
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--zl-muted);
+}
+
+/* ---------- appendix (Citation, Reuse) ---------- */
+#quarto-appendix.default {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--zl-rule);
+}
+#quarto-appendix .quarto-appendix-heading {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: none;
+  font-family: var(--zl-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+}
+.quarto-appendix-secondary-label {
+  margin: 1.5rem 0 0.5rem;
+  font-family: var(--zl-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+}
+.quarto-appendix-citeas { font-size: 0.95rem; color: var(--zl-text); }
+
+/* BibTeX block: click anywhere to copy (assets/js/citation-copy.js) */
+.quarto-appendix-bibtex {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--zl-text);
+  background: var(--zl-surface);
+  border: 1px solid var(--zl-rule);
+  border-radius: 0;
+  white-space: pre-wrap;
+  cursor: copy;
+}
+.quarto-appendix-bibtex code {
+  padding: 0;
+  color: inherit;
+  background: none;
+  border: none;
+}
+.quarto-appendix-bibtex::before {
+  content: var(--copy-label, "Copy");
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  font-family: var(--zl-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+  border: 1px solid var(--zl-accent);
+}
+.quarto-appendix-bibtex:hover::before {
+  color: var(--zl-bg);
+  background: var(--zl-accent);
+}
+
+/* ---------- comments ---------- */
+.utterances { max-width: 46rem; }

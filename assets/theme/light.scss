@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+// Light palette — the ONLY place light-mode colours are defined.
+// Every other stylesheet reads these through the CSS custom properties
+// emitted in base.scss (--zl-bg, --zl-ink, ...).
+
+$zl-bg:       #ede8de;   // page
+$zl-paper:    #e9e4da;   // paper tone of the illustrations
+$zl-surface:  #f4f0e8;   // inputs, code blocks, quiet panels
+$zl-ink:      #1f2a33;   // headings, strong text
+$zl-text:     #2c3e50;   // body copy
+$zl-muted:    #6b6457;   // secondary text, metadata
+$zl-rule:     rgba(31, 42, 51, 0.15);
+$zl-accent:   #a8552f;   // terracotta — links on hover, labels, buttons
+$zl-teal:     #5e9aa6;   // secondary accent from the illustrations
+$zl-banner:   rgba(31, 42, 51, 0.78);   // overlay on featured-image title banners
+
+/*-- scss:rules --*/

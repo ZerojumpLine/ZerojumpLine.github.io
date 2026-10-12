@@ -1,13 +1,11 @@
 ---
 title: "Research Vacancies at Fudan University"
+subtitle: "Join us"
 format:
   html:
     page-layout: full
 title-block-banner: false
-header-includes: >
-  <link rel="stylesheet" href="/assets/hiring.css">
-resources:
-  - /assets/hiring.css
+body-classes: zl-index
 ---
 
 ::: {.hiring-hero}
