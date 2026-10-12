@@ -365,3 +365,20 @@ body.zl-team .quarto-grid-item .listing-date::before { content: "From "; }
 }
 .zl-group-photo figcaption span:first-child { color: var(--zl-accent); }
 body.quarto-dark .zl-group-photo__frame { background: var(--zl-surface); }
+.zl-group-photo__intro {
+  max-width: 44rem;
+  margin: 0 0 1.75rem;
+  font-family: var(--zl-serif);
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--zl-ink);
+}
+.zl-team-code {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin: 0 0 2.5rem;
+}
+.zl-team-code p { margin: 0; color: var(--zl-muted); }
