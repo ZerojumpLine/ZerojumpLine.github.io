@@ -51,6 +51,20 @@ main div.quarto-about-trestles {
   line-height: 1.15;
   color: var(--zl-ink);
 }
+/* About: the name is shown as Zeju's signature. The text stays in the page
+   for screen readers / search; the signature is a mask filled with the ink
+   colour, so it follows the light/dark theme. */
+body.zl-about .quarto-about-trestles .quarto-title .title {
+  width: 15rem;
+  height: 6.5rem;
+  margin: 0 auto;
+  font-size: 0;
+  color: transparent;
+  background: var(--zl-ink);
+  -webkit-mask: url("../zerojump/img/signature.png") center / contain no-repeat;
+          mask: url("../zerojump/img/signature.png") center / contain no-repeat;
+}
+
 .quarto-about-trestles .quarto-title .subtitle {
   margin-top: 0.4rem;
   font-family: var(--zl-mono);
@@ -120,6 +134,12 @@ div.quarto-about-trestles .about-entity .about-link:hover {
   color: var(--zl-accent);
 }
 
+#hero-heading .fa-envelope {
+  margin-right: 0.35rem;
+  font-size: 0.85em;
+  color: var(--zl-accent);
+}
+
 /* education list */
 .fa-ul { margin-top: 1rem; }
 .fa-ul li { margin-bottom: 0.35rem; }
@@ -134,7 +154,7 @@ div.quarto-about-trestles .about-entity .about-link:hover {
   color: var(--zl-ink);
 }
 .zl-notice p { margin: 0; }
-.zl-notice strong:first-child {
+.zl-notice > p:first-child > strong:only-child {
   display: block;
   margin-bottom: 0.5rem;
   font-family: var(--zl-mono);
@@ -282,3 +302,34 @@ body.zl-team .quarto-grid-item:hover .card-img-top img { filter: saturate(1.15) 
 
 /* Team grid: the listing date is the start date */
 body.zl-team .quarto-grid-item .listing-date::before { content: "From "; }
+
+/* Find Me → WeChat official account */
+.zl-wechat-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem 0 1rem;
+}
+.zl-wechat-block img {
+  flex: none;
+  width: 9.5rem;
+  height: auto;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid var(--zl-rule);
+}
+.zl-wechat-block p { margin: 0 0 0.5rem; }
+.zl-wechat-block__name {
+  font-family: var(--zl-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--zl-ink);
+}
+@media (max-width: 576px) {
+  .zl-wechat-block { flex-direction: column; align-items: flex-start; }
+}
+
+/* Vacancies: English summary box */
+.zl-english ul { margin: 0.75rem 0; padding-left: 1.25rem; }
+.zl-english li { margin-bottom: 0.4rem; }
+.zl-english > p:last-child { margin-top: 0.75rem; color: var(--zl-muted); font-size: 0.9rem; }

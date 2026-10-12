@@ -1,6 +1,22 @@
 ---
-pagetitle: "Zeju Li"
+pagetitle: "Zeju Li – Fudan"
+description: "Zeju Li, Associate Professor at Fudan University — machine learning for medical image analysis and neuroimaging."
+image: assets/zerojump/img/social-card.jpg
 body-classes: zl-home
+listing:
+  id: featured-list
+  # every page with `featured: true` in its front matter, newest first
+  contents:
+    - "blog/*/index.qmd"
+    - "news/*/index.qmd"
+    - "publication/*/index.qmd"
+    - "teaching/*/index.qmd"
+  include:
+    featured: true
+  sort: "date desc"
+  max-items: 6
+  template: _partials/featured-rows.ejs
+  fields: [title, date, featured-label, path]
 title-block-banner: false
 ---
 
@@ -83,36 +99,7 @@ Currently, we are working on building AI models that can: 1) operate reliably an
 ## Featured
 :::
 
-::: {.zl-split__body .zl-rows}
-::: {.zl-row}
-[Medical Generative Models Need More Than Realism](/blog/2026-08-19-generative-models-need-more-than-realism/)
-[**Research** August 19, 2026]{.zl-row__meta}
-:::
-
-::: {.zl-row}
-[National BME Competition](/news/2026-07-19-BME-Innovation-Competition/)
-[**Competition** July 19, 2026]{.zl-row__meta}
-:::
-
-::: {.zl-row}
-[MICS 2026](/news/2026-07-10-MICS/)
-[**Seminar** July 10, 2026]{.zl-row__meta}
-:::
-
-::: {.zl-row}
-[Introducing SEVAL](/SEVAL/)
-[**Publication** June 1, 2026]{.zl-row__meta}
-:::
-
-::: {.zl-row}
-[Generative Machine Learning Models in Medical Image Computing](/news/2025-08-08-GenAI-Book/)
-[**Book** August 4, 2025]{.zl-row__meta}
-:::
-
-::: {.zl-row}
-[Pattern Recognition](/teaching/2025-08-08-Pattern Recognition/)
-[**Teaching** August 2, 2025]{.zl-row__meta}
-:::
+::: {.zl-split__body #featured-list}
 
 :::
 :::

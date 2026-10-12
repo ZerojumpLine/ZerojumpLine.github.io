@@ -3,12 +3,17 @@ project:
   output-dir: _site
   resources:
     - assets/js/
+    - assets/fonts/
+    - assets/zerojump/img/wechat-qr.png
+    - assets/zerojump/img/signature.png
 
 website:
-  title: "**ZEJU** Li"
+  title: "Zeju Li – Fudan"
   site-url: https://zerojumpline.github.io/
-  description: "Zeju Li."
-  favicon: assets/zerojump/img/brain_logo.png
+  description: "Zeju Li, Associate Professor at Fudan University — machine learning for medical image analysis and neuroimaging."
+  image: assets/zerojump/img/social-card.jpg   # default link-preview image (pages with their own image override it)
+  open-graph: true
+  favicon: assets/zerojump/img/brain_logo_ink.png
   page-navigation: true
   back-to-top-navigation: true
 
@@ -35,6 +40,7 @@ website:
       #   text: body
  
   navbar:
+    title: "Zeju Li"
     logo: assets/zerojump/img/brain_logo_ink.png
     toggle-color-scheme: true
     tools:
@@ -73,6 +79,7 @@ website:
     right: >-
       <a class="zl-footer-icon" href="https://www.linkedin.com/in/zeju-li-a42676102/" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
       <a class="zl-footer-icon" href="https://twitter.com/li_zeju" title="X" target="_blank" rel="noopener">{{< fa brands x-twitter >}}</a>
+      <span class="zl-wechat" tabindex="0" title="微信公众号 · 江湾智影"><span class="zl-footer-icon">{{< fa brands weixin >}}</span><span class="zl-wechat__card"><img src="/assets/zerojump/img/wechat-qr.png" alt="WeChat official account 江湾智影 QR code"><span>微信公众号 · 江湾智影</span></span></span>
 
 format:
   html:
@@ -82,6 +89,7 @@ format:
       light: [cosmo, assets/theme/base.scss, assets/theme/light.scss]
       dark:  [cosmo, assets/theme/base.scss, assets/theme/dark.scss]
     css:
+      - assets/css/fonts.css      # self-hosted @font-face (no Google Fonts)
       - assets/css/base.css       # typography, navbar, footer, buttons, page headers
       - assets/css/listings.css   # News / Blog / Publications lists, Team / Teaching grids
       - assets/css/article.css    # posts, publications, citation blocks
@@ -89,7 +97,6 @@ format:
       - assets/css/home.css       # homepage hero and sections
     highlight-style: a11y
     code-link: true
-    pagetitle: "Zeju Li"
     lightbox: true
 
 execute: 
@@ -100,5 +107,8 @@ jupyter: python3
 
 include-in-header:
   - text: |
+      <!-- Umami analytics (cookie-free): https://cloud.umami.is -->
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="13c8f25a-1f21-4fce-8a7b-08810724c218"></script>
       <script src="/assets/js/citation-copy.js"></script>
       <script src="/assets/js/category-links.js"></script>
+      <script src="/assets/js/comments-theme.js"></script>

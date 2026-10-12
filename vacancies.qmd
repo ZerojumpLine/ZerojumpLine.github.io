@@ -12,6 +12,20 @@ body-classes: zl-index
 
 :::
 
+::: {.zl-notice .zl-english #in-english}
+**In English**
+
+I recruit **one Master's student and two PhD students every year**, plus postdocs and research interns, at the [College of Biomedical Engineering](https://bme-college.fudan.edu.cn/), Fudan University (Shanghai). International applicants are very welcome.
+
+- **Research topics:** safe and robust AI, advanced medical imaging algorithms (reconstruction, segmentation, generative models), and AI for healthcare and neuroscience. The exact project can follow your interests.
+- **Background:** computer science, electronic or biomedical engineering, or a related field; fluent with PyTorch and Git; a genuine interest in medicine or neuroscience.
+- **Timeline:** Fudan's Master's and direct-PhD admissions run through the July summer camp (prepare from May). Regular PhD and postdoc applications are open all year.
+- **The lab:** part of the Medical Imaging & AI Lab led by [Prof. Yuanyuan Wang](https://bme-college.fudan.edu.cn/wyy/main.htm) (30+ graduate students), with strong funding, compute and clinical collaborations. Alumni have gone on to PhDs at Oxford, Cambridge, Imperial and TUM, and to Google, Microsoft, Meta and Huawei.
+- **How to apply:** email your CV, transcripts, publications and GitHub to [zejuli@fudan.edu.cn](mailto:zejuli@fudan.edu.cn) with the subject **"Start term – Programme – Your name"** (e.g. "Fall 2027 – PhD – Jane Doe"). I read every email that follows this format.
+
+The detailed description below is in Chinese.
+:::
+
 ::: {.about-section}
 
 ## About Me

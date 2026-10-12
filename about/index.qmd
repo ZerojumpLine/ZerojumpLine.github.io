@@ -1,8 +1,10 @@
 ---
-title: "&nbsp;&nbsp;&nbsp;李泽榉&nbsp;&nbsp;&nbsp;"
+title: "李泽榉"
+pagetitle: "About"
+body-classes: zl-about
 # subtitle: 青年研究员
 image: sidebar/IDPhoto.jpeg
-image-alt: "Your photo description"
+image-alt: "Portrait of Zeju Li"
 about:
   template: trestles
   image-width: 14em
@@ -28,6 +30,9 @@ about:
     - text: "{{< ai google-scholar >}}"
       aria-label: "Google Scholar"
       href: https://scholar.google.co.uk/citations?user=zeuflXEAAAAJ&hl=en&oi=ao
+    - text: "{{< fa brands weixin >}}"
+      aria-label: "WeChat official account 江湾智影"
+      href: /assets/zerojump/img/wechat-qr.png
 format:
   html:
     page-layout: full
@@ -65,8 +70,8 @@ Shanghai, China
 &nbsp;
 
 <b>Email</b>  
-📧 <b>Work:</b> zejuli(at)fudan.edu.cn  
-📧 <b>Personal:</b> lizeju79(at)sina.cn
+{{< fa regular envelope >}} <b>Work:</b> zejuli(at)fudan.edu.cn  
+{{< fa regular envelope >}} <b>Personal:</b> lizeju79(at)sina.cn
 
 :::
 

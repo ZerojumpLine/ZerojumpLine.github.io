@@ -1,0 +1,20 @@
+```{=html}
+<%
+// Homepage "Featured" rows. Items opt in with `featured: true` in their front
+// matter; `featured-label` (optional) overrides the type shown before the date,
+// otherwise it is derived from the section the item lives in.
+const labels = { blog: "Research", news: "News", publication: "Publication", teaching: "Teaching" };
+const fmt = (d) => new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+%>
+<div class="zl-rows">
+<% for (const item of items) {
+     const section = (item.path || "").replace(/^\.?\//, "").split("/")[0];
+     const label = item["featured-label"] || labels[section] || "";
+%>
+  <div class="zl-row">
+    <p><a href="<%- item.path %>"><%= item.title %></a></p>
+    <p class="zl-row__meta"><strong><%= label %></strong><%= item.date ? fmt(item.date) : "" %></p>
+  </div>
+<% } %>
+</div>
+```

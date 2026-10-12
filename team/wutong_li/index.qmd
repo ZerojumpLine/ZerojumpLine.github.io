@@ -36,7 +36,7 @@ Fudan University
 **Lab Period**  
 Sep 2022 - Present
 
-📧 **Email** wtli22(at)m.fudan.edu.cn
+{{< fa regular envelope >}} **Email** wtli22(at)m.fudan.edu.cn
 
 :::
 

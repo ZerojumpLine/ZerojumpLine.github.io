@@ -25,5 +25,7 @@ format:
 title-block-banner: false
 math: false
 bibliography: publications.bib
-body-classes: zl-index
+body-classes: zl-index zl-pubs
+include-after-body:
+  text: <script src="/assets/js/publications.js"></script>
 ---

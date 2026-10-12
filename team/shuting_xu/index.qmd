@@ -35,7 +35,7 @@ Fudan University
 **Lab Period**  
 Sep 2026 - Present
 
-📧 **Email** 26113060040(at)m.fudan.edu.cn
+{{< fa regular envelope >}} **Email** 26113060040(at)m.fudan.edu.cn
 
 :::
 
@@ -51,7 +51,7 @@ Shuting Xu is a doctoral student working on brain MRI analysis, especially on pa
 
 ::: {.g-col-6 #about-me-2}
 
-Shuting joined the lab in 2026 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+Shuting joined the lab in 2026 and is currently pursuing her doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2031</li>

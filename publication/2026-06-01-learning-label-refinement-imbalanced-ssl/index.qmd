@@ -25,6 +25,8 @@ links:
 - icon: globe
   name: Website
   url: https://zerojumpline.github.io/SEVAL
+featured: true
+featured-label: "Publication"
 ---
 
 ## Abstract

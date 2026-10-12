@@ -21,6 +21,18 @@ Shanghai, China
 **Email:** zejuli@fudan.edu.cn  
 **Office Hours:** Monday-Friday, 9am-5pm
 
+## WeChat Official Account
+
+```{=html}
+<div class="zl-wechat-block">
+  <img src="/assets/zerojump/img/wechat-qr.png" alt="QR code of the WeChat official account 江湾智影">
+  <div>
+    <p class="zl-wechat-block__name">江湾智影</p>
+    <p>Follow my WeChat official account (微信公众号) <strong>江湾智影</strong>: scan the QR code with WeChat, or search “江湾智影” in WeChat (微信搜一搜).</p>
+  </div>
+</div>
+```
+
 ## Mailing Address
 
 Same as office location.

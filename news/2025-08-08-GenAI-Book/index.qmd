@@ -8,6 +8,8 @@ image-alt: "GenAI Book 2025"
 format: 
   html: 
     page-layout: full
+featured: true
+featured-label: "Book"
 ---
 
 ## Description

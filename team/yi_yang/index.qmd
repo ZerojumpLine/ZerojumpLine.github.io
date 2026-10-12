@@ -36,7 +36,7 @@ Fudan University
 **Lab Period**  
 Sep 2025 - Present
 
-📧 **Email** 25213090038(at)m.fudan.edu.cn
+{{< fa regular envelope >}} **Email** 25213090038(at)m.fudan.edu.cn
 
 :::
 

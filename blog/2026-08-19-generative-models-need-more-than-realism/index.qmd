@@ -26,6 +26,8 @@ links:
 format:
   html:
     page-layout: full
+featured: true
+featured-label: "Research"
 ---
 
 ## The limits of realism

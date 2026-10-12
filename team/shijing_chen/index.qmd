@@ -35,7 +35,7 @@ Fudan University
 **Lab Period**  
 Sep 2026 - Present
 
-📧 **Email** 26113060048(at)m.fudan.edu.cn
+{{< fa regular envelope >}} **Email** 26113060048(at)m.fudan.edu.cn
 
 :::
 
@@ -51,7 +51,7 @@ Shijing Chen is a doctor student working on generative models in medicine.
 
 ::: {.g-col-6 #about-me-2}
 
-Shijing joined the lab in 2026 and is currently pursuing his doctoral degree in Biomedical Engineering at Fudan University.
+Shijing joined the lab in 2026 and is currently pursuing her doctoral degree in Biomedical Engineering at Fudan University.
 
 <ul class="fa-ul">
    <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>Ph.D. ∙ Fudan University ∙ Expected 2030</li>

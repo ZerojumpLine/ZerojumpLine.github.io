@@ -16,6 +16,8 @@ links:
   - icon: journal-text
     name: EST60033.02
     url: https://elearning.fudan.edu.cn/courses/100620
+featured: true
+featured-label: "Teaching"
 ---
 I teach a pattern recognition course for BME Ph.D. students. In this course, I will cover some advanced concepts of AI.
 

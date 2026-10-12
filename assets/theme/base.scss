@@ -6,12 +6,13 @@
 // differs between the two compiled themes would make the page jump when
 // the colour scheme is toggled. Layout lives in assets/css/*.css.
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Petrona:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap');
+// Fonts are self-hosted: see assets/css/fonts.css (@font-face) and assets/fonts/.
+$web-font-path: false;   // stop the Cosmo theme importing Source Sans Pro from Google Fonts
 
 // Typography
 $font-family-sans-serif:  "Red Hat Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 $font-family-monospace:   "JetBrains Mono", SFMono-Regular, Menlo, Consolas, monospace;
-$headings-font-family:    "Petrona", "Songti SC", serif;
+$headings-font-family:    "Petrona", "Noto Serif SC", "Songti SC", serif;   // Petrona has no CJK glyphs; Chinese falls through to Noto Serif SC
 $headings-font-weight:    600;
 $headings-color:          $zl-ink;
 $font-size-base:          1.125rem;

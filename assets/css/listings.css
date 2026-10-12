@@ -197,6 +197,37 @@
 }
 .quarto-listing-default .metadata a { text-decoration: none; }
 
+/* mid widths (small laptops, iPad landscape): the date column moves above the
+   title so the title keeps the full text column */
+@media (max-width: 1199.98px) and (min-width: 768px) {
+  .quarto-listing-default .quarto-post.image-left:has(.thumbnail) {
+    grid-template-columns: 12rem minmax(0, 1fr);
+    grid-template-areas: "thumb meta" "thumb body";
+    grid-template-rows: auto 1fr;
+  }
+  .quarto-listing-default .quarto-post.image-right:has(.thumbnail) {
+    grid-template-columns: minmax(0, 1fr) 12rem;
+    grid-template-areas: "meta thumb" "body thumb";
+    grid-template-rows: auto 1fr;
+  }
+  /* same selectors as the desktop rules above, so these win */
+  .quarto-listing-default .quarto-post.image-left:has(.thumbnail) .thumbnail,
+  .quarto-listing-default .quarto-post.image-right:has(.thumbnail) .thumbnail { grid-area: thumb; width: 100%; }
+  .quarto-listing-default .quarto-post.image-left:has(.thumbnail) .body,
+  .quarto-listing-default .quarto-post.image-right:has(.thumbnail) .body { grid-area: body; }
+  .quarto-listing-default .quarto-post.image-left:has(.thumbnail) .metadata,
+  .quarto-listing-default .quarto-post.image-right:has(.thumbnail) .metadata {
+    grid-area: meta;
+    grid-area: meta;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    max-width: none;
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+}
+
 @media (max-width: 767.98px) {
   .quarto-listing-default .quarto-post,
   .quarto-listing-default .quarto-post.image-left,
@@ -273,3 +304,37 @@ body.zl-teaching .quarto-listing-container-grid .quarto-grid-item p.card-img-top
   text-transform: uppercase;
   color: var(--zl-accent);
 }
+
+/* ---------- Publications: year headings + category order (assets/js/publications.js) ---------- */
+body.zl-pubs .quarto-listing-default .quarto-post.zl-year-start::before {
+  content: attr(data-year);
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin: 1.5rem 0 1.75rem;
+  padding-bottom: 0.6rem;
+  font-family: var(--zl-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--zl-accent);
+  border-bottom: 1px solid var(--zl-rule);
+}
+body.zl-pubs .quarto-listing-default .quarto-post.zl-year-start:first-child::before { margin-top: 0; }
+body.zl-pubs .quarto-listing-default .quarto-post.zl-year-start .body { grid-row: 2; }
+body.zl-pubs .quarto-listing-default .quarto-post.zl-year-start .metadata { grid-row: 3; }
+body.zl-pubs #quarto-margin-sidebar .category { text-transform: capitalize; }
+/* the year is already the section heading */
+body.zl-pubs .listing-category.zl-year-tag { display: none; }
+/* highlighted papers: filled terracotta tag, listed first in the tag row */
+body.zl-pubs .listing-category.zl-highlight-tag {
+  order: -1;
+  font-size: 0;                 /* replace the text "highlights" with "Highlight" */
+  color: var(--zl-bg);
+  background: var(--zl-accent);
+  border-color: var(--zl-accent);
+}
+body.zl-pubs .listing-category.zl-highlight-tag::before {
+  content: "★ Highlight";
+  font-size: 0.68rem;
+}
+body.zl-pubs .listing-category.zl-highlight-tag:hover { opacity: 0.85; color: var(--zl-bg); }

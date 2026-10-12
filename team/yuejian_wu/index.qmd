@@ -36,7 +36,7 @@ Fudan University
 **Lab Period**  
 Feb 2025 - Present
 
-📧 **Email** 1337347541(at)qq.com
+{{< fa regular envelope >}} **Email** 1337347541(at)qq.com
 
 :::
 

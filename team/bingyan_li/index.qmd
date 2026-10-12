@@ -35,7 +35,7 @@ Fudan University
 **Lab Period**  
 Mar 2026 - Present
 
-📧 **Email** 213221829(at)seu.edu.cn
+{{< fa regular envelope >}} **Email** 213221829(at)seu.edu.cn
 
 :::
 

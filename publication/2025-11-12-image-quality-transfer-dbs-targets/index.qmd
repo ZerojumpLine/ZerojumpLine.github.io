@@ -11,7 +11,7 @@ categories:
   - 2025
 slug: image-quality-transfer-dbs-targets
 image: featured.png
-description: 'Imaging Neuroscience 2025'
+description: 'Imaging Neuroscience'
 subtitle: An image quality transfer approach for robust Vim localisation on clinical-quality diffusion MRI for deep brain stimulation.
 links:
 - icon: file-richtext-fill

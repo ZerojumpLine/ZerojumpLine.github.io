@@ -35,7 +35,7 @@ Fudan University
 **Lab Period**  
 Sep 2026 - Present
 
-📧 **Email** zhang_h26(at)m.fudan.edu.cn
+{{< fa regular envelope >}} **Email** zhang_h26(at)m.fudan.edu.cn
 
 :::
 

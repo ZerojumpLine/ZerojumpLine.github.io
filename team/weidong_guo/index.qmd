@@ -35,7 +35,7 @@ Fudan University
 **Lab Period**  
 May 2025 - Present
 
-📧 **Email** gwd200(at)mail.ustc.edu.cn
+{{< fa regular envelope >}} **Email** gwd200(at)mail.ustc.edu.cn
 
 :::
 

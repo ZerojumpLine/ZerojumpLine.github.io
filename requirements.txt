@@ -1,0 +1,10 @@
+# Python packages for pages that execute code (currently only
+# teaching/2025-08-08-Pattern Recognition). Results are frozen in _freeze/,
+# so these only run when that page's source changes.
+jupyter
+nbformat
+plotly
+numpy
+scipy
+scikit-learn
+pandas

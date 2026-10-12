@@ -8,6 +8,8 @@ image-alt: "Presentation at MICS 2026 in New Tsinghua Xuetang"
 format: 
   html: 
     page-layout: full
+featured: true
+featured-label: "Seminar"
 ---
 
 ## Description

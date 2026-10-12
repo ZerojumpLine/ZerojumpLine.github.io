@@ -8,6 +8,8 @@ image-alt: "Closing ceremony of the 11th National Biomedical Engineering Innovat
 format: 
   html: 
     page-layout: full
+featured: true
+featured-label: "Competition"
 ---
 
 ## Description

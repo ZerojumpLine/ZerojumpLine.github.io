@@ -36,7 +36,7 @@ Fudan University
 **Lab Period**  
 Sep 2023 - Present
 
-📧 **Email** jie_xu18(at)fudan.edu.cn
+{{< fa regular envelope >}} **Email** jie_xu18(at)fudan.edu.cn
 
 :::
 
