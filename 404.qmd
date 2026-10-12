@@ -1,9 +1,32 @@
 ---
-title: "404"
+title: "Page not found"
+subtitle: "404"
+description: "It might have been removed, renamed, or has mysteriously disappeared."
+body-classes: zl-index
 ---
 
-# Oh no! That page is nowhere to be found <i class="fas fa-search pr2"></i>
+::: {.zl-rows .zl-404-links}
 
-It might have been removed, renamed, or has mysteriously disappeared. 
+::: {.zl-row}
+[Home](/)
+[**Start** the homepage]{.zl-row__meta}
+:::
 
-Head back to the [homepage](/) to try finding it again, or try using the search feature.
+::: {.zl-row}
+[Publications](/publication/)
+[**Research** papers, preprints and code]{.zl-row__meta}
+:::
+
+::: {.zl-row}
+[News](/news/)
+[**Lab** updates and events]{.zl-row__meta}
+:::
+
+::: {.zl-row}
+[Blog](/blog/)
+[**Notes** essays and explainers]{.zl-row__meta}
+:::
+
+:::
+
+Or use the search in the top-right corner.

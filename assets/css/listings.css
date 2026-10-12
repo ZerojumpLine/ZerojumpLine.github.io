@@ -338,3 +338,28 @@ body.zl-pubs .listing-category.zl-highlight-tag::before {
   font-size: 0.68rem;
 }
 body.zl-pubs .listing-category.zl-highlight-tag:hover { opacity: 0.85; color: var(--zl-bg); }
+
+/* Publications: per-paper quick links (assets/js/publications.js) */
+#listing-paper-links { display: none; }
+.zl-pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+.zl-pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--zl-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--zl-accent);
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--zl-accent) 45%, transparent);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.zl-pub-links a:hover { color: var(--zl-bg); background: var(--zl-accent); }
+.zl-pub-links .bi { font-size: 0.85em; }

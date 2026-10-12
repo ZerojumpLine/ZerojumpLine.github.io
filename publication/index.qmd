@@ -4,21 +4,26 @@ subtitle: "Research output"
 description: |
   This is home for my research publications, each linked with<br>
   accompanying preprints, posters, and/or news pieces.
-listing: 
-  contents: 
-    - "**/index.qmd"
-    - "**/index.markdown"
-    - "**/index.md"
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  fields: [title, author, categories, date, description]
-  image-align: left
-  # image-height: 10em
-  # page-size: 5
-
+listing:
+  - id: papers
+    contents:
+      - "**/index.qmd"
+      - "**/index.markdown"
+      - "**/index.md"
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+    fields: [title, author, categories, date, description]
+    image-align: left
+  # data only: each paper's `links:` for the buttons added by publications.js
+  - id: paper-links
+    contents:
+      - "**/index.qmd"
+    template: ../_partials/pub-links.ejs
+    fields: [path, links]
+    page-size: 1000
 format:
   html:
     page-layout: full
@@ -29,3 +34,9 @@ body-classes: zl-index zl-pubs
 include-after-body:
   text: <script src="/assets/js/publications.js"></script>
 ---
+
+::: {#papers}
+:::
+
+::: {#paper-links .zl-hidden}
+:::

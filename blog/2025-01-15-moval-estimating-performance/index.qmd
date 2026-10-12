@@ -25,6 +25,9 @@ links:
 format:
   html:
     page-layout: full
+aliases:
+  - /moval/
+  - /moval.html
 ---
 
 <div style="text-align: center; margin-bottom: 2rem;">
