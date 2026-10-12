@@ -44,6 +44,16 @@ math: false
 body-classes: zl-index zl-team
 ---
 
+```{=html}
+<figure class="zl-group-photo">
+  <p class="zl-eyebrow">The lab</p>
+  <div class="zl-group-photo__frame">
+    <img src="group-2026-09.jpg" alt="Group photo of the lab members in front of the Department of Electronic Engineering and Department of Biomedical Engineering signs at Fudan University" loading="lazy">
+  </div>
+  <figcaption><span>September 10, 2026</span><span>Fudan University · Shanghai</span></figcaption>
+</figure>
+```
+
 ## Current Team
 
 We are a part of research team lead by [Prof. Yuanyuan Wang](https://bme-college.fudan.edu.cn/wyy/main.htm). I feel truly fortunate to collaborate with such a talented and kind team.

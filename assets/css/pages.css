@@ -333,3 +333,35 @@ body.zl-team .quarto-grid-item .listing-date::before { content: "From "; }
 .zl-english ul { margin: 0.75rem 0; padding-left: 1.25rem; }
 .zl-english li { margin-bottom: 0.4rem; }
 .zl-english > p:last-child { margin-top: 0.75rem; color: var(--zl-muted); font-size: 0.9rem; }
+
+/* Team: group photo — warm-graded print on a paper mat */
+.zl-group-photo { margin: 0 0 4rem; }
+.zl-group-photo__frame {
+  overflow: hidden;
+  padding: 0.6rem;
+  background: var(--zl-paper);
+  border: 1px solid var(--zl-rule);
+  box-shadow: 0 18px 40px -24px rgba(31, 42, 51, 0.35);
+}
+.zl-group-photo__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+.zl-group-photo:hover .zl-group-photo__frame img { transform: scale(1.015); }
+.zl-group-photo figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--zl-rule);
+  font-family: var(--zl-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+}
+.zl-group-photo figcaption span:first-child { color: var(--zl-accent); }
+body.quarto-dark .zl-group-photo__frame { background: var(--zl-surface); }
