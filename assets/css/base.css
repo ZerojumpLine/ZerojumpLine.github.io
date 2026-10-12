@@ -191,7 +191,7 @@ body.quarto-dark .navbar .navbar-logo {
 .navbar .navbar-nav .nav-link {
   margin: 0 0.4rem;
   padding: 0.5rem 0.6rem;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   line-height: 1.2;
@@ -255,7 +255,7 @@ body.quarto-dark .navbar .navbar-logo {
 }
 /* 992–1200px: full menu still shown but tight on space */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .navbar .navbar-nav .nav-link { margin: 0 0.1rem; letter-spacing: 0.08em; }
+  .navbar .navbar-nav .nav-link { margin: 0 0.1rem; font-size: 0.85rem; letter-spacing: 0.08em; }
 }
 .navbar .navbar-brand-container,
 .navbar .navbar-brand { flex-shrink: 0; }
@@ -273,16 +273,36 @@ body.zl-home #quarto-header.headroom--top .navbar { background: transparent; }
   padding: 2rem var(--zl-gutter);
   border-top: 1px solid var(--zl-rule);
   background: var(--zl-bg);
-  font-family: var(--zl-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
   color: var(--zl-muted);
 }
+.nav-footer p { margin: 0; }
+/* room under the footer text for the floating "Back to top" button */
+.nav-footer { padding-bottom: 5rem; }
+#quarto-back-to-top {
+  bottom: 1.25rem;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--zl-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--zl-muted);
+  background: var(--zl-bg);
+  border: 1px solid var(--zl-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+#quarto-back-to-top:hover { color: var(--zl-accent); border-color: var(--zl-accent); }
+/* Quarto shrinks each footer column to 0.825em; keep them at full size */
+.nav-footer .nav-footer-left,
+.nav-footer .nav-footer-center,
+.nav-footer .nav-footer-right { font-size: 1rem; }
 .nav-footer a { color: var(--zl-muted); }
 .nav-footer a:hover { color: var(--zl-accent); }
 .nav-footer .zl-footer-icon {
-  margin-left: 0.6rem;
-  font-size: 1.1rem;
+  margin-left: 0.75rem;
+  font-size: 1.35rem;
   color: var(--zl-muted);
   text-decoration: none;
 }

@@ -31,6 +31,7 @@ title-block-banner: false
 math: false
 bibliography: publications.bib
 body-classes: zl-index zl-pubs
+comments: false
 include-after-body:
   text: <script src="/assets/js/publications.js"></script>
 ---

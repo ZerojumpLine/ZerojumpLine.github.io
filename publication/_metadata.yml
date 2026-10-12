@@ -18,3 +18,11 @@ format:
       
 # placeholder featured image
 image: featured.jpg
+
+# Enable comments
+comments:
+  utterances:
+    repo: ZerojumpLine/ZerojumpLine.github.io
+    issue-term: title
+    theme: boxy-light
+    label: "comments :crystal_ball:"

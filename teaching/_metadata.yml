@@ -27,10 +27,4 @@ format:
 # Post info
 author: Zeju Li
 
-# Enable comments
-comments: 
-  utterances:
-    repo: ZerojumpLine/ZerojumpLine.github.io
-    issue-term: title
-    theme: boxy-light
-    label: "comments :crystal_ball:"
+comments: false
