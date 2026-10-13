@@ -1,4 +1,5 @@
-// Publications index:
+// Publications index (per-paper link buttons are rendered by
+// _partials/pub-list.ejs.md):
 //  1. category filter ordered All → highlights → years, newest first
 //     (Quarto sorts categories alphabetically, which put 2017 at the top);
 //  2. a year heading above the first paper of each year. The heading is drawn
@@ -24,46 +25,6 @@
     items.forEach(function (el) { box.appendChild(el); });
   }
 
-  // Quick links (Publication / Preprint / Code / Website) under each paper,
-  // read from the data-only listing rendered by _partials/pub-links.ejs.
-  var linkData = null;
-  function addLinks() {
-    if (linkData === null) {
-      var el = document.getElementById("zl-pub-links");
-      try { linkData = el ? JSON.parse(el.textContent) : {}; } catch (e) { linkData = {}; }
-    }
-    document.querySelectorAll(".quarto-listing-default .quarto-post").forEach(function (post) {
-      var body = post.querySelector(".body");
-      var title = post.querySelector(".listing-title a");
-      if (!body || !title || body.querySelector(".zl-pub-links")) return;
-      // listing paths point at the .qmd source; compare by directory
-      var dir = function (u) {
-        return new URL(u, window.location.href).pathname.replace(/index\.(qmd|html|md|markdown)$/, "");
-      };
-      var path = dir(title.getAttribute("href"));
-      var key = Object.keys(linkData).find(function (k) { return dir(k) === path; });
-      var links = key && linkData[key];
-      if (!links || !links.length) return;
-      var box = document.createElement("div");
-      box.className = "zl-pub-links";
-      links.forEach(function (l) {
-        if (!l.url) return;
-        var a = document.createElement("a");
-        a.href = l.url;
-        a.target = "_blank";
-        a.rel = "noopener";
-        if (l.icon) {
-          var i = document.createElement("i");
-          i.className = "bi bi-" + l.icon;
-          a.appendChild(i);
-        }
-        a.appendChild(document.createTextNode(l.name || "Link"));
-        box.appendChild(a);
-      });
-      body.appendChild(box);
-    });
-  }
-
   function markYears() {
     document.querySelectorAll(".quarto-post .listing-category").forEach(function (tag) {
       var name = tag.textContent.trim();
@@ -86,9 +47,8 @@
   function init() {
     orderCategories();
     markYears();
-    addLinks();
     var list = document.querySelector(".quarto-listing-default");
-    if (list) new MutationObserver(function () { markYears(); addLinks(); }).observe(list, { childList: true });
+    if (list) new MutationObserver(markYears).observe(list, { childList: true });
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

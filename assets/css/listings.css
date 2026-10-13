@@ -339,8 +339,7 @@ body.zl-pubs .listing-category.zl-highlight-tag::before {
 }
 body.zl-pubs .listing-category.zl-highlight-tag:hover { opacity: 0.85; color: var(--zl-bg); }
 
-/* Publications: per-paper quick links (assets/js/publications.js) */
-#listing-paper-links { display: none; }
+/* Publications: per-paper quick links (_partials/pub-list.ejs.md) */
 .zl-pub-links {
   display: flex;
   flex-wrap: wrap;

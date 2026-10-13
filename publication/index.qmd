@@ -11,19 +11,12 @@ listing:
       - "**/index.markdown"
       - "**/index.md"
     sort: "date desc"
-    type: default
+    template: ../_partials/pub-list.ejs.md   # default list + per-paper link buttons
     categories: true
     sort-ui: false
     filter-ui: false
-    fields: [title, author, categories, date, description]
+    fields: [title, author, categories, date, description, links]
     image-align: left
-  # data only: each paper's `links:` for the buttons added by publications.js
-  - id: paper-links
-    contents:
-      - "**/index.qmd"
-    template: ../_partials/pub-links.ejs
-    fields: [path, links]
-    page-size: 1000
 format:
   html:
     page-layout: full
@@ -39,5 +32,3 @@ include-after-body:
 ::: {#papers}
 :::
 
-::: {#paper-links .zl-hidden}
-:::
