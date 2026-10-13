@@ -44,9 +44,9 @@ body.zl-home { overflow-x: clip; }
   --r: clamp(0, (var(--p) - 0.18) / 0.6, 1);
   clip-path: circle(calc(var(--r) * 100%) at 60% 46%);
 }
-body.quarto-dark .zl-hero__img {
-  filter: invert(0.92) hue-rotate(180deg) brightness(0.95) contrast(0.95);
-}
+/* light/dark artwork: each picture has a hand-made dark version */
+body:not(.quarto-dark) .zl-only-dark,
+body.quarto-dark .zl-only-light { display: none; }
 
 /* paper wash on the left so text always reads, soft edge into the page below */
 .zl-hero__veil {
@@ -313,10 +313,6 @@ body.quarto-dark .zl-hero__img {
   transition: filter 0.6s ease, transform 0.8s cubic-bezier(.2, .7, .2, 1);
 }
 .zl-area:hover .zl-area__fig img { filter: saturate(1); transform: scale(1.04); }
-body.quarto-dark .zl-area__fig img,
-body.quarto-dark .zl-area:hover .zl-area__fig img {
-  filter: invert(0.92) hue-rotate(180deg) brightness(0.95);
-}
 .zl-area__meta {
   display: flex;
   gap: 1rem;

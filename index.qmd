@@ -24,8 +24,10 @@ title-block-banner: false
 <section class="zl-hero" aria-label="Introduction">
   <div class="zl-hero__sticky">
     <div class="zl-hero__media" aria-hidden="true">
-      <img class="zl-hero__img zl-hero__img--base" src="assets/zerojump/img/hero-base.webp" alt="">
-      <img class="zl-hero__img zl-hero__img--reveal" src="assets/zerojump/img/hero-reveal.webp" alt="">
+      <img class="zl-hero__img zl-hero__img--base zl-only-light" src="assets/zerojump/img/hero-base.webp" alt="">
+      <img class="zl-hero__img zl-hero__img--reveal zl-only-light" src="assets/zerojump/img/hero-reveal.webp" alt="">
+      <img class="zl-hero__img zl-hero__img--base zl-only-dark" src="assets/zerojump/img/hero-base-dark.webp" alt="" loading="lazy">
+      <img class="zl-hero__img zl-hero__img--reveal zl-only-dark" src="assets/zerojump/img/hero-reveal-dark.webp" alt="" loading="lazy">
       <div class="zl-hero__veil"></div>
     </div>
 
@@ -71,19 +73,19 @@ Currently, we are working on building AI models that can: 1) operate reliably an
   <p class="zl-eyebrow">Research areas</p>
   <div class="zl-areas__grid">
     <article class="zl-area">
-      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-ml.webp" alt="Engraved illustration of layered feature maps and a neural network"></figure>
+      <figure class="zl-area__fig"><img class="zl-only-light" src="assets/zerojump/img/research-ml.webp" alt="Engraved illustration of layered feature maps and a neural network"><img class="zl-only-dark" src="assets/zerojump/img/research-ml-dark.webp" alt="Engraved illustration of layered feature maps and a neural network" loading="lazy"></figure>
       <div class="zl-area__meta"><span>01</span><span>Interpretability &middot; Uncertainty</span></div>
       <h3>Machine Learning</h3>
       <p>AI models that operate reliably and stably &mdash; and know when they might be wrong.</p>
     </article>
     <article class="zl-area">
-      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-mia.webp" alt="Engraved illustration of an MRI slice being reconstructed and segmented"></figure>
+      <figure class="zl-area__fig"><img class="zl-only-light" src="assets/zerojump/img/research-mia.webp" alt="Engraved illustration of an MRI slice being reconstructed and segmented"><img class="zl-only-dark" src="assets/zerojump/img/research-mia-dark.webp" alt="Engraved illustration of an MRI slice being reconstructed and segmented" loading="lazy"></figure>
       <div class="zl-area__meta"><span>02</span><span>Reconstruction &middot; Segmentation</span></div>
       <h3>Medical Image Analysis</h3>
       <p>Advancing the imaging pipeline, from raw acquisition to clinically meaningful measurements.</p>
     </article>
     <article class="zl-area">
-      <figure class="zl-area__fig"><img src="assets/zerojump/img/research-neuro.webp" alt="Engraved illustration of brain tractography and functional signals"></figure>
+      <figure class="zl-area__fig"><img class="zl-only-light" src="assets/zerojump/img/research-neuro.webp" alt="Engraved illustration of brain tractography and functional signals"><img class="zl-only-dark" src="assets/zerojump/img/research-neuro-dark.webp" alt="Engraved illustration of brain tractography and functional signals" loading="lazy"></figure>
       <div class="zl-area__meta"><span>03</span><span>fMRI &middot; dMRI</span></div>
       <h3>Computational Neuroscience</h3>
       <p>Modelling how the brain is wired and how it works, to deepen our understanding of brain function.</p>
