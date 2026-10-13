@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - tools/cache-bust.ts   # fingerprint our CSS/JS URLs so deploys never mix new HTML with cached old CSS
   resources:
     - assets/js/
     - assets/fonts/

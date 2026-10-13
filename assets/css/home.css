@@ -304,15 +304,30 @@ body.quarto-dark .zl-only-light { display: none; }
   margin: 0 0 1.75rem;
   aspect-ratio: 3 / 2;
   overflow: hidden;
+  /* feather the edges so the illustration's paper melts into the page */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 9%, #000 91%, transparent),
+    linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+  -webkit-mask-composite: source-in;
+          mask-image:
+    linear-gradient(to right, transparent, #000 9%, #000 91%, transparent),
+    linear-gradient(to bottom, transparent, #000 9%, #000 91%, transparent);
+          mask-composite: intersect;
 }
 .zl-area__fig img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.4);
+  /* muted until hovered. In light mode, saturate() alone turns the warm paper
+     grey-white; the sepia + brightness terms put it back on the page colour
+     (fitted to #EDE8DE). Same function list on hover so it animates smoothly. */
+  filter: saturate(0.4) sepia(0.1) brightness(0.98);
   transition: filter 0.6s ease, transform 0.8s cubic-bezier(.2, .7, .2, 1);
 }
-.zl-area:hover .zl-area__fig img { filter: saturate(1); transform: scale(1.04); }
+.zl-area:hover .zl-area__fig img { filter: saturate(1) sepia(0) brightness(1); transform: scale(1.04); }
+/* dark artwork sits on neutral charcoal paper: plain desaturation is enough */
+body.quarto-dark .zl-area__fig img { filter: saturate(0.4); }
+body.quarto-dark .zl-area:hover .zl-area__fig img { filter: saturate(1); }
 .zl-area__meta {
   display: flex;
   gap: 1rem;
