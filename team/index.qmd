@@ -47,7 +47,7 @@ body-classes: zl-index zl-team
 ```{=html}
 <figure class="zl-group-photo">
   <p class="zl-eyebrow">The lab</p>
-  <p class="zl-group-photo__intro">We are a part of the research team led by <a href="https://bme-college.fudan.edu.cn/wyy/main.htm">Prof. Yuanyuan Wang</a>. I feel truly fortunate to collaborate with such a talented and kind team.</p>
+  <p class="zl-group-photo__intro">We are part of the research group led by <a href="https://bme-college.fudan.edu.cn/wyy/main.htm">Prof. Yuanyuan Wang</a>. I feel truly fortunate to work alongside such talented and kind colleagues.</p>
   <div class="zl-group-photo__frame">
     <img src="group-2026-09.jpg" alt="Group photo of the lab members in front of the Department of Electronic Engineering and Department of Biomedical Engineering signs at Fudan University" loading="lazy">
   </div>
